@@ -1,10 +1,38 @@
 <template>
   <div class="container">
     <nav>
-      <p><strong>Dominus Kelvin </strong></p>
-      <ul>
-        <li><nuxt-link to="/blog">Blog</nuxt-link></li>
-        <li><nuxt-link to="/creations">Creations</nuxt-link></li>
+      <p class="brand"><nuxt-link to="/">Dominus Kelvin</nuxt-link></p>
+      <ul class="main-nav">
+        <li><nuxt-link to="/">Blog</nuxt-link></li>
+        <li>
+          <a
+            href="https://www.smashingmagazine.com/author/kelvin-omereshone/"
+            target="_blank"
+            >Writings</a
+          >
+        </li>
+        <li><nuxt-link to="/">Creations</nuxt-link></li>
+      </ul>
+
+      <ul class="social">
+        <li>
+          <a href="https://github.com/DominusKelvin" target="_blank">github</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Dominus_Kelvin" target="_blank"
+            >twtter</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/kelvinomereshone/"
+            target="_blank"
+            >linkedIn</a
+          >
+        </li>
+        <li>
+          <a href="mailto:kelvinomereshone@gmail.com" target="_blank">email</a>
+        </li>
       </ul>
     </nav>
     <main>
@@ -19,6 +47,9 @@
           <li>nuxt</li>
           <li>node</li>
           <li>sails</li>
+          <li>automation</li>
+          <li>testing</li>
+          <li>technical writing</li>
         </ul>
       </section>
     </aside>
@@ -33,13 +64,18 @@ export default {
 <style>
 body {
   background-color: #191710;
-  color: #fff;
+  color: #7e8d85;
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+a {
+  text-decoration: none;
+  color: rgb(77, 148, 110);
+  transition: all 300ms;
+  font-weight: 600;
+}
 ul {
   padding: 0;
   margin: 0;
@@ -61,17 +97,53 @@ main {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-main,
-aside {
-  padding-left: 0.5rem;
-}
 nav {
   padding-right: 0.5rem;
   margin-left: 2rem;
 }
 
+nav ul {
+  margin-top: 2rem;
+}
+nav ul > li {
+  margin-bottom: 1.5rem;
+  width: 50%;
+}
+
+nav ul a {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.brand {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+.brand a {
+  color: #7e8d85;
+}
+
+ul.social {
+  margin-top: 3rem;
+}
+
+ul.social a {
+  color: rgba(77, 148, 110, 0.6);
+}
+
+ul.social a:hover {
+  color: rgba(77, 148, 110);
+}
+
+nav ul.main-nav a:hover {
+  background-color: rgb(77, 148, 110, 0.3);
+  border-radius: 2rem;
+  color: #7e8d85;
+}
+
 aside {
   margin-top: 3rem;
+  padding-left: 0.5rem;
 }
 aside .card {
   width: 50%;
