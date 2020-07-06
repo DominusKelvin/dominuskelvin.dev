@@ -18,6 +18,7 @@
         >, playing chess, learning Spanish or playing the piano.
       </p>
     </section>
+    <newsletter-opt-in />
   </div>
 </template>
 <style>

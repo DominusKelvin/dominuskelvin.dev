@@ -1,26 +1,30 @@
 <template>
-  <div class="articles-container">
-    <h1>Blog</h1>
-    <p class="subtitle">
-      I write about JavaScript, Node, Vue and a bunch of other interests of
-      mine. I also write tips and tricks aim at simplifying daily development
-      with JavaScript.
-    </p>
-    <input
-      v-model="query"
-      class="search-box"
-      type="search"
-      autocomplete="off"
-      placeholder="search articles..."
-    />
-    <ul v-if="articles.length" class="articles">
-      <li v-for="article of articles" :key="article.slug" class="article">
-        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">{{
-          article.title
-        }}</NuxtLink>
-      </li>
-    </ul>
-  </div>
+  <section>
+    <div class="articles-container">
+      <h1>Blog</h1>
+      <p class="subtitle">
+        I write about JavaScript, Node, Vue and a bunch of other interests of
+        mine. I also write tips and tricks aim at simplifying daily development
+        with JavaScript.
+      </p>
+      <input
+        v-model="query"
+        class="search-box"
+        type="search"
+        autocomplete="off"
+        placeholder="search articles..."
+      />
+      <ul v-if="articles.length" class="articles">
+        <li v-for="article of articles" :key="article.slug" class="article">
+          <NuxtLink
+            :to="{ name: 'blog-slug', params: { slug: article.slug } }"
+            >{{ article.title }}</NuxtLink
+          >
+        </li>
+      </ul>
+    </div>
+    <newsletter-opt-in />
+  </section>
 </template>
 
 <script>

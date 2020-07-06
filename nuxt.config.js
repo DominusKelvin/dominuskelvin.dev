@@ -24,6 +24,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Mono|Lato' }
+    ],
+    script: [
+      { src: 'https://f.convertkit.com/ckjs/ck.5.js' }
     ]
   },
   /*

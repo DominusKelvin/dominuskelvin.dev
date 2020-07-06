@@ -4,6 +4,7 @@
       <h1 class="article__title">{{ article.title }}</h1>
       <nuxt-content :document="article" />
     </article>
+    <newsletter-opt-in />
     <footer>
       <div class="pagination">
         <NuxtLink
