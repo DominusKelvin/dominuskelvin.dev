@@ -38,6 +38,40 @@ export default {
       articles: [],
     }
   },
+  head() {
+    return {
+      title: `Blog | DominusKelvin`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: "Kelvin Omereshone's personal blog",
+        },
+        // Open Graph
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: "Kelvin Omereshone's personal blog",
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: "Kelvin Omereshone's personal blog",
+        },
+        // Twitter Card
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: `Blog | DominusKelvin`,
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: `Blog | DominusKelvin`,
+        },
+      ],
+    }
+  },
 }
 </script>
 <style>
