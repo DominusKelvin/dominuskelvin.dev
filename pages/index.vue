@@ -41,8 +41,6 @@
 }
 
 .hello {
-  font-size: 1.2rem;
-  line-height: 1.3;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 </style>

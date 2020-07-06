@@ -1,58 +1,10 @@
 <template>
   <div class="container">
-    <nav>
-      <p class="brand"><nuxt-link to="/">Dominus Kelvin</nuxt-link></p>
-      <ul class="main-nav">
-        <li><nuxt-link to="/">Blog</nuxt-link></li>
-        <li>
-          <a
-            href="https://www.smashingmagazine.com/author/kelvin-omereshone/"
-            target="_blank"
-            >Writings</a
-          >
-        </li>
-        <li><nuxt-link to="/">Creations</nuxt-link></li>
-      </ul>
-
-      <ul class="social">
-        <li>
-          <a href="https://github.com/DominusKelvin" target="_blank">github</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/Dominus_Kelvin" target="_blank"
-            >twtter</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/kelvinomereshone/"
-            target="_blank"
-            >linkedIn</a
-          >
-        </li>
-        <li>
-          <a href="mailto:kelvinomereshone@gmail.com" target="_blank">email</a>
-        </li>
-      </ul>
-    </nav>
+    <nav-bar />
     <main>
       <Nuxt />
     </main>
-    <aside>
-      <section class="card">
-        <h2>Skills</h2>
-        <ul>
-          <li>javascript</li>
-          <li>vue</li>
-          <li>nuxt</li>
-          <li>node</li>
-          <li>sails</li>
-          <li>automation</li>
-          <li>testing</li>
-          <li>technical writing</li>
-        </ul>
-      </section>
-    </aside>
+    <aside-section v-if="$route.path == '/'" />
   </div>
 </template>
 
@@ -68,7 +20,18 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto Mono', sans-serif;
+}
+p {
+  font-size: 1.1rem;
+  letter-spacing: 0.125;
+  line-height: 1.7;
 }
 a {
   text-decoration: none;
