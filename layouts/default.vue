@@ -153,7 +153,7 @@ nav ul.main-nav a:hover {
   border-radius: 2rem;
   color: #7e8d85;
 }
-nav ul a.nuxt-link-exact-active {
+nav ul a.nuxt-link-active {
   background-color: rgb(77, 148, 110, 0.3);
   border-radius: 2rem;
   color: #7e8d85;
