@@ -15,11 +15,11 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: 'Kelvin Omereshone\'s Majestic Site',
+    title: 'Kelvin Omereshone',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+      { hid: 'description', name: 'description', content: 'Kelvin Omereshone is a web developer' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
