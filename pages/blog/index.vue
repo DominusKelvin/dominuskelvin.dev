@@ -32,7 +32,7 @@ export default {
   async fetch() {
     this.articles = await this.$content('articles')
       .only(['title', 'slug', 'createdAt'])
-      .sortBy('createdAt', 'asc')
+      .sortBy('createdAt', 'desc')
       .search(this.query)
       .fetch()
   },

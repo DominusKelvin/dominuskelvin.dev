@@ -1,6 +1,6 @@
 ---
  title: "Don't sacrifice expressiveness for ease"
- description: "Use tech that doesn't need you to sacrifice ease for expressiveness"
+ description: "Use tech that doesn't need you to sacrifice expressiveness for ease"
 ---
 
 > Expressiveness: The quality of effectively conveying a thought or feeling
@@ -16,6 +16,4 @@ As a matter of fact, you can liken the tools as brushes in the hands of an artis
 ## My point 📌
 So here is my point - use tech that allows you the maximum amount of expressiveness. I know its easy to go for tech that are the hype of the day but when doing so, apply due diligence in asking the question: Am I sacrificing expressiveness for ease?
 
-Happy deploying 🚀 🚀,
-
-Kelvin
+Happy deploying 🚀 🚀, <br /> Kelvin
