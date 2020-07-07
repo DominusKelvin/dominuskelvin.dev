@@ -1,5 +1,5 @@
 
-import { getCard } from "./helpers/util"
+import util from "./helpers/util"
 export default {
   /*
   ** Nuxt rendering mode
@@ -33,7 +33,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: getCard(),
+        content: util.getCard(),
       },
       {
         hid: 'og:url',
@@ -54,7 +54,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: getCard(),
+        content: util.getCard(),
       },
       {
         hid: 'twitter:card',
