@@ -1,4 +1,5 @@
 
+import { getCard } from "./helpers/util"
 export default {
   /*
   ** Nuxt rendering mode
@@ -19,7 +20,45 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-      { hid: 'description', name: 'description', content: 'Kelvin Omereshone is a web developer' }
+      { hid: 'description', name: 'description', content: 'Kelvin Omereshone is a web developer' },
+      // Open Graph
+      { hid: 'og:title', property: 'og:title', content: 'Kelvin Omereshone' },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Kelvin Omereshone is a Nigerian software engineer skilled JavaScript and NodeJS',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: getCard(),
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: `https://dominuskelvin.dev`,
+      },
+      // Twitter Card
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Kelvin Omereshone',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Kelvin Omereshone is a Nigerian software engineer skilled JavaScript and NodeJS',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: getCard(),
+      },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
