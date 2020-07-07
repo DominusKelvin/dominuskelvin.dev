@@ -20,13 +20,15 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-      { hid: 'description', name: 'description', content: 'Kelvin Omereshone is a web developer' },
+      {
+        hid: 'description', name: 'description', content: "Kelvin Omereshone is a Nigerian 🇳🇬 software engineer that loves working with JavaScript on mostly everything.I am also interested in systems architecture and design"
+      },
       // Open Graph
       { hid: 'og:title', property: 'og:title', content: 'Kelvin Omereshone' },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Kelvin Omereshone is a Nigerian software engineer skilled JavaScript and NodeJS',
+        content: "Kelvin Omereshone is a Nigerian 🇳🇬 software engineer that loves working with JavaScript on mostly everything.I am also interested in systems architecture and design",
       },
       {
         hid: 'og:image',
@@ -47,7 +49,7 @@ export default {
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'Kelvin Omereshone is a Nigerian software engineer skilled JavaScript and NodeJS',
+        content: "Kelvin Omereshone is a Nigerian 🇳🇬 software engineer that loves working with JavaScript on mostly everything.I am also interested in systems architecture and design",
       },
       {
         hid: 'twitter:image',
