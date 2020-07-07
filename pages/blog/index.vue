@@ -83,6 +83,11 @@ export default {
   padding: 2rem 1rem;
 }
 
+@media only screen and (max-width: 839px) {
+  .articles-container {
+    padding: 1rem 0.5rem;
+  }
+}
 .articles {
   margin-top: 2rem;
 }

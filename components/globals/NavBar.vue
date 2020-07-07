@@ -10,7 +10,7 @@
           >Writings</a
         >
       </li>
-      <li><nuxt-link to="/">Creations</nuxt-link></li>
+      <li><nuxt-link to="#">Creations</nuxt-link></li>
     </ul>
 
     <ul class="social">
@@ -18,7 +18,7 @@
         <a href="https://github.com/DominusKelvin" target="_blank">github</a>
       </li>
       <li>
-        <a href="https://twitter.com/Dominus_Kelvin" target="_blank">twtter</a>
+        <a href="https://twitter.com/Dominus_Kelvin" target="_blank">twitter</a>
       </li>
       <li>
         <a href="https://www.linkedin.com/in/kelvinomereshone/" target="_blank"

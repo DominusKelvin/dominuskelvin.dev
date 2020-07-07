@@ -44,4 +44,13 @@
 .hello {
   padding: 0 2rem;
 }
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .hello {
+    padding: 0 0.5rem;
+    margin-top: -1.5rem;
+  }
+}
 </style>

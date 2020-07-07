@@ -61,6 +61,14 @@
 .newsletter {
   padding: 2rem 6rem;
 }
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .newsletter {
+    padding: 2rem 1.5rem;
+  }
+}
 .clean {
   display: flex;
   flex-direction: column;
@@ -82,6 +90,14 @@
   border-color: #e3e3e3;
   border-radius: 4px;
   font-weight: 400;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .formkit-input {
+    width: 92%;
+  }
 }
 .formkit-input:focus {
   outline: none;

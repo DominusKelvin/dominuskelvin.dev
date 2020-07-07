@@ -82,6 +82,11 @@ export default {
   padding: 5rem 2rem;
 }
 
+@media only screen and (max-width: 839px) {
+  .article-container {
+    padding: 1rem 0.5rem;
+  }
+}
 h1.article__title {
   font-size: 1.5rem;
 }

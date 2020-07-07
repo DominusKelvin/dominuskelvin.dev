@@ -55,22 +55,58 @@ ul {
   height: 100vh;
 }
 
+@media only screen and (min-width: 840px) and (max-width: 1450px) {
+  .container {
+    padding: 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 839px) {
+  .container {
+    padding: 0 0.5rem;
+    grid-template-columns: 1fr;
+  }
+}
+
 main {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+/* Main navigation */
 nav {
   padding-right: 0.5rem;
   margin-left: 2rem;
 }
 
+@media only screen and (max-width: 839px) {
+  nav {
+    padding: 0.2rem;
+    margin-left: 0;
+  }
+}
+
 nav ul {
   margin-top: 2rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 839px) {
+  nav ul {
+    margin-top: 1rem;
+    display: flex;
+  }
 }
 nav ul > li {
   margin-bottom: 1.5rem;
   width: 50%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 839px) {
+  nav ul > li {
+    margin-bottom: 0;
+  }
 }
 
 nav ul a {
@@ -86,10 +122,24 @@ nav ul a {
   color: #7e8d85;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 839px) {
+  .brand {
+    margin-bottom: 0.5rem;
+  }
+}
+
 ul.social {
   margin-top: 3rem;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 839px) {
+  ul.social {
+    margin-top: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+}
 ul.social a {
   color: rgba(77, 148, 110, 0.6);
 }
@@ -103,7 +153,11 @@ nav ul.main-nav a:hover {
   border-radius: 2rem;
   color: #7e8d85;
 }
-
+nav ul a.nuxt-link-exact-active {
+  background-color: rgb(77, 148, 110, 0.3);
+  border-radius: 2rem;
+  color: #7e8d85;
+}
 aside {
   margin-top: 3rem;
   padding-left: 0.5rem;
@@ -112,6 +166,22 @@ aside .card {
   width: 50%;
   padding: 0.5rem 1rem;
   color: gray;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 839px) {
+  aside {
+    margin-bottom: 1rem;
+  }
+  aside .card {
+    width: 90%;
+  }
+  aside .card ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .card ul > li {
