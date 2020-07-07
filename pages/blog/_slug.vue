@@ -53,7 +53,6 @@ export default {
         cloudName: 'dominuskelvin',
         imagePublicID: 'dominuskelvin.dev/card',
         font: 'futura',
-        taglineFontSize: '30',
         textColor: '7e8d85',
       })
       return socialImage
