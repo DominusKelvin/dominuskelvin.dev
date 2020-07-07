@@ -27,6 +27,7 @@
   </section>
 </template>
 <script>
+import getShareImage from '@jlengstorf/get-share-image'
 export default {
   name: 'BlogSlug',
   async asyncData({ $content, params }) {
@@ -44,6 +45,20 @@ export default {
       next,
     }
   },
+  methods: {
+    getCard() {
+      const socialImage = getShareImage({
+        title: this.article.title,
+        tagline: this.article.description,
+        cloudName: 'dominuskelvin',
+        imagePublicID: 'dominuskelvin.dev/card',
+        font: 'futura',
+        taglineFontSize: '30',
+        textColor: '7e8d85',
+      })
+      return socialImage
+    },
+  },
   head() {
     return {
       title: `${this.article.title} | Dominus Kelvin`,
@@ -60,6 +75,16 @@ export default {
           property: 'og:description',
           content: this.article.description,
         },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.getCard(),
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `/${this.article.slug}`,
+        },
         // Twitter Card
         {
           hid: 'twitter:title',
@@ -70,6 +95,16 @@ export default {
           hid: 'twitter:description',
           name: 'twitter:description',
           content: this.article.description,
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: this.getCard(),
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_card',
         },
       ],
     }
