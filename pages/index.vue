@@ -2,7 +2,7 @@
   <div>
     <section class="bio">
       <section class="hero"></section>
-      <img class="avatar" src="~/assets/avatar.jpeg" />
+      <img class="avatar" src="~/assets/avatar.jpeg" alt="Kelvin Omereshone" />
       <p class="hello">
         Hola 👋! I am Kelvin Omereshone (dominus_kelvin). I am a Nigerian 🇳🇬
         software engineer that loves working with JavaScript on mostly
