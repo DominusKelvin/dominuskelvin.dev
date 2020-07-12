@@ -33,7 +33,7 @@ export default {
   name: 'BlogSlug',
   filters: {
     toHumanDate(value) {
-      const milliseconds = Date.parse(value)
+      const milliseconds = new Date(value).getTime()
       const dateObject = new Date(milliseconds)
       const humanReadableDate = dateObject.toLocaleString('en-US', {
         month: 'long',
