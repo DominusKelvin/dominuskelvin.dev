@@ -3,7 +3,8 @@
     <h1>My Newsletter</h1>
     <p>
       I send out an email every so often about cool stuff I'm working on or
-      launching. If you dig, go ahead and sign up!
+      launching. If you want to be the first to get notified 🔔, go ahead and
+      sign up 👍!
     </p>
     <form
       action="https://app.convertkit.com/forms/1511017/subscriptions"
