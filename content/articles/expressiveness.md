@@ -16,4 +16,4 @@ As a matter of fact, you can liken the tools as brushes in the hands of an artis
 ## My point... 📌
 Use tech that allows you the maximum amount of expressiveness. I know its easy to go for tech that are the hype of the day but when doing so, apply due diligence in asking the question: Am I sacrificing expressiveness for ease?
 
-Happy deploying 🚀 🚀, <br /> Kelvin
+Code expressively 🚀 🚀, <br /> Kelvin
