@@ -85,26 +85,49 @@ Remember that time you just copied the fix for a bug? Yeah we all have done it. 
 
 Take the time to learn the solutions you are implementing. Even though you copied it the first time, don't copy it again. Take your time and learn it and see if you can improve upon it.
 
+### Suggestion
+
+Take out time to really learn a particular solution you have been using. This is where your curiosity would be needed. Again, investigate and learn supporting patterns or anti-patterns as well.
+
 ## Mistake #10 - Glossing over unknown concepts
 
 Granted there are concepts we all are battling on understanding. I mean things you don't quite get yet. I do have such concepts. But I encourage you to set out time to really learn them or these concepts might embarrass you when you least expect it. Each concepts that you don't know is an opportunity to grow your knowledge.
+
+### Suggestion
+
+When you discover you don't quite understand something you are using or a piece of code you are writing, make schedule to study that subject matter until it becomes second nature and you can use it without much mental effort. This takes practice and time but the reward is sure worth it.
 
 ## Mistake #11 - Not listening to the other elements of software development
 
 This one is a big one. Most beginning software developers just want to care about their code but they forget their code is just one piece of the puzzle in a sea of several puzzles - architecture, user experience, design etc. The users don't see your code! So you have got to learn to see the whole picture. This will let you appreciate how your code fits in on a larger scale. So from time to time investigate these other elements and how they affect your work as a software developer. 
 
+### Suggestion
+
+Depending on your learning model, set the time to learn about other elements of software development. I mostly do this on weekends when I watch a bunch of talks about the matter or read a blog post about it.
+
 ## Mistake #12 - Not studying other facets of software development
 
 Most of the time beginning software developers don't study other facets of software development apart from writing code. They don't study their tools(when was the last time you dug into the Webpack docs), they don't study their editors, they don't learn to git well or even use the terminal to a confident level.
+
+### Suggestion
+I implore you to learn your tools really well as this will reduce friction while using them. Learn your editor's shortcuts as well as productivity tips and tricks. Learn to git well!. Also invest time in mastering the terminal as it will be home for your development half the time.
 
 ## Mistake #13 - Trusting stuff found on the internet as a standard
 
 We are humans we are susceptible to making mistakes(this article is about mistakes!), . Do not take the fact that because you found a tutorial on YouTube and assume it is unquestionably correct and follow it blindly to the letter. Don't just ingest everything without cross referencing them. Again investigate. Do your research.
 
+### Suggestion
+
+I suggest you don't blindly use solutions presented on the internet without investigating it some more. You can ask questions about that solution in your community and get other opinions on it. And yet again, explore that solution and really prove it!
+
 
 ## Mistake #14 - Learning too many things at one time
 
 Concentration is key to mastery and in this industry, there is so much to cover in one life time. Do not be fooled that you can learn everything. I am a big proponent of mastering one thing. Mastering one thing would make you more valuable than fumbling on a lot of stuff that you don't fully grasp. Note, it's not how much you gain, its how much you retain that improves you. Don't be all over the place on every tech that springs up. Find a tech you feel strongly about and that solves your problem and work on that.
+
+### Suggestion
+
+You will need discipline here as they are many enticing tech springing out almost every other day. I suggest you develop a plan that allows you really sit on what particular subject or technology and really master it.
 
 
 ## Next Steps
