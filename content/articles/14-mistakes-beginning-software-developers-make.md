@@ -65,9 +65,23 @@ You bring something unique to the tech world. So celebrate that difference, cele
 
 This might seem trivial and I am very much guilty of this. Learning the history of programming or software development in general would expose you to different schools of thought which would give you a robust understanding of where we came from as an industry from the days of Ada Lovelace and where we are now. You will get to appreciate the history this way.
 
+### Suggestion
+
+Do not ignore the history of programming. Find out people that have done notable works in this field and study them as well.
+
+
+
 ## Mistake #7 - Not falling in love with your craft
 
 Do you wake up thinking about software development? Do you smile when reading technical articles or documentation or is it just work for you. The love for your craft will help prepare you when (I didn't say if) you get frustrated or get stuck on a bug for weeks(this happens). 
+
+### Suggestion
+
+You would have to figure out a strong reason why you are in this industry. One of my favorite quote goes:
+
+> If you know the why for living, you can endure any how
+
+Take the time out to discover what really made you come into this industry and let that guide you in tough times or through tough bugs.
 
 
 ## Mistake #8 - Not learning your language
