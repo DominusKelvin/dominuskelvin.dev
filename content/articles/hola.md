@@ -12,3 +12,5 @@ This very first post is my idea of the conventional 'hello world' so bear with m
 I would also provide a newsletter so you can get notify when I write new articles.
 
 Expect great things from this side of the web soonest!
+
+Code expressively 🚀 🚀, <br /> Kelvin
