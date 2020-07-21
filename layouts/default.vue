@@ -73,6 +73,12 @@ main {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+@media only screen and (max-width: 839px) {
+  main {
+    border: none;
+  }
+}
+
 /* Main navigation */
 nav {
   padding-right: 0.5rem;
