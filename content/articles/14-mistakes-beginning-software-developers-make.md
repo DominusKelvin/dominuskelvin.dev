@@ -148,6 +148,6 @@ You will need discipline here as they are many enticing tech springing out almos
 
 So those are the 14 mistakes I have discovered personally that beginning developers are liable to make. I hope the above list would help you make a change and adjust where you find yourself wanting. 
 
-We all have gaps in our learning, however we can make those gaps much more narrow if we take out time to revisit those things we ignored while starting out. Again if you there are any other mistakes you have notice, feel free to [tweet](https://twitter.com/dominus_kelvin) at me. You can also sign up for my newsletter below to get more of such advice.
+We all have gaps in our learning, however we can make those gaps much more narrow if we take out time to revisit those things we ignored while starting out. Again, if there are any other mistakes you have notice you made on your journey as a software developer, feel free to [tweet](https://twitter.com/dominus_kelvin) at me. You can also sign up for my newsletter below to get more of such advice.
 
 Code expressively 🚀 🚀, <br /> Kelvin
