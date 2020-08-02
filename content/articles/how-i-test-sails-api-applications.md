@@ -1,6 +1,6 @@
 ---
     title: 'How I Test Sails API Applications'
-    description: '#sailsjs #webservice #node #automatedTesting'
+    description: 'sailsjs, webservice, node, automatedtesting'
 ---
 
 Lately I have been both writing and maintaining a couple of NodeJS web services written with the [Sails](https://sailsjs.com/) framework. In this article, I want to show my approach in setting up and writing API tests for a Sails powered web service or API.
