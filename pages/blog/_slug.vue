@@ -12,17 +12,15 @@
           v-if="prev"
           class="pagination-link"
           :to="{ name: 'blog-slug', params: { slug: prev.slug } }"
+          >&larr; {{ prev.title }}</NuxtLink
         >
-          &larr; {{ prev.title }}
-        </NuxtLink>
 
         <NuxtLink
           v-if="next"
           class="pagination-link"
           :to="{ name: 'blog-slug', params: { slug: next.slug } }"
+          >{{ next.title }} &rarr;</NuxtLink
         >
-          {{ next.title }} &rarr;
-        </NuxtLink>
       </div>
     </footer>
   </section>
@@ -169,6 +167,57 @@ h1.article__title {
   margin-bottom: 2rem;
   letter-spacing: 0.125;
   line-height: 1.7;
+}
+
+.nuxt-content ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
+.nuxt-content li {
+  margin-bottom: 0.5rem;
+}
+
+.nuxt-content p > code,
+.nuxt-content pre[class*='language-'] {
+  background-color: rgba(126, 141, 133, 0.2);
+  border-radius: 4px;
+}
+
+.nuxt-content pre[class*='language-'] {
+  color: #7e8d85;
+  text-shadow: 0 1px rgba(126, 141, 133, 0.1);
+  margin-bottom: 2rem;
+}
+.nuxt-content p > code {
+  color: rgba(77, 148, 110);
+  padding: 0 0.2rem;
+  font-weight: bold;
+}
+
+.nuxt-content .token.operator {
+  background-color: transparent;
+}
+
+.nuxt-content .token.string {
+  color: rgba(77, 148, 110);
+}
+
+.nuxt-content .token.function {
+  color: #c7435e;
+}
+
+.nuxt-content .token.keyword {
+  color: #9e883b;
+}
+
+.nuxt-content .token.comment {
+  color: rgba(126, 140, 133, 0.4);
+}
+
+.nuxt-content span.filename {
+  color: rgba(126, 141, 133, 0.3);
+  font-family: monospace;
 }
 footer {
   margin-top: 5rem;
