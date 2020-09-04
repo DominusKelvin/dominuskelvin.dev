@@ -79,33 +79,6 @@ export default {
 }
 </script>
 <style>
-.articles-container {
-  padding: 2rem 1rem;
-}
-
-@media only screen and (max-width: 839px) {
-  .articles-container {
-    padding: 1rem 0.5rem;
-  }
-}
-.articles {
-  margin-top: 2rem;
-}
-
-.article {
-  margin-bottom: 0.8rem;
-  font-size: 1.2rem;
-  font-family: 'Roboto Mono', sans-serif;
-}
-
-.article a:hover::after,
-.article a:focus::after {
-  content: '\2192';
-  position: absolute;
-  margin-left: 0.5rem;
-  color: #7e8d85;
-}
-
 .search-box {
   padding: 0.5rem;
   margin-top: 0.2rem;

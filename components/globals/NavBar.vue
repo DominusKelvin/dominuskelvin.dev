@@ -1,8 +1,12 @@
 <template>
   <nav>
-    <p class="brand"><nuxt-link to="/">Dominus Kelvin</nuxt-link></p>
+    <p class="brand">
+      <nuxt-link to="/">Dominus Kelvin</nuxt-link>
+    </p>
     <ul class="main-nav">
-      <li><nuxt-link to="/blog">Blog</nuxt-link></li>
+      <li>
+        <nuxt-link to="/blog">Blog</nuxt-link>
+      </li>
       <li>
         <a
           href="https://www.smashingmagazine.com/author/kelvin-omereshone/"
@@ -10,7 +14,9 @@
           >Writings</a
         >
       </li>
-      <li><nuxt-link to="#">Creations</nuxt-link></li>
+      <li>
+        <nuxt-link to="/creations">Creations</nuxt-link>
+      </li>
     </ul>
 
     <ul class="social">

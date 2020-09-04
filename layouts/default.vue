@@ -28,6 +28,10 @@ h3,
 h4 {
   font-family: 'Roboto Mono', sans-serif;
 }
+
+h2.sub-heading: {
+  padding-bottom: 0;
+}
 p {
   font-size: 1.1rem;
   letter-spacing: 0.125;
@@ -197,5 +201,32 @@ aside .card {
   color: black;
   padding: 10px;
   border: 1px solid #7e8d85;
+}
+
+.articles-container {
+  padding: 2rem 1rem;
+}
+
+@media only screen and (max-width: 839px) {
+  .articles-container {
+    padding: 1rem 0.5rem;
+  }
+}
+.articles {
+  margin-top: 2rem;
+}
+
+.article {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.article a:hover::after,
+.article a:focus::after {
+  content: '\2192';
+  position: absolute;
+  margin-left: 0.5rem;
+  color: #7e8d85;
 }
 </style>
