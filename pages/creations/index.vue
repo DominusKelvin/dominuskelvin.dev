@@ -8,6 +8,11 @@
       </p>
       <ul class="articles">
         <li class="article">
+          <a href="https://sailscasts.com" target="_blank">Sailscasts</a>
+          <br />The definitive source for Sails.js and modern backend JavaScript
+          mastery.
+        </li>
+        <li class="article">
           <a
             href="https://www.npmjs.com/package/vue-cli-plugin-chakra-ui"
             target="_blank"
