@@ -10,7 +10,7 @@
         <li class="article">
           <a href="https://sailscasts.com" target="_blank">Sailscasts</a>
           <br />The definitive source for Sails.js and modern backend JavaScript
-          mastery.
+          mastery(coming soon).
         </li>
         <li class="article">
           <a
