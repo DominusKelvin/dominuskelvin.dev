@@ -1,6 +1,8 @@
 ---
     title: '14 Mistakes Beginning Software Developers Make'
     description: 'These mistakes could be keeping you from reaching the next level in your software development career'
+    publishedAt: 'August 12, 2020'
+    id: 3
 ---
 
 >  Mistake: an error, a goof, a slip-up. When you make a mistake, you've done something incorrectly. Mistake has a lot of uses, but they all have to do with doing the wrong thing.

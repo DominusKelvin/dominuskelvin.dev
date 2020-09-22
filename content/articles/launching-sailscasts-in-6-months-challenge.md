@@ -1,6 +1,8 @@
 ---
 title: 'Launching Sailscasts in 6 months challenge'
 description: 'Launch Sailscasts on March 17th, 2021 with a recurring revenue of 5,000 USD/month'
+publishedAt: 'September 16, 2020'
+id: 6
 ---
 
 Hello there, so I was having a bit of light reading and I stumbled on an interview of Nathan Barry(the creator of ConvertKit).

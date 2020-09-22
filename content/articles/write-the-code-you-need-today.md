@@ -1,6 +1,8 @@
 ---
     title: 'Write The Code You Need Today'
     description: "Postpone writing the code you don't need today."
+    publishedAt: 'July 23, 2020'
+    id: 2
 ---
 
 >  Need: require (something) because it is essential or very important rather than just desirable.

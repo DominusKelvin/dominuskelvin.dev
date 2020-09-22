@@ -1,6 +1,8 @@
 ---
     title: 'Hola Mundo'
     description: 'My very first article on my personal blog'
+    publishedAt: 'July 6, 2020'
+    id: 0
 ---
 
 I finally did it 🎉. For years I have been procrastinating maintaining my own blog. I finally pulled it off and it feels so good.

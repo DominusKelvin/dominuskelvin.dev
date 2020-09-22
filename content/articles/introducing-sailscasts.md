@@ -1,6 +1,8 @@
 ---
     title: 'Introducing Sailscasts'
     description: 'The definitive source for Sails.js and modern backend JavaScript mastery.'
+    publishedAt: 'September 7, 2020'
+    id: 5
 ---
 
 Hello there. I recently announced in this [tweet](https://twitter.com/Dominus_Kelvin/status/1302614636227956736?s=20) that I will be working on an exclusive online platform for learning Sails.js and backend JavaScript. This article is to resound why I decided to work on the project.

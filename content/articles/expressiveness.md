@@ -1,6 +1,8 @@
 ---
  title: "Don't sacrifice expressiveness for ease"
  description: "Use tech that doesn't need you to sacrifice expressiveness for ease"
+ publishedAt: 'July 7, 2020',
+ id: 1
 ---
 
 > Expressiveness: The quality of effectively conveying a thought or feeling

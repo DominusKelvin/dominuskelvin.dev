@@ -217,7 +217,7 @@ aside .card {
 }
 
 .article {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
   font-size: 1.2rem;
   font-family: 'Roboto Mono', sans-serif;
 }

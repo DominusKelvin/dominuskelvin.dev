@@ -2,7 +2,7 @@
   <section class="article-container">
     <article>
       <h1 class="article__title">{{ article.title }}</h1>
-      <p class="published-date">{{ article.createdAt | toHumanDate }}</p>
+      <p class="published-date">{{ article.publishedAt }}</p>
       <nuxt-content :document="article" />
     </article>
     <newsletter-opt-in />
@@ -29,26 +29,14 @@
 import getShareImage from '@jlengstorf/get-share-image'
 export default {
   name: 'BlogSlug',
-  filters: {
-    toHumanDate(value) {
-      const milliseconds = new Date(value).getTime()
-      const dateObject = new Date(milliseconds)
-      const humanReadableDate = dateObject.toLocaleString('en-US', {
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric',
-      })
-      return humanReadableDate
-    },
-  },
   async asyncData({ $content, params }) {
+    const article = await $content('articles', params.slug).fetch()
+
     const [prev, next] = await $content('articles')
-      .only(['title', 'slug', 'createdAt'])
-      .sortBy('createdAt', 'asc')
+      .only(['title', 'slug', 'id'])
+      .sortBy('id', 'asc')
       .surround(params.slug)
       .fetch()
-
-    const article = await $content('articles', params.slug).fetch()
 
     return {
       article,

@@ -7,13 +7,15 @@
         mine. I also write tips and tricks aim at simplifying daily development
         with JavaScript.
       </p>
-      <input
-        v-model="query"
-        class="search-box"
-        type="search"
-        autocomplete="off"
-        placeholder="search articles..."
-      />
+      <form @submit.prevent.enter="$fetch">
+        <input
+          v-model="query"
+          class="search-box"
+          type="search"
+          autocomplete="off"
+          :placeholder="`Search articles...`"
+        />
+      </form>
       <ul v-if="articles.length" class="articles">
         <li v-for="article of articles" :key="article.slug" class="article">
           <NuxtLink
@@ -30,16 +32,18 @@
 <script>
 export default {
   async fetch() {
-    this.articles = await this.$content('articles')
-      .only(['title', 'slug', 'createdAt'])
-      .sortBy('createdAt', 'asc')
+    const articles = await this.$content('articles')
+      .only(['title', 'slug', 'id'])
       .search(this.query)
       .fetch()
+
+    this.articles = articles.sort((a, b) => b.id - a.id)
   },
   data() {
     return {
       query: '',
       articles: [],
+      articlesCount: 0,
     }
   },
   head() {
