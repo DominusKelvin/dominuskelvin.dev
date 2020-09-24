@@ -11,7 +11,7 @@ Prior to the launch of the Sailscasts platform, I created a Discord server where
 
 When we are together we learn and grow faster. Join the Sailscasts community, I will be stoked to bid you welcome in there.
 
-[Join the Sailscasts community](https://discord.gg/7y3KRF2)
+[Join the Sailscasts community](https://discord.gg/gbJZuNm)
 
 P.S: Interested in learning Sails.js from the Sailscasts platform? [Join](https://sailscasts.com) the wait-list and you will be the first to know when it launches.
 
