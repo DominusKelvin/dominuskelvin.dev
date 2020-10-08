@@ -39,7 +39,7 @@ Though I feel hyped about my journey to learn React, I wouldn't want to abandon 
 
 I always believe understanding the intention of a creator would allow you better understand and utilize a piece of software of programming language.
 
-As far as practice goes, I plan on using React for building the interactive parts of [Sailscasts](https://sailcasts.com) - a platform for learning server-side JavaScript using the [Sails.js](https://sailsjs.com) framework so if you are interested in tuning in to that journey, subscribe to the [early access list](https://sailscasts.com) for Sailscasts. I believe this way I get to solidify my handle of React and see how it plays out in a real-world project. Should be fun As far as practice goes, I plan on using React for building the interactive parts of [Sailscasts](https://sailcasts.com) - a platform for learning server-side JavaScript using the [Sails.js](https://sailsjs.com) framework so if you are interested in tuning in to that journey, subscribe to the [early access list](https://sailscasts.com) for Sailscasts. I believe this way I get to solidify my handle of React and see how it plays out in a real-world project. Should be fun 😺
+As far as practice goes, I plan on using React for building the interactive parts of [Sailscasts](https://sailcasts.com) - a platform for learning server-side JavaScript using the [Sails.js](https://sailsjs.com) framework so if you are interested in tuning in to that journey, subscribe to the [early access list](https://sailscasts.com) for Sailscasts. I believe this way I get to solidify my handle of React and see how it plays out in a real-world project. Should be fun 😺
 
 > P.S: I am still a Vue guy, I'm just augment my tool set my learning React as well
 
