@@ -94,6 +94,7 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/google-analytics'
   ],
   /*
   ** Nuxt.js modules
@@ -108,6 +109,9 @@ export default {
   ** See https://content.nuxtjs.org/configuration
   */
   content: {},
+   googleAnalytics: {
+    id: 'UA-147175682-2',
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
