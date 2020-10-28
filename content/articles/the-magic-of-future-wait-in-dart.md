@@ -1,8 +1,8 @@
 ---
 title: 'The magic of Future.wait() in Dart'
 description: "#flutter #dart"
-publishedAt: 'September 21, 2020'
-id: 8
+publishedAt: 'October 28, 2020'
+id: 9
 ---
 
 > > A software bug is an error, flaw or fault in a computer program or system that causes it to produce an incorrect or unexpected result, or to behave in unintended ways.
