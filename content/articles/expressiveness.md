@@ -1,7 +1,7 @@
 ---
  title: "Don't sacrifice expressiveness for ease"
  description: "Use tech that doesn't need you to sacrifice expressiveness for ease"
- publishedAt: 'July 7, 2020',
+ publishedAt: 'July 7, 2020'
  id: 1
 ---
 
@@ -16,6 +16,7 @@ As software engineers, our job is to solve problems on a daily basis so I am of 
 As a matter of fact, you can liken the tools as brushes in the hands of an artist. When an artist paints, he chooses the brushes not based on feelings or attachments but solely base on how expressive the brush would allow him convey his intent. He knows what brush type to use for various strokes and flexibility.
 
 ## My point... 📌
+
 Use tech that allows you the maximum amount of expressiveness. I know its easy to go for tech that are the hype of the day but when doing so, apply due diligence in asking the question: Am I sacrificing expressiveness for ease?
 
 Code expressively 🚀 🚀, <br /> Kelvin

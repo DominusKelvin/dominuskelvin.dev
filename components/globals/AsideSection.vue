@@ -5,6 +5,9 @@
       <ul>
         <li>javascript</li>
         <li>vue</li>
+        <li>react</li>
+        <li>dart</li>
+        <li>flutter</li>
         <li>nuxt</li>
         <li>node</li>
         <li>sails</li>
