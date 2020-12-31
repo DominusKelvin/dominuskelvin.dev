@@ -1,6 +1,6 @@
 ---
 title: "2020: I still can't believe what's happening"
-description: "2020 came in pack with a lot giant steps, lessons learnt and overall massive decisions"
+description: "2020 came in pack with a lot of giant steps, lessons learnt and overall massive decisions"
 publishedAt: 'December 31, 2020'
 id: 12
 ---
