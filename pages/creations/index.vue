@@ -8,7 +8,9 @@
       </p>
       <ul class="articles">
         <li class="article">
-          <a href="https://sailscasts.com" target="_blank">Sailscasts</a>
+          <a href="https://sailscasts.com" target="_blank"
+            >&#8226; Sailscasts</a
+          >
           <br />The definitive source for Sails.js and modern backend JavaScript
           mastery(coming soon).
         </li>
@@ -16,7 +18,7 @@
           <a
             href="https://www.npmjs.com/package/vue-cli-plugin-chakra-ui"
             target="_blank"
-            >vue-cli-plugin-chakra-ui</a
+            >&#8226; vue-cli-plugin-chakra-ui</a
           >
           <br />The official Vue CLI plugin to setup Chakra UI Vue.
         </li>
@@ -25,7 +27,7 @@
           <a
             href="https://marketplace.visualstudio.com/items?itemName=dominuskelvin.sailboat"
             target="_blank"
-            >Sailboat</a
+            >&#8226; Sailboat</a
           >
           <br />Sails.js tooling for VS Code to boost productivity with the
           framework.
