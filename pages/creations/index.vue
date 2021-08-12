@@ -11,8 +11,41 @@
           <a href="https://sailscasts.com" target="_blank"
             >&#x2023; Sailscasts</a
           >
-          <br />The definitive source for Sails.js and modern backend JavaScript
-          mastery(coming soon).
+          <br />The All-In-One Platform To Master Sails.
+        </li>
+        <li class="article">
+          <a
+            href="https://www.npmjs.com/package/machinepack-paystack"
+            target="_blank"
+            >&#x2023; machinepack-paystack</a
+          >
+          <br />Communicate with over 113
+          <a href="https://paystack.com" target="_blank">Paystack</a>
+          API to initialize transaction, create plans, etc.
+        </li>
+        <li class="article">
+          <a href="https://pub.dev/packages/sails_io" target="_blank"
+            >&#x2023; sails_io</a
+          >
+          <br />Dart/Flutter Websocket Client SDK for communication with Sails
+          from a mobile application(or any client running Dart or Flutter)
+        </li>
+        <li class="article">
+          <a href="https://pub.dev/packages/sails_io" target="_blank"
+            >&#x2023; wistia_player</a
+          >
+          <br />Flutter package for playing or streaming inline Wistia videos
+          using the official iFrame player API. This plugin supports both
+          Android and iOS.
+        </li>
+        <li class="article">
+          <a
+            href="https://www.npmjs.com/package/sails-hook-paystack"
+            target="_blank"
+            >&#x2023; sails-hook-paystack</a
+          >
+          <br />This Sails hook exposes methods for interacting with the
+          Paystack API. Internally it uses the machinepack-paystack package
         </li>
         <li class="article">
           <a
