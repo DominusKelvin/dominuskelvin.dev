@@ -5,6 +5,9 @@
     </p>
     <ul class="main-nav">
       <li>
+        <a href="https://sailscasts.com" target="_blank">Screencasts</a>
+      </li>
+      <li>
         <nuxt-link to="/blog">Blog</nuxt-link>
       </li>
       <li>
