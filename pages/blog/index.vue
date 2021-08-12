@@ -19,7 +19,7 @@
       <ul v-if="articles.length" class="articles">
         <li v-for="article of articles" :key="article.slug" class="article">
           <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }"
-            >&#8226; {{ article.title }}</NuxtLink
+            >&#x2023; {{ article.title }}</NuxtLink
           >
         </li>
       </ul>
