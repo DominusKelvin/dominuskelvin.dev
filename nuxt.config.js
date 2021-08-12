@@ -1,34 +1,37 @@
-
-import util from "./helpers/util"
+import util from './helpers/util'
 export default {
   /*
-  ** Nuxt rendering mode
-  ** See https://nuxtjs.org/api/configuration-mode
-  */
+   ** Nuxt rendering mode
+   ** See https://nuxtjs.org/api/configuration-mode
+   */
   mode: 'universal',
   /*
-  ** Nuxt target
-  ** See https://nuxtjs.org/api/configuration-target
-  */
+   ** Nuxt target
+   ** See https://nuxtjs.org/api/configuration-target
+   */
   target: 'static',
   /*
-  ** Headers of the page
-  ** See https://nuxtjs.org/api/configuration-head
-  */
+   ** Headers of the page
+   ** See https://nuxtjs.org/api/configuration-head
+   */
   head: {
     title: 'Kelvin Omereshone',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       {
-        hid: 'description', name: 'description', content: "Hola 👋! I am Kelvin Omereshone (dominus_kelvin). I am a Nigerian 🇳🇬 software engineer that loves working with JavaScript on mostly everything.I am also interested in systems architecture and design."
+        hid: 'description',
+        name: 'description',
+        content:
+          'Hola 👋! I am Kelvin Omereshone (dominus_kelvin). I am a Nigerian 🇳🇬 software engineer that loves working with JavaScript on mostly everything.I am also interested in systems architecture and design.',
       },
       // Open Graph
       { hid: 'og:title', property: 'og:title', content: 'Kelvin Omereshone' },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: "Hola 👋! I am Kelvin Omereshone (dominus_kelvin). I am a Nigerian 🇳🇬 software engineer that loves working with JavaScript on mostly everything.I am also interested in systems architecture and design.",
+        content:
+          'Hola 👋! I am Kelvin Omereshone (dominus_kelvin). I am a Nigerian 🇳🇬 software engineer that loves working with JavaScript on mostly everything.I am also interested in systems architecture and design.',
       },
       {
         hid: 'og:image',
@@ -49,7 +52,8 @@ export default {
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: "Hola 👋! I am Kelvin Omereshone (dominus_kelvin). I am a Nigerian 🇳🇬 software engineer that loves working with JavaScript on mostly everything.I am also interested in systems architecture and design.",
+        content:
+          'Hola 👋! I am Kelvin Omereshone (dominus_kelvin). I am a Nigerian 🇳🇬 software engineer that loves working with JavaScript on mostly everything.I am also interested in systems architecture and design.',
       },
       {
         hid: 'twitter:image',
@@ -64,58 +68,57 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Mono|Lato' }
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Roboto+Mono|Lato',
+      },
     ],
-    script: [
-      { src: 'https://f.convertkit.com/ckjs/ck.5.js' }
-    ]
+    script: [{ src: 'https://f.convertkit.com/ckjs/ck.5.js' }],
   },
   /*
-  ** Global CSS
-  */
-  css: [
-  ],
+   ** Global CSS
+   */
+  css: [],
   /*
-  ** Plugins to load before mounting the App
-  ** https://nuxtjs.org/guide/plugins
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   ** https://nuxtjs.org/guide/plugins
+   */
+  plugins: [],
   /*
-  ** Auto import components
-  ** See https://nuxtjs.org/api/configuration-components
-  */
+   ** Auto import components
+   ** See https://nuxtjs.org/api/configuration-components
+   */
   components: true,
   /*
-  ** Nuxt.js dev-modules
-  */
+   ** Nuxt.js dev-modules
+   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
   ],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
   ],
   /*
-  ** Content module configuration
-  ** See https://content.nuxtjs.org/configuration
-  */
+   ** Content module configuration
+   ** See https://content.nuxtjs.org/configuration
+   */
   content: {},
-   googleAnalytics: {
+  googleAnalytics: {
     id: 'UA-147175682-2',
   },
   /*
-  ** Build configuration
-  ** See https://nuxtjs.org/api/configuration-build/
-  */
+   ** Build configuration
+   ** See https://nuxtjs.org/api/configuration-build/
+   */
   build: {
     // Run ESLint on save
     extend(config, ctx) {
@@ -126,10 +129,10 @@ export default {
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
           options: {
-            fix: true
-          }
+            fix: true,
+          },
         })
       }
-    }
-  }
+    },
+  },
 }
