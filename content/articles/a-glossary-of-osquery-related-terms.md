@@ -1,6 +1,6 @@
 ---
 title: "A glossary of osquery related terms"
-description: "Found these terms popping up more and more in my research into osquery. Thought it wise to document it."
+description: "Found these terms popping up more and more in my research into osquery. Thought it wise to document them."
 publishedAt: 'October 21, 2021'
 id: 16
 ---
