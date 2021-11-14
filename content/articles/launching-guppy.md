@@ -1,6 +1,6 @@
 ---
 title: "Launching guppy: the needed Tinker tool for backend JavaScript"
-description: "This simple yet powerful desktop application allows you to run Javascript code and act as a scratchpad for trying out new ideas – all within the context of your application. Here is the story of how it was built"
+description: "guppy allows you to run Javascript code all within the context a Sails application."
 publishedAt: 'November 14, 2021'
 id: 17
 ---
