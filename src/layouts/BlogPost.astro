@@ -26,8 +26,12 @@ const {
   <body>
     <Header />
 
-    <main class="min-h-screen p-4 text-gray-800">
-      <p class="mb-8"><a href="/blog">&lsaquo; Go back</a></p>
+    <main
+      class="min-h-screen p-4 sm:mx-auto lg:mx-auto lg:w-8/12 xl:w-1/2 sm:w-10/12 m:p-0 lg:p-10 text-gray-800"
+    >
+      <p class="mb-8">
+        <a href="/blog" class="hover:text-green">&lsaquo; Go back</a>
+      </p>
       <p class="text-sm text-gray-700">
         {pubDate && <time>{pubDate}</time>}
         {
@@ -38,7 +42,7 @@ const {
           )
         }
       </p>
-      <article class="prose prose-md">
+      <article class="prose lg:prose-lg prose-md">
         <h1 class="title">{title}</h1>
         <slot />
       </article>

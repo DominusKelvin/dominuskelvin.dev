@@ -30,7 +30,7 @@ I have a list of keys that I want to loop through and make a network request to 
 
 Obviously I have stripped out some implementation details for the sake of brevity but I think you get the gist.
 
-At first glance the above code should work right? At least so it seemed to me. But here's the kicker; when I `print` the value of  `finalItems` guess what I had?
+At first glance the above code should work right? At least so it seemed to me. But here's the kicker; when I `print` the value of `finalItems` guess what I had?
 
 ```dart
 print(finalItems) // []
@@ -40,7 +40,7 @@ Yes folks, I got me an empty list!
 
 Here is why...
 
- It turns out that since we are making an asynchronous operation, at a point in time, the value gotten will be an instance of the `Future` class so the value won't be added to the `finalItems` list. Classic right?
+It turns out that since we are making an asynchronous operation, at a point in time, the value gotten will be an instance of the `Future` class so the value won't be added to the `finalItems` list. Classic right?
 
 ## Another naive implementation
 

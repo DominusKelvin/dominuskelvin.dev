@@ -24,12 +24,15 @@ What happens is that osquery will parse, optimize and execute your query using t
 > Do note that the data captured is not stored in SQLite but is mostly captured in Virtual Tables or RocksDB Database which is embedded in osquery.
 
 ## What are Virtual Tables
+
 Virtual Tables are an SQLite concept and they are at the core of how osquery operates. As earlier stated, they are generated during query execution time either by calling a system's API or by parsing a file.
 
 **Understand**: what osquery provides is a unified, simple and Low-level API - SQL - that gives us access to information already present in our operating systems. osquery helps organizes these information via Virtual Tables and the RocksDB database.
 
 osquery leverages the SQLite engine for all query execution and accesses the equivalent system API or parse a file that holds the information the specified query needs.
+
 ## Conclusion
+
 osquery has been a growing interest of mine and this article is meant to document my research on how osquery really works under-the-hood and also serves the purpose of educationg any one new to osquery on how osquery works technically.
 
 I hope like me you better understand and appreciate how osquery does its magic!

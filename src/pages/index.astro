@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Socials from "../components/Socials.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
-import koo from '../../public/koo.png'
+import koo from "/koo.png";
 ---
 
 <!DOCTYPE html>
@@ -14,36 +14,72 @@ import koo from '../../public/koo.png'
   </head>
   <body class="text-gray-700">
     <Header title={SITE_TITLE} />
-    <main class="min-h-screen  px-4">
-      <h1 class="text-2xl font-extrabold">Hello, I'm Kelvin!</h1>
-    <section class="prose">
-      <p>
-       I'm a Fullstack JavaScript developer who loves learning new things and teaching others as I learn.
-      </p>
-    </section>
-
-    <aside class="space-y-6">
-      <section class="my-4 space-y-3">
-        <h3 class="text-2xl font-extrabold">Connect with Kelvin</h3>
-        <Socials />
-       </section>
-        <img src={koo} alt="A picture of Kelvin O. Omereshone" class="rounded-md w-full" />
+    <main
+      class="min-h-screen px-4 sm:px-10 lg:mt-10 lg:mx-auto lg:w-8/12 xl:w-1/2"
+    >
+      <section class="sm:flex lg:items-center sm:space-x-4 lg:mb-10">
+        <div>
+          <h1 class="lg:text-3xl text-2xl font-extrabold">
+            Hello, I'm Kelvin!
+          </h1>
+          <p class="lg:text-lg">
+            I'm a Fullstack JavaScript developer who loves learning new things
+            and teaching others as I learn.
+          </p>
+          <section class="my-4 space-y-3">
+            <h3 class="lg:text-3xl text-2xl font-extrabold">
+              Connect with Kelvin
+            </h3>
+            <Socials />
+          </section>
+        </div>
+        <div class="sm:flex-auto">
+          <img
+            src={koo}
+            alt="A picture of Kelvin O. Omereshone"
+            class="rounded-md w-full sm:w-72 lg:w-96 lg:h-60 sm:object-cover"
+          />
+        </div>
+      </section>
+      <aside class="lg:space-y-14 space-y-6 lg:w-4/5 sm:w-10/12 sm:mt-12">
         <section class="my-4">
-          <h3 class="text-2xl font-extrabold">The Sailscasts community</h3>
-          <p>A welcoming and open Discord community for Web developers</p>
-          <a href="https://discord.gg/gbJZuNm" class="border border-transparent border-b-green-700">Connect with Us!</a>
+          <h3 class="sm:text-3xl text-2xl font-extrabold">
+            The Sailscasts community
+          </h3>
+          <p class="sm:text-lg">
+            A welcoming and open Discord community for Web developers
+          </p>
+          <a
+            href="https://discord.gg/gbJZuNm"
+            class="border border-transparent border-b-green-700 lg:text-lg font-semibold"
+            target="_blank">Connect with Us!</a
+          >
         </section>
         <section class="my-4">
-          <h3 class="text-2xl font-extrabold">Sailscasts</h3>
-          <p>Want to learn fullstack JavaScript from screencasts and build your next great idea? I teach just that at sailscasts.com</p>
-          <a href="https://sailscasts.com/courses" class="border border-transparent border-b-green-700">Watch Now!</a>
+          <h3 class="sm:text-3xl text-2xl font-extrabold">Sailscasts</h3>
+          <p class="sm:text-lg">
+            Want to learn fullstack JavaScript from screencasts and build your
+            next great idea? I teach just that at sailscasts.com
+          </p>
+          <a
+            href="https://sailscasts.com/courses"
+            class="border border-transparent border-b-green-700 lg:text-lg font-semibold"
+            target="_blank">Take a course!</a
+          >
         </section>
         <section class="my-4">
-          <h3 class="text-2xl font-extrabold">YouTube</h3>
-          <p>I teach modern web development with JavaScript through videos on my YouTube channel</p>
-          <a href="https://youtube.com/c/KelvinOmereshoneOfficial" class="border border-transparent border-b-green-700">Watch Now!</a>
+          <h3 class="sm:text-3xl text-2xl font-extrabold">YouTube</h3>
+          <p class="sm:text-lg">
+            I teach modern web development with JavaScript through videos on my
+            YouTube channel
+          </p>
+          <a
+            href="https://youtube.com/c/KelvinOmereshoneOfficial"
+            class="border border-transparent border-b-green-700 lg:text-lg font-semibold"
+            target="_blank">Watch Now!</a
+          >
         </section>
-    </aside>
+      </aside>
     </main>
     <Footer />
   </body>

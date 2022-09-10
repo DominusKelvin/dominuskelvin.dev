@@ -2,18 +2,19 @@
 import HeaderLink from "./HeaderLink.astro";
 ---
 
-<header class="text-center text-gray-800 my-4">
-  <h2 class="text-3xl font-extrabold">
+<header class="text-center text-gray-800 my-4 lg:pt-8">
+  <h2 class="lg:text-6xl text-3xl font-extrabold">
     <a href="/">Kelvin <span class="text-green">O</span> Omereshone</a>
   </h2>
-  <h3>Developer. Teacher. Speaker.</h3>
+  <h3 class="lg:text-xl mb-2">Developer. Teacher. Speaker.</h3>
   <nav class="space-x-4">
     <HeaderLink href="/blog">Blog</HeaderLink>
     <HeaderLink href="https://twitter.com/Dominus_Kelvin" target="_blank"
       >Twitter</HeaderLink
     >
-    <HeaderLink href="/tkyt" target="_blank"
-      >TKYT</HeaderLink
+    <HeaderLink
+      href="https://youtube.com/playlist?list=PL4qsujwiHvcP-a8z1--RyZ8XVFHbeBIfn"
+      target="_blank">TKYT</HeaderLink
     >
   </nav>
 </header>

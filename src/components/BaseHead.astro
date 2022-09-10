@@ -5,14 +5,16 @@ export interface Props {
   image?: string;
 }
 
-const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
+const { title, description, image = "/social.png" } = Astro.props;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#4D946E">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
+<script src="https://cdn.usefathom.com/script.js" data-site="ENXESNYH" data-included-domains="dominuskelvin.dev" defer></script>
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>

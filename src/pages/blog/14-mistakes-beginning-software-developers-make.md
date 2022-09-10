@@ -5,7 +5,7 @@
  pubDate: 'August 12, 2020'
 ---
 
->  Mistake: an error, a goof, a slip-up. When you make a mistake, you've done something incorrectly. Mistake has a lot of uses, but they all have to do with doing the wrong thing.
+> Mistake: an error, a goof, a slip-up. When you make a mistake, you've done something incorrectly. Mistake has a lot of uses, but they all have to do with doing the wrong thing.
 
 One of the good part of the software development industry is also its bad part - which is the ability for anyone to simply teach themselves these technologies and go on to be a software developer.
 
@@ -20,14 +20,15 @@ This is wrong because of the disassociation of context. What I mean by this is, 
 Knowing your theories well enough would give you a better handle on the said subject. To put it another way: understanding what something is rather than how to use it goes a longer way in making you a better software developer.
 
 ### Suggestion
-Invest time in learning the theory about what you are currently working on. There are a ton of resources for JavaScript that are dedicated to such theories. Resources like [MDN](https://developer.mozilla.org/en-US/), or the [YDKJSY](https://www.amazon.com/You-Dont-Know-JS-Yet-ebook/dp/B084BNMN7T)(You Don't Know JS Yet) book series by Kyle Simpson and many more...
 
+Invest time in learning the theory about what you are currently working on. There are a ton of resources for JavaScript that are dedicated to such theories. Resources like [MDN](https://developer.mozilla.org/en-US/), or the [YDKJSY](https://www.amazon.com/You-Dont-Know-JS-Yet-ebook/dp/B084BNMN7T)(You Don't Know JS Yet) book series by Kyle Simpson and many more...
 
 ## Mistake #2 - Not developing softwares in your mind
 
 I admit this is a little bit esoteric but it is worth mentioning. Not taking the time to develop the skill of being able to think like the computer and executing your bits of code in your mind is another mistake beginning developers make. You should be able to glance at a piece of code you or someone else has written and at a higher level execute it in your mind(not like a computer though 😂). You should be able to reason about the code your are reading(do you still read code?) or writing even before you give it to the computer to execute.
 
 ### Suggestion
+
 Take the time to reason about your program; why it works or why it doesn't.
 
 ## Mistake #3 - Avoiding struggles
@@ -58,7 +59,6 @@ This is not necessarily a bad thing, however just using a tech because someone y
 
 Taking out time to find your voice or your individuality in your coding career would make you do better at it. Don't just rush up with the hype of the moment. Again, investigate and find out what works for you. A good example is of my friend [Angie Jones](https://twitter.com/techgirl1908), she has been doing astronomically great works with [Java](https://afrotech.com/angie-jones-becomes-the-first-ever-black-female-java-champion) and [automation testing](https://testautomationu.applitools.com/instructors/angie_jones.html); that's her individuality speaking, she didn't move from one language to the other like most of us do. She instead stayed with what appealed to her.
 
-
 ### Suggestion
 
 You bring something unique to the tech world. So celebrate that difference, celebrate the way you reason about problems and solution. Often times you diminish yourself trying to become someone else. Don't do that! Its good to learn from other people you admire but don't become them instead become the best you you can be. You are different! celebrate that! bring who you are to the table.
@@ -70,8 +70,6 @@ This might seem trivial and I am very much guilty of this. Learning the history 
 ### Suggestion
 
 Do not ignore the history of programming. Find out people that have done notable works in this field and study them as well.
-
-
 
 ## Mistake #7 - Not falling in love with your craft
 
@@ -85,7 +83,6 @@ You would have to figure out a strong reason why you are in this industry. One o
 
 Take the time out to discover what really made you come into this industry and let that guide you in tough times or through tough bugs.
 
-
 ## Mistake #8 - Not learning your language
 
 I am grateful for people like [Kyle Simpson](https://twitter.com/getify) who took it as their life's work to help us learn and master JavaScript. Most developers just stop or plateaued on the surface of their language. They don't take the time to really know their language. Knowing your language is like speaking the English language - you can only use the words you know about and nothing more.
@@ -93,6 +90,7 @@ I am grateful for people like [Kyle Simpson](https://twitter.com/getify) who too
 Take the time to learn you language be it JavaScript, PHP, Rust, really know them as opposed to using 5% of their capacity in your life time!
 
 ### Suggestion
+
 There are concepts, patterns and nuances that are unique to your language of programming. Do learn them, it gives depth to your [expressiveness](https://dominuskelvin.dev/blog/expressiveness). Learning your language would give you options to chose from when solving problems with them.
 
 ## Mistake #9 - Not learning patterns and solutions
@@ -126,6 +124,7 @@ Depending on your learning model, set the time to learn about other elements of 
 Most of the time beginning software developers don't study other facets of software development apart from writing code. They don't study their tools(when was the last time you dug into the Webpack docs), they don't study their editors, they don't learn to git well or even use the terminal to a confident level.
 
 ### Suggestion
+
 I implore you to learn your tools really well as this will reduce friction while using them. Learn your editor's shortcuts as well as productivity tips and tricks. Learn to git well!. Also invest time in mastering the terminal as it will be home for your development half the time.
 
 ## Mistake #13 - Trusting stuff found on the internet as a standard
@@ -136,7 +135,6 @@ We are humans we are susceptible to making mistakes(this article is about mistak
 
 I suggest you don't blindly use solutions presented on the internet without investigating it some more. You can ask questions about that solution in your community and get other opinions on it. And yet again, explore that solution and really prove it!
 
-
 ## Mistake #14 - Learning too many things at one time
 
 Concentration is key to mastery and in this industry, there is so much to cover in one life time. Do not be fooled that you can learn everything. I am a big proponent of mastering one thing. Mastering one thing would make you more valuable than fumbling on a lot of stuff that you don't fully grasp. Note, it's not how much you gain, its how much you retain that improves you. Don't be all over the place on every tech that springs up. Find a tech you feel strongly about and that solves your problem and work on that.
@@ -144,7 +142,6 @@ Concentration is key to mastery and in this industry, there is so much to cover 
 ### Suggestion
 
 You will need discipline here as they are many enticing tech springing out almost every other day. I suggest you develop a plan that allows you really sit on what particular subject or technology and really master it.
-
 
 ## Next Steps
 
