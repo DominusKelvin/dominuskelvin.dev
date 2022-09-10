@@ -1,13 +1,15 @@
 ---
-const today = new Date();
+import Socials from "../components/Socials.astro";
 ---
 
-<footer>
-	&copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+<footer class="text-center p-4 flex flex-col items-center">
+  <a href="twitter.com/Dominus_Kelvin" class="underline text-gray-700 font-semibold">@Dominus_Kelvin</a>
+  <p>
+    <span>Built with <a class="text-green" href="https://astro.build" target="_blank">Astro</a></span>
+    <span>Styling with <a class="text-green" href="https://tailwindcss.com" target="_blank">Tailwind CSS</a></span>
+    <span>Hosted on <a class="text-green" href="https://render.com">Render</a></span>
+  </p>
+  <section class="mt-4">
+    <Socials />
+  </section>
 </footer>
-<style>
-	footer {
-		padding: 25px;
-		text-align: center;
-	}
-</style>

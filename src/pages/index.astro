@@ -1,50 +1,50 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Socials from "../components/Socials.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import koo from '../../public/koo.png'
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="text-gray-700">
+    <Header title={SITE_TITLE} />
+    <main class="min-h-screen  px-4">
+      <h1 class="text-2xl font-extrabold">Hello, I'm Kelvin!</h1>
+    <section class="prose">
+      <p>
+       I'm a Fullstack JavaScript developer who loves learning new things and teaching others as I learn.
+      </p>
+    </section>
+
+    <aside class="space-y-6">
+      <section class="my-4 space-y-3">
+        <h3 class="text-2xl font-extrabold">Connect with Kelvin</h3>
+        <Socials />
+       </section>
+        <img src={koo} alt="A picture of Kelvin O. Omereshone" class="rounded-md w-full" />
+        <section class="my-4">
+          <h3 class="text-2xl font-extrabold">The Sailscasts community</h3>
+          <p>A welcoming and open Discord community for Web developers</p>
+          <a href="https://discord.gg/gbJZuNm" class="border border-transparent border-b-green-700">Connect with Us!</a>
+        </section>
+        <section class="my-4">
+          <h3 class="text-2xl font-extrabold">Sailscasts</h3>
+          <p>Want to learn fullstack JavaScript from screencasts and build your next great idea? I teach just that at sailscasts.com</p>
+          <a href="https://sailscasts.com/courses" class="border border-transparent border-b-green-700">Watch Now!</a>
+        </section>
+        <section class="my-4">
+          <h3 class="text-2xl font-extrabold">YouTube</h3>
+          <p>I teach modern web development with JavaScript through videos on my YouTube channel</p>
+          <a href="https://youtube.com/c/KelvinOmereshoneOfficial" class="border border-transparent border-b-green-700">Watch Now!</a>
+        </section>
+    </aside>
+    </main>
+    <Footer />
+  </body>
 </html>
