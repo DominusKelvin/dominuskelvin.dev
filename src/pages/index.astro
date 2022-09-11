@@ -1,10 +1,10 @@
 ---
+import { Image, Picture } from '@astrojs/image/components';
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Socials from "../components/Socials.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
-import koo from "/koo.png";
 ---
 
 <!DOCTYPE html>
@@ -33,10 +33,13 @@ import koo from "/koo.png";
             <Socials />
           </section>
         </div>
-        <div class="sm:flex-auto">
-          <img
-            src={koo}
+        <div class="px-16 my-10 sm:my-0 sm:px-0 sm:flex-auto">
+          <Image
+            src="/koo.png"
             alt="A picture of Kelvin O. Omereshone"
+            height={700}
+            width={700}
+            format={"webp"}
             class="rounded-md w-full sm:w-72 lg:w-96 lg:h-60 sm:object-cover"
           />
         </div>
