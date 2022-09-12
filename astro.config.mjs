@@ -8,5 +8,5 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   site: "https://dominuskelvin.dev",
-  integrations: [mdx(), sitemap(), tailwind(), image()]
+  integrations: [mdx(), sitemap(), tailwind(), image()],
 });
