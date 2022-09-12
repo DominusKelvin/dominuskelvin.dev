@@ -1,0 +1,21 @@
+---
+import { Image } from "@astrojs/image/components";
+export interface Props {
+  link: string;
+  icon: string;
+  title: string;
+}
+const { link, icon, title } = Astro.props;
+---
+
+<li>
+  <a href={link} target="_blank"
+    ><Image
+      width={"100%"}
+      height={"100%"}
+      class="w-7 h-7"
+      src={icon}
+      alt={title}
+    />
+  </a>
+</li>

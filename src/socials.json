@@ -1,0 +1,32 @@
+[
+  {
+    "link": "https://twitter.com/Dominus_Kelvin",
+    "icon": "/twitter.svg",
+    "title": "Twitter"
+  },
+  {
+    "link": "https://github.com/DominusKelvin",
+    "icon": "/github.svg",
+    "title": "GitHub"
+  },
+  {
+    "link": "https://youtube.com/c/KelvinOmereshoneOfficial",
+    "icon": "/youtube.svg",
+    "title": "YouTube"
+  },
+  {
+    "link": "https://youtube.com/c/KelvinOmereshoneOfficial",
+    "icon": "/linkedin.svg",
+    "title": "LinkedIn"
+  },
+  {
+    "link": "https://twitch.tv/DominusKelvin",
+    "icon": "/twitch.svg",
+    "title": "Twitch"
+  },
+  {
+    "link": "https://discord.gg/gbJZuNm",
+    "icon": "/discord.svg",
+    "title": "Discord"
+  }
+]
