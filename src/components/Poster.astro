@@ -1,0 +1,42 @@
+---
+import { Image } from "@astrojs/image/components";
+export interface Session {
+  title: string;
+  teacher: string;
+  teacherUrl: string;
+  date: string;
+  poster: string;
+  url?: string;
+}
+export interface Props {
+  session: Session;
+}
+const { session } = Astro.props;
+---
+
+<a href={session.url ?? "#"}
+  ><Image
+    class="rounded-sm"
+    width={1012}
+    height={506}
+    src={session.poster}
+    alt={session.title}
+    format={"webp"}
+  />
+</a>
+<h3 class="font-extrabold text-md text-purple-500">
+  {session.title}
+  <span>with</span>
+  <a class="text-pink-600 underline" href={session.teacherUrl} target="_blank"
+    >{session.teacher}
+  </a>
+</h3>
+<p class="text-brown-800 text-sm font-semibold">
+  {
+    new Date(session.date).toLocaleDateString("en-us", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    })
+  }
+</p>

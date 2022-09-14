@@ -1,3 +1,74 @@
 ---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Posters from "../components/Posters.astro";
+import tkyt from "../tkyt.json";
 
+const schedule = tkyt.schedule.sort(
+  (a, b) => new Date(a.date).valueOf() - new Date(b.date).valueOf()
+);
+
+const sessions = tkyt.sessions.sort(
+  (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
+);
 ---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="Teach Kelvin Your Thing"
+      description="Creators and developers get to teach me their "Thing" for an hour by building something with it while I pick their brains."
+    />
+  </head>
+  <body>
+    <Header />
+    <main
+      class="min-h-screen p-4 sm:p-0 sm:mx-auto sm:w-9/12 lg:w-7/12 my-4 sm:my-12"
+    >
+      <h1 class="text-pink-700 text-5xl sm:text-7xl font-black mb-4">
+        Learn web development with me
+      </h1>
+      <p>
+        <span class="text-purple font-extrabold prose sm:prose-xl"
+          >Teach Kelvin Your Thing</span
+        > was created out of a need for me to learn not just new technologies but
+        how folks who know these technologies use them.
+      </p>
+      <section class="my-6">
+        <h2 class="text-brown text-3xl sm:text-4xl font-black mb-2">
+          Schedule
+        </h2>
+        <p
+          class="prose prose-a:underline prose-a:font-black prose-a:text-pink-600 sm:prose-xl"
+        >
+          Here's who we'll be learning from next on <span
+            class="text-purple font-extrabold prose"
+            >Teach Kelvin Your Thing!</span
+          > Get notified when new sessions are live by subscribing on <a
+            href="https://youtube.com/c/KelvinOmereshoneOfficial">YouTube</a>
+        </p>
+        <Posters sessions={schedule} />
+      </section>
+      <section>
+        <h2 class="text-purple-50 text-3xl font-black mb-2 sm:text-4xl">
+          All Sessions
+        </h2>
+        <p
+          class="prose prose-lead: prose-a:underline prose-a:font-black prose-a:text-pink-600 sm:prose-xl"
+        >
+          Watch all <span class="font-black text-brown-700"
+            >{tkyt.sessions.length}
+          </span> sessions of <span
+            class="text-purple font-extrabold prose sm:prose-xl"
+            >Teach Kelvin Your Thing</span
+          > on YouTube. Show your support and get notified of new sessions by subscribing
+          on <a href="">YouTube</a>
+        </p>
+        <Posters sessions={sessions} />
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
