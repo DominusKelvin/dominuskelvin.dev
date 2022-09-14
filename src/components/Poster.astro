@@ -14,7 +14,7 @@ export interface Props {
 const { session } = Astro.props;
 ---
 
-<a href={session.url ?? "#"}
+<a href={session.url ?? "#"} target="_blank"
   ><Image
     class="rounded-sm"
     width={1012}
