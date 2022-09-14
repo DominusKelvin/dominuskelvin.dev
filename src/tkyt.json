@@ -1,0 +1,93 @@
+{
+  "schedule": [
+    {
+      "title": "Monorepos, Nx and Lerna",
+      "teacher": "Juri Strumpflohner",
+      "teacherUrl": "https://twitter.com/juristr",
+      "date": "27 September, 2022",
+      "poster": "/tkyt/monorepos.png",
+      "url": ""
+    },
+    {
+      "title": "Building a serverless API with Netlify and PlanetScale",
+      "teacher": "Brian Morrison II",
+      "teacherUrl": "https://twitter.com/brianmmdev",
+      "date": "13 October, 2022",
+      "poster": "/tkyt/serverless-api-planetscale.png"
+    }
+  ],
+  "sessions": [
+    {
+      "title": "Async iterators in JavaScript and Node.js",
+      "teacher": "Luciano Mammino",
+      "teacherUrl": "https://twitter.com/loige",
+      "date": "May 14, 2021",
+      "poster": "/tkyt/async-iterators.png",
+      "url": "https://youtu.be/l2CA9FtW1Pw"
+    },
+    {
+      "title": "Building CLI apps with Dart",
+      "teacher": "Brett Sutton",
+      "teacherUrl": "https://www.linkedin.com/in/brettsutton/",
+      "date": "July 2, 2021",
+      "poster": "/tkyt/building-cli-apps-with-dart.png",
+      "url": "https://youtu.be/yvu7f3lv9AQ"
+    },
+    {
+      "title": "Getting started with RapidAPI",
+      "teacher": "Pratham Kumar",
+      "teacherUrl": "https://twitter.com/Prathkum",
+      "date": "April 20, 2022",
+      "poster": "/tkyt/getting-started-with-rapid-api.png",
+      "url": "https://youtu.be/QAOkWwrPqZU"
+    },
+    {
+      "title": "Node.js streams",
+      "teacher": "Luciano Mammino",
+      "teacherUrl": "https://twitter.com/loige",
+      "date": "April 29, 2022",
+      "poster": "/tkyt/node-js-streams.png",
+      "url": "https://youtu.be/ldcfYB_mo6Q"
+    },
+    {
+      "title": "Building APIs with AdonisJS",
+      "teacher": "Harminder Virk",
+      "teacherUrl": "https://twitter.com/AmanVirk1",
+      "date": "May 4, 2022",
+      "poster": "/tkyt/building-apis-with-adonis.png",
+      "url": "https://youtu.be/_MSQY3lqhCo"
+    },
+    {
+      "title": "Building a landing page with Charkra UI",
+      "teacher": "Esther Agbaje",
+      "teacherUrl": "https://twitter.com/_estheragbaje",
+      "date": "May 23, 2022",
+      "poster": "/tkyt/chakra-ui.png",
+      "url": "https://youtu.be/0pgnR3p4o2w"
+    },
+    {
+      "title": "Building desktop apps with Electron",
+      "teacher": "Praneet Rohida",
+      "teacherUrl": "https://twitter.com/praneet_ro",
+      "date": "May 26, 2022",
+      "poster": "/tkyt/building-desktop-apps-with-electron.png",
+      "url": "https://youtu.be/TBvZ4CoCfnM"
+    },
+    {
+      "title": "Zagjs: UI components on state machines",
+      "teacher": "Segun Adebayo",
+      "teacherUrl": "https://twitter.com/thesegunadebayo",
+      "date": "June 29, 2022",
+      "poster": "/tkyt/zagjs.png",
+      "url": "https://youtu.be/VZHBa5Kgets"
+    },
+    {
+      "title": "Learning TypeScript from scratch",
+      "teacher": "Matt Pocock",
+      "teacherUrl": "https://twitter.com/mattpocockuk",
+      "date": "July 19, 2022",
+      "poster": "/tkyt/learn-typescript.png",
+      "url": "https://youtu.be/qcFmCKQDa2s"
+    }
+  ]
+}
