@@ -14,6 +14,13 @@
       "teacherUrl": "https://twitter.com/brianmmdev",
       "date": "13 October, 2022",
       "poster": "/tkyt/serverless-api-planetscale.png"
+    },
+    {
+      "title": "Learning Svelte from scratch",
+      "teacher": "Geoff Rich",
+      "teacherUrl": "https://twitter.com/geoffrich_",
+      "date": "29 September, 2022",
+      "poster": "/tkyt/learn-svelte.png"
     }
   ],
   "sessions": [
