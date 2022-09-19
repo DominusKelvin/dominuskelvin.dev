@@ -16,6 +16,12 @@ export interface Props {
 const {
   content: { title, description, pubDate, updatedDate },
 } = Astro.props;
+
+const tweetText = `I just read "${title}" by @Dominus_Kelvin \n`;
+const tweetUrl = `https://twitter.com/intent/tweet?url=${
+  Astro.url
+}&text=${encodeURIComponent(tweetText)}`;
+const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(Astro.url)}`
 ---
 
 <html lang="en">
@@ -48,7 +54,24 @@ const {
         <h1 class="title">{title}</h1>
         <slot />
       </article>
+      <aside class="mt-8 p">
+        <ul class="text-pink font-extrabold flex justify-center space-x-4">
+          <li>
+            <a
+              class="hover:underline focus:outline-none"
+              target="_blank"
+              rel="noreferrer noopener"
+              href={tweetUrl}>Tweet this article</a>
+          </li>
+          <li>
+            <a class="hover:underline focus:outline-none"  target="_blank"
+            rel="noreferrer noopener" href={twitterSearchUrl}
+              >Discuss on Twitter</a>
+          </li>
+        </ul>
+      </aside>
     </main>
+
     <Footer />
   </body>
 </html>
