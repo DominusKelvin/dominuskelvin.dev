@@ -21,7 +21,7 @@ const tweetText = `I just read "${title}" by @Dominus_Kelvin \n`;
 const tweetUrl = `https://twitter.com/intent/tweet?url=${
   Astro.url
 }&text=${encodeURIComponent(tweetText)}`;
-const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(Astro.url)}`
+const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(String(Astro.url))}`;
 ---
 
 <html lang="en">
@@ -61,12 +61,16 @@ const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(Astro.url)}`
               class="hover:underline focus:outline-none"
               target="_blank"
               rel="noreferrer noopener"
-              href={tweetUrl}>Tweet this article</a>
+              href={tweetUrl}>Tweet this article</a
+            >
           </li>
           <li>
-            <a class="hover:underline focus:outline-none"  target="_blank"
-            rel="noreferrer noopener" href={twitterSearchUrl}
-              >Discuss on Twitter</a>
+            <a
+              class="hover:underline focus:outline-none"
+              target="_blank"
+              rel="noreferrer noopener"
+              href={twitterSearchUrl}>Discuss on Twitter</a
+            >
           </li>
         </ul>
       </aside>
