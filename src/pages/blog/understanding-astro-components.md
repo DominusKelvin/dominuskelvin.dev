@@ -3,6 +3,7 @@
  title: 'Understanding Astro components'
  description: 'Astro components improve the DX of writing MPAs as we have been so used to doing in SPA frameworks like Vue, React or Svelte.'
  pubDate: '19 September, 2022'
+ updatedDate: '20 September, 2022'
 ---
 
 After [rewriting my website](/blog/rewriting-my-website-with-astro) with [Astro](https://astro.build), I was impressed by Astro components and how easy it was for me to learn enough of its syntax and conventions to be productive. In this article, I'll give you a crash course on Astro components.
@@ -171,4 +172,5 @@ Unlike in JSX, HTML comments are valid inside Astro components.
 ```
 
 ## Conclusion
+
 Astro components improve the DX of writing MPAs as we have been so used to doing in SPA frameworks like Vue, React, or Svelte. In this article, we took a high-level look at Astro components, and how it is both similar and different from other frameworks' components.
