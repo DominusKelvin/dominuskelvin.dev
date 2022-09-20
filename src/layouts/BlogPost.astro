@@ -38,14 +38,11 @@ const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(String(Astro.
       <p class="mb-8">
         <a href="/blog" class="hover:text-green">&lsaquo; Go back</a>
       </p>
-      <p class="text-sm text-gray-700">
+      <p class="text-sm text-gray-700 flex flex-col">
         {pubDate && <time>{pubDate}</time>}
         {
-          updatedDate && (
-            <div>
-              Last updated on <time>{updatedDate}</time>
-            </div>
-          )
+          updatedDate && <span class="text-gray-800">
+            Last updated on <time>{updatedDate}</time></span>
         }
       </p>
       <article
