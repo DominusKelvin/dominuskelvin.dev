@@ -1,19 +1,21 @@
 ---
  layout: '../../layouts/BlogPost.astro'
  title: 'Understanding Astro components'
- description: 'Astro components really improves the DX of writing MPAs as we have been so used to doing in SPA frameworks like Vue, React or Svelte.'
+ description: 'Astro components improve the DX of writing MPAs as we have been so used to doing in SPA frameworks like Vue, React or Svelte.'
  pubDate: '19 September, 2022'
 ---
 
-After [rewriting my website](/blog/rewriting-my-website-with-astro) with [Astro](https://astro.build), I was really impressed by Astro components and how easy it was for me to learn enough of it's syntax and conventions to be productive. In this article, I'll giving you a crash course on Astro components.
+After [rewriting my website](/blog/rewriting-my-website-with-astro) with [Astro](https://astro.build), I was impressed by Astro components and how easy it was for me to learn enough of its syntax and conventions to be productive. In this article, I'll give you a crash course on Astro components.
 
 ## The need for componentization
 
-I believe one of the reasons frameworks like Vue, React, Svelte has been super popular in the JavaScript frontent space is components. I know this because as a developer myself, I have really enjoyed writing components and following a component driven paradigm for building websites.
+I believe one of the reasons frameworks like Vue, React, and Svelte have been super popular in the JavaScript frontend space is components.
 
-These frameworks has been super appealing for building UIs on the web and in the JavaScript space, writing components is sort of a house hold concept at this point.
+I know this because as a developer myself, I have enjoyed writing components and following a component-driven paradigm for building websites.
 
-So it's only logical for a framework like Astro seeking to be an alternative school of though for building content-based websites to have a component syntax of its own at its core and I believe it executed this perfectly.
+These frameworks have been super appealing for building UIs on the web and in the JavaScript space, writing components is sort of a household concept at this point.
+
+So it's only logical for a framework like Astro seeking to be an alternative school of thought for building content-based websites to have a component syntax of its own at its core and I believe it executed this perfectly.
 
 ## What is an Astro component?
 
@@ -25,11 +27,13 @@ So whenever you are in an Astro codebase, you will typically find Astro componen
 
 ## The usage of an Astro component
 
-If you speak frontend frameworks, the usage of the Astro component might be easy to infer. However let's go over them. In Astro, an Astro component can be used for either of these reasons.
+If you speak frontend frameworks, the usage of an Astro component might be easy to infer. However, let's go over them.
 
-- As a page. These components are found in `pages/` folder. For example `pages/index.astro` will serve as the home page of your website since Astro uses a file-based routing.
+In Astro, an Astro component can be used for either of these reasons.
+
+- As a page. These components are found in the `pages/` folder. For example `pages/index.astro` will serve as the home page of your website since Astro uses a file-based routing.
 - As page layout. An Astro component found in the `layouts/` folder by convention is intended to be used as layouts to wrap pages that share some similarities e.g you might have a `layouts/BlogPost.astro` component which will be used for laying out each blog post in your blog.
-- For code reusability. Astro components found in `components/` folder are mostly used for code reusability so you can import them in other Astro components found in `components/`, `pages/`, or `layouts/` folders. For example a common use case, is to have a reusable header or footer component that you can import in either a layout component or a page component.
+- For code reusability. Astro components found in `components/` folder are mostly used for code reusability so you can import them into other Astro components found in `components/`, `pages/`, or `layouts/` folders. For example, a common use case is to have a reusable header or footer component that you can import in either a layout component or a page component.
 
 ## HTML-only
 
@@ -37,13 +41,13 @@ Remember I mentioned Astro components have a notable difference from frameworks 
 
 Unlike these other frameworks, Astro components don't have a client runtime and it renders to HTML at build time.
 
-"What does this mean?", you may ask, well, it means that Astro components outputs HTML during build time in Node.js and this HTML is what it's being sent to the client when you visit a page.
+"What does this mean?", you may ask, well, it means that Astro components output HTML during build time in Node.js and this HTML is what it's being sent to the client when you visit a page.
 
-This is a difference worth mentioning because you might not fully grasp the implication of this if you are coming from an SPA based framework.
+This is a difference worth mentioning because you might not fully grasp the implication of this if you are coming from a SPA-based framework.
 
-For example, since Astro allow you have Vue, React, Svelte components in an Astro components, you may think these components you've imported will work as they do in their respective frameworks but then you click a button component and you didn't get the expected behaviour because Astro renders them to HTML only at build time(although there are ways to [hydrate interactive components](https://docs.astro.build/en/core-concepts/framework-components/)).
+For example, since Astro allows you to have Vue, React, and Svelte components in Astro components, you may think these components you've imported will work as they do in their respective frameworks but then you click a button component and you didn't get the expected behavior because Astro renders them to HTML only at build time(although there are ways to [hydrate interactive components](https://docs.astro.build/en/core-concepts/framework-components/)).
 
-Understand: Astro components are HTML-only they are a superset of HTML and as such you get HTML in the client by default.
+Understand: Astro components are HTML-only. They are a superset of HTML and as such you get HTML in the client by default.
 
 To put it simply: **The output of an Astro component after it is built is HTML by default.**
 
@@ -67,7 +71,7 @@ Within `---`(code fences) is where you author JavaScript(and TypeScript). Variab
 
 One thing I love about the Component Script is that with zero setup and configuration, you can author TypeScript by default.
 
-I think this is really cool as the TypeScript setup is one of the reasons I don't use it often in my project but in Astro I find myself writing TypeScript and it does feel good.
+I think this is cool as the TypeScript setup is one of the reasons I don't use it often in my project but in Astro I find myself writing TypeScript and it does feel good.
 
 Here are a couple of things you'd want to do in the Component Script:
 
@@ -142,9 +146,9 @@ import socials from "../socials.json";
 </ul>
 ```
 
-You can see like in JSX, I can use the built-in array map method on an Array like object to dynamically create markup.
+You can see like in JSX, I can use the built-in array map method on an Array-like object to dynamically create markup.
 
-Also notice interpolation is done via `{}` just like in JSX.
+Also, notice interpolation is done via `{}` just like in JSX.
 
 ## Difference between Astro components and JSX
 
@@ -152,7 +156,7 @@ Even though Astro components are inspired JSX for things like interpolation and 
 
 ### Attributes
 
-This is a big one for me because I didn't like having `className` replace the HTML `class` attribute in JSX. Astro took care of this so you can use `class` attribute inside Astro components.
+This is a big one for me because I didn't like having `className` replace the HTML `class` attribute in JSX. Astro took care of this so you can use `class` attributes inside Astro components.
 
 ```astro
 <ul class="flex items-center space-x-2"></ul>
@@ -167,5 +171,4 @@ Unlike in JSX, HTML comments are valid inside Astro components.
 ```
 
 ## Conclusion
-
-Astro components really improves the DX of writing MPAs as we have been so used to doing in SPA frameworks like Vue, React or Svelte. In this article we took an high level look at Astro components, how it is both similar and different from other frameworks' components.
+Astro components improve the DX of writing MPAs as we have been so used to doing in SPA frameworks like Vue, React, or Svelte. In this article, we took a high-level look at Astro components, and how it is both similar and different from other frameworks' components.
