@@ -18,6 +18,7 @@ You can't get a sense of good technical writing if you don't read technical arti
 I read a ton of technical articles and documentations and this has helped shaped my writing style as I can see what I like and how a particular writer made me feel when I read their piece i.e did I become **confused** or **knowledgeable**?
 
 ## 2. Imitate your favourite technical writers
+
 > ...You will possibly go through the phase where you will imitate your favourite writers and that's okay... - J.K. Rowling
 
 From reading as many technical articles as possible, you get to have a feel of what writing style you like and you easily understand. For me, that was [Sarah Drasner](https://twitter.com/sarah_edo).
@@ -57,6 +58,7 @@ Also, don't cram too much into a technical article. A great part of your job as 
 Again, know all there is to know about the subject matter you are writing on!
 
 ## 5. Add a human touch when possible
+
 Most documentations and articles are so packed with technical jargon that leaves the readers more confused than they were when they sought the documentation or article.
 
 Write as if you are writing for someone to learn from it and not just writing for writing's sake. Keep it simple.
@@ -64,6 +66,7 @@ Write as if you are writing for someone to learn from it and not just writing fo
 Simplify your grammar and technical jargon. Subtly add in humour when you can - folks love this as they feel that the writer is human and that makes what you are writing relatable.
 
 ## 6. Craft a catchy description
+
 Your article description is what's going to be read when you share it on social media and in search queries.
 
 I think in your article description your potential reader decides whether your article is worth reading or not.
@@ -73,4 +76,5 @@ You do not want to give out too much in the description but you want to arouse t
 The description of an article is like the cover of a book and we both know we all judge a book by its cover!
 
 ## Conclusion
+
 I had to reflect a lot about technical writing as I craft this article and I hope these tips will help me as well as you become stronger and better technical writers.
