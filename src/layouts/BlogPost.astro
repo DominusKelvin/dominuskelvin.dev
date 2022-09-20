@@ -21,7 +21,9 @@ const tweetText = `I just read "${title}" by @Dominus_Kelvin \n`;
 const tweetUrl = `https://twitter.com/intent/tweet?url=${
   Astro.url
 }&text=${encodeURIComponent(tweetText)}`;
-const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(String(Astro.url))}`;
+const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(
+  String(Astro.url)
+)}`;
 ---
 
 <html lang="en">
@@ -41,8 +43,11 @@ const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(String(Astro.
       <p class="text-sm text-gray-700 flex flex-col">
         {pubDate && <time>{pubDate}</time>}
         {
-          updatedDate && <span class="text-gray-800">
-            Last updated on <time>{updatedDate}</time></span>
+          updatedDate && (
+            <span class="text-gray-800">
+              Last updated on <time>{updatedDate}</time>
+            </span>
+          )
         }
       </p>
       <article
