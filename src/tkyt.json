@@ -21,6 +21,13 @@
       "teacherUrl": "https://twitter.com/geoffrich_",
       "date": "29 September, 2022",
       "poster": "/tkyt/learn-svelte.png"
+    },
+    {
+      "title": "Reactivity and SolidJS",
+      "teacher": "Ryan Carniato",
+      "teacherUrl": "https://twitter.com/RyanCarniato",
+      "date": "13 October, 2022",
+      "poster": "/tkyt/reactivity-and-solid.png"
     }
   ],
   "sessions": [
