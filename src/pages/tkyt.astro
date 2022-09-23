@@ -5,7 +5,7 @@ import Footer from "../components/Footer.astro";
 import Posters from "../components/Posters.astro";
 import tkyt from "../tkyt.json";
 
-const schedule = tkyt.schedule.sort(
+const upcoming = tkyt.upcoming.sort(
   (a, b) => new Date(a.date).valueOf() - new Date(b.date).valueOf()
 );
 
@@ -50,7 +50,7 @@ const sessions = tkyt.sessions.sort(
             href="https://youtube.com/c/KelvinOmereshoneOfficial">YouTube</a
           >
         </p>
-        <Posters sessions={schedule} />
+        <Posters sessions={upcoming} />
       </section>
       <section>
         <h2 class="text-purple-50 text-3xl font-black mb-2 sm:text-4xl">
