@@ -1,5 +1,5 @@
 {
-  "schedule": [
+  "upcoming": [
     {
       "title": "Monorepos, Nx and Lerna",
       "teacher": "Juri Strumpflohner",
@@ -28,6 +28,13 @@
       "teacherUrl": "https://twitter.com/RyanCarniato",
       "date": "13 October, 2022",
       "poster": "/tkyt/reactivity-and-solid.png"
+    },
+    {
+      "title": "Lit and Web Components",
+      "teacher": "Elliott Marquez",
+      "teacherUrl": "https://twitter.com/techytacos",
+      "date": "30 September, 2022",
+      "poster": "/tkyt/lit-and-web-components.png"
     }
   ],
   "sessions": [
