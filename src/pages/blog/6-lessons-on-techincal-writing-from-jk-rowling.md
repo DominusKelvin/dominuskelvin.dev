@@ -21,7 +21,7 @@ I read a ton of technical articles and documentations and this has helped shaped
 
 > ...You will possibly go through the phase where you will imitate your favourite writers and that's okay... - J.K. Rowling
 
-From reading as many technical articles as possible, you get to have a feel of what writing style you like and you easily understand. For me, that was [Sarah Drasner](https://twitter.com/sarah_edo).
+From reading as many technical articles as possible, you get to have a feel of what writing style you like and you easily understand. For me, that was [Sarah Drasner's](https://twitter.com/sarah_edo).
 
 I love the simplicity and humour in her writing and how she can make ideas simple. Even now when I write I still think of her influence on my work and if she will approve the article if she gets to proofread it.
 
