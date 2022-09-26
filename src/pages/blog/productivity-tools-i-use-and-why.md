@@ -10,7 +10,7 @@ The tools listed here are tools that I use and I've found them to be really valu
 
 A big factor for me to choose a tool to boost productivity is simplicity. By **simplicity** I mean: **how easy it is to do stuff with this tool**.
 
-I also like tools that act like tools - something you reach for when you need it to carry out a particular function. I don't like tools that wants attention every time.
+I also like tools that act like tools - something you reach for when you need it to carry out a particular function. I don't like tools that want attention every time.
 
 
 ## The tools
@@ -37,3 +37,9 @@ I love this tool for scheduling tweets and posts for LinkedIn. It also enables m
 ### [Krisp](https://krisp.ai)
 
 Krisp removes background noise from my screencasts and TKYT sessions. I don't know how it does it but it's like magic!
+
+### [Todoist](https://todoist.com)
+
+This tool is one I open every day. I use it to have an overview of the things I want to do everyday.
+
+You can see it as my personal project management tool and to-do list.
