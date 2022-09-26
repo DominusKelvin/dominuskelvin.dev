@@ -38,6 +38,8 @@ I love this tool for scheduling tweets and posts for LinkedIn. It also enables m
 
 Krisp removes background noise from my screencasts and TKYT sessions. I don't know how it does it but it's like magic!
 
-## [Todoist](https://todoist.com)
+### [Todoist](https://todoist.com)
 
-Easily my frequently open tool. I use it to have an overview of the things I want to do everyday.
+This tool is one I open every day. I use it to have an overview of the things I want to do everyday.
+
+You can see it as my personal project management tool and to-do list.
