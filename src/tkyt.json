@@ -1,14 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "Monorepos, Nx and Lerna",
-      "teacher": "Juri Strumpflohner",
-      "teacherUrl": "https://twitter.com/juristr",
-      "date": "27 September, 2022",
-      "poster": "/tkyt/monorepos.png",
-      "url": ""
-    },
-    {
       "title": "Building a serverless API with Netlify and PlanetScale",
       "teacher": "Brian Morrison II",
       "teacherUrl": "https://twitter.com/brianmmdev",
@@ -109,6 +101,14 @@
       "date": "July 19, 2022",
       "poster": "/tkyt/learn-typescript.png",
       "url": "https://youtu.be/qcFmCKQDa2s"
+    },
+    {
+      "title": "Monorepos, Nx and Lerna",
+      "teacher": "Juri Strumpflohner",
+      "teacherUrl": "https://twitter.com/juristr",
+      "date": "27 September, 2022",
+      "poster": "/tkyt/monorepos.png",
+      "url": "https://youtu.be/P5Un_z0hH90"
     }
   ]
 }
