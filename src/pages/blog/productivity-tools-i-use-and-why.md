@@ -6,22 +6,25 @@
 ---
 
 ## The Why
+
 The tools listed here are tools that I use and I've found them to be really valuable for certain tasks.
 
 A big factor for me to choose a tool to boost productivity is simplicity. By **simplicity** I mean: **how easy it is to do stuff with this tool**.
 
 I also like tools that act like tools - something you reach for when you need it to carry out a particular function. I don't like tools that want attention every time.
 
-
 ## The tools
 
 ### [Calendly](https://calendly.com)
+
 This is a no-brainer for scheduling. It has made scheduling [TKYT](/tkyt) sessions and one-on-one a breeze. I love it!
 
 ### [Grammarly](https://grammarly.com)
+
 This is gold for technical writing or [tweeting](https://twitter.com/Dominus_Kelvin) 😀. I use it as a browser extension.
 
 ### [1Password](https://1password.com)
+
 Password management has never been easier!
 
 ### [Zapier](https://zapier.com)

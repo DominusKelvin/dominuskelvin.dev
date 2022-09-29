@@ -8,13 +8,6 @@
       "poster": "/tkyt/serverless-api-planetscale.png"
     },
     {
-      "title": "Learning Svelte from scratch",
-      "teacher": "Geoff Rich",
-      "teacherUrl": "https://twitter.com/geoffrich_",
-      "date": "29 September, 2022",
-      "poster": "/tkyt/learn-svelte.png"
-    },
-    {
       "title": "Reactivity and SolidJS",
       "teacher": "Ryan Carniato",
       "teacherUrl": "https://twitter.com/RyanCarniato",
@@ -109,6 +102,14 @@
       "date": "27 September, 2022",
       "poster": "/tkyt/monorepos.png",
       "url": "https://youtu.be/P5Un_z0hH90"
+    },
+    {
+      "title": "Learning Svelte from scratch",
+      "teacher": "Geoff Rich",
+      "teacherUrl": "https://twitter.com/geoffrich_",
+      "date": "29 September, 2022",
+      "poster": "/tkyt/learn-svelte.png",
+      "url": "https://youtu.be/QoR0AZ-Rov8"
     }
   ]
 }
