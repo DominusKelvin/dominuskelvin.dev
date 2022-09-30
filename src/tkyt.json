@@ -4,22 +4,29 @@
       "title": "Building a serverless API with Netlify and PlanetScale",
       "teacher": "Brian Morrison II",
       "teacherUrl": "https://twitter.com/brianmmdev",
-      "date": "13 October, 2022",
+      "date": "October 13, 2022",
       "poster": "/tkyt/serverless-api-planetscale.png"
     },
     {
       "title": "Reactivity and SolidJS",
       "teacher": "Ryan Carniato",
       "teacherUrl": "https://twitter.com/RyanCarniato",
-      "date": "13 October, 2022",
+      "date": "October 13, 2022",
       "poster": "/tkyt/reactivity-and-solid.png"
     },
     {
       "title": "Lit and Web Components",
       "teacher": "Elliott Marquez",
       "teacherUrl": "https://twitter.com/techytacos",
-      "date": "30 September, 2022",
+      "date": "September 30, 2022",
       "poster": "/tkyt/lit-and-web-components.png"
+    },
+    {
+      "title": "Mutation testing with StrykerJS",
+      "teacher": "Nico Jansen",
+      "teacherUrl": "https://twitter.com/_nicojs",
+      "date": "October 3, 2022",
+      "poster": "/tkyt/mutation-testing.png"
     }
   ],
   "sessions": [
