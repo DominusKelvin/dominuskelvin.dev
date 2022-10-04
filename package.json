@@ -20,6 +20,7 @@
     "astro": "^1.2.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.26.1",
     "@tailwindcss/typography": "^0.5.7",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.5.4",
