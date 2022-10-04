@@ -10,17 +10,16 @@ test.describe("Home page", () => {
   });
 
   test("can navigate to blog", async ({ page }) => {
-    const blog = page.locator('text=Blog')
-    await expect(blog).toHaveAttribute('href', '/blog')
-    await blog.click()
-    await expect(page).toHaveURL(/.*blog/)
+    const blog = page.locator("text=Blog");
+    await expect(blog).toHaveAttribute("href", "/blog");
+    await blog.click();
+    await expect(page).toHaveURL(/.*blog/);
   });
 
   test("can navigate to TKYT", async ({ page }) => {
-    const tkyt = page.locator('text=TKYT')
-    await expect(tkyt).toHaveAttribute('href', '/tkyt')
-    await tkyt.click()
-    await expect(page).toHaveURL(/.*tkyt/)
+    const tkyt = page.locator("text=TKYT");
+    await expect(tkyt).toHaveAttribute("href", "/tkyt");
+    await tkyt.click();
+    await expect(page).toHaveURL(/.*tkyt/);
   });
-
 });
