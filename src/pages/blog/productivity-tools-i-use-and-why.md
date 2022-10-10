@@ -16,7 +16,7 @@ I also like tools that act like tools - something you reach for when you need it
 
 ## The tools
 
-> P.S: Do note that something of the tools listed here contains affiliate links
+> P.S: Do note that some of my productivity tools listed here contains affiliate links.
 
 ### [Calendly](https://calendly.com)
 
