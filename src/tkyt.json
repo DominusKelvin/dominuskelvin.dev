@@ -1,6 +1,13 @@
 {
   "upcoming": [
     {
+      "title": "Eleventy: the underdog site generator",
+      "teacher": "Zach Leatherman",
+      "teacherUrl": "https://twitter.com/zachleat",
+      "date": "October 13, 2022",
+      "poster": "/tkyt/eleventy-with-zach.png"
+    },
+    {
       "title": "Building a serverless API with Netlify and PlanetScale",
       "teacher": "Brian Morrison II",
       "teacherUrl": "https://twitter.com/brianmmdev",
