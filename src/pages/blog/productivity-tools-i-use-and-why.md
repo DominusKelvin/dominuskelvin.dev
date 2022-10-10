@@ -3,6 +3,7 @@
  title: 'Productivity tools I use and why'
  description: 'These tools make my life a little bit easier.'
  pubDate: '26 September, 2022'
+ updatedDate: '10 October, 2022'
 ---
 
 ## The Why
@@ -14,6 +15,8 @@ A big factor for me to choose a tool to boost productivity is simplicity. By **s
 I also like tools that act like tools - something you reach for when you need it to carry out a particular function. I don't like tools that want attention every time.
 
 ## The tools
+
+> P.S: Do note that something of the tools listed here contains affiliate links
 
 ### [Calendly](https://calendly.com)
 
@@ -33,9 +36,9 @@ A life-saver for me, this one. I can set up automation to create a Todoist task 
 
 Also any time a schedule is made on my Google Calendar I get a task created on Todoist!
 
-### [FeedHive](feedhive.io)
+### [Typefully](https://typefully.com/?via=koo)
 
-I love this tool for scheduling tweets and posts for LinkedIn. It also enables me to not have to open the [Twitter](https://twitter.com/Dominus_Kelvin) app every time!
+I love this tool for scheduling tweets and threads without distractions. It also enables me to not have to open the [Twitter](https://twitter.com/Dominus_Kelvin) app every time and it has some great analytics for growing on Twitter.
 
 ### [Krisp](https://krisp.ai)
 
