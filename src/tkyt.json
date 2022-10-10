@@ -27,6 +27,13 @@
       "teacherUrl": "https://twitter.com/mhevery",
       "date": "October 17, 2022",
       "poster": "/tkyt/why-qwik.png"
+    },
+    {
+      "title": "Styling with Design Tokens and Token CSS",
+      "teacher": "Nate Moore",
+      "teacherUrl": "https://twitter.com/mhevery",
+      "date": "October 20, 2022",
+      "poster": "/tkyt/design-tokens.png"
     }
   ],
   "sessions": [
