@@ -8,13 +8,6 @@
       "poster": "/tkyt/serverless-api-planetscale.png"
     },
     {
-      "title": "Reactivity and SolidJS",
-      "teacher": "Ryan Carniato",
-      "teacherUrl": "https://twitter.com/RyanCarniato",
-      "date": "October 13, 2022",
-      "poster": "/tkyt/reactivity-and-solid.png"
-    },
-    {
       "title": "Why Qwik",
       "teacher": "Miško Hevery",
       "teacherUrl": "https://twitter.com/mhevery",
@@ -141,6 +134,14 @@
       "date": "October 13, 2022",
       "poster": "/tkyt/eleventy-with-zach.png",
       "url": "https://youtu.be/ayOouJv6WYg"
+    },
+    {
+      "title": "Reactivity and SolidJS",
+      "teacher": "Ryan Carniato",
+      "teacherUrl": "https://twitter.com/RyanCarniato",
+      "date": "October 13, 2022",
+      "poster": "/tkyt/reactivity-and-solid.png",
+      "url": "https://youtu.be/N-Y32BqhoYQ"
     }
   ]
 }
