@@ -8,13 +8,6 @@
       "poster": "/tkyt/serverless-api-planetscale.png"
     },
     {
-      "title": "Why Qwik",
-      "teacher": "Miško Hevery",
-      "teacherUrl": "https://twitter.com/mhevery",
-      "date": "October 17, 2022",
-      "poster": "/tkyt/why-qwik.png"
-    },
-    {
       "title": "Styling with Design Tokens and Token CSS",
       "teacher": "Nate Moore",
       "teacherUrl": "https://twitter.com/n_moore",
@@ -156,6 +149,14 @@
       "date": "October 13, 2022",
       "poster": "/tkyt/eleventy-with-zach.png",
       "url": "https://youtu.be/ayOouJv6WYg"
+    },
+    {
+      "title": "Why Qwik",
+      "teacher": "Miško Hevery",
+      "teacherUrl": "https://twitter.com/mhevery",
+      "date": "October 17, 2022",
+      "poster": "/tkyt/why-qwik.png",
+      "url": "https://youtu.be/IRw9efkn9UA"
     }
   ]
 }
