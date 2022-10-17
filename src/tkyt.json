@@ -27,6 +27,13 @@
       "teacherUrl": "https://twitter.com/flybayer",
       "date": "November 2, 2022",
       "poster": "/tkyt/nextjs-brandon.png"
+    },
+    {
+      "title": "Resumability and Qwik",
+      "teacher": "Manu Almeida",
+      "teacherUrl": "https://twitter.com/manucorporat",
+      "date": "October 18, 2022",
+      "poster": "/tkyt/manu-resumability.png"
     }
   ],
   "sessions": [
