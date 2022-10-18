@@ -1,13 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "Building a serverless API with Netlify and PlanetScale",
-      "teacher": "Brian Morrison II",
-      "teacherUrl": "https://twitter.com/brianmmdev",
-      "date": "October 13, 2022",
-      "poster": "/tkyt/serverless-api-planetscale.png"
-    },
-    {
       "title": "Styling with Design Tokens and Token CSS",
       "teacher": "Nate Moore",
       "teacherUrl": "https://twitter.com/n_moore",
@@ -22,11 +15,11 @@
       "poster": "/tkyt/nextjs-brandon.png"
     },
     {
-      "title": "Resumability and Qwik",
-      "teacher": "Manu Almeida",
-      "teacherUrl": "https://twitter.com/manucorporat",
-      "date": "October 18, 2022",
-      "poster": "/tkyt/manu-resumability.png"
+      "title": "Getting started with Platformatic DB",
+      "teacher": "Matteo Collina",
+      "teacherUrl": "https://twitter.com/matteocollina",
+      "date": "November 24, 2022",
+      "poster": "/tkyt/platformatic-db.png"
     }
   ],
   "sessions": [
@@ -151,12 +144,20 @@
       "url": "https://youtu.be/ayOouJv6WYg"
     },
     {
-      "title": "Why Qwik",
+      "title": "Why the world needs Qwik",
       "teacher": "Miško Hevery",
       "teacherUrl": "https://twitter.com/mhevery",
       "date": "October 17, 2022",
       "poster": "/tkyt/why-qwik.png",
       "url": "https://youtu.be/IRw9efkn9UA"
+    },
+    {
+      "title": "Building resumable websites with Qwik",
+      "teacher": "Manu Almeida",
+      "teacherUrl": "https://twitter.com/manucorporat",
+      "date": "October 18, 2022",
+      "poster": "/tkyt/manu-resumability.png",
+      "url": "https://youtu.be/umASDvjaKTY"
     }
   ]
 }
