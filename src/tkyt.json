@@ -1,13 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "Styling with Design Tokens and Token CSS",
-      "teacher": "Nate Moore",
-      "teacherUrl": "https://twitter.com/n_moore",
-      "date": "October 20, 2022",
-      "poster": "/tkyt/design-tokens.png"
-    },
-    {
       "title": "Building full-stack Next.js apps",
       "teacher": "Brandon Bayer",
       "teacherUrl": "https://twitter.com/flybayer",
@@ -158,6 +151,14 @@
       "date": "October 18, 2022",
       "poster": "/tkyt/manu-resumability.png",
       "url": "https://youtu.be/umASDvjaKTY"
+    },
+    {
+      "title": "Styling with Design Tokens and Token CSS",
+      "teacher": "Nate Moore",
+      "teacherUrl": "https://twitter.com/n_moore",
+      "date": "October 20, 2022",
+      "poster": "/tkyt/design-tokens.png",
+      "url": "https://youtu.be/3M1oHN2ydwA"
     }
   ]
 }
