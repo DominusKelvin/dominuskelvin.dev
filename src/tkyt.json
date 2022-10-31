@@ -13,6 +13,13 @@
       "teacherUrl": "https://twitter.com/matteocollina",
       "date": "November 24, 2022",
       "poster": "/tkyt/platformatic-db.png"
+    },
+    {
+      "title": "Serverless from sratch",
+      "teacher": "Matteo Collina",
+      "teacherUrl": "https://twitter.com/jlengstorf",
+      "date": "November 16, 2022",
+      "poster": "/tkyt/serverless-from-scratch.png"
     }
   ],
   "sessions": [
@@ -85,7 +92,7 @@
       "teacher": "Matt Pocock",
       "teacherUrl": "https://twitter.com/mattpocockuk",
       "date": "July 19, 2022",
-      "poster": "/tkyt/learn-typescript.png",
+      "poster": "/tkyt/serverless-from-scratch.png",
       "url": "https://youtu.be/qcFmCKQDa2s"
     },
     {
