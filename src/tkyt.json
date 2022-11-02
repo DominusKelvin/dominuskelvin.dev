@@ -1,13 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "Building full-stack Next.js apps",
-      "teacher": "Brandon Bayer",
-      "teacherUrl": "https://twitter.com/flybayer",
-      "date": "November 2, 2022",
-      "poster": "/tkyt/nextjs-brandon.png"
-    },
-    {
       "title": "Getting started with Platformatic DB",
       "teacher": "Matteo Collina",
       "teacherUrl": "https://twitter.com/matteocollina",
@@ -166,6 +159,14 @@
       "date": "October 20, 2022",
       "poster": "/tkyt/design-tokens.png",
       "url": "https://youtu.be/3M1oHN2ydwA"
+    },
+    {
+      "title": "Building full-stack Next.js apps",
+      "teacher": "Brandon Bayer",
+      "teacherUrl": "https://twitter.com/flybayer",
+      "date": "November 2, 2022",
+      "poster": "/tkyt/nextjs-brandon.png",
+      "url": "https://youtu.be/XI8sztoNsJQ"
     }
   ]
 }
