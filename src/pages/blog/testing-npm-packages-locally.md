@@ -4,6 +4,7 @@
  description: "Harminder Virk the creator of AdonisJS showed me this super easy way to test NPM packages locally."
  pubDate: 'November 8, 2022'
 ---
+> You can [watch](https://youtu.be/h_L7q91LTOE) a screencast version of this article on YouTube
 
 A part of my [job](https://twitter.com/Dominus_Kelvin/status/1587844494749155329?s=20&t=WZpehnK7AFd7MsMaM4S6Xg) at [Treblle](https://treblle.com), is to build and maintain our JavaScript SDK packages.
 
