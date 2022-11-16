@@ -6,13 +6,6 @@
       "teacherUrl": "https://twitter.com/matteocollina",
       "date": "November 24, 2022",
       "poster": "/tkyt/platformatic-db.png"
-    },
-    {
-      "title": "Serverless from scratch",
-      "teacher": "Jason Lengstorf",
-      "teacherUrl": "https://twitter.com/jlengstorf",
-      "date": "November 16, 2022",
-      "poster": "/tkyt/serverless-from-scratch.png"
     }
   ],
   "sessions": [
@@ -167,6 +160,14 @@
       "date": "November 2, 2022",
       "poster": "/tkyt/nextjs-brandon.png",
       "url": "https://youtu.be/XI8sztoNsJQ"
+    },
+    {
+      "title": "Serverless from scratch",
+      "teacher": "Jason Lengstorf",
+      "teacherUrl": "https://twitter.com/jlengstorf",
+      "date": "November 16, 2022",
+      "poster": "/tkyt/serverless-from-scratch.png",
+      "url": "https://youtu.be/a_OVJvT7z6A"
     }
   ]
 }
