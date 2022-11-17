@@ -6,6 +6,13 @@
       "teacherUrl": "https://twitter.com/matteocollina",
       "date": "November 24, 2022",
       "poster": "/tkyt/platformatic-db.png"
+    },
+    {
+      "title": "Learning modern Angular",
+      "teacher": "Chau Tran",
+      "teacherUrl": "https://twitter.com/Nartc1410",
+      "date": "December 2, 2022",
+      "poster": "/tkyt/modern-angular.png"
     }
   ],
   "sessions": [
