@@ -1,13 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "Getting started with Platformatic DB",
-      "teacher": "Matteo Collina",
-      "teacherUrl": "https://twitter.com/matteocollina",
-      "date": "November 24, 2022",
-      "poster": "/tkyt/platformatic-db.png"
-    },
-    {
       "title": "Building hybrid web apps with Nuxt",
       "teacher": "Daniel Roe",
       "teacherUrl": "https://twitter.com/danielcroe",
@@ -182,6 +175,14 @@
       "date": "November 16, 2022",
       "poster": "/tkyt/serverless-from-scratch.png",
       "url": "https://youtu.be/a_OVJvT7z6A"
+    },
+    {
+      "title": "Getting started with Platformatic DB",
+      "teacher": "Matteo Collina",
+      "teacherUrl": "https://twitter.com/matteocollina",
+      "date": "November 24, 2022",
+      "poster": "/tkyt/platformatic-db.png",
+      "url": "https://youtu.be/iDgE0OVeBWo"
     }
   ]
 }
