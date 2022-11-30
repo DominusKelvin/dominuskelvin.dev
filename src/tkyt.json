@@ -13,6 +13,13 @@
       "teacherUrl": "https://twitter.com/danielcroe",
       "date": "January 16, 2023",
       "poster": "/tkyt/magic-regexp.png"
+    },
+    {
+      "title": "Getting started with Formidable",
+      "teacher": "Donald Pakkies",
+      "teacherUrl": "https://twitter.com/DonaldPakkies",
+      "date": "January 18, 2023",
+      "poster": "/tkyt/formidable.png"
     }
   ],
   "sessions": [
