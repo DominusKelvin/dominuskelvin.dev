@@ -13,6 +13,13 @@
       "teacherUrl": "https://twitter.com/DonaldPakkies",
       "date": "January 18, 2023",
       "poster": "/tkyt/formidable.png"
+    },
+    {
+      "title": "Embracing the strengths of the web with Marko",
+      "teacher": "Dylan Piercey",
+      "teacherUrl": "https://twitter.com/dylan_piercey",
+      "date": "January 10, 2023",
+      "poster": "/tkyt/marko.png"
     }
   ],
   "sessions": [
