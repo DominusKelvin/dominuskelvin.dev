@@ -1,29 +1,29 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 
 export interface Props {
   content: {
-    title: string;
-    description: string;
-    pubDate?: string;
-    updatedDate?: string;
-    heroImage?: string;
-  };
+    title: string
+    description: string
+    pubDate?: string
+    updatedDate?: string
+    heroImage?: string
+  }
 }
 
 const {
   content: { title, description, pubDate, updatedDate },
-} = Astro.props;
+} = Astro.props
 
-const tweetText = `I just read "${title}" by @Dominus_Kelvin \n`;
+const tweetText = `I just read "${title}" by @Dominus_Kelvin \n`
 const tweetUrl = `https://twitter.com/intent/tweet?url=${
   Astro.url
-}&text=${encodeURIComponent(tweetText)}`;
+}&text=${encodeURIComponent(tweetText)}`
 const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(
   String(Astro.url)
-)}`;
+)}`
 ---
 
 <html lang="en">

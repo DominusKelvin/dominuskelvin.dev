@@ -5,4 +5,5 @@
  pubDate: '21 November, 2022'
  draft: true
 ---
+
 I had my first [introduction to serverless]() and Netlify functions from Jason Lengstorf in a previous TKYT session

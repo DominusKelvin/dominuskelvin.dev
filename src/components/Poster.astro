@@ -1,27 +1,27 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from '@astrojs/image/components'
 export interface Session {
-  title: string;
-  teacher: string;
-  teacherUrl: string;
-  date: string;
-  poster: string;
-  url?: string;
+  title: string
+  teacher: string
+  teacherUrl: string
+  date: string
+  poster: string
+  url?: string
 }
 export interface Props {
-  session: Session;
+  session: Session
 }
-const { session } = Astro.props;
+const { session } = Astro.props
 ---
 
-<a href={session.url ?? "#"} target="_blank"
+<a href={session.url ?? '#'} target="_blank"
   ><Image
     class="rounded-sm"
     width={1012}
     height={506}
     src={session.poster}
     alt={session.title}
-    format={"webp"}
+    format={'webp'}
   />
 </a>
 <h3 class="font-extrabold text-md text-purple-500">
@@ -33,10 +33,10 @@ const { session } = Astro.props;
 </h3>
 <p class="text-brown-800 text-sm font-semibold">
   {
-    new Date(session.date).toLocaleDateString("en-us", {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
+    new Date(session.date).toLocaleDateString('en-us', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
     })
   }
 </p>

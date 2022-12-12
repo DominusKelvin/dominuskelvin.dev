@@ -20,6 +20,13 @@
       "teacherUrl": "https://twitter.com/dylan_piercey",
       "date": "January 10, 2023",
       "poster": "/tkyt/marko.png"
+    },
+    {
+      "title": "Securing a React application with Auth0",
+      "teacher": "William Johnson",
+      "teacherUrl": "https://twitter.com/willjohnsonio",
+      "date": "January 27, 2023",
+      "poster": "/tkyt/auth0.png"
     }
   ],
   "sessions": [
