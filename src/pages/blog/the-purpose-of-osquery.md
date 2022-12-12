@@ -1,8 +1,8 @@
 ---
-layout: "../../layouts/BlogPost.astro"
-title: "The purpose of osquery"
-description: "In this article we zoom in at the problem osquery was created to solve and some of the use case osquery can be applied to."
-pubDate: "October 22, 2021"
+layout: '../../layouts/BlogPost.astro'
+title: 'The purpose of osquery'
+description: 'In this article we zoom in at the problem osquery was created to solve and some of the use case osquery can be applied to.'
+pubDate: 'October 22, 2021'
 ---
 
 > When purpose is not known, abuse is inevitable - Myles Munroe

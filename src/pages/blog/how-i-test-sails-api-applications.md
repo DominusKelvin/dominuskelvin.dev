@@ -45,8 +45,8 @@ Traditionally to start up the sails development server, you would run `sails lif
 With the above knowledge, I would first set up a jest lifecycle to both start sails before running my tests and shut sails down after ll tests are run. To do this, at the top of `home.test.js`, I would import both Sails and Supertest:
 
 ```js
-var sails = require("sails");
-const request = require("supertest");
+var sails = require('sails')
+const request = require('supertest')
 ```
 
 Then I would setup the jest `beforeAll` and `afterAll` life cycles methods/hooks.
@@ -62,34 +62,34 @@ beforeAll(function (done) {
       // For example, we might want to skip the Grunt hook,
       // and disable all logs except errors and warnings:
       hooks: { grunt: false },
-      log: { level: "warn" },
+      log: { level: 'warn' },
     },
     function (err) {
       if (err) {
-        return done(err);
+        return done(err)
       }
 
       // here you can load fixtures, etc.
       // (for example, you might want to create some records in the database)
 
-      return done();
+      return done()
     }
-  );
-});
+  )
+})
 
 // Global after hook
 afterAll(function (done) {
   // here you can clear fixtures, etc.
   // (e.g. you might want to destroy the records you created above)
-  sails.lower(done);
-});
+  sails.lower(done)
+})
 ```
 
 So far `home.test.js` would look like this:
 
 ```js
-var sails = require("sails");
-const request = require("supertest");
+var sails = require('sails')
+const request = require('supertest')
 
 // Global before hook
 beforeAll(function (done) {
@@ -101,27 +101,27 @@ beforeAll(function (done) {
       // For example, we might want to skip the Grunt hook,
       // and disable all logs except errors and warnings:
       hooks: { grunt: false },
-      log: { level: "warn" },
+      log: { level: 'warn' },
     },
     function (err) {
       if (err) {
-        return done(err);
+        return done(err)
       }
 
       // here you can load fixtures, etc.
       // (for example, you might want to create some records in the database)
 
-      return done();
+      return done()
     }
-  );
-});
+  )
+})
 
 // Global after hook
 afterAll(function (done) {
   // here you can clear fixtures, etc.
   // (e.g. you might want to destroy the records you created above)
-  sails.lower(done);
-});
+  sails.lower(done)
+})
 ```
 
 ## Now unto test!
@@ -129,11 +129,11 @@ afterAll(function (done) {
 So the first test is really nothing fancy. So what we would do is call supertest which we are referring with the `request` variable, pass in the sail app and then make a GET request to the home route and see if it responds with a 200 OK. Fair enough? Let's write it:
 
 ```js
-describe("Home", () => {
-  it("/ - returns 200", (done) => {
-    request(sails.hooks.http.app).get("/").expect(200, done);
-  });
-});
+describe('Home', () => {
+  it('/ - returns 200', (done) => {
+    request(sails.hooks.http.app).get('/').expect(200, done)
+  })
+})
 ```
 
 Hopefully if we run our test via `npm test`, it will pass. I hope you noticed `sails.hooks.http.app` being passed to the call to `request`. That gave us the sails app instance currently running.
@@ -145,26 +145,26 @@ Also worthy of note is the `done` callback. It's required since API requests are
 Let's say I have a sign up feature in my Sails application located at `user/signup` and signs up a new user and returns back a JSON payload with the keys: `userInfo` and `token` for the new user info and a JWT token respectively. Let's write a test for this. So assuming everything is setup properly as described above, I would write:
 
 ```js
-it("Signs up new user", (done) => {
+it('Signs up new user', (done) => {
   const newUser = {
-    fullName: "Kelvin Omereshone",
-    emailAddress: "kelvinoemreshone@gmail.com",
-    password: "holamundo",
-  };
+    fullName: 'Kelvin Omereshone',
+    emailAddress: 'kelvinoemreshone@gmail.com',
+    password: 'holamundo',
+  }
   request(sails.hooks.http.app)
-    .post("/user/signup")
+    .post('/user/signup')
     .send(newUser)
     .expect(201)
     .then((res) => {
-      expect(res.body.userInfo).not.toBeUndefined();
-      expect(res.body.token).not.toBeUndefined();
-      done();
+      expect(res.body.userInfo).not.toBeUndefined()
+      expect(res.body.token).not.toBeUndefined()
+      done()
     })
     .catch((err) => {
-      console.log(err);
-      done(err);
-    });
-});
+      console.log(err)
+      done(err)
+    })
+})
 ```
 
 ## Conclusion

@@ -80,7 +80,7 @@ Here are a couple of things you'd want to do in the Component Script:
 
 ```astro
 ---
-import HeaderLink from "./HeaderLink.astro";
+import HeaderLink from './HeaderLink.astro'
 // ...
 ---
 ```
@@ -91,17 +91,17 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 // ...
 export interface Session {
-  title: string;
-  teacher: string;
-  teacherUrl: string;
-  date: string;
-  poster: string;
-  url?: string;
+  title: string
+  teacher: string
+  teacherUrl: string
+  date: string
+  poster: string
+  url?: string
 }
 export interface Props {
-  session: Session;
+  session: Session
 }
-const { session } = Astro.props;
+const { session } = Astro.props
 // ...
 ---
 ```
@@ -116,13 +116,13 @@ Any valid **non-client side** JavaScript is valid within the Component Script. E
 ---
 // Use Astro.glob() to fetch all posts,
 // filter out draft posts and sort them by date.
-const posts = (await Astro.glob("./blog/*.{md,mdx}"))
+const posts = (await Astro.glob('./blog/*.{md,mdx}'))
   .filter((post) => !post.frontmatter.draft)
   .sort(
     (a, b) =>
       new Date(b.frontmatter.pubDate).valueOf() -
       new Date(a.frontmatter.pubDate).valueOf()
-  );
+  )
 ---
 ```
 
@@ -134,8 +134,8 @@ Let's look at an example combining both Component Script and Component Template
 
 ```astro
 ---
-import SocialLink from "./SocialLink.astro";
-import socials from "../socials.json";
+import SocialLink from './SocialLink.astro'
+import socials from '../socials.json'
 ---
 
 <ul class="flex items-center space-x-2">
