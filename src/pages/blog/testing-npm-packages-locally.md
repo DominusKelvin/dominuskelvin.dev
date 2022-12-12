@@ -4,6 +4,7 @@
  description: "Harminder Virk the creator of AdonisJS showed me this super easy way to test NPM packages locally."
  pubDate: 'November 8, 2022'
 ---
+
 > You can [watch](https://youtu.be/h_L7q91LTOE) a screencast version of this article on YouTube
 
 A part of my [job](https://twitter.com/Dominus_Kelvin/status/1587844494749155329?s=20&t=WZpehnK7AFd7MsMaM4S6Xg) at [Treblle](https://treblle.com), is to build and maintain our JavaScript SDK packages.
@@ -17,9 +18,11 @@ I also learnt from Harminder a way to test NPM packages locally.
 Previously, I test NPM packages locally using `npm link` but we ran into some issues doing so and he showed me how he test NPM packages locally
 
 ## Using yalc
+
 Harminder showed me [yalc]() - which promises a better workflow than using `npm link` or `yarn link` and yes it does all that.
 
 ### Publishing locally with yalc
+
 To use yalc, all you need to do is the following 👇🏾
 
 Run
@@ -27,9 +30,11 @@ Run
 ```sh
 npx yalc publish
 ```
+
 in the package directory you want to test(in my case I want to test `treblle-adonisjs`). Yalc will then grab only the files that should be published to NPM and put them in a global store.
 
 ### Using the locally published package
+
 Then to use that package you've just published in yalc's local global store, in another project, you can add the package by using
 
 ```sh
@@ -45,7 +50,6 @@ The dependency will look something like this 👇🏾
     "treblle-adonisjs": "file:.yalc/treblle-adonisjs"
   }
 ```
-
 
 ## Conclusion
 

@@ -1,17 +1,17 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import Posters from "../components/Posters.astro";
-import tkyt from "../tkyt.json";
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import Posters from '../components/Posters.astro'
+import tkyt from '../tkyt.json'
 
 const upcoming = tkyt.upcoming.sort(
   (a, b) => new Date(a.date).valueOf() - new Date(b.date).valueOf()
-);
+)
 
 const sessions = tkyt.sessions.sort(
   (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
-);
+)
 ---
 
 <!DOCTYPE html>

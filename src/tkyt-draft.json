@@ -1,9 +1,9 @@
 [
-   {
-      "title": "Building a serverless API with Netlify and PlanetScale",
-      "teacher": "Brian Morrison II",
-      "teacherUrl": "https://twitter.com/brianmmdev",
-      "date": "October 13, 2022",
-      "poster": "/tkyt/serverless-api-planetscale.png"
-    },
+  {
+    "title": "Building a serverless API with Netlify and PlanetScale",
+    "teacher": "Brian Morrison II",
+    "teacherUrl": "https://twitter.com/brianmmdev",
+    "date": "October 13, 2022",
+    "poster": "/tkyt/serverless-api-planetscale.png"
+  }
 ]
