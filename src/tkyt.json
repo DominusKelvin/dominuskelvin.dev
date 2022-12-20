@@ -8,6 +8,13 @@
       "poster": "/tkyt/magic-regexp.png"
     },
     {
+      "title": "Getting started with 3D modelling in React",
+      "teacher": "Sara Vieira",
+      "teacherUrl": "https://twitter.com/NikkitaFTW",
+      "date": "January 16, 2023",
+      "poster": "/tkyt/3d-react.png"
+    },
+    {
       "title": "Getting started with Formidable",
       "teacher": "Donald Pakkies",
       "teacherUrl": "https://twitter.com/DonaldPakkies",
