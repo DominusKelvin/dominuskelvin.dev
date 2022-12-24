@@ -34,6 +34,13 @@
       "teacherUrl": "https://twitter.com/willjohnsonio",
       "date": "January 27, 2023",
       "poster": "/tkyt/auth0.png"
+    },
+    {
+      "title": "Building full-stack apps with AWS Amplify",
+      "teacher": "Erik Hanchett",
+      "teacherUrl": "https://twitter.com/ErikCH",
+      "date": "January 25, 2023",
+      "poster": "/tkyt/aws-amplify.png"
     }
   ],
   "sessions": [
