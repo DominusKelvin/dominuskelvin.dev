@@ -41,6 +41,20 @@
       "teacherUrl": "https://twitter.com/ErikCH",
       "date": "January 25, 2023",
       "poster": "/tkyt/aws-amplify.png"
+    },
+    {
+      "title": "Building a blog with BlogHunch",
+      "teacher": "Subham Mitra",
+      "teacherUrl": "https://twitter.com/icodefuture",
+      "date": "January 18, 2023",
+      "poster": "/tkyt/bloghunch.png"
+    },
+    {
+      "title": "Building a Qwik app",
+      "teacher": "Yoav Ganbar",
+      "teacherUrl": "https://twitter.com/HamatoYogi",
+      "date": "February 6, 2023",
+      "poster": "/tkyt/build-a-qwik-app.png"
     }
   ],
   "sessions": [
