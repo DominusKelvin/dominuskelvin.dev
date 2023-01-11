@@ -62,6 +62,13 @@
       "teacherUrl": "https://twitter.com/jensneuse_de",
       "date": "January 11, 2023",
       "poster": "/tkyt/wundergraph.png"
+    },
+    {
+      "title": "Getting started with tRPC",
+      "teacher": "Anthony Shew",
+      "teacherUrl": "https://twitter.com/anthonysheww",
+      "date": "February 21, 2023",
+      "poster": "/tkyt/trpc.png"
     }
   ],
   "sessions": [
