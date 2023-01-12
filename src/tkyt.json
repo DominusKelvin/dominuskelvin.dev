@@ -22,13 +22,6 @@
       "poster": "/tkyt/formidable.png"
     },
     {
-      "title": "Embracing the strengths of the web with Marko",
-      "teacher": "Dylan Piercey",
-      "teacherUrl": "https://twitter.com/dylan_piercey",
-      "date": "January 10, 2023",
-      "poster": "/tkyt/marko.png"
-    },
-    {
       "title": "Securing a React application with Auth0",
       "teacher": "Will Johnson",
       "teacherUrl": "https://twitter.com/willjohnsonio",
@@ -55,13 +48,6 @@
       "teacherUrl": "https://twitter.com/HamatoYogi",
       "date": "February 6, 2023",
       "poster": "/tkyt/build-a-qwik-app.png"
-    },
-    {
-      "title": "Getting started with Wundergraph",
-      "teacher": "Jens Neuse",
-      "teacherUrl": "https://twitter.com/jensneuse_de",
-      "date": "January 11, 2023",
-      "poster": "/tkyt/wundergraph.png"
     },
     {
       "title": "Getting started with tRPC",
@@ -255,6 +241,22 @@
       "date": "December 2, 2022",
       "poster": "/tkyt/modern-angular.png",
       "url": "https://youtu.be/J6s6bb3XEEI"
+    },
+    {
+      "title": "Embracing the strengths of the web with Marko",
+      "teacher": "Dylan Piercey",
+      "teacherUrl": "https://twitter.com/dylan_piercey",
+      "date": "January 10, 2023",
+      "poster": "/tkyt/marko.png",
+      "url": "https://youtu.be/MWUZK_mbdlU"
+    },
+    {
+      "title": "Getting started with Wundergraph",
+      "teacher": "Jens Neuse",
+      "teacherUrl": "https://twitter.com/jensneuse_de",
+      "date": "January 11, 2023",
+      "poster": "/tkyt/wundergraph.png",
+      "url": "https://youtu.be/KxJZI56FsH4"
     }
   ]
 }
