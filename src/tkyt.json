@@ -1,13 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "magic-regexp: the readable RegExp alternative",
-      "teacher": "Daniel Roe",
-      "teacherUrl": "https://twitter.com/danielcroe",
-      "date": "January 16, 2023",
-      "poster": "/tkyt/magic-regular-expressions.png"
-    },
-    {
       "title": "Getting started with 3D modelling in React",
       "teacher": "Sara Vieira",
       "teacherUrl": "https://twitter.com/NikkitaFTW",
@@ -257,6 +250,14 @@
       "date": "January 11, 2023",
       "poster": "/tkyt/wundergraph.png",
       "url": "https://youtu.be/s9By-LXnxcI"
+    },
+    {
+      "title": "magic-regexp: the readable RegExp alternative",
+      "teacher": "Daniel Roe",
+      "teacherUrl": "https://twitter.com/danielcroe",
+      "date": "January 16, 2023",
+      "poster": "/tkyt/magic-regular-expressions.png",
+      "url": "https://youtu.be/tgRMf0_Bgdo"
     }
   ]
 }
