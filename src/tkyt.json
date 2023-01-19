@@ -1,13 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "Getting started with Formidable",
-      "teacher": "Donald Pakkies",
-      "teacherUrl": "https://twitter.com/DonaldPakkies",
-      "date": "January 18, 2023",
-      "poster": "/tkyt/formidable.png"
-    },
-    {
       "title": "Securing a React application with Auth0",
       "teacher": "Will Johnson",
       "teacherUrl": "https://twitter.com/willjohnsonio",
@@ -260,6 +253,14 @@
       "date": "January 18, 2023",
       "poster": "/tkyt/bloghunch.png",
       "url": "https://youtu.be/jxg2FiAHBok"
+    },
+    {
+      "title": "Getting started with Formidable",
+      "teacher": "Donald Pakkies",
+      "teacherUrl": "https://twitter.com/DonaldPakkies",
+      "date": "January 18, 2023",
+      "poster": "/tkyt/formidable.png",
+      "url": "https://youtu.be/3PeX6fbGrN8"
     }
   ]
 }
