@@ -4,7 +4,7 @@
       "title": "Securing a React application with Auth0",
       "teacher": "Will Johnson",
       "teacherUrl": "https://twitter.com/willjohnsonio",
-      "date": "January 27, 2023",
+      "date": "February 2, 2023",
       "poster": "/tkyt/auth0.png"
     },
     {
@@ -27,6 +27,13 @@
       "teacherUrl": "https://twitter.com/anthonysheww",
       "date": "February 21, 2023",
       "poster": "/tkyt/trpc.png"
+    },
+    {
+      "title": "Why attention to details matters",
+      "teacher": "Sanjin Celeski",
+      "teacherUrl": "https://twitter.com/sanjinceleski",
+      "date": "February 3, 2023",
+      "poster": "/tkyt/sanjin.png"
     }
   ],
   "sessions": [
