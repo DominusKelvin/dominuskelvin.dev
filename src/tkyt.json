@@ -20,6 +20,13 @@
       "teacherUrl": "https://twitter.com/anthonysheww",
       "date": "February 21, 2023",
       "poster": "/tkyt/trpc.png"
+    },
+    {
+      "title": "Getting started with tRPC",
+      "teacher": "Manuel Spigolon",
+      "teacherUrl": "https://twitter.com/ManuEomm",
+      "date": "April 3, 2023",
+      "poster": "/tkyt/manuel.png"
     }
   ],
   "sessions": [
