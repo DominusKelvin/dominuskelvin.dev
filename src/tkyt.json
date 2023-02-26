@@ -4,7 +4,7 @@
       "title": "Securing a React application with Auth0",
       "teacher": "Will Johnson",
       "teacherUrl": "https://twitter.com/willjohnsonio",
-      "date": "February 2, 2023",
+      "date": "March 9, 2023",
       "poster": "/tkyt/auth0.png"
     },
     {
@@ -13,13 +13,6 @@
       "teacherUrl": "https://twitter.com/ErikCH",
       "date": "February 28, 2023",
       "poster": "/tkyt/aws-amplify.png"
-    },
-    {
-      "title": "Getting started with tRPC",
-      "teacher": "Anthony Shew",
-      "teacherUrl": "https://twitter.com/anthonysheww",
-      "date": "February 21, 2023",
-      "poster": "/tkyt/trpc.png"
     },
     {
       "title": "Getting started with tRPC",
@@ -277,6 +270,14 @@
       "date": "February 6, 2023",
       "poster": "/tkyt/build-a-qwik-app.png",
       "url": "https://youtu.be/qqbi9WBe-ts"
+    },
+    {
+      "title": "Getting started with tRPC",
+      "teacher": "Anthony Shew",
+      "teacherUrl": "https://twitter.com/anthonysheww",
+      "date": "February 24, 2023",
+      "poster": "/tkyt/trpc.png",
+      "url": "https://youtu.be/yMcdJMAIsec"
     }
   ]
 }
