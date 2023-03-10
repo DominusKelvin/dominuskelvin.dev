@@ -1,17 +1,10 @@
 {
   "upcoming": [
     {
-      "title": "Securing a React application with Auth0",
-      "teacher": "Will Johnson",
-      "teacherUrl": "https://twitter.com/willjohnsonio",
-      "date": "March 9, 2023",
-      "poster": "/tkyt/auth0.png"
-    },
-    {
       "title": "Building full-stack apps with AWS Amplify",
       "teacher": "Erik Hanchett",
       "teacherUrl": "https://twitter.com/ErikCH",
-      "date": "February 28, 2023",
+      "date": "April 6, 2023",
       "poster": "/tkyt/aws-amplify.png"
     },
     {
