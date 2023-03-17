@@ -5,6 +5,7 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import Socials from '../components/Socials.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
+import NewsletterSignup from '../components/NewsletterSignup.vue'
 ---
 
 <!DOCTYPE html>
@@ -99,6 +100,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
           >
         </section>
       </aside>
+      <NewsletterSignup client:idle />
     </main>
     <Footer />
   </body>
