@@ -1,6 +1,6 @@
 {
   "name": "dominuskelvin",
-  "version": "3.0.74",
+  "version": "3.0.75",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -36,5 +36,8 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
+  },
+  "engines": {
+    "node": "^18.0"
   }
 }
