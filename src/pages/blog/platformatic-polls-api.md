@@ -13,7 +13,7 @@ Since it's been a while I wrote a guide article, and with **Platformatic invitin
 
 Platformatic DB solves the problem of having to create endpoints whose sole purpose is to return data from a database.
 
-With Platformatic DB, you don’t need to write those endpoints anymore as Platformatic DB will map your Database to REST/GraphQL endpoints to expose to your API consumers.
+With Platformatic DB, you don’t need to write those endpoints anymore as Platformatic DB will map your Database to `REST/GraphQL` endpoints to expose to your API consumers.
 
 When I was introduced to Platformatic DB, the quickest thing I could relate it to was Sails [Blueprint](https://sailsjs.com/documentation/concepts/blueprints).
 
