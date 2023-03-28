@@ -2,19 +2,18 @@
  layout: '../../layouts/BlogPost.astro'
  title: 'Build a polls API with Platformatic DB'
  description: "Platformatic provides a set of open source tools to improve the DX of building backend applications. In this article I document how I built a polls API with one of the Platformatic tools - Platformatic DB"
- pubDate: 'March 15, 2023'
- draft: true
+ pubDate: 'March 29, 2023'
 ---
 
 After having [Matteo Collina](https://twitter.com/matteocollina) come to a [TKYT session to teach me Platformatic DB](https://youtu.be/iDgE0OVeBWo), I was keen on checking out [Platformatic](https://platformatic.dev/) - a tech(and company) that aims to remove the friction of day-to-day backend development by providing a suite of open-source tools.
 
-And since it's been a while I wrote this sort of guide article, I decided to build a polls API using one of the platformatic tools - Platformatic DB
+Since it's been a while I wrote a guide article, and with **Platformatic inviting me to participate in ther Launch Week**, I decided to build a polls API using one of the Platformatic tools - Platformatic DB
 
 ## What is Platformatic DB?
 
 Platformatic DB solves the problem of having to create endpoints whose sole purpose is to return data from a database.
 
-With Platformatic DB, you don’t need to write those endpoints anymore as Platformatic DB will map your Database to REST/GraphQL endpoints to expose to your API consumers.
+With Platformatic DB, you don’t need to write those endpoints anymore as Platformatic DB will map your Database to `REST/GraphQL` endpoints to expose to your API consumers.
 
 When I was introduced to Platformatic DB, the quickest thing I could relate it to was Sails [Blueprint](https://sailsjs.com/documentation/concepts/blueprints).
 
@@ -24,7 +23,7 @@ But unlike Sails Blueprint, Platformatic DB also exposes a GraphQL API which to 
 
 To follow along and build the polls API with this article, you'll need to have the following installed:
 
-- Node.js >= `v16.17.0` or >= `v18.8.0`
+- Node.js >= `v18.15.0`
 - npm `v7` or later
 - A code editor e.g VS Code
 - A terminal to run the commands required
@@ -59,9 +58,9 @@ When you run the above command, you will be asked what sort of project you want 
 
 > Note for this project, we are assuming you chose No for TypeScript and we will be using JavaScript
 
-Once the setup has complete, the [Platformatic CLI](https://oss.platformatic.dev/docs/reference/cli) would have generated the files needed for your Platformatic DB project as well as installed your project's dependencies
+When asked if you want to run the migrations, select **no** as we don't want the example migrations to be ran but rather we want to customize those migrations.
 
-When asked if you want to run the mirations, select **no** as we don't want the example migrations to be ran but rather we want to customize those migrations.
+Once the setup has complete, the [Platformatic CLI](https://oss.platformatic.dev/docs/reference/cli) would have generated the files needed for your Platformatic DB project as well as installed your project's dependencies
 
 ## Setting up migrations
 
@@ -75,7 +74,7 @@ Polls are central to the functioning of this API, so we will kick-off things by 
 CREATE TABLE IF NOT EXISTS polls (
   id INTEGER PRIMARY KEY,
   question TEXT NOT NULL,
-  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
@@ -107,7 +106,7 @@ npm start
 
 Next, in our terminal, let's make a request to our server's REST API to create a new poll.
 
-> I will be using HTTPie CLI for the request but you can use CURL or even a GUI that let's you test an endpoint. The bottom line is that you are able to make a request to the server.
+> I will be using [HTTPie CLI](https://httpie.io/cli) for the request but you can use CURL or even a [GUI](https://httpie.io/app) that let's you test an endpoint. The bottom line is that you are able to make a request to the server.
 
 ```sh
 http POST :3042/polls question="Do you use Node.js?"
@@ -162,7 +161,7 @@ DROP TABLE poll_options;
 Okay, let's apply our latest migration:
 
 ```sh
-npx platformatic db migrations apply --to 002
+npx platformatic db migrations apply
 ```
 
 After the above command has been successfully ran, let's now give the poll we created earlier, some options.
@@ -236,7 +235,7 @@ We get a similar output like the one we had earlier but with a new field - `poll
 }
 ```
 
-However, we have an empty array at this time, because we haven't really created a poll option for the poll we currently have, let's create a GraphQL mutation to fix that. So back in GraphiQL, write the following query:
+However, we have an empty array at this time, because we haven't really created a poll option for the poll we currently have, let's create a GraphQL mutation to fix that. So back in GraphiQL, write the following mutation:
 
 ```graphql
 mutation {
@@ -336,10 +335,10 @@ First we will define a new mutation type. So edit `plugin.js` to look have the f
 
 ```js
 app.graphql.extendSchema(`
-    extend type Mutation {
-      savePollWithOptions(poll: PollInput!, pollOptions: [PollOptionInput!]!): Poll
-    }
-  `)
+  extend type Mutation {
+    savePollWithOptions(poll: PollInput!, pollOptions: [PollOptionInput!]!): Poll
+  }
+`)
 ```
 
 Next let's define an async function called `savePollWithOptions`:
@@ -406,7 +405,7 @@ module.exports = async function (app) {
 }
 ```
 
-Okay let's test this new mutation we've just made, head back to the GraphiQL playground and run the following mutation:
+Okay let's test this new mutation we've just made, head back to the GraphiQL playground and click the 'Re-fetch GraphQL schema' button in the left-hand sidebar, and then run the following mutation:
 
 ```graphql
 mutation {
@@ -527,7 +526,9 @@ async function vote(pollId, optionId) {
 }
 ```
 
-Notice, how we can drop down to using SQL statements when we need to. Let's create a mutation type called `vote`:
+Notice, how we can drop down to using SQL statements when we need to. Let's update the already existing `app.graphql.extendSchema()` to create a mutation type called `vote`.
+
+Your call to `app.graphql.extendSchema` should now look like this:
 
 ```js
 app.graphql.extendSchema(`
@@ -538,7 +539,9 @@ app.graphql.extendSchema(`
   `)
 ```
 
-Finally let's create the mutation:
+Finally, in the already existing `app.graphql.defineResolvers()`, let's ad a new mutation to create the `vote` mutation.
+
+Your `app.graphql.defineResolvers()` should now look like this:
 
 ```js
 app.graphql.defineResolvers({
@@ -550,7 +553,7 @@ app.graphql.defineResolvers({
 })
 ```
 
-When we run the mutation on the GraphiQL playground like so:
+Head back to GraphiQL and click the 'Re-fetch GraphQL schema' button again and then run the `vote` mutation:
 
 ```graphql
 mutation {
@@ -585,6 +588,7 @@ There is so much you can add to this API. For example you can:
 - Have a `users` table and setup relationships so polls can belong to a user.
 - Set up authentication for users of the API. We can use AuthO for this one as [Platformatic DB plays well with Auth0](https://oss.platformatic.dev/docs/guides/jwt-auth0)
 - Set up authorization using [Platformatic DB's role-based authorization](https://oss.platformatic.dev/docs/reference/db/authorization/introduction)
+- Deploy and host the polls API on [Platformatic Cloud](https://platformatic.cloud/)
 
 And so much more we can add.
 

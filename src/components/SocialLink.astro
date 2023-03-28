@@ -11,6 +11,7 @@ const { link, icon, title } = Astro.props
   <a href={link} target="_blank"
     ><img
       class="w-7 h-7 hover:scale-125 transition-transform"
+      loading="lazy"
       src={icon}
       alt={title}
     />

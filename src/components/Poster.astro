@@ -1,5 +1,4 @@
 ---
-import { Image } from '@astrojs/image/components'
 export interface Session {
   title: string
   teacher: string
@@ -15,13 +14,13 @@ const { session } = Astro.props
 ---
 
 <a href={session.url ?? '#'} target="_blank"
-  ><Image
+  ><img
     class="rounded-sm"
     width={1012}
     height={506}
     src={session.poster}
     alt={session.title}
-    format={'webp'}
+    loading="lazy"
   />
 </a>
 <h3 class="font-extrabold text-md text-purple-500">
