@@ -2,8 +2,7 @@
  layout: '../../layouts/BlogPost.astro'
  title: 'Build a polls API with Platformatic DB'
  description: "Platformatic provides a set of open source tools to improve the DX of building backend applications. In this article I document how I built a polls API with one of the Platformatic tools - Platformatic DB"
- pubDate: 'March 15, 2023'
- draft: true
+ pubDate: 'March 29, 2023'
 ---
 
 After having [Matteo Collina](https://twitter.com/matteocollina) come to a [TKYT session to teach me Platformatic DB](https://youtu.be/iDgE0OVeBWo), I was keen on checking out [Platformatic](https://platformatic.dev/) - a tech(and company) that aims to remove the friction of day-to-day backend development by providing a suite of open-source tools.
@@ -24,7 +23,7 @@ But unlike Sails Blueprint, Platformatic DB also exposes a GraphQL API which to 
 
 To follow along and build the polls API with this article, you'll need to have the following installed:
 
-- Node.js >= `v16.17.0` or >= `v18.8.0`
+- Node.js >= `v18.15.0`
 - npm `v7` or later
 - A code editor e.g VS Code
 - A terminal to run the commands required
