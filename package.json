@@ -13,7 +13,6 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@astrojs/image": "^0.7.1",
     "@astrojs/mdx": "^0.11.6",
     "@astrojs/rss": "^2.3.0",
     "@astrojs/sitemap": "^1.2.1",
