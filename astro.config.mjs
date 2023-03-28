@@ -9,13 +9,5 @@ import vue from '@astrojs/vue'
 // https://astro.build/config
 export default defineConfig({
   site: 'https://dominuskelvin.dev',
-  integrations: [
-    mdx(),
-    sitemap(),
-    tailwind(),
-    image({
-      serviceEntryPoint: '@astrojs/image/sharp',
-    }),
-    vue(),
-  ],
+  integrations: [mdx(), sitemap(), tailwind(), image(), vue()],
 })
