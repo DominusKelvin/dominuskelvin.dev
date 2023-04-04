@@ -8,13 +8,6 @@
       "poster": "/tkyt/aws-amplify.png"
     },
     {
-      "title": "Understanding the Fastify plugin system",
-      "teacher": "Manuel Spigolon",
-      "teacherUrl": "https://twitter.com/ManuEomm",
-      "date": "April 3, 2023",
-      "poster": "/tkyt/manuel.png"
-    },
-    {
       "title": "Building an API with Nest",
       "teacher": "Jay Cooper Bell",
       "teacherUrl": "https://twitter.com/JayCooperBell",
@@ -285,6 +278,14 @@
       "date": "February 24, 2023",
       "poster": "/tkyt/trpc.png",
       "url": "https://youtu.be/yMcdJMAIsec"
+    },
+    {
+      "title": "Decoding the Fastify plugin system",
+      "teacher": "Manuel Spigolon",
+      "teacherUrl": "https://twitter.com/ManuEomm",
+      "date": "April 3, 2023",
+      "poster": "/tkyt/manuel.png",
+      "url": "https://youtu.be/BnnL7fAKqNU"
     }
   ]
 }
