@@ -13,6 +13,13 @@
       "teacherUrl": "https://twitter.com/ajcwebdev",
       "date": "April 5, 2023",
       "poster": "/tkyt/anthony.png"
+    },
+    {
+      "title": "WTF is UnoCSS?",
+      "teacher": "Anthony Fu",
+      "teacherUrl": "https://twitter.com/antfu7",
+      "date": "April 10, 2023",
+      "poster": "/tkyt/anthony-fu.png"
     }
   ],
   "sessions": [
