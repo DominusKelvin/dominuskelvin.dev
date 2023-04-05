@@ -8,18 +8,18 @@
       "poster": "/tkyt/aws-amplify.png"
     },
     {
-      "title": "Building an API with Nest",
-      "teacher": "Jay Cooper Bell",
-      "teacherUrl": "https://twitter.com/JayCooperBell",
-      "date": "April 4, 2023",
-      "poster": "/tkyt/jay.png"
-    },
-    {
       "title": "Getting started with Redwood",
       "teacher": "Anthony Campolo",
       "teacherUrl": "https://twitter.com/ajcwebdev",
       "date": "April 5, 2023",
       "poster": "/tkyt/anthony.png"
+    },
+    {
+      "title": "WTF is UnoCSS?",
+      "teacher": "Anthony Fu",
+      "teacherUrl": "https://twitter.com/antfu7",
+      "date": "April 10, 2023",
+      "poster": "/tkyt/anthony-fu.png"
     }
   ],
   "sessions": [
@@ -286,6 +286,14 @@
       "date": "April 3, 2023",
       "poster": "/tkyt/manuel.png",
       "url": "https://youtu.be/BnnL7fAKqNU"
+    },
+    {
+      "title": "Building an API with Nest",
+      "teacher": "Jay Cooper Bell",
+      "teacherUrl": "https://twitter.com/JayCooperBell",
+      "date": "April 4, 2023",
+      "poster": "/tkyt/jay.png",
+      "url": "https://youtu.be/nGPe0hgEnCQ"
     }
   ]
 }
