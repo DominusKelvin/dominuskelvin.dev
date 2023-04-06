@@ -8,13 +8,6 @@
       "poster": "/tkyt/aws-amplify.png"
     },
     {
-      "title": "Getting started with Redwood",
-      "teacher": "Anthony Campolo",
-      "teacherUrl": "https://twitter.com/ajcwebdev",
-      "date": "April 5, 2023",
-      "poster": "/tkyt/anthony.png"
-    },
-    {
       "title": "WTF is UnoCSS?",
       "teacher": "Anthony Fu",
       "teacherUrl": "https://twitter.com/antfu7",
@@ -294,6 +287,14 @@
       "date": "April 4, 2023",
       "poster": "/tkyt/jay.png",
       "url": "https://youtu.be/nGPe0hgEnCQ"
+    },
+    {
+      "title": "Getting started with Redwood",
+      "teacher": "Anthony Campolo",
+      "teacherUrl": "https://twitter.com/ajcwebdev",
+      "date": "April 5, 2023",
+      "poster": "/tkyt/anthony.png",
+      "url": "https://youtu.be/Ih6cWaII1mc"
     }
   ]
 }
