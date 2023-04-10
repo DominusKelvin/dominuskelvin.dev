@@ -1,20 +1,5 @@
 {
-  "upcoming": [
-    {
-      "title": "Building full-stack apps with AWS Amplify",
-      "teacher": "Erik Hanchett",
-      "teacherUrl": "https://twitter.com/ErikCH",
-      "date": "April 6, 2023",
-      "poster": "/tkyt/aws-amplify.png"
-    },
-    {
-      "title": "WTF is UnoCSS?",
-      "teacher": "Anthony Fu",
-      "teacherUrl": "https://twitter.com/antfu7",
-      "date": "April 10, 2023",
-      "poster": "/tkyt/anthony-fu.png"
-    }
-  ],
+  "upcoming": [],
   "sessions": [
     {
       "title": "Async iterators in JavaScript and Node.js",
@@ -295,6 +280,22 @@
       "date": "April 5, 2023",
       "poster": "/tkyt/anthony.png",
       "url": "https://youtu.be/Ih6cWaII1mc"
+    },
+    {
+      "title": "Building full-stack apps with AWS Amplify",
+      "teacher": "Erik Hanchett",
+      "teacherUrl": "https://twitter.com/ErikCH",
+      "date": "April 6, 2023",
+      "poster": "/tkyt/aws-amplify.png",
+      "url": "https://youtu.be/kq0uQOW67qs"
+    },
+    {
+      "title": "WTF is UnoCSS?",
+      "teacher": "Anthony Fu",
+      "teacherUrl": "https://twitter.com/antfu7",
+      "date": "April 10, 2023",
+      "poster": "/tkyt/anthony-fu.png",
+      "url": "https://youtu.be/nHag_UhwORY"
     }
   ]
 }
