@@ -20,6 +20,13 @@
       "teacherUrl": "https://twitter.com/sabinthedev",
       "date": "May 31, 2023",
       "poster": "/tkyt/prisma-with-sabin.png"
+    },
+    {
+      "title": "Formkit: the form framework for Vue",
+      "teacher": "Justin Schroeder",
+      "teacherUrl": "https://twitter.com/jpschroeder",
+      "date": "May 16, 2023",
+      "poster": "/tkyt/formkit.png"
     }
   ],
   "sessions": [
