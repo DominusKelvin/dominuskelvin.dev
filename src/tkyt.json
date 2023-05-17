@@ -20,13 +20,6 @@
       "teacherUrl": "https://twitter.com/sabinthedev",
       "date": "May 31, 2023",
       "poster": "/tkyt/prisma-with-sabin.png"
-    },
-    {
-      "title": "Formkit: the form framework for Vue",
-      "teacher": "Justin Schroeder",
-      "teacherUrl": "https://twitter.com/jpschroeder",
-      "date": "May 16, 2023",
-      "poster": "/tkyt/formkit.png"
     }
   ],
   "sessions": [
@@ -333,6 +326,14 @@
       "date": "May 5, 2023",
       "poster": "/tkyt/turso-with-glauber.png",
       "url": "https://youtu.be/1Khw1MFFha0"
+    },
+    {
+      "title": "Formkit: the form framework for Vue",
+      "teacher": "Justin Schroeder",
+      "teacherUrl": "https://twitter.com/jpschroeder",
+      "date": "May 16, 2023",
+      "poster": "/tkyt/formkit.png",
+      "url": "https://youtu.be/K61oLjg0N4A"
     }
   ]
 }
