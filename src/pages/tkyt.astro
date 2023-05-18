@@ -12,6 +12,7 @@ const upcoming = tkyt.upcoming.sort(
 const sessions = tkyt.sessions.sort(
   (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
 )
+const youtubeUrl = 'https://youtube.com/@dominuskelvin'
 ---
 
 <!DOCTYPE html>
@@ -47,7 +48,8 @@ const sessions = tkyt.sessions.sort(
             class="text-purple font-extrabold prose"
             >Teach Kelvin Your Thing!</span
           > Get notified when new sessions are live by subscribing on <a
-            href="https://youtube.com/c/KelvinOmereshoneOfficial">YouTube</a
+            href={youtubeUrl}
+            target="_blank">YouTube</a
           >
         </p>
         <Posters sessions={upcoming} />
@@ -65,7 +67,7 @@ const sessions = tkyt.sessions.sort(
             class="text-purple font-extrabold prose sm:prose-xl"
             >Teach Kelvin Your Thing</span
           > on YouTube. Show your support and get notified of new sessions by subscribing
-          on <a href="">YouTube</a>
+          on <a href={youtubeUrl} target="_blank">YouTube</a>
         </p>
         <Posters sessions={sessions} />
       </section>
