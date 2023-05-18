@@ -1,13 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "Headless commerce with Shopify's Hydrogen",
-      "teacher": "Bret Little",
-      "teacherUrl": "https://twitter.com/little_breat",
-      "date": "May 17, 2023",
-      "poster": "/tkyt/hydrogen.png"
-    },
-    {
       "title": "Building mobile apps with Ionic & Vue",
       "teacher": "Mike Hartington",
       "teacherUrl": "https://twitter.com/mhartington",
@@ -334,6 +327,14 @@
       "date": "May 16, 2023",
       "poster": "/tkyt/formkit.png",
       "url": "https://youtu.be/K61oLjg0N4A"
+    },
+    {
+      "title": "Headless commerce with Shopify's Hydrogen",
+      "teacher": "Bret Little",
+      "teacherUrl": "https://twitter.com/little_breat",
+      "date": "May 17, 2023",
+      "poster": "/tkyt/hydrogen.png",
+      "url": "https://youtu.be/dTh1esIxw1kj"
     }
   ]
 }
