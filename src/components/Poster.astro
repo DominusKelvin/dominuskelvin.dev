@@ -13,16 +13,21 @@ export interface Props {
 const { session } = Astro.props
 ---
 
-<a href={session.url ?? '#'} target="_blank"
-  ><img
-    class="rounded-sm"
-    width={1012}
-    height={506}
-    src={session.poster}
-    alt={session.title}
-    loading="lazy"
-  />
-</a>
+<div class="relative">
+  <a
+    href={session.url ?? '#'}
+    target="_blank"
+    class:list={[{ 'cursor-default': !session.url }]}
+    ><img
+      class="rounded-sm font-semibold"
+      width={1012}
+      height={506}
+      src={session.poster}
+      alt={session.title}
+      loading="lazy"
+    />
+  </a>
+</div>
 <h3 class="font-extrabold text-md text-purple-500">
   {session.title}
   <span>with</span>
@@ -30,7 +35,7 @@ const { session } = Astro.props
     >{session.teacher}
   </a>
 </h3>
-<p class="text-brown-800 text-sm font-semibold">
+<p class="text-brown-800 text-sm">
   {
     new Date(session.date).toLocaleDateString('en-us', {
       year: 'numeric',
