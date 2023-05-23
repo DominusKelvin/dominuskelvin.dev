@@ -14,10 +14,7 @@ const { session } = Astro.props
 ---
 
 <div class="relative">
-  <a
-    href={session.url ?? '#'}
-    target="_blank"
-    class:list={[{ 'cursor-default': !session.url }]}
+  <a href={session.url} target="_blank"
     ><img
       class="rounded-sm font-semibold"
       width={1012}
