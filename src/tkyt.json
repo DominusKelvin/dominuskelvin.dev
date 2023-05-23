@@ -13,6 +13,13 @@
       "teacherUrl": "https://twitter.com/sabinthedev",
       "date": "May 31, 2023",
       "poster": "/tkyt/prisma-with-sabin.png"
+    },
+    {
+      "title": "Getting started with Vuetify",
+      "teacher": "John Leider",
+      "teacherUrl": "https://twitter.com/zeroskillz",
+      "date": "May 31, 2023",
+      "poster": "/tkyt/vuetify.png"
     }
   ],
   "sessions": [
