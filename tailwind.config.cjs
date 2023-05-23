@@ -57,6 +57,9 @@ module.exports = {
           900: '#463131',
         },
       },
+      content: {
+        watch: 'url("/watch.svg")',
+      },
     },
   },
   plugins: [

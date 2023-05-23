@@ -1,13 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "Headless commerce with Shopify's Hydrogen",
-      "teacher": "Bret Little",
-      "teacherUrl": "https://twitter.com/little_breat",
-      "date": "May 17, 2023",
-      "poster": "/tkyt/hydrogen.png"
-    },
-    {
       "title": "Building mobile apps with Ionic & Vue",
       "teacher": "Mike Hartington",
       "teacherUrl": "https://twitter.com/mhartington",
@@ -20,6 +13,13 @@
       "teacherUrl": "https://twitter.com/sabinthedev",
       "date": "May 31, 2023",
       "poster": "/tkyt/prisma-with-sabin.png"
+    },
+    {
+      "title": "Getting started with Vuetify",
+      "teacher": "John Leider",
+      "teacherUrl": "https://twitter.com/zeroskillz",
+      "date": "May 31, 2023",
+      "poster": "/tkyt/vuetify.png"
     }
   ],
   "sessions": [
@@ -334,6 +334,14 @@
       "date": "May 16, 2023",
       "poster": "/tkyt/formkit.png",
       "url": "https://youtu.be/K61oLjg0N4A"
+    },
+    {
+      "title": "Headless commerce with Shopify's Hydrogen",
+      "teacher": "Bret Little",
+      "teacherUrl": "https://twitter.com/little_breat",
+      "date": "May 17, 2023",
+      "poster": "/tkyt/hydrogen.png",
+      "url": "https://youtu.be/dTh1esIxw1kj"
     }
   ]
 }
