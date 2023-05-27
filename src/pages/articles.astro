@@ -13,8 +13,9 @@ const articles = (await getCollection('articles')).sort(
 <html lang="en">
   <head>
     <BaseHead
-      title="The Kelvin O. Omereshone Blog"
-      description="Learn Fullstack Web Development through articles on various topics across the stack."
+      title="Kelvin O. Omereshone Articles"
+      description={`I've written over ${articles.length} articles for publications
+      like Smashing Magazine, FreeCodeCamp, LogRocket Blog, etc.`}
     />
   </head>
   <body>
