@@ -1,0 +1,7 @@
+{
+  "title": "Docker volumes vs. bind mounts",
+  "url": "https://blog.logrocket.com/node-js-best-practices-and-performance-analytics-in-2021/",
+  "excerpt": "When a Docker container is destroyed, creating a new container off of the existing Docker image does so without making any changes to the original container",
+  "publication": "LogRocket",
+  "date": "June 3, 2021"
+}

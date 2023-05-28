@@ -1,0 +1,7 @@
+{
+  "title": "The importance of HTTP status codes to REST-based APIs",
+  "url": "https://blog.treblle.com/the-importance-of-http-status-codes-in-rest-apis/",
+  "excerpt": "HTTP status codes are essential for REST-based APIs, as they provide a standard way of communication between the server and the client and handle errors",
+  "publication": "Treblle",
+  "date": "April 6, 2023"
+}

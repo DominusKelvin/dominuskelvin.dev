@@ -1,0 +1,7 @@
+{
+  "title": "Supercharge Testing React Applications With Wallaby.js",
+  "url": "https://www.smashingmagazine.com/2020/10/supercharge-testing-react-applications-wallabyjs/",
+  "excerpt": "Ever had to switch your focus from your editor and to your terminal to see the results of your tests? This article will introduce you to Wallaby.js — a JavaScript productivity tool that supercharges your IDE by allowing you to get real-time feedback on your JavaScript tests in your code editor even before saving the file",
+  "publication": "Smashing Magazine",
+  "date": "October 16, 2020"
+}
