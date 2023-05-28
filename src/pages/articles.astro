@@ -27,14 +27,14 @@ const articles = (await getCollection('articles')).sort(
         <p class="lg:text-xl text-lg text-gray-700">
           I've written over <strong>{articles.length}</strong> articles for publications
           like <strong>Smashing Magazine</strong>, <strong>FreeCodeCamp</strong
-          >, <strong>LogRocket Blog</strong>, etc.
+          >, <strong>LogRocket Blog</strong>, and many more.
         </p>
       </header>
       <section>
         <ul>
           {
             articles.map((article) => (
-              <a href={article.data.url}>
+              <a href={article.data.url} target="_blank">
                 <li class="mb-4 grid grid-cols-1 rounded-md px-4 py-2 hover:bg-green/10 focus:bg-green/10 sm:flex sm:grid-cols-2 sm:items-center sm:py-4">
                   <p class="sm:w-32">
                     <time class="text-gray-500" datetime={article.data.date}>
