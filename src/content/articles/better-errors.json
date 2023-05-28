@@ -1,0 +1,7 @@
+{
+  "title": "Better Error Handling In NodeJS With Error Classes",
+  "url": "https://www.smashingmagazine.com/2020/08/error-handling-nodejs-error-classes/",
+  "excerpt": "This article is for JavaScript and NodeJS developers who want to improve error-handling in their applications. Kelvin Omereshone explains the error class pattern and how to use it for a better, more efficient way of handling errors across your applications",
+  "publication": "Smashing Magazine",
+  "date": "August 10, 2020"
+}

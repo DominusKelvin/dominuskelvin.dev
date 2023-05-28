@@ -1,0 +1,7 @@
+{
+  "title": "Enrolling a DigitalOcean Droplet on a Fleet instance",
+  "url": "https://fleetdm.com/guides/enrolling-a-digital-ocean-droplet-on-a-fleet-instance",
+  "excerpt": "Here's a scenario: you have an Ubuntu server created as a Droplet on DigitalOcean. You want to deploy an osquery agent on that server and connect to your Fleet Instance.",
+  "publication": "Fleet Device Management",
+  "date": "May 26, 2022"
+}
