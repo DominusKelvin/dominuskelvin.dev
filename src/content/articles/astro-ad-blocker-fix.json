@@ -1,0 +1,7 @@
+{
+  "title": "Fixing ad blockers breaking CSS Styling in Astro",
+  "url": "https://blog.treblle.com/astro-adblock-fix/",
+  "excerpt": "In this article, I show how I resolved an issue in the Treblle Docs built with Astro where the CSS styles were not being applied for some visitors of the docs because they had ad blockers on",
+  "publication": "Treblle",
+  "date": "April 6, 2023"
+}

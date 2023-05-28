@@ -1,0 +1,7 @@
+{
+  "title": "Setting Up API Mocking With Mirage JS And Vue.js",
+  "url": "https://www.smashingmagazine.com/2020/02/api-mocking-mirage-vue-javascript/",
+  "excerpt": "This article introduces Mirage JS, an API mocking library that lets you build, test and share a complete working JavaScript application without having to rely on any backend API or services. You’ll also learn how to set up Mirage JS with the progressive front-end framework, Vue.js.",
+  "publication": "Smashing Magazine",
+  "date": "February 13, 2020"
+}

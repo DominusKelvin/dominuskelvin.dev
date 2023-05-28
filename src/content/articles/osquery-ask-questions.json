@@ -1,0 +1,7 @@
+{
+  "title": "Osquery: a tool to easily ask questions about operating systems",
+  "url": "https://fleetdm.com/guides/osquery-a-tool-to-easily-ask-questions-about-operating-systems",
+  "excerpt": "Osquery is an easy-to-use operating system monitoring tool that uses SQL to expose a device’s operating system as a highly performant relational database",
+  "publication": "Fleet Device Management",
+  "date": "April 04, 2022"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "How to install osquery and enroll macOS devices into Fleet",
+  "url": "https://fleetdm.com/guides/how-to-install-osquery-and-enroll-macos-devices-into-fleet",
+  "excerpt": "The easiest way to install osquery and enroll macOS devices into your Fleet instance is to use our osquery installer.",
+  "publication": "Fleet Device Management",
+  "date": "January 13, 2022"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Building a plugin with Vite",
+  "url": "https://www.vuemastery.com/blog/building-a-plugin-with-vite",
+  "excerpt": "A Vite plugin allows us to accomplish tasks like these. So you might be wondering how to create a Vite plugin yourself. In this article, we’ll walk through how to create some simple plugins that you can use as the foundation and inspiration for your own custom Vite plugins",
+  "publication": "Vue Mastery",
+  "date": "November 8, 2022"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Mirage JS Deep Dive: Understanding Timing, Response And Passthrough (Part 3)",
+  "url": "https://www.smashingmagazine.com/2020/05/mirage-javascript-factories-fixtures-serializers/",
+  "excerpt": "In this third part of Mirage JS Deep Dive series, we will be focusing on using response, timing and passthrough in Mirage for a better handle on simulating an actual backend server",
+  "publication": "Smashing Magazine",
+  "date": "June 10, 2020"
+}

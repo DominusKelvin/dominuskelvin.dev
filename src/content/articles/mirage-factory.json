@@ -1,0 +1,7 @@
+{
+  "title": "Mirage JS Deep Dive: Understanding Factories, Fixtures And Serializers (Part 2)",
+  "url": "https://www.smashingmagazine.com/2020/05/mirage-javascript-factories-fixtures-serializers/",
+  "excerpt": "In this second part of the Mirage JS Deep Dive series, we will be looking at Mirage JS’ Factories, Fixtures, and Serializers. We’ll see how they enable rapid API mocking using Mirage.",
+  "publication": "Smashing Magazine",
+  "date": "May 29, 2020"
+}
