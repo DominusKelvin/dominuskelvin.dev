@@ -1,0 +1,7 @@
+{
+  "title": "How I deployed My Vue SPA on Heroku 🚀",
+  "url": "https://medium.com/js-dojo/how-i-deployed-my-vue-spa-on-heroku-4884fb81d73e",
+  "excerpt": "It was an exceeding finger aching day for me today when I tried deploying my Vue.js app on Heroku. After trying some “known” methods that were in articles and docs, I finally was able to do get it deployed! (With some tweaking on my end though 😏)",
+  "publication": "Vue.js Developers",
+  "date": "April 4, 2019"
+}
