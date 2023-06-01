@@ -1,12 +1,18 @@
 ---
+import { getCollection } from 'astro:content'
 import SocialLink from './SocialLink.astro'
-import socials from '../socials.json'
+
+const socials = await getCollection('socials')
 ---
 
 <ul class="flex items-center space-x-2">
   {
     socials.map((social) => (
-      <SocialLink link={social.link} icon={social.icon} title={social.title} />
+      <SocialLink
+        link={social.data.link}
+        icon={social.data.icon}
+        title={social.data.title}
+      />
     ))
   }
 </ul>
