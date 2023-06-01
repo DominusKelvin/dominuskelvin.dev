@@ -5,13 +5,20 @@ import Footer from '../components/Footer.astro'
 import Posters from '../components/Posters.astro'
 import tkyt from '../tkyt.json'
 
-const upcoming = tkyt.upcoming.sort(
-  (a, b) => new Date(a.date).valueOf() - new Date(b.date).valueOf()
-)
+import { getCollection } from 'astro:content'
 
-const sessions = tkyt.sessions.sort(
-  (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
+const tkyt_upcoming = await getCollection('tkyt-upcoming')
+tkyt_upcoming.sort(
+  (a, b) => new Date(a.data.date).valueOf() - new Date(b.data.date).valueOf()
 )
+const upcoming = tkyt_upcoming.map((data) => data.data)
+
+const tkyt_sessions = await getCollection('tkyt-sessions')
+tkyt_sessions.sort(
+  (a, b) => new Date(a.data.date).valueOf() - new Date(b.data.date).valueOf()
+)
+const sessions = tkyt_sessions.map((data) => data.data)
+
 const youtubeUrl = 'https://youtube.com/@dominuskelvin'
 ---
 
