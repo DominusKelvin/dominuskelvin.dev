@@ -1,25 +1,11 @@
 {
   "upcoming": [
     {
-      "title": "Type-safe data access with Prisma",
-      "teacher": "Sabin Adams",
-      "teacherUrl": "https://twitter.com/sabinthedev",
-      "date": "May 31, 2023",
-      "poster": "/tkyt/prisma-with-sabin.png"
-    },
-    {
       "title": "Getting started with Vuetify",
       "teacher": "John Leider",
       "teacherUrl": "https://twitter.com/_alexblokh",
       "date": "May 31, 2023",
       "poster": "/tkyt/vuetify.png"
-    },
-    {
-      "title": "Drizzle ORM: The TypeScript ORM",
-      "teacher": "Alex Blokh",
-      "teacherUrl": "https://twitter.com/zeroskillz",
-      "date": "June 1, 2023",
-      "poster": "/tkyt/drizzle.png"
     },
     {
       "title": "Building real-time web apps with Meteor and React",
@@ -357,6 +343,21 @@
       "date": "May 30, 2023",
       "poster": "/tkyt/ionic-vue.png",
       "url": "https://youtu.be/lGE02RXAxNg"
+    },
+    {
+      "title": "Drizzle ORM: The TypeScript ORM",
+      "teacher": "Alex Blokh",
+      "teacherUrl": "https://twitter.com/zeroskillz",
+      "date": "June 1, 2023",
+      "poster": "/tkyt/drizzle.png",
+      "url": "https://youtu.be/rwqjR9eoE9Y"
+    },
+    {
+      "title": "Type-safe data access with Prisma",
+      "teacher": "Sabin Adams",
+      "teacherUrl": "https://twitter.com/sabinthedev",
+      "date": "May 31, 2023",
+      "poster": "/tkyt/prisma-with-sabin.png"
     }
   ]
 }

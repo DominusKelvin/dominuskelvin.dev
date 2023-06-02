@@ -11,6 +11,16 @@ const articles = defineCollection({
   }),
 })
 
+const socials = defineCollection({
+  type: 'data',
+  schema: z.object({
+    link: z.string(),
+    icon: z.string(),
+    title: z.string(),
+  }),
+})
+
 export const collections = {
   articles,
+  socials,
 }
