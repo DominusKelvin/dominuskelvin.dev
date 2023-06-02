@@ -7,17 +7,15 @@ import tkyt from '../tkyt.json'
 
 import { getCollection } from 'astro:content'
 
-const tkyt_upcoming = await getCollection('tkyt-upcoming')
-tkyt_upcoming.sort(
-  (a, b) => new Date(a.data.date).valueOf() - new Date(b.data.date).valueOf()
-)
-const upcoming = tkyt_upcoming.map((data) => data.data)
+const tkytUpcoming = await getCollection('tkyt', ({ data }) => {
+  return data.upcoming === true
+})
+const upcoming = tkytUpcoming.map((info) => {return info.data})
 
-const tkyt_sessions = await getCollection('tkyt-sessions')
-tkyt_sessions.sort(
-  (a, b) => new Date(a.data.date).valueOf() - new Date(b.data.date).valueOf()
-)
-const sessions = tkyt_sessions.map((data) => data.data)
+const tkytSessions = await getCollection('tkyt', ({ data }) => {
+  return data.upcoming !== true;
+})
+const sessions = tkytSessions.map((info) => {return info.data})
 
 const youtubeUrl = 'https://youtube.com/@dominuskelvin'
 ---
@@ -69,7 +67,7 @@ const youtubeUrl = 'https://youtube.com/@dominuskelvin'
           class="prose prose-lead: prose-a:underline prose-a:font-black prose-a:text-pink-600 sm:prose-xl"
         >
           Watch all <span class="font-black text-brown-700"
-            >{tkyt.sessions.length}
+            >{sessions.length}
           </span> sessions of <span
             class="text-purple font-extrabold prose sm:prose-xl"
             >Teach Kelvin Your Thing</span
