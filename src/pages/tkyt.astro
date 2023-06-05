@@ -7,15 +7,13 @@ import tkyt from '../tkyt.json'
 
 import { getCollection } from 'astro:content'
 
-const tkytUpcoming = await getCollection('tkyt', ({ data }) => {
-  return data.upcoming === true
-})
-const upcoming = tkytUpcoming.map((info) => {return info.data})
+const upcoming = (await getCollection('tkyt', ({ data }) => data.upcoming === true))
+  .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf())
+  .map((info) => {return info.data})
 
-const tkytSessions = await getCollection('tkyt', ({ data }) => {
-  return data.upcoming !== true;
-})
-const sessions = tkytSessions.map((info) => {return info.data})
+const sessions = (await getCollection('tkyt', ({ data }) => data.upcoming !== true))
+  .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf())
+  .map((info) => {return info.data})
 
 const youtubeUrl = 'https://youtube.com/@dominuskelvin'
 ---

@@ -1,8 +1,9 @@
 {
-    "title": "Drizzle ORM: The TypeScript ORM",
-    "teacher": "Alex Blokh",
-    "teacherUrl": "https://twitter.com/zeroskillz",
-    "date": "June 1, 2023",
-    "poster": "/tkyt/drizzle.png",
+    "title": "Building real-time web apps with Meteor and React",
+    "teacher": "Fred Maia",
+    "teacherUrl": "https://twitter.com/fredmaiaarantes",
+    "date": "June 5, 2023",
+    "poster": "/tkyt/meteor-react.png",
     "upcoming": true
 }
+  
