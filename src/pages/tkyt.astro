@@ -4,24 +4,31 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import Posters from '../components/Posters.astro'
 import { getCollection } from 'astro:content'
-// @ts-ignore
-function sortByDateDSC(a, b) {
-  return new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
-}
+
 // @ts-ignore
 function getSessionData(session) {
   return session.data
 }
-const upcoming = (
-  await getCollection('tkyt', ({ data }) => data.upcoming === true)
+const upcomingSessions = (
+  await getCollection(
+    'tkyt',
+    ({ data: session }) => typeof session.url === 'undefined'
+  )
 )
-  .sort(sortByDateDSC)
+  .sort(
+    (a, b) => new Date(a.data.date).valueOf() - new Date(b.data.date).valueOf()
+  )
   .map(getSessionData)
 
-const sessions = (
-  await getCollection('tkyt', ({ data }) => data.upcoming !== true)
+const pastSessions = (
+  await getCollection(
+    'tkyt',
+    ({ data: session }) => typeof session.url === 'string'
+  )
 )
-  .sort(sortByDateDSC)
+  .sort(
+    (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
+  )
   .map(getSessionData)
 
 const youtubeUrl = 'https://youtube.com/@dominuskelvin'
@@ -64,7 +71,7 @@ const youtubeUrl = 'https://youtube.com/@dominuskelvin'
             target="_blank">YouTube</a
           >
         </p>
-        <Posters sessions={upcoming} />
+        <Posters sessions={upcomingSessions} />
       </section>
       <section>
         <h2 class="text-purple-50 text-3xl font-black mb-2 sm:text-4xl">
@@ -74,14 +81,14 @@ const youtubeUrl = 'https://youtube.com/@dominuskelvin'
           class="prose prose-lead: prose-a:underline prose-a:font-black prose-a:text-pink-600 sm:prose-xl"
         >
           Watch all <span class="font-black text-brown-700"
-            >{sessions.length}
+            >{pastSessions.length}
           </span> sessions of <span
             class="text-purple font-extrabold prose sm:prose-xl"
             >Teach Kelvin Your Thing</span
           > on YouTube. Show your support and get notified of new sessions by subscribing
           on <a href={youtubeUrl} target="_blank">YouTube</a>
         </p>
-        <Posters sessions={sessions} />
+        <Posters sessions={pastSessions} />
       </section>
     </main>
     <Footer />
