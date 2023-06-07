@@ -3,15 +3,27 @@ import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import Posters from '../components/Posters.astro'
-import tkyt from '../tkyt.json'
-
-const upcoming = tkyt.upcoming.sort(
-  (a, b) => new Date(a.date).valueOf() - new Date(b.date).valueOf()
+import { getCollection } from 'astro:content'
+// @ts-ignore
+function sortByDateDSC(a, b) {
+  return new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
+}
+// @ts-ignore
+function getSessionData(session) {
+  return session.data
+}
+const upcoming = (
+  await getCollection('tkyt', ({ data }) => data.upcoming === true)
 )
+  .sort(sortByDateDSC)
+  .map(getSessionData)
 
-const sessions = tkyt.sessions.sort(
-  (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
+const sessions = (
+  await getCollection('tkyt', ({ data }) => data.upcoming !== true)
 )
+  .sort(sortByDateDSC)
+  .map(getSessionData)
+
 const youtubeUrl = 'https://youtube.com/@dominuskelvin'
 ---
 
@@ -62,7 +74,7 @@ const youtubeUrl = 'https://youtube.com/@dominuskelvin'
           class="prose prose-lead: prose-a:underline prose-a:font-black prose-a:text-pink-600 sm:prose-xl"
         >
           Watch all <span class="font-black text-brown-700"
-            >{tkyt.sessions.length}
+            >{sessions.length}
           </span> sessions of <span
             class="text-purple font-extrabold prose sm:prose-xl"
             >Teach Kelvin Your Thing</span
