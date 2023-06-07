@@ -25,10 +25,10 @@ const tkyt = defineCollection({
   schema: z.object({
     title: z.string(),
     teacher: z.string(),
-    teacherUrl: z.string(),
+    teacherUrl: z.string().url(),
     date: z.string(),
     poster: z.string(),
-    url: z.string().optional(),
+    url: z.string().url().optional(),
   }),
 })
 
