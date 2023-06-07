@@ -29,7 +29,6 @@ const tkyt = defineCollection({
     date: z.string(),
     poster: z.string(),
     url: z.string().optional(),
-    upcoming: z.boolean().optional(),
   }),
 })
 
