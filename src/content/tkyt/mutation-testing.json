@@ -1,8 +1,8 @@
 {
-    "title": "Mutation testing with StrykerJS",
-    "teacher": "Nico Jansen",
-    "teacherUrl": "https://twitter.com/_nicojs",
-    "date": "October 3, 2022",
-    "poster": "/tkyt/mutation-testing.png",
-    "url": "https://youtu.be/3FN1r43yJHU"
+  "title": "Mutation testing with StrykerJS",
+  "teacher": "Nico Jansen",
+  "teacherUrl": "https://twitter.com/_nicojs",
+  "date": "October 3, 2022",
+  "poster": "/tkyt/mutation-testing.png",
+  "url": "https://youtu.be/3FN1r43yJHU"
 }
