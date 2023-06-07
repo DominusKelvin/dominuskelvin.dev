@@ -1,9 +1,8 @@
 {
-    "title": "Building real-time web apps with Meteor and React",
-    "teacher": "Fred Maia",
-    "teacherUrl": "https://twitter.com/fredmaiaarantes",
-    "date": "June 5, 2023",
-    "poster": "/tkyt/meteor-react.png",
-    "upcoming": true
+  "title": "Building real-time web apps with Meteor and React",
+  "teacher": "Fred Maia",
+  "teacherUrl": "https://twitter.com/fredmaiaarantes",
+  "date": "July 10, 2023",
+  "poster": "/tkyt/meteor-react.png",
+  "upcoming": true
 }
-  
