@@ -20,7 +20,20 @@ const socials = defineCollection({
   }),
 })
 
+const tkyt = defineCollection({
+  type: 'data',
+  schema: z.object({
+    title: z.string(),
+    teacher: z.string(),
+    teacherUrl: z.string().url(),
+    date: z.string(),
+    poster: z.string(),
+    url: z.string().url().optional(),
+  }),
+})
+
 export const collections = {
   articles,
   socials,
+  tkyt,
 }
