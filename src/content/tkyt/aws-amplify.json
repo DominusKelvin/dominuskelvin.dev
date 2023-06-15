@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "title": "Building full-stack apps with AWS Amplify",
     "teacher": "Erik Hanchett",
     "teacherUrl": "https://twitter.com/ErikCH",
@@ -7,12 +6,3 @@
     "poster": "/tkyt/aws-amplify.png",
     "url": "https://youtu.be/kq0uQOW67qs"
 }
-=======
-  "title": "Building full-stack apps with AWS Amplify",
-  "teacher": "Erik Hanchett",
-  "teacherUrl": "https://twitter.com/ErikCH",
-  "date": "April 6, 2023",
-  "poster": "/tkyt/aws-amplify.png",
-  "url": "https://youtu.be/kq0uQOW67qs"
-}
->>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

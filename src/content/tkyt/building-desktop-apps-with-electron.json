@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "title": "Building desktop apps with Electron",
     "teacher": "Praneet Rohida",
     "teacherUrl": "https://twitter.com/praneet_ro",
@@ -7,12 +6,3 @@
     "poster": "/tkyt/building-desktop-apps-with-electron.png",
     "url": "https://youtu.be/TBvZ4CoCfnM"
 }
-=======
-  "title": "Building desktop apps with Electron",
-  "teacher": "Praneet Rohida",
-  "teacherUrl": "https://twitter.com/praneet_ro",
-  "date": "May 26, 2022",
-  "poster": "/tkyt/building-desktop-apps-with-electron.png",
-  "url": "https://youtu.be/TBvZ4CoCfnM"
-}
->>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

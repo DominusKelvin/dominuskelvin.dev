@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "title": "magic-regexp: the readable RegExp alternative",
     "teacher": "Daniel Roe",
     "teacherUrl": "https://twitter.com/danielcroe",
@@ -7,12 +6,3 @@
     "poster": "/tkyt/magic-regular-expressions.png",
     "url": "https://youtu.be/tgRMf0_Bgdo"
 }
-=======
-  "title": "magic-regexp: the readable RegExp alternative",
-  "teacher": "Daniel Roe",
-  "teacherUrl": "https://twitter.com/danielcroe",
-  "date": "January 16, 2023",
-  "poster": "/tkyt/magic-regular-expressions.png",
-  "url": "https://youtu.be/tgRMf0_Bgdo"
-}
->>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

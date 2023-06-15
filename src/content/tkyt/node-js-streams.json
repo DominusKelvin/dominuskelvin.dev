@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "title": "Node.js streams",
     "teacher": "Luciano Mammino",
     "teacherUrl": "https://twitter.com/loige",
@@ -7,12 +6,3 @@
     "poster": "/tkyt/node-js-streams.png",
     "url": "https://youtu.be/ldcfYB_mo6Q"
 }
-=======
-  "title": "Node.js streams",
-  "teacher": "Luciano Mammino",
-  "teacherUrl": "https://twitter.com/loige",
-  "date": "April 29, 2022",
-  "poster": "/tkyt/node-js-streams.png",
-  "url": "https://youtu.be/ldcfYB_mo6Q"
-}
->>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

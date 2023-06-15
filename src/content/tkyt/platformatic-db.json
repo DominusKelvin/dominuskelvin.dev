@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "title": "Getting started with Platformatic DB",
     "teacher": "Matteo Collina",
     "teacherUrl": "https://twitter.com/matteocollina",
@@ -7,12 +6,3 @@
     "poster": "/tkyt/platformatic-db.png",
     "url": "https://youtu.be/iDgE0OVeBWo"
 }
-=======
-  "title": "Getting started with Platformatic DB",
-  "teacher": "Matteo Collina",
-  "teacherUrl": "https://twitter.com/matteocollina",
-  "date": "November 24, 2022",
-  "poster": "/tkyt/platformatic-db.png",
-  "url": "https://youtu.be/iDgE0OVeBWo"
-}
->>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "title": "Building a blog with BlogHunch",
     "teacher": "Subham Mitra",
     "teacherUrl": "https://twitter.com/icodefuture",
@@ -7,12 +6,3 @@
     "poster": "/tkyt/bloghunch.png",
     "url": "https://youtu.be/jxg2FiAHBok"
 }
-=======
-  "title": "Building a blog with BlogHunch",
-  "teacher": "Subham Mitra",
-  "teacherUrl": "https://twitter.com/icodefuture",
-  "date": "January 18, 2023",
-  "poster": "/tkyt/bloghunch.png",
-  "url": "https://youtu.be/jxg2FiAHBok"
-}
->>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "title": "Learning TypeScript from scratch",
     "teacher": "Matt Pocock",
     "teacherUrl": "https://twitter.com/mattpocockuk",
@@ -7,12 +6,3 @@
     "poster": "/tkyt/learn-typescript.png",
     "url": "https://youtu.be/qcFmCKQDa2s"
 }
-=======
-  "title": "Learning TypeScript from scratch",
-  "teacher": "Matt Pocock",
-  "teacherUrl": "https://twitter.com/mattpocockuk",
-  "date": "July 19, 2022",
-  "poster": "/tkyt/learn-typescript.png",
-  "url": "https://youtu.be/qcFmCKQDa2s"
-}
->>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

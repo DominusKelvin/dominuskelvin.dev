@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "title": "Building resumable websites with Qwik",
     "teacher": "Manu Almeida",
     "teacherUrl": "https://twitter.com/manucorporat",
@@ -7,12 +6,3 @@
     "poster": "/tkyt/manu-resumability.png",
     "url": "https://youtu.be/umASDvjaKTY"
 }
-=======
-  "title": "Building resumable websites with Qwik",
-  "teacher": "Manu Almeida",
-  "teacherUrl": "https://twitter.com/manucorporat",
-  "date": "October 18, 2022",
-  "poster": "/tkyt/manu-resumability.png",
-  "url": "https://youtu.be/umASDvjaKTY"
-}
->>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

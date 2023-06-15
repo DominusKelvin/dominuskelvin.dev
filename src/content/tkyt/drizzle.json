@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "title": "Drizzle ORM: The TypeScript ORM",
     "teacher": "Alex Blokh",
     "teacherUrl": "https://twitter.com/zeroskillz",
@@ -7,12 +6,3 @@
     "poster": "/tkyt/drizzle.png",
     "upcoming": true
 }
-=======
-  "title": "Drizzle ORM: The TypeScript ORM",
-  "teacher": "Alex Blokh",
-  "teacherUrl": "https://twitter.com/zeroskillz",
-  "date": "June 1, 2023",
-  "poster": "/tkyt/drizzle.png",
-  "url": "https://youtu.be/rwqjR9eoE9Y"
-}
->>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

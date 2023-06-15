@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "title": "Building hybrid web apps with Nuxt",
     "teacher": "Daniel Roe",
     "teacherUrl": "https://twitter.com/danielcroe",
@@ -7,12 +6,3 @@
     "poster": "/tkyt/hybrid-apps-with-nuxt.png",
     "url": "https://youtu.be/OXcFuEyngqA"
 }
-=======
-  "title": "Building hybrid web apps with Nuxt",
-  "teacher": "Daniel Roe",
-  "teacherUrl": "https://twitter.com/danielcroe",
-  "date": "November 28, 2022",
-  "poster": "/tkyt/hybrid-apps-with-nuxt.png",
-  "url": "https://youtu.be/OXcFuEyngqA"
-}
->>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

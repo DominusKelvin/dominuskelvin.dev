@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "title": "Headless commerce with Shopify's Hydrogen",
     "teacher": "Bret Little",
     "teacherUrl": "https://twitter.com/little_breat",
@@ -7,12 +6,3 @@
     "poster": "/tkyt/hydrogen.png",
     "url": "https://youtu.be/dTh1esIxw1kj"
 }
-=======
-  "title": "Headless commerce with Shopify's Hydrogen",
-  "teacher": "Bret Little",
-  "teacherUrl": "https://twitter.com/little_breat",
-  "date": "May 17, 2023",
-  "poster": "/tkyt/hydrogen.png",
-  "url": "https://youtu.be/dTh1esIxw1kj"
-}
->>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

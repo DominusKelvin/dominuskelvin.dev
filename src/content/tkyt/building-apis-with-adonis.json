@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "title": "Building APIs with AdonisJS",
     "teacher": "Harminder Virk",
     "teacherUrl": "https://twitter.com/AmanVirk1",
@@ -7,12 +6,3 @@
     "poster": "/tkyt/building-apis-with-adonis.png",
     "url": "https://youtu.be/_MSQY3lqhCo"
 }
-=======
-  "title": "Building APIs with AdonisJS",
-  "teacher": "Harminder Virk",
-  "teacherUrl": "https://twitter.com/AmanVirk1",
-  "date": "May 4, 2022",
-  "poster": "/tkyt/building-apis-with-adonis.png",
-  "url": "https://youtu.be/_MSQY3lqhCo"
-}
->>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5
