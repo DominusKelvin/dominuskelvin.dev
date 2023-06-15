@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "title": "Building an API with Nest",
     "teacher": "Jay Cooper Bell",
     "teacherUrl": "https://twitter.com/JayCooperBell",
@@ -6,3 +7,12 @@
     "poster": "/tkyt/jay.png",
     "url": "https://youtu.be/nGPe0hgEnCQ"
 }
+=======
+  "title": "Building an API with Nest",
+  "teacher": "Jay Cooper Bell",
+  "teacherUrl": "https://twitter.com/JayCooperBell",
+  "date": "April 4, 2023",
+  "poster": "/tkyt/jay.png",
+  "url": "https://youtu.be/nGPe0hgEnCQ"
+}
+>>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

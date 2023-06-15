@@ -1,0 +1,7 @@
+{
+    "title": "Modifying Sails log prefix with prefix themes",
+    "url": "https://blog.sailscasts.com/modifying-sails-log-prefix-with-prefix-themes",
+    "excerpt": "Sails ship with an elegant logger called captains-log. In this article we will see how to modify your logs prefix with the prefixTheme option.",
+    "publication": "Sailscasts Blog",
+    "date": "April 24, 2022"
+}

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "title": "Serverless from scratch",
     "teacher": "Jason Lengstorf",
     "teacherUrl": "https://twitter.com/jlengstorf",
@@ -6,3 +7,12 @@
     "poster": "/tkyt/serverless-from-scratch.png",
     "url": "https://youtu.be/a_OVJvT7z6A"
 }
+=======
+  "title": "Serverless from scratch",
+  "teacher": "Jason Lengstorf",
+  "teacherUrl": "https://twitter.com/jlengstorf",
+  "date": "November 16, 2022",
+  "poster": "/tkyt/serverless-from-scratch.png",
+  "url": "https://youtu.be/a_OVJvT7z6A"
+}
+>>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

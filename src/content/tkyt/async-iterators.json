@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "title": "Async iterators in JavaScript and Node.js",
     "teacher": "Luciano Mammino",
     "teacherUrl": "https://twitter.com/loige",
@@ -6,3 +7,12 @@
     "poster": "/tkyt/async-iterators.png",
     "url": "https://youtu.be/l2CA9FtW1Pw"
 }
+=======
+  "title": "Async iterators in JavaScript and Node.js",
+  "teacher": "Luciano Mammino",
+  "teacherUrl": "https://twitter.com/loige",
+  "date": "May 14, 2021",
+  "poster": "/tkyt/async-iterators.png",
+  "url": "https://youtu.be/l2CA9FtW1Pw"
+}
+>>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

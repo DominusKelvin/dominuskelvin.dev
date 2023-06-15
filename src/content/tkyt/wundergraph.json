@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "title": "Getting started with Wundergraph",
     "teacher": "Jens Neuse",
     "teacherUrl": "https://twitter.com/jensneuse_de",
@@ -6,3 +7,12 @@
     "poster": "/tkyt/wundergraph.png",
     "url": "https://youtu.be/s9By-LXnxcI"
 }
+=======
+  "title": "Getting started with Wundergraph",
+  "teacher": "Jens Neuse",
+  "teacherUrl": "https://twitter.com/jensneuse_de",
+  "date": "January 11, 2023",
+  "poster": "/tkyt/wundergraph.png",
+  "url": "https://youtu.be/s9By-LXnxcI"
+}
+>>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "title": "Mutation testing with StrykerJS",
     "teacher": "Nico Jansen",
     "teacherUrl": "https://twitter.com/_nicojs",
@@ -6,3 +7,12 @@
     "poster": "/tkyt/mutation-testing.png",
     "url": "https://youtu.be/3FN1r43yJHU"
 }
+=======
+  "title": "Mutation testing with StrykerJS",
+  "teacher": "Nico Jansen",
+  "teacherUrl": "https://twitter.com/_nicojs",
+  "date": "October 3, 2022",
+  "poster": "/tkyt/mutation-testing.png",
+  "url": "https://youtu.be/3FN1r43yJHU"
+}
+>>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

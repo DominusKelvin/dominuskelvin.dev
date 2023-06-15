@@ -1,0 +1,7 @@
+{
+    "title": "Understanding Sails policies and best practices",
+    "url": "https://blog.sailscasts.com/understanding-sails-policies-and-best-practices",
+    "excerpt": "Policies are versatile tools in Sails for authorization and access control. They give you the ability to execute some logic before an action is run for the purpose of ascertaining if the request should continue or not. This article will introduce policies in Sails, explain how to go about creating policies in Sails and the best practices to observe when doing so.",
+    "publication": "Sailscasts Blog",
+    "date": "October 29, 2020"
+}

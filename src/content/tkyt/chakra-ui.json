@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "title": "Building a landing page with Charkra UI",
     "teacher": "Esther Agbaje",
     "teacherUrl": "https://twitter.com/_estheragbaje",
@@ -6,3 +7,12 @@
     "poster": "/tkyt/chakra-ui.png",
     "url": "https://youtu.be/0pgnR3p4o2w"
 }
+=======
+  "title": "Building a landing page with Charkra UI",
+  "teacher": "Esther Agbaje",
+  "teacherUrl": "https://twitter.com/_estheragbaje",
+  "date": "May 23, 2022",
+  "poster": "/tkyt/chakra-ui.png",
+  "url": "https://youtu.be/0pgnR3p4o2w"
+}
+>>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

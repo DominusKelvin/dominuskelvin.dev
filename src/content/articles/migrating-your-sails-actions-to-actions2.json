@@ -1,0 +1,7 @@
+{
+    "title": "Migrating your Sails actions to actions2",
+    "url": "https://blog.sailscasts.com/migrating-your-sails-actions-to-actions2",
+    "excerpt": "Actions are Sails mechanisms that are responsible for responding and handling requests to your Sails applications. This article will introduce you to the actions2 style of writing actions in Sails and how to start using it in your Sails applications.",
+    "publication": "Sailscasts Blog",
+    "date": "October 21, 2020"
+}

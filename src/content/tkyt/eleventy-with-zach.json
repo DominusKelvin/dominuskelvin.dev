@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "title": "Eleventy: the underdog site generator",
     "teacher": "Zach Leatherman",
     "teacherUrl": "https://twitter.com/zachleat",
@@ -6,3 +7,12 @@
     "poster": "/tkyt/eleventy-with-zach.png",
     "url": "https://youtu.be/ayOouJv6WYg"
 }
+=======
+  "title": "Eleventy: the underdog site generator",
+  "teacher": "Zach Leatherman",
+  "teacherUrl": "https://twitter.com/zachleat",
+  "date": "October 13, 2022",
+  "poster": "/tkyt/eleventy-with-zach.png",
+  "url": "https://youtu.be/ayOouJv6WYg"
+}
+>>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

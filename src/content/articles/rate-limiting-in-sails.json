@@ -1,0 +1,7 @@
+{
+    "title": "Rate limiting in Sails",
+    "url": "https://blog.sailscasts.com/rate-limiting-in-sails",
+    "excerpt": "Rate limiting helps you control the rate of incoming requests to an API. In this article we go over how to set up rate limiting in Sails",
+    "publication": "Sailscasts Blog",
+    "date": "February 2, 2023"
+}

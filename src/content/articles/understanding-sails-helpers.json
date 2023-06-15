@@ -1,0 +1,7 @@
+{
+    "title": "Understanding Sails helpers",
+    "url": "https://blog.sailscasts.com/understanding-sails-helpers",
+    "excerpt": "Sails provides you with a mechanism to share code in different places in your applications. This mechanism is called helpers. In this article we will dive into what helpers are and how to begin using them in your Sails application.",
+    "publication": "Sailscasts Blog",
+    "date": "December 9, 2020"
+}

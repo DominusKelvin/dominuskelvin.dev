@@ -1,0 +1,7 @@
+{
+    "title": "Disabling the sails global",
+    "url": "https://blog.sailscasts.com/disabling-the-sails-global",
+    "excerpt": "The sails global gives you access to the running Sails application instance and the properties and methods it exposes. In this article we will see how we can disable it and other ways to access the running Sails application instance.",
+    "publication": "Sailscasts Blog",
+    "date": "April 13, 2022"
+}

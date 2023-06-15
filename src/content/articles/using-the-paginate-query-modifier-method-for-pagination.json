@@ -1,0 +1,7 @@
+{
+    "title": "Using the paginate query modifier method for pagination",
+    "url": "https://blog.sailscasts.com/using-the-paginate-query-modifier-method-for-pagination",
+    "excerpt": "Sails provides a super useful syntactic sugar for paginating Waterline queries. In this article we will see how to get started using it in your applications.",
+    "publication": "Sailscasts Blog",
+    "date": "May 31, 2022"
+}

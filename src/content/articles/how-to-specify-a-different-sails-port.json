@@ -1,0 +1,7 @@
+{
+    "title": "How to specify a different Sails port",
+    "url": "https://blog.sailscasts.com/how-to-specify-a-different-sails-port",
+    "excerpt": "So you think Sails run on port 1337 by default? Wrong! In this article we will see how Sails really handles the default running port and how you can change it.",
+    "publication": "Sailscasts Blog",
+    "date": "August 12, 2021"
+}

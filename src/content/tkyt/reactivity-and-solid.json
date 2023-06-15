@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "title": "Reactivity and SolidJS",
     "teacher": "Ryan Carniato",
     "teacherUrl": "https://twitter.com/RyanCarniato",
@@ -6,3 +7,12 @@
     "poster": "/tkyt/reactivity-and-solid.png",
     "url": "https://youtu.be/N-Y32BqhoYQ"
 }
+=======
+  "title": "Reactivity and SolidJS",
+  "teacher": "Ryan Carniato",
+  "teacherUrl": "https://twitter.com/RyanCarniato",
+  "date": "October 13, 2022",
+  "poster": "/tkyt/reactivity-and-solid.png",
+  "url": "https://youtu.be/N-Y32BqhoYQ"
+}
+>>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5

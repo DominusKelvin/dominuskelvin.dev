@@ -3,8 +3,9 @@ import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import Posters from '../components/Posters.astro'
-import tkyt from '../tkyt.json'
+import { getCollection } from 'astro:content'
 
+<<<<<<< HEAD
 import { getCollection } from 'astro:content'
 
 const upcoming = (await getCollection('tkyt', ({ data }) => data.upcoming === true))
@@ -15,6 +16,34 @@ const sessions = (await getCollection('tkyt', ({ data }) => data.upcoming !== tr
   .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf())
   .map((info) => {return info.data})
 
+=======
+// @ts-ignore
+function getSessionData(session) {
+  return session.data
+}
+const upcoming = (
+  await getCollection(
+    'tkyt',
+    ({ data: session }) => typeof session.url === 'undefined'
+  )
+)
+  .sort(
+    (a, b) => new Date(a.data.date).valueOf() - new Date(b.data.date).valueOf()
+  )
+  .map(getSessionData)
+
+const sessions = (
+  await getCollection(
+    'tkyt',
+    ({ data: session }) => typeof session.url === 'string'
+  )
+)
+  .sort(
+    (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
+  )
+  .map(getSessionData)
+
+>>>>>>> 86799b00a2ba019589fb0ee637ee3b7203c1e0c5
 const youtubeUrl = 'https://youtube.com/@dominuskelvin'
 ---
 

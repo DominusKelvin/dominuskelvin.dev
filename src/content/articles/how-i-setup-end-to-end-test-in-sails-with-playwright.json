@@ -1,0 +1,7 @@
+{
+    "title": "How I set up end-to-end testing in Sails with Playwright",
+    "url": "https://blog.sailscasts.com/how-i-setup-end-to-end-test-in-sails-with-playwright",
+    "excerpt": "I have been researching Playwright for a while now and finally decided to take the plunge and set up end-to-end testing in the sailscasts.com codebase with it. Let me show you how I did it.",
+    "publication": "Sailscasts Blog",
+    "date": "August 26, 2022"
+}
