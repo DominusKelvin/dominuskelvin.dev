@@ -1,0 +1,7 @@
+{
+    "title": "How to configure ESLint and Standard JS in a Sails project",
+    "url": "https://blog.sailscasts.com/how-to-configure-eslint-and-standard-js-in-a-sails-project",
+    "excerpt": "Linting improves readability and consitency in a codebase. It is a must have for teams to enforce coding style guides and standards, fix typos, find potential bugs across a codebase. In this article, we will be setting up ESLint and StandardJS in a Sails project.",
+    "publication": "Sailscasts Blog",
+    "date": "February 4, 2021"
+}

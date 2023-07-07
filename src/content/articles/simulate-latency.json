@@ -1,0 +1,7 @@
+{
+    "title": "How to simulate latency in a Sails action",
+    "url": "https://blog.sailscasts.com/simulate-latency",
+    "excerpt": "Having trouble testing your loading state when making a request to your local Sails API from your local frontend? Here is how to simulate latency...",
+    "publication": "Sailscasts Blog",
+    "date": "December 2, 2021"
+}

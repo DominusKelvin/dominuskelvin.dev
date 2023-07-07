@@ -1,0 +1,7 @@
+{
+    "title": "Testing your Sails apps with Japa",
+    "url": "https://blog.sailscasts.com/testing-your-sails-apps-with-japa",
+    "excerpt": "Japa is an API-first testing framework. It focuses only on testing Node.js (backend) applications, thus resulting in a fast, small, and simple tests runner.",
+    "publication": "Sailscasts Blog",
+    "date": "May 20, 2022"
+}

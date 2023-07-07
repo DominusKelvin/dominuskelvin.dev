@@ -1,0 +1,7 @@
+{
+    "title": "Understanding Waterline projections",
+    "url": "https://blog.sailscasts.com/understanding-waterline-projections",
+    "excerpt": "Projections make for faster performance and better security when sending back records to a client by allowing you to select or omit fields to be returned.",
+    "publication": "Sailscasts Blog",
+    "date": "March 18, 2021"
+}

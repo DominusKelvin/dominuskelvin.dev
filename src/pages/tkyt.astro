@@ -5,31 +5,13 @@ import Footer from '../components/Footer.astro'
 import Posters from '../components/Posters.astro'
 import { getCollection } from 'astro:content'
 
-// @ts-ignore
-function getSessionData(session) {
-  return session.data
-}
-const upcoming = (
-  await getCollection(
-    'tkyt',
-    ({ data: session }) => typeof session.url === 'undefined'
-  )
-)
-  .sort(
-    (a, b) => new Date(a.data.date).valueOf() - new Date(b.data.date).valueOf()
-  )
-  .map(getSessionData)
+const upcoming = (await getCollection('tkyt', ({ data }) => data.upcoming === true))
+  .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf())
+  .map((info) => {return info.data})
 
-const sessions = (
-  await getCollection(
-    'tkyt',
-    ({ data: session }) => typeof session.url === 'string'
-  )
-)
-  .sort(
-    (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
-  )
-  .map(getSessionData)
+const sessions = (await getCollection('tkyt', ({ data }) => data.upcoming !== true))
+  .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf())
+  .map((info) => {return info.data})
 
 const youtubeUrl = 'https://youtube.com/@dominuskelvin'
 ---

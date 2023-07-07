@@ -1,0 +1,7 @@
+{
+    "title": "Build a URL shortener with Sails",
+    "url": "https://blog.sailscasts.com/build-a-url-shortener-with-sails",
+    "excerpt": "A URL shortener is basically a tool that you give a long URL and it gives a shorter URL for convenience. In this article we will build a basic URL shortener using Sails.",
+    "publication": "Sailscasts Blog",
+    "date": "May 4, 2021"
+}

@@ -1,0 +1,7 @@
+{
+    "title": "Testing Sails Applications with Mocha and SuperTest",
+    "url": "https://blog.sailscasts.com/testing-sails-applications-with-mocha-and-supertest",
+    "excerpt": "Testing or automated testing helps ensure code quality and serves as a measure to prevent you or other members of your team from shipping code with defects aka bugs to production. In this article we will look at setting up automated tests in Sails applications using Mocha and Supertest.",
+    "publication": "Sailscasts Blog",
+    "date": "January 26, 2021"
+}

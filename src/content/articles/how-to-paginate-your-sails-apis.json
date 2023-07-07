@@ -1,0 +1,7 @@
+{
+    "title": "How to paginate your Sails APIs",
+    "url": "https://blog.sailscasts.com/how-to-paginate-your-sails-apis",
+    "excerpt": "Pagination helps splits the dataset being returned to a user into smaller chunks and return the rest as requested. In this article we will look at a couple of options on implementing pagination in your Sails APIs.",
+    "publication": "Sailscasts Blog",
+    "date": "January 12, 2021"
+}

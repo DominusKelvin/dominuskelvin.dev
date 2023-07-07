@@ -1,0 +1,7 @@
+{
+    "title": "Setting up API monitoring with Treblle in Sails",
+    "url": "https://blog.sailscasts.com/setting-up-api-monitoring-with-treblle-in-sails",
+    "excerpt": "I recently discovered Treblle - an API monitoring service that let's you monitor your APIs in production. Here is how to set it up in a Sails project.",
+    "publication": "Sailscasts Blog",
+    "date": "October 28, 2022"
+}

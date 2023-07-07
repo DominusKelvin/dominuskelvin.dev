@@ -1,0 +1,7 @@
+{
+    "title": "Understanding Sails routes",
+    "url": "https://blog.sailscasts.com/understanding-sails-routes",
+    "excerpt": "Routes are URLs that a web client use to communicate with your application. In this article you will learn how Sails handles routes and how you can use them in your application.",
+    "publication": "Sailscasts Blog",
+    "date": "November 11, 2020"
+}

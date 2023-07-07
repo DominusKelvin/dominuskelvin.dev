@@ -1,8 +1,8 @@
 {
-  "title": "Drizzle ORM: The TypeScript ORM",
-  "teacher": "Alex Blokh",
-  "teacherUrl": "https://twitter.com/zeroskillz",
-  "date": "June 1, 2023",
-  "poster": "/tkyt/drizzle.png",
-  "url": "https://youtu.be/rwqjR9eoE9Y"
+    "title": "Drizzle ORM: The TypeScript ORM",
+    "teacher": "Alex Blokh",
+    "teacherUrl": "https://twitter.com/zeroskillz",
+    "date": "June 1, 2023",
+    "poster": "/tkyt/drizzle.png",
+    "upcoming": true
 }
