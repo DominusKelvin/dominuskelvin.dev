@@ -12,7 +12,6 @@ async function updateTkytTitles(pathToSessions = '../src/content/tkyt') {
     const files = await fs.readdir(pathToSessions)
     let jsonFiles = []
 
-    // Read all JSON files and store their content
     for (const file of files) {
       if (path.extname(file) === '.json') {
         const filePath = path.join(pathToSessions, file)
@@ -22,10 +21,8 @@ async function updateTkytTitles(pathToSessions = '../src/content/tkyt') {
       }
     }
 
-    // Sort files based on the date field
     jsonFiles.sort((a, b) => new Date(a.json.date) - new Date(b.json.date))
 
-    // Update titles
     for (let i = 0; i < jsonFiles.length; i++) {
       const { file, json } = jsonFiles[i]
       const filePath = path.join(pathToSessions, file)
