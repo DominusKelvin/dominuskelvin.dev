@@ -12,19 +12,6 @@
   },
   "projects": [
     {
-      "guid": "sails",
-      "name": "Sails.js",
-      "description": "The MVC framework for Node.js. Sails makes it easy to build custom, enterprise-grade Node.js apps. Build practica production-ready Node.js apps in a matter of weeks, not months. Sails is the most popular MVC framework for Node.js, designed to emulate the familiar MVC pattern of frameworks like Ruby on Rails, but with support for the requirements of modern apps: data-driven APIs with a scalable, service-oriented architecture.",
-      "webpageUrl": {
-        "url": "https://sailsjs.com"
-      },
-      "repositoryUrl": {
-        "url": "https://github.com/balderdashy/sails"
-      },
-      "licenses": ["spdx:MIT"],
-      "tags": ["web-development"]
-    },
-    {
       "guid": "tbjs",
       "name": "The Boring JavaScript Stack",
       "description": "The reliable full-stack JavaScript stack. Ship products with battle-tested technologies. Say no to chasing JavaScript trends.",
