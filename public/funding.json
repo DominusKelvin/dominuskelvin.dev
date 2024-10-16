@@ -1,0 +1,118 @@
+{
+  "version": "v1.0.0",
+  "entity": {
+    "type": "individual",
+    "role": "maintainer",
+    "name": "Kelvin Omereshone",
+    "email": "koo@hey.com",
+    "description": "Lead maintainer of Sails and creator of The Boring JavaScript Stack. Helping developers build business on JavaScript by providing free and open source tools. Teaching fullstack JavaScript for web development.",
+    "webpageUrl": {
+      "url": "https://dominuskelvin.dev"
+    }
+  },
+  "projects": [
+    {
+      "guid": "sails",
+      "name": "Sails.js",
+      "description": "The MVC framework for Node.js. Sails makes it easy to build custom, enterprise-grade Node.js apps. Build practica production-ready Node.js apps in a matter of weeks, not months. Sails is the most popular MVC framework for Node.js, designed to emulate the familiar MVC pattern of frameworks like Ruby on Rails, but with support for the requirements of modern apps: data-driven APIs with a scalable, service-oriented architecture.",
+      "webpageUrl": {
+        "url": "https://sailsjs.com"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/balderdashy/sails"
+      },
+      "licenses": ["spdx:MIT"],
+      "tags": ["web-development"]
+    },
+    {
+      "guid": "tbjs",
+      "name": "The Boring JavaScript Stack",
+      "description": "The reliable full-stack JavaScript stack. Ship products with battle-tested technologies. Say no to chasing JavaScript trends.",
+      "webpageUrl": {
+        "url": "https://docs.sailscasts.com/boring-stack",
+        "wellKnown": "https://docs.sailscasts.com/.well-known/funding-manifest-urls"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/sailscastshq/boring-stack",
+        "wellKnown": "https://github.com/sailscastshq/boring-stack/blob/main/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:MIT"],
+      "tags": [
+        "web-development",
+        "programming",
+        "software-engineering",
+        "developer-tools",
+        "computers",
+        "development"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "my-bank",
+        "type": "bank",
+        "address": "",
+        "description": "Will accept direct bank transfers to my Wise account. Please e-mail me for details."
+      },
+      {
+        "guid": "my-github-sponsor",
+        "type": "payment-provider",
+        "address": "https://github.com/sponsors/dominuskelvin",
+        "description": "Pay with your debit/credit card through GitHub sponsorship gateway."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "generous-backer",
+        "status": "active",
+        "name": "🍺 Generous Backer",
+        "description": "You are serious about supporting OSS! Your name will be listed under a dedicated Generous Backers section in sailscastshq/boring-stack README.",
+        "amount": 80,
+        "currency": "USD",
+        "frequency": "monthly",
+        "channels": ["my-github-sponsor"]
+      },
+      {
+        "guid": "gold-sponsor",
+        "status": "active",
+        "name": "🥇 Gold Sponsor",
+        "description": "This will cover the cost of me developer working part-time on the projects. You can have your company's logo placed on: The README and Sponsors files of the sailscastshq/boring-stack and relevant repos.",
+        "amount": 1200,
+        "currency": "USD",
+        "frequency": "monthly",
+        "channels": ["my-github-sponsor"]
+      },
+      {
+        "guid": "diamond-sponsor",
+        "status": "active",
+        "name": "💎 Diamond Sponsor",
+        "description": "Simultaneously support both my work on Sails and The Boring JavaScript Stack at the highest tier.",
+        "amount": 5000,
+        "currency": "USD",
+        "frequency": "monthly",
+        "channels": ["my-github-sponsor"]
+      },
+      {
+        "guid": "tbjs-partners",
+        "status": "active",
+        "name": "The Boring JavaScript Stack Partners",
+        "description": "Get unstuck, get help planning your app, and learn about new features from the creator of The Boring Stack.",
+        "amount": 950,
+        "currency": "USD",
+        "frequency": "monthly",
+        "channels": ["my-github-sponsor"]
+      },
+      {
+        "guid": "angel-plan",
+        "status": "active",
+        "name": "Goodwill plan",
+        "description": "Pay anything you wish to show your goodwill for the project.",
+        "amount": 0,
+        "currency": "USD",
+        "frequency": "one-time",
+        "channels": ["my-bank"]
+      }
+    ]
+  }
+}
