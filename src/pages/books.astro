@@ -5,7 +5,7 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 
 const books = (await getCollection('books')).sort(
-  (a, b) => new Date(b.data.title).valueOf() - new Date(a.data.title).valueOf()
+  (a, b) => b.data.readCount -  a.data.readCount
 )
 ---
 
