@@ -28,7 +28,7 @@ const books = (await getCollection('books')).sort(
     </span>
   )}
              <a href={book.data.url} target="_blank">
-            <img src={book.data.cover} alt={`${book.data.title} cover`} class="w-full object-cover mb-4 rounded-lg" />
+            <img loading="lazy" src={book.data.cover} alt={`${book.data.title} cover`} class="w-full object-cover mb-4 rounded-lg" />
             </a>
             <h2 class="text-xl font-semibold mb-2 text-center">
               {book.data.title}
