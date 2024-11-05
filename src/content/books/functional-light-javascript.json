@@ -1,0 +1,9 @@
+{
+  "title": "Functional-Light JavaScript",
+  "subtitle": "Balanced, Pragmatic FP in JavaScript",
+  "author": "Kyle Simpson",
+  "cover": "/books/functional-light-js.png",
+  "readCount": 0,
+  "url": "https://www.example.com/books/100m-leads",
+  "tags": ["javascript", "functional programming", "programming", "tech"]
+}

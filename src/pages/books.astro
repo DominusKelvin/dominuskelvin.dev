@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content'
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+
+const books = (await getCollection('books')).sort(
+  (a, b) => b.data.readCount -  a.data.readCount
+)
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title="Books | Dominus Kelvin" description={`Explore my curated collection of ${books.length} insightful books that shaped my journey in tech and beyond`} image='/books.png'/>
+  </head>
+  <body>
+    <Header />
+    <main  class="min-h-screen p-4 sm:p-0 sm:mx-auto sm:w-9/12 lg:w-7/12 my-4 sm:my-12">
+      <h1 class="text-pink-700 text-5xl sm:text-7xl font-black mb-16">
+        I own {books.length} books
+      </h1>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {books.map((book) => (
+          <article class="relative border rounded-lg p-4 hover:shadow-lg transition-shadow flex flex-col items-center">
+             {book.data.readCount >= 1 && (
+    <span class="absolute -top-2 -right-2 bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full" title="Number of times I have read this book">
+      {book.data.readCount}x
+    </span>
+  )}
+             <a href={book.data.url} target="_blank">
+            <img loading="lazy" src={book.data.cover} alt={`${book.data.title} cover`} class="w-full object-cover mb-4 rounded-lg" />
+            </a>
+            <h2 class="text-xl font-semibold mb-2 text-center">
+              {book.data.title}
+            </h2>
+            {book.data.author && (
+              <p class="text-gray-600 mb-2 text-center">{book.data.author}</p>
+            )}
+            <ul>
+              {book.data.tags.map((tag) => (
+                <li class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full mr-2 mb-2">
+                  {tag}
+                </li>
+              ))}
+
+            </ul>
+          </article>
+        ))}
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

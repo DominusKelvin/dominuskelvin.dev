@@ -32,8 +32,22 @@ const tkyt = defineCollection({
   }),
 })
 
+const books = defineCollection({
+  type: 'data',
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string().optional(),
+    author: z.string(),
+    cover: z.string(),
+    readCount: z.number(),
+    url: z.string().url(),
+    tags: z.array(z.string()),
+  }),
+})
+
 export const collections = {
   articles,
   socials,
   tkyt,
+  books,
 }
