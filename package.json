@@ -1,6 +1,6 @@
 {
   "name": "dominuskelvin",
-  "version": "3.2.59",
+  "version": "3.2.60",
   "private": true,
   "scripts": {
     "dev": "astro dev",
