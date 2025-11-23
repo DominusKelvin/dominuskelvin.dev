@@ -15,7 +15,7 @@ export interface Props {
 }
 
 const {
-  content: { title, description, pubDate, updatedDate },
+  content: { title, description, pubDate, updatedDate, heroImage },
 } = Astro.props
 
 const tweetText = `I just read "${title}" by @Dominus_Kelvin \n`
@@ -29,7 +29,7 @@ const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(
 
 <html lang="en" class="scroll-smooth">
   <head>
-    <BaseHead title={title} description={description}, image='/blog.png' />
+    <BaseHead title={title} description={description} image={heroImage} />
   </head>
 
   <body >
@@ -51,6 +51,7 @@ const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(
           )
         }
       </p>
+      {heroImage && <img src={heroImage} alt={title} class="w-full rounded-lg mb-8" />}
       <article
         class="prose lg:prose-lg prose-md prose-a:no-underline prose-a:font-semibold prose-a:border prose-a:border-transparent prose-a:border-b-green hover:prose-a:text-green prose-code:before:content-none prose-code:after:content-none prose-code:text-green"
       >
