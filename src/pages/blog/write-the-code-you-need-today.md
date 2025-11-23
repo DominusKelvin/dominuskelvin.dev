@@ -48,6 +48,6 @@ I like you to be frugal with your code. This hold tremendous benefits for you as
 
 I hope this concept don't fool you by its simplicity, try applying it and you will begin reaping the above benefits(and more). Write what you need! write what is important! write what is needful! Don't get carried away! Write what is required. In essence - **Write the code you need today**
 
-As always, you can [tweet](https://twitter.com/dominus_kelvin) at me on Twitter your thoughts on this article.
+As always, you can [tweet](https://x.com/dominus_kelvin) at me on Twitter your thoughts on this article.
 
 Code expressively 🎨, <br /> Kelvin

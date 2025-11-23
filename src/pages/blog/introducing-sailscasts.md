@@ -5,7 +5,7 @@
  pubDate: 'September 7, 2020'
 ---
 
-Hello there. I recently announced in this [tweet](https://twitter.com/Dominus_Kelvin/status/1302614636227956736?s=20) that I will be working on an exclusive online platform for learning Sails.js and backend JavaScript. This article is to resound why I decided to work on the project.
+Hello there. I recently announced in this [tweet](https://x.com/Dominus_Kelvin/status/1302614636227956736?s=20) that I will be working on an exclusive online platform for learning Sails.js and backend JavaScript. This article is to resound why I decided to work on the project.
 
 ## The inspiration
 
@@ -17,10 +17,10 @@ I strongly believe JavaScript is an empowering language and more developers coul
 - Deployments and scaling
 - and so much more...
 
-It's a project I feel strongly about and I am committing the next six months to bringing it to fruition. I will be [tweeting](https://twitter.com/dominus_kelvin) and writing on the journey as it goes on.
+It's a project I feel strongly about and I am committing the next six months to bringing it to fruition. I will be [tweeting](https://x.com/dominus_kelvin) and writing on the journey as it goes on.
 
 You can also subscribe for the early-bird list [here](https://sailscast.com) for sneak peaks on the development process as well as bonuses when the project launches.
 
-P.S: You can follow [@sails_casts](https://twitter.com/sails_casts) on twitter for updates as well.
+P.S: You can follow [@sails_casts](https://x.com/sails_casts) on twitter for updates as well.
 
 Code expressively 🎨, <br /> Kelvin

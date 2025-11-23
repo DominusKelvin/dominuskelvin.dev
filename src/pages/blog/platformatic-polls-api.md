@@ -5,7 +5,7 @@
  pubDate: 'March 29, 2023'
 ---
 
-After having [Matteo Collina](https://twitter.com/matteocollina) come to a [TKYT session to teach me Platformatic DB](https://youtu.be/iDgE0OVeBWo), I was keen on checking out [Platformatic](https://platformatic.dev/) - a tech(and company) that aims to remove the friction of day-to-day backend development by providing a suite of open-source tools.
+After having [Matteo Collina](https://x.com/matteocollina) come to a [TKYT session to teach me Platformatic DB](https://youtu.be/iDgE0OVeBWo), I was keen on checking out [Platformatic](https://platformatic.dev/) - a tech(and company) that aims to remove the friction of day-to-day backend development by providing a suite of open-source tools.
 
 Since it's been a while I wrote a guide article, and with **Platformatic inviting me to participate in their Launch Week**, I decided to build a polls API using one of the Platformatic tools - Platformatic DB
 
@@ -500,7 +500,7 @@ app.post('/polls/new', async function (request, response) {
   return {
     poll: await savePollWithOptions(
       request.body.poll,
-      request.body.pollOptions
+      request.body.pollOptions,
     ),
   }
 })

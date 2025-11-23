@@ -9,7 +9,7 @@
 
 <!-- <img src="/images/covers/guppy-card.png" width="350"> -->
 
-About a month ago(precisely on the 18th of October, 2021), I launched [guppy](https://guppy.sailscasts.com) on [Twitter](https://twitter.com/Dominus_Kelvin/status/1450221793344696324?s=20) after teasing about building it for a while [here](https://twitter.com/Dominus_Kelvin/status/1428057558145814530?s=20), also [here](https://twitter.com/Dominus_Kelvin/status/1431479983923515392?s=20) and [there](https://twitter.com/Dominus_Kelvin/status/1432152058250121220?s=20)
+About a month ago(precisely on the 18th of October, 2021), I launched [guppy](https://guppy.sailscasts.com) on [Twitter](https://x.com/Dominus_Kelvin/status/1450221793344696324?s=20) after teasing about building it for a while [here](https://x.com/Dominus_Kelvin/status/1428057558145814530?s=20), also [here](https://x.com/Dominus_Kelvin/status/1431479983923515392?s=20) and [there](https://x.com/Dominus_Kelvin/status/1432152058250121220?s=20)
 
 So if memory serves me correctly, it took about 3 months(August 18th - October 18th, 2021) to roll out the first version of guppy to the public!
 
@@ -25,7 +25,7 @@ Also I have always been a fan of the Laravel community and they don't have short
 
 I however decided I don't know enough to build a tool like this and for months I just suck it up and went about my business. But it kept coming back and to the point I couldn't put it away no more...
 
-Finally, I decided to take a stab at a [POC](https://twitter.com/Dominus_Kelvin/status/1428057558145814530?s=20) and boy was I right to! Just having a glimpse of what the thing I was concocting and hacking my way into can be, made me not want to stop.
+Finally, I decided to take a stab at a [POC](https://x.com/Dominus_Kelvin/status/1428057558145814530?s=20) and boy was I right to! Just having a glimpse of what the thing I was concocting and hacking my way into can be, made me not want to stop.
 
 So I kept working on "my thing" as I called it on Twitter(I haven't gotten a name for it then or didn't I?).
 
@@ -44,7 +44,7 @@ I had a lot of learning moments while building guppy and times I just wanted to 
 
 I hit this point where I couldn't get async code to run and guppy kept returning pending promises. It was a rather interesting problem which I however managed to solve in a way that made guppy capable of running async code with or without the user adding the `async` keyword! (See the [docs](https://guppy-docs.sailscasts.com) for guppy for more on that)
 
-I also had it with streams and had to talk to some rather helpful folks like [Luciano Mammino](https://twitter.com/loige) and another of my friend on the internet(who funny enough I don't happen to know his Twitter handle). It was a learning moment(s).
+I also had it with streams and had to talk to some rather helpful folks like [Luciano Mammino](https://x.com/loige) and another of my friend on the internet(who funny enough I don't happen to know his Twitter handle). It was a learning moment(s).
 
 ## Launch it!
 
@@ -64,7 +64,7 @@ After that was done! I cleaned up guppy and then it happened - that feeling of "
 
 Let's skip the mental tussle I had to go through with Imposter Syndrome and cut right to the chase where I tell it "Not today", summoned courage and... Launched!
 
-I launched first on [Twitter](https://twitter.com/Dominus_Kelvin/status/1450221793344696324?s=20) with a [demo](https://www.youtube.com/watch?v=9eCNERqwH1c) of course.
+I launched first on [Twitter](https://x.com/Dominus_Kelvin/status/1450221793344696324?s=20) with a [demo](https://www.youtube.com/watch?v=9eCNERqwH1c) of course.
 
 I went on to Launch of [ProductHunt](https://www.producthunt.com/posts/guppy-2) and I was shocked(I still am) at the upvotes guppy received. I also announced on [IndieHacker](https://www.indiehackers.com/product/guppy) and guppy picked by [daily.dev](https://app.daily.dev/posts/wQw-x8mT7) that same day!
 

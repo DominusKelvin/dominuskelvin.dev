@@ -27,7 +27,7 @@ What this means is that with osquery and a basic understanding of SQL you can pu
 
 Like everything I am interested in, I did a bit of research to understand the genesis of osquery and the why of osquery and here are my findings:
 
-osquery was created in 2014 by [Mike Arpaia](https://twitter.com/mikearpaia) at Facebook for the purpose of **low-level operating system monitoring**.
+osquery was created in 2014 by [Mike Arpaia](https://x.com/mikearpaia) at Facebook for the purpose of **low-level operating system monitoring**.
 
 It was meant to be a light-weight solution to the problem of getting real-time insight into the current state of your infrastructure.
 
@@ -86,4 +86,4 @@ osquery just gave me more reasons to write SQL and beyond that I think it's an a
 
 I will sure want to see how I can be a sort of security engineer(in trainig) by leveraging osquery and it's tables.
 
-If you do try osquery let me know what you think on [Twitter](https://twitter.com/dominus_kelvin)
+If you do try osquery let me know what you think on [Twitter](https://x.com/dominus_kelvin)

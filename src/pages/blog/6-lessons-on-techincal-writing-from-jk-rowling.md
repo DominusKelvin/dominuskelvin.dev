@@ -5,7 +5,7 @@
  pubDate: '20 September, 2022'
 ---
 
-I'm a big fan of the Harry Potter books and movies. I'm a bigger fan of the author - [J.K. Rowling](https://twitter.com/jk_rowling).
+I'm a big fan of the Harry Potter books and movies. I'm a bigger fan of the author - [J.K. Rowling](https://x.com/jk_rowling).
 
 I have been watching a lot of her interviews and speeches lately and I was able to draw out 10 lessons on technical writing from her. Here they are:
 
@@ -21,7 +21,7 @@ I read a ton of technical articles and documentations and this has helped shaped
 
 > ...You will possibly go through the phase where you will imitate your favourite writers and that's okay... - J.K. Rowling
 
-From reading as many technical articles as possible, you get to have a feel of what writing style you like and you easily understand. For me, that was [Sarah Drasner's](https://twitter.com/sarah_edo).
+From reading as many technical articles as possible, you get to have a feel of what writing style you like and you easily understand. For me, that was [Sarah Drasner's](https://x.com/sarah_edo).
 
 I love the simplicity and humour in her writing and how she can make ideas simple. Even now when I write I still think of her influence on my work and if she will approve the article if she gets to proofread it.
 

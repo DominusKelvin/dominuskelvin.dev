@@ -73,7 +73,7 @@ beforeAll(function (done) {
       // (for example, you might want to create some records in the database)
 
       return done()
-    }
+    },
   )
 })
 
@@ -112,7 +112,7 @@ beforeAll(function (done) {
       // (for example, you might want to create some records in the database)
 
       return done()
-    }
+    },
   )
 })
 
@@ -171,6 +171,6 @@ it('Signs up new user', (done) => {
 
 Learning to write automated tests would allow you more confidence in the code you write. I hope this setup would help you on your journey in testing Sails applications.
 
-As always, you can [tweet](https://twitter.com/dominus_kelvin) at me on Twitter your thoughts on this article.
+As always, you can [tweet](https://x.com/dominus_kelvin) at me on Twitter your thoughts on this article.
 
 Code expressively 🎨, <br /> Kelvin

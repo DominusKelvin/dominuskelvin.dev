@@ -35,6 +35,6 @@ As you can see above, osquery is really being deployed and used as a base for a 
 
 The above question is something I am looking into as I myself have used osquery to find process hogging memory, my local machine info, etc. But I belive that only scratch the surface of what we can use it for on a day to day.
 
-I will be researching in this light bearing the purpose of osquery in mind and will definitely share my finding in this blog as well as on [Twitter](https://twitter.com/dominus_kelvin)
+I will be researching in this light bearing the purpose of osquery in mind and will definitely share my finding in this blog as well as on [Twitter](https://x.com/dominus_kelvin)
 
 Stay tuned...

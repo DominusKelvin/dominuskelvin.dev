@@ -102,6 +102,6 @@ Big kudos to the awesome brains in the flutter community for their willingness t
 
 I hope this little piece will help you if you have to do something similar.
 
-As always, you can [tweet](https://twitter.com/dominus_kelvin) at me on Twitter your thoughts on this article.
+As always, you can [tweet](https://x.com/dominus_kelvin) at me on Twitter your thoughts on this article.
 
 Code expressively 🎨, <br /> Kelvin

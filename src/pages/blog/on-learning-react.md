@@ -7,7 +7,7 @@
 
 > LEARNING: the acquisition of knowledge or skills through study, experience, or being taught.
 
-Hello there 👋! It's no secret that I am a big fan of [Vue.js](https://vuejs.org) and I really love the framework because of it's simplicity and developer love. I have been very much active in the Vue community, writing and maintain open-source Vue [plugins](https://www.npmjs.com/package/vue-cli-plugin-chakra-ui), writing [articles](https://www.smashingmagazine.com/2020/07/accessible-front-end-application-chakra-ui-nuxtjs/) and even started [Nuxt.js Africa](https://twitter.com/nuxtjs_africa) in a bid to spread the word about the framework and foster more adoption in Africa(I haven't been really active in this though).
+Hello there 👋! It's no secret that I am a big fan of [Vue.js](https://vuejs.org) and I really love the framework because of it's simplicity and developer love. I have been very much active in the Vue community, writing and maintain open-source Vue [plugins](https://www.npmjs.com/package/vue-cli-plugin-chakra-ui), writing [articles](https://www.smashingmagazine.com/2020/07/accessible-front-end-application-chakra-ui-nuxtjs/) and even started [Nuxt.js Africa](https://x.com/nuxtjs_africa) in a bid to spread the word about the framework and foster more adoption in Africa(I haven't been really active in this though).
 
 I literally got my first professional software engineering role back in 2018 as a front-end engineer using the Vue framework so you can see clearly I have been Vue for quite a while, so why learn React?
 
@@ -45,6 +45,6 @@ As far as practice goes, I plan on using React for building the interactive part
 
 So that's it! I will be sharing what I find in using React to build Sailscasts(privately first to my email list so go [subscribe](https://sailscasts.com)!) and a bit of the journey might be shared here on this blog as well.
 
-As always, you can [tweet](https://twitter.com/dominus_kelvin) at me on Twitter your thoughts on this article.
+As always, you can [tweet](https://x.com/dominus_kelvin) at me on Twitter your thoughts on this article.
 
 Code expressively 🎨, <br /> Kelvin
