@@ -20,7 +20,7 @@ I really want this to be in the hands of potential developers it might help out 
 
 Oh that's thoughtful! Thanks. Here is how you can help:
 
-- Follow me on [twitter](https://twitter.com/dominus_kelvin)
+- Follow me on [twitter](https://x.com/dominus_kelvin)
 - Share the world about Sailscasts on Twitter(or other platforms) to those you think it will be relevant to. Don't forget to mention me so I will retweet as well.
 - Subscribe to the early access list found [here](https://sailscasts.com)
 
@@ -28,6 +28,6 @@ I hope to be writing an article along the line: **Launched Sailscasts!** soonest
 
 Until next time, let me get busy bringing Sailscasts to the world.
 
-P.S: You can follow [@sails_casts](https://twitter.com/sails_casts) on twitter for updates as well.
+P.S: You can follow [@sails_casts](https://x.com/sails_casts) on twitter for updates as well.
 
 Code expressively 🎨, <br /> Kelvin

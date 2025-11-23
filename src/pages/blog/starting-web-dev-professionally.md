@@ -58,7 +58,7 @@ It was my introduction to the world of technical writing and I liked it because 
 
 After a couple of articles on [Medium](https://medium.com/@dominuskelvin), I decided to try my hand on paid writing and I submitted a proposal to Smashing Magazine and I got accepted as a writer! I was thrilled as I was about to make some income from doing what I’ve always loved - writing about the technologies I am excited about and problems I was solving. It felt like cheating.
 
-I made my debut on [Smashing Magazine](https://www.smashingmagazine.com/author/kelvin-omereshone/) with the **[Setting Up API Mocking With Mirage JS And Vue.js](https://www.smashingmagazine.com/2020/02/api-mocking-mirage-vue-javascript/).** The inspiration for the article was from a Tweet by the creator of Mirage JS and I loved the idea of Mirage, I studied it some more, played with it and pitched the idea to Smashing Magazine and they liked it. I went on to make over [$10,000 from Technical Writing](https://twitter.com/Dominus_Kelvin/status/1625449822605164545?s=20)
+I made my debut on [Smashing Magazine](https://www.smashingmagazine.com/author/kelvin-omereshone/) with the **[Setting Up API Mocking With Mirage JS And Vue.js](https://www.smashingmagazine.com/2020/02/api-mocking-mirage-vue-javascript/).** The inspiration for the article was from a Tweet by the creator of Mirage JS and I loved the idea of Mirage, I studied it some more, played with it and pitched the idea to Smashing Magazine and they liked it. I went on to make over [$10,000 from Technical Writing](https://x.com/Dominus_Kelvin/status/1625449822605164545?s=20)
 
 ## Unofficial Sails.js DevRel
 
@@ -66,7 +66,7 @@ For the freelancing gig, I needed a backend framework in JavaScript that was as 
 
 As always I started screaming it from the roof top on Twitter, in articles like this [one](https://www.smashingmagazine.com/2020/05/understanding-machines-open-standard-javascript-functions/). I created a [community](https://sailscasts.com/chat) on Discord for Sails developers and even made a [platform to teach Sails](https://sailscasts.com) and of course, a [blog about Sails](https://blog.sailscasts.com)
 
-Whilst I was going about my business spreading the good news of Sails and Vue, the creator of Sails - [Mike McNeil](https://twitter.com/mikermcneil) - took noticed of my tweets and articles and we begun conversing ever so frequently and one day, he referred me for a full-stack development contract that amounted to my [first major income](https://twitter.com/Dominus_Kelvin/status/1630523258419417088?s=20) in web development.
+Whilst I was going about my business spreading the good news of Sails and Vue, the creator of Sails - [Mike McNeil](https://x.com/mikermcneil) - took noticed of my tweets and articles and we begun conversing ever so frequently and one day, he referred me for a full-stack development contract that amounted to my [first major income](https://x.com/Dominus_Kelvin/status/1630523258419417088?s=20) in web development.
 
 A year after that, Mike employed me as a DevRel for Fleet Device Management because he was already acquainted with my work on shouting about technologies I love from the roof top 😅
 
@@ -78,7 +78,7 @@ Doing so quickly got me from 500 to 10,000+ followers within the space of 4 mont
 
 I had previously started a show on YouTube called [TKYT](https://dominuskelvin.dev/tkyt)(Teach Kelvin Your Thing) - a series where I invite people building technologies to teach me something for an hour. I’ve done over [30+ sessions](https://youtube.com/playlist?list=PL4qsujwiHvcP-a8z1--RyZ8XVFHbeBIfn) now.
 
-Also connecting with people for TKYT got me in touch with someone from the company I am currently a [JavaScript engineer and Developer Advocate](https://twitter.com/Dominus_Kelvin/status/1587844494749155329?s=20) at.
+Also connecting with people for TKYT got me in touch with someone from the company I am currently a [JavaScript engineer and Developer Advocate](https://x.com/Dominus_Kelvin/status/1587844494749155329?s=20) at.
 
 ## Key takeaways
 
@@ -92,7 +92,7 @@ So as you solve problems in your web development journey, teach it, tweet about 
 
 ### Contribute to the community
 
-I remember contributing to the docs of the Chakra UI Vue project, writing an [article](https://www.smashingmagazine.com/2020/07/accessible-front-end-application-chakra-ui-nuxtjs/) about it on Smashing Magazine and also building a Vue CLI plugin for it. My proudest moment was seeing that plugin being used on a [YouTube tutorial](https://youtu.be/hjoEFBqW_DI?t=219) by a [Gift Egwuenu](https://twitter.com/lauragift_) and she said the plugin made setting up Chakra UI Vue easy to setup.
+I remember contributing to the docs of the Chakra UI Vue project, writing an [article](https://www.smashingmagazine.com/2020/07/accessible-front-end-application-chakra-ui-nuxtjs/) about it on Smashing Magazine and also building a Vue CLI plugin for it. My proudest moment was seeing that plugin being used on a [YouTube tutorial](https://youtu.be/hjoEFBqW_DI?t=219) by a [Gift Egwuenu](https://x.com/lauragift_) and she said the plugin made setting up Chakra UI Vue easy to setup.
 
 At your level, in whatever form you can, contributing to the community of the technology you want to use professionally either by tweeting about it, writing, building tools, etc. makes you show competence and you can build long-term relationships from there or start a conversation that makes folks trust your competence enough to refer you for a job when they can.
 
@@ -104,7 +104,7 @@ In my experience, people will care far less of your competence if you are not a 
 
 And people may forget what you know but it’s harder to forget how you made them feel during your interactions with them.
 
-Having a “I’m here to add value” mindset when engaging with folks has led me to have some amazing guests for TKYT from [Miško Hevery](https://twitter.com/mhevery), the creator of Angular to [Jason Lengstorf](https://twitter.com/jlengstorf) of [Learn With Jason](https://www.learnwithjason.dev). And that’s just to name a few.
+Having a “I’m here to add value” mindset when engaging with folks has led me to have some amazing guests for TKYT from [Miško Hevery](https://x.com/mhevery), the creator of Angular to [Jason Lengstorf](https://x.com/jlengstorf) of [Learn With Jason](https://www.learnwithjason.dev). And that’s just to name a few.
 
 ### Bonus: You can build your own business
 

@@ -49,7 +49,7 @@ However, with Astro, the setup was so basic and intuitive, and even though there
 
 ### Do you really need all that JavaScript
 
-I made [this tweet](https://twitter.com/Dominus_Kelvin/status/1568645691467247616?s=20&t=JBzyrzEjLcsUinL0Aksozw) after taking in the philosophy of Astro. I have seen blog posts that needed spinners to load or a marketing website that used so much JavaScript that Safari notified me on the memory usage(no kidding).
+I made [this tweet](https://x.com/Dominus_Kelvin/status/1568645691467247616?s=20&t=JBzyrzEjLcsUinL0Aksozw) after taking in the philosophy of Astro. I have seen blog posts that needed spinners to load or a marketing website that used so much JavaScript that Safari notified me on the memory usage(no kidding).
 
 JavaScript in the context of websites(not web applications) was made to be sprinkled to handle interactivity on the website when need be. Having to let JavaScript handle everything including navigation for your blog or marketing page is an overkill in my opinion.
 
@@ -71,7 +71,7 @@ A great DX is forefront for me when it comes to adopting a new tech and Astro di
 
 ### The docs were written by humans for humans
 
-Nothing annoys me more than docs that seem as if it was written by robots for computers. The Astro docs read [like a prose](https://twitter.com/Dominus_Kelvin/status/1568843065967910913?s=20&t=JBzyrzEjLcsUinL0Aksozw) and I must commend the docs team for this.
+Nothing annoys me more than docs that seem as if it was written by robots for computers. The Astro docs read [like a prose](https://x.com/Dominus_Kelvin/status/1568843065967910913?s=20&t=JBzyrzEjLcsUinL0Aksozw) and I must commend the docs team for this.
 
 I believe the success of a tech hinges a great deal on its documentation. I spent my weekend binging on the Astro docs not Netflix and that should tell you something.
 

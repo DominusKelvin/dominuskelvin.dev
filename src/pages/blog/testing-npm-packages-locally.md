@@ -7,9 +7,9 @@
 
 > You can [watch](https://youtu.be/h_L7q91LTOE) a screencast version of this article on YouTube
 
-A part of my [job](https://twitter.com/Dominus_Kelvin/status/1587844494749155329?s=20&t=WZpehnK7AFd7MsMaM4S6Xg) at [Treblle](https://treblle.com), is to build and maintain our JavaScript SDK packages.
+A part of my [job](https://x.com/Dominus_Kelvin/status/1587844494749155329?s=20&t=WZpehnK7AFd7MsMaM4S6Xg) at [Treblle](https://treblle.com), is to build and maintain our JavaScript SDK packages.
 
-I recently created the [treblle-adonisjs](https://github.com/Treblle/treblle-adonisjs) SDK for AdonisJS - to let AdonisJS developers easily monitor and observer their APIs with Treblle - and it was a fun experience as I had the privilege to ask the creator of AdonisJS - [Harminder Virk](https://twitter.com/AmanVirk1) - about the AdonisJS way to create the SDK and it made the job a whole lot easier.
+I recently created the [treblle-adonisjs](https://github.com/Treblle/treblle-adonisjs) SDK for AdonisJS - to let AdonisJS developers easily monitor and observer their APIs with Treblle - and it was a fun experience as I had the privilege to ask the creator of AdonisJS - [Harminder Virk](https://x.com/AmanVirk1) - about the AdonisJS way to create the SDK and it made the job a whole lot easier.
 
 I also learnt from Harminder a way to test NPM packages locally.
 

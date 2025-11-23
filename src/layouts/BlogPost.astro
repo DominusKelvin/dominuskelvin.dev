@@ -15,21 +15,21 @@ export interface Props {
 }
 
 const {
-  content: { title, description, pubDate, updatedDate },
+  content: { title, description, pubDate, updatedDate, heroImage },
 } = Astro.props
 
-const tweetText = `I just read "${title}" by @Dominus_Kelvin \n`
-const tweetUrl = `https://twitter.com/intent/tweet?url=${
+const postText = `I just read "${title}" by @Dominus_Kelvin \n`
+const postUrl = `https://x.com/intent/tweet?url=${
   Astro.url
-}&text=${encodeURIComponent(tweetText)}`
-const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(
+}&text=${encodeURIComponent(postText)}`
+const xSearchUrl = `https://x.com/search?q=${encodeURI(
   String(Astro.url)
 )}`
 ---
 
 <html lang="en" class="scroll-smooth">
   <head>
-    <BaseHead title={title} description={description}, image='/blog.png' />
+    <BaseHead title={title} description={description} image={heroImage} />
   </head>
 
   <body >
@@ -55,6 +55,7 @@ const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(
         class="prose lg:prose-lg prose-md prose-a:no-underline prose-a:font-semibold prose-a:border prose-a:border-transparent prose-a:border-b-green hover:prose-a:text-green prose-code:before:content-none prose-code:after:content-none prose-code:text-green"
       >
         <h1 class="title">{title}</h1>
+        {heroImage && <img src={heroImage} alt={title} class="w-full rounded-lg mb-8" />}
         <slot />
       </article>
       <NewsletterSignup client:idle />
@@ -65,7 +66,7 @@ const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(
               class="hover:underline focus:outline-none"
               target="_blank"
               rel="noreferrer noopener"
-              href={tweetUrl}>Tweet this article</a
+              href={postUrl}>Post this article on X</a
             >
           </li>
           <li>
@@ -73,7 +74,7 @@ const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(
               class="hover:underline focus:outline-none"
               target="_blank"
               rel="noreferrer noopener"
-              href={twitterSearchUrl}>Discuss on Twitter</a
+              href={xSearchUrl}>Discuss on X</a
             >
           </li>
         </ul>

@@ -5,7 +5,7 @@
  pubDate: 'December 18, 2020'
 ---
 
-Some time ago I [announced](https://twitter.com/Dominus_Kelvin/status/1306158387340681217?s=20) on Twitter I am working on Sailscasts - a platform to teach the Sails framework to help more people build out their ideas on JavaScript/Node.js
+Some time ago I [announced](https://x.com/Dominus_Kelvin/status/1306158387340681217?s=20) on Twitter I am working on Sailscasts - a platform to teach the Sails framework to help more people build out their ideas on JavaScript/Node.js
 
 The journey to delivering Sailscasts has been(and it's still) interesting; I quit my job to focus fully on this project as I think I got something here. Sails is the most efficient way of building web service/application I know on Node.js. Companies like Postman and Paystack also share this sentiment(I believe) as they use Sails in production with a lot of success to it.
 
@@ -35,4 +35,4 @@ We want to walk our talk. Since we are asking you to build on Sails, we also wil
 
 The above and more are the motivation behind The Sailscasts Company and we are excited to deliver our first vision - Making Sailscasts a reality and giving it to you the developers to have a place to learn how to build your ideas using a language that can be likened to be the Ugly Duckling but now the language of our future - **JavaScript**
 
-I am pretty pumped about this. You can let me know what you think on [Twitter](https://twitter.com/Dominus_Kelvin)
+I am pretty pumped about this. You can let me know what you think on [Twitter](https://x.com/Dominus_Kelvin)

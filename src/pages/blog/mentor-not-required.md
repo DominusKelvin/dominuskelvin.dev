@@ -21,7 +21,7 @@ So you may be thinking, "Kelvin, if I don't need a mentor as I'm getting started
 
 Role models to me are people that are producing the results you want in your life. So if you want to produce results as a frontend web developer, then get role models - people who are **working** and **producing** results you aspire to produce as a frontend web developer.
 
-I've had a long list of role models for every part of my life. For example [Sarah Drasner](https://twitter.com/sdras) is my role model on writing quality understandable technical articles. Also [Taylor Otwell](https://twitter.com/taylorotwell), [DHH](https://twitter.com/dhh), [Jason Fried](https://twitter.com/jasonfried), [Caleb Porzio](https://twitter.com/calebporzio), [Mike McNeil](https://twitter.com/mikermcneil), [Prosper Otemuyiwa](https://twitter.com/unicodeveloper), etc have all inspired me and produced results I can look at in my software engineering journey.
+I've had a long list of role models for every part of my life. For example [Sarah Drasner](https://x.com/sdras) is my role model on writing quality understandable technical articles. Also [Taylor Otwell](https://x.com/taylorotwell), [DHH](https://x.com/dhh), [Jason Fried](https://x.com/jasonfried), [Caleb Porzio](https://x.com/calebporzio), [Mike McNeil](https://x.com/mikermcneil), [Prosper Otemuyiwa](https://x.com/unicodeveloper), etc have all inspired me and produced results I can look at in my software engineering journey.
 
 These people have produce results I like and want to replicate so I study them and look for the processes they've used and I adopt them and gauge the results I then produce.
 

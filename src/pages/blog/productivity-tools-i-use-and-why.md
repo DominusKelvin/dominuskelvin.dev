@@ -24,7 +24,7 @@ This is a no-brainer for scheduling. It has made scheduling [TKYT](/tkyt) sessio
 
 ### [Grammarly](https://grammarly.com)
 
-This is gold for technical writing or [tweeting](https://twitter.com/Dominus_Kelvin) 😀. I use it as a browser extension.
+This is gold for technical writing or [tweeting](https://x.com/Dominus_Kelvin) 😀. I use it as a browser extension.
 
 ### [1Password](https://1password.com)
 
@@ -38,7 +38,7 @@ Also any time a schedule is made on my Google Calendar I get a task created on T
 
 ### [Typefully](https://typefully.com/?via=koo)
 
-I love this tool for scheduling tweets and threads without distractions. It also enables me to not have to open the [Twitter](https://twitter.com/Dominus_Kelvin) app every time and it has some great analytics for growing on Twitter.
+I love this tool for scheduling tweets and threads without distractions. It also enables me to not have to open the [Twitter](https://x.com/Dominus_Kelvin) app every time and it has some great analytics for growing on Twitter.
 
 ### [Krisp](https://krisp.ai)
 

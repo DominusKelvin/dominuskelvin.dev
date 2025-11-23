@@ -55,4 +55,4 @@ In osquery speak, watchdog is a performance monitor guard for every query proces
 
 ## Conclusion
 
-This is by no means an exhaustive list of terms, but so far in my research these stood out as they are mostly new to me. Know more osquery related terms? [Tweet](https://twitter.com/dominus_kelvin) at me.
+This is by no means an exhaustive list of terms, but so far in my research these stood out as they are mostly new to me. Know more osquery related terms? [Tweet](https://x.com/dominus_kelvin) at me.

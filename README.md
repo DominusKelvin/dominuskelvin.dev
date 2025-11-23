@@ -14,7 +14,7 @@ You can use this repo as inspiration or just fork it to make your own website
 
 - Star this repo
 
-- Give a shout out on [Twitter](https://twitter.com/DominusKelvin) if you find this repo valuable
+- Give a shout out on [Twitter](https://x.com/DominusKelvin) if you find this repo valuable
 
 ### Contributors
 

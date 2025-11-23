@@ -37,4 +37,4 @@ osquery has been a growing interest of mine and this article is meant to documen
 
 I hope like me you better understand and appreciate how osquery does its magic!
 
-As always if you've got any questions do tweet at [@Dominus_Kelvin](https://twitter.com/Dominus_Kelvin)
+As always if you've got any questions do tweet at [@Dominus_Kelvin](https://x.com/Dominus_Kelvin)

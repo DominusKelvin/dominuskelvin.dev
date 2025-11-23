@@ -9,7 +9,7 @@
 
 One of the good part of the software development industry is also its bad part - which is the ability for anyone to simply teach themselves these technologies and go on to be a software developer.
 
-Don't get me wrong though. I am in no way calling out self-taught developers(I am more or less one myself 😉). However the ability to get yourself started without any formal introduction or direct mentorship from anyone creates the problem of developing mistake or bad habits along the way. These mistakes could be so subtle and are most of the times non-fatal but from time to time they start showing up as symptoms in your work as a developer. I have identified 14 of these mistakes and if you've discovered any not mentioned here, I would be stoked to hear from you on [twitter](https://twitter.com/dominus_kelvin). Now put on your Sherlock Holmes' hat and let's go..
+Don't get me wrong though. I am in no way calling out self-taught developers(I am more or less one myself 😉). However the ability to get yourself started without any formal introduction or direct mentorship from anyone creates the problem of developing mistake or bad habits along the way. These mistakes could be so subtle and are most of the times non-fatal but from time to time they start showing up as symptoms in your work as a developer. I have identified 14 of these mistakes and if you've discovered any not mentioned here, I would be stoked to hear from you on [twitter](https://x.com/dominus_kelvin). Now put on your Sherlock Holmes' hat and let's go..
 
 ## Mistake #1 - Not spending time developing your theoretical knowledge
 
@@ -57,7 +57,7 @@ Now don't get me started on this one. If we take a survey and ask some entry lev
 
 This is not necessarily a bad thing, however just using a tech because someone you admire uses it, is not a good idea. Every tech appeals to different group of people. I for one use Vue for front-end development because appeals to me personally. Someone else might use React because it appeals to them.
 
-Taking out time to find your voice or your individuality in your coding career would make you do better at it. Don't just rush up with the hype of the moment. Again, investigate and find out what works for you. A good example is of my friend [Angie Jones](https://twitter.com/techgirl1908), she has been doing astronomically great works with [Java](https://afrotech.com/angie-jones-becomes-the-first-ever-black-female-java-champion) and [automation testing](https://testautomationu.applitools.com/instructors/angie_jones.html); that's her individuality speaking, she didn't move from one language to the other like most of us do. She instead stayed with what appealed to her.
+Taking out time to find your voice or your individuality in your coding career would make you do better at it. Don't just rush up with the hype of the moment. Again, investigate and find out what works for you. A good example is of my friend [Angie Jones](https://x.com/techgirl1908), she has been doing astronomically great works with [Java](https://afrotech.com/angie-jones-becomes-the-first-ever-black-female-java-champion) and [automation testing](https://testautomationu.applitools.com/instructors/angie_jones.html); that's her individuality speaking, she didn't move from one language to the other like most of us do. She instead stayed with what appealed to her.
 
 ### Suggestion
 
@@ -85,7 +85,7 @@ Take the time out to discover what really made you come into this industry and l
 
 ## Mistake #8 - Not learning your language
 
-I am grateful for people like [Kyle Simpson](https://twitter.com/getify) who took it as their life's work to help us learn and master JavaScript. Most developers just stop or plateaued on the surface of their language. They don't take the time to really know their language. Knowing your language is like speaking the English language - you can only use the words you know about and nothing more.
+I am grateful for people like [Kyle Simpson](https://x.com/getify) who took it as their life's work to help us learn and master JavaScript. Most developers just stop or plateaued on the surface of their language. They don't take the time to really know their language. Knowing your language is like speaking the English language - you can only use the words you know about and nothing more.
 
 Take the time to learn you language be it JavaScript, PHP, Rust, really know them as opposed to using 5% of their capacity in your life time!
 
@@ -147,6 +147,6 @@ You will need discipline here as they are many enticing tech springing out almos
 
 So those are the 14 mistakes I have discovered personally that beginning developers are liable to make. I hope the above list would help you make a change and adjust where you find yourself wanting.
 
-We all have gaps in our learning, however we can make those gaps much more narrow if we take out time to revisit those things we ignored while starting out. Again, if there are any other mistakes you have notice you made on your journey as a software developer, feel free to [tweet](https://twitter.com/dominus_kelvin) at me. You can also sign up for my newsletter below to get more of such advice.
+We all have gaps in our learning, however we can make those gaps much more narrow if we take out time to revisit those things we ignored while starting out. Again, if there are any other mistakes you have notice you made on your journey as a software developer, feel free to [tweet](https://x.com/dominus_kelvin) at me. You can also sign up for my newsletter below to get more of such advice.
 
 Code expressively 🚀 🚀, <br /> Kelvin
