@@ -21,59 +21,66 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}'))
       description="Learn Fullstack Web Development through articles on various topics across the stack.", image='/blog.png'
     />
   </head>
-  <body>
+  <body class="bg-gray-50">
     <Header />
-    <main
-      class="min-h-screen mx-auto pb-28 sm:px-6 md:px-8 xl:px-12 lg:max-w-3xl"
-    >
-      <header class="lg:py-10 sm:py-12 py-4 sm:text-center mx-4">
-        <p class="lg:text-xl text-lg text-gray-700">
-          Thoughts, tutorials, guides, etc
-        </p>
-      </header>
-      <section>
-        <ul>
-          {
-            posts.map((post) => (
-              <a href={post.url}>
-                <li class="mb-4 grid grid-cols-1 rounded-md px-4 py-2 hover:bg-green/10 focus:bg-green/10 sm:flex sm:grid-cols-2 sm:items-center sm:py-4">
-                  <p class="sm:w-32">
-                    <time
-                      class="text-gray-500"
-                      datetime={post.frontmatter.pubDate}
-                    >
-                      {new Date(post.frontmatter.pubDate).toLocaleDateString(
-                        'en-us',
-                        {
-                          year: 'numeric',
-                          month: 'short',
-                          day: 'numeric',
-                        }
-                      )}
-                    </time>
-                  </p>
-                  <section class="">
-                    <h3 class="text-lg font-semibold tracking-tight text-gray-900 sm:pt-0">
-                      {post.frontmatter.title}
-                    </h3>
-                    <p class="prose line-clamp-2 prose-a:relative prose-a:z-10">
-                      {post.frontmatter.description}
-                    </p>
-                    <span>
-                      <a
-                        class="text-md under font-semibold text-green"
-                        href={post.url}
+    <main class="min-h-screen">
+      <div class="max-w-4xl mx-auto px-4 sm:px-10 py-12 lg:py-16">
+        <header class="mb-12 lg:mb-16">
+          <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">Blog</h1>
+          <p class="text-xl text-gray-500">Thoughts, tutorials, guides, etc</p>
+        </header>
+        <section>
+          <div class="divide-y divide-gray-200/60">
+            {
+              posts.map((post) => (
+                <article class="group py-8 first:pt-0">
+                  <a
+                    href={post.url}
+                    class="block"
+                  >
+                    <div class="flex items-baseline gap-6">
+                      <time
+                        class="text-sm text-gray-500 w-28 shrink-0 hidden sm:block"
+                        datetime={post.frontmatter.pubDate}
                       >
-                        Read more &rsaquo;
-                      </a>
-                    </span>
-                  </section>
-                </li>
-              </a>
-            ))
-          }
-        </ul>
-      </section>
+                        {new Date(post.frontmatter.pubDate).toLocaleDateString(
+                          'en-us',
+                          {
+                            year: 'numeric',
+                            month: 'short',
+                            day: 'numeric',
+                          }
+                        )}
+                      </time>
+                      <div class="flex-1 min-w-0">
+                        <time
+                          class="text-sm text-gray-500 block mb-1 sm:hidden"
+                          datetime={post.frontmatter.pubDate}
+                        >
+                          {new Date(post.frontmatter.pubDate).toLocaleDateString(
+                            'en-us',
+                            {
+                              year: 'numeric',
+                              month: 'short',
+                              day: 'numeric',
+                            }
+                          )}
+                        </time>
+                        <h2 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-green-600 transition-colors">
+                          {post.frontmatter.title}
+                        </h2>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                          {post.frontmatter.description}
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              ))
+            }
+          </div>
+        </section>
+      </div>
     </main>
     <Footer />
   </body>

@@ -12,146 +12,304 @@ import NewsletterSignup from '../components/NewsletterSignup.vue'
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body class="text-gray-700">
+  <body class="bg-gray-50">
     <Header title={SITE_TITLE} />
-    <main
-      class="min-h-screen px-4 sm:px-10 lg:mt-10 lg:mx-auto lg:w-8/12 xl:w-1/2"
-    >
-      <section class="sm:flex lg:items-center sm:space-x-4 lg:mb-10">
-        <div>
-          <h1 class="lg:text-3xl text-2xl font-extrabold">
-            Hello, I'm Kelvin!
-          </h1>
-          <p class="mb-2 lg:text-lg">
-            Lead maintainer of <strong
-              ><a href="https://sailsjs.com" class="underline">Sails</a>
-            </strong>
-          </p>
-          <p class="lg:text-lg">
-            Helping developers build business on JavaScript. Teaching fullstack
-            JavaScript for web development.
-          </p>
-          <section class="my-4 space-y-3">
-            <h3 class="lg:text-3xl text-2xl font-extrabold">
-              Connect with Kelvin
-            </h3>
-            <Socials />
-          </section>
-        </div>
-        <div class="px-16 my-10 sm:my-0 sm:px-0 sm:flex-auto">
-          <img
-            src="/koo.png"
-            alt="A picture of Kelvin O. Omereshone"
-            height={700}
-            width={700}
-            class="rounded-md w-full sm:w-72 lg:w-96 lg:h-60 sm:object-cover"
-          />
+    <main class="min-h-screen px-4 sm:px-10 lg:mx-auto lg:w-10/12 xl:w-9/12 max-w-7xl">
+
+      <!-- Hero Section -->
+      <section class="py-12 lg:py-20">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <div class="inline-block">
+              <span class="text-green-600 font-semibold text-sm uppercase tracking-wider">Developer • Teacher • Speaker</span>
+            </div>
+            <h1 class="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-gray-900 leading-tight">
+              Hello, I'm <span class="text-green-600">Kelvin</span>!
+            </h1>
+            <p class="text-xl text-gray-600 leading-relaxed">
+              Lead maintainer of <a href="https://sailsjs.com" class="text-green-600 font-semibold hover:text-green-700 underline decoration-2 underline-offset-2">Sails</a>
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Helping developers build businesses on JavaScript. Teaching fullstack JavaScript for web development.
+            </p>
+            <div class="pt-4">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">Connect with me</h3>
+              <Socials />
+            </div>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="relative">
+              <div class="absolute -inset-4 bg-linear-to-r from-green-400 to-green-600 rounded-3xl opacity-20 blur-2xl"></div>
+              <img
+                src="/koo.png"
+                alt="A picture of Kelvin O. Omereshone"
+                class="relative rounded-2xl shadow-2xl w-full max-w-md object-cover aspect-square"
+              />
+            </div>
+          </div>
         </div>
       </section>
-      <aside class="lg:space-y-14 space-y-6 lg:w-4/5 sm:w-10/12 sm:mt-12">
-        <section class="my-4">
-          <h3 class="sm:text-3xl text-2xl font-extrabold">
-            The African Engineer
-          </h3>
-          <p class="sm:text-lg">
-            Inside stories from engineers building Africa's tech future. Deep dives into Big Tech & startups. Hard-won lessons. No hype—just real engineering insights you can't find anywhere else.
-          </p>
-          <a
-            href="https://africanengineer.com"
-            class="border border-transparent border-b-green-700 lg:text-lg font-semibold"
-            target="_blank">Read Issues</a
-          >
-        </section>
-        <section class="my-4">
-            <h3 class="sm:text-3xl text-2xl font-extrabold">Sponsorships deals</h3>
-          <p class="sm:text-lg">
-            Do you have a product or service that you think I'll find interesting enough to tell my audience about? Let's talk about it!
-          </p>
-          <a
-            href="https://dominuskelvin.dev/deals"
-            class="border border-transparent border-b-green-700 lg:text-lg font-semibold"
-            target="_blank">Check out my deals!</a
-          >
-        </section>
-        <section class="my-4">
-          <h3 class="sm:text-3xl text-2xl font-extrabold">
-            The Boring JavaScript Stack
-          </h3>
-          <p class="sm:text-lg">
-            Are you tired of getting caught up in the whirlwind of flashy new
-            JavaScript trends? Use <strong
-              >The Boring JavaScript Stack 🥱</strong
+
+            <!-- Projects Grid -->
+      <section class="py-16 lg:py-24">
+        <div class="text-center mb-12 lg:mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">Featured Projects & Initiatives</h2>
+          <p class="text-xl text-gray-500">Building tools and communities to help developers thrive with JavaScript</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+          <!-- The African Engineer -->
+          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-green-500/50 transition-all">
+            <div class="flex items-center justify-center w-12 h-12 bg-green-500 rounded-xl mb-5">
+              <span class="text-2xl">🌍</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">The African Engineer</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              Inside stories from engineers building Africa's tech future. Deep dives into Big Tech & startups.
+            </p>
+            <a
+              href="https://africanengineer.com"
+              target="_blank"
+              class="inline-flex items-center text-sm font-medium text-green-600 hover:text-green-700"
             >
-          </p>
-          <a
-            href="https://github.com/sailscastshq/boring-stack"
-            class="border border-transparent border-b-green-700 lg:text-lg font-semibold"
-            target="_blank">Check it out!</a
-          >
-        </section>
-        <section class="my-4">
-          <h3 class="sm:text-3xl text-2xl font-extrabold">Sailscasts</h3>
-          <p class="sm:text-lg">
-            Want to learn fullstack JavaScript from screencasts and build your
-            next great idea? I teach just that at sailscasts.com
-          </p>
-          <a
-            href="https://sailscasts.com/courses?utm_source=dominuskelvin.dev"
-            class="border border-transparent border-b-green-700 lg:text-lg font-semibold"
-            target="_blank">Take a course!</a
-          >
-        </section>
-        <section class="my-4">
-          <h3 class="sm:text-3xl text-2xl font-extrabold">
-            Hagfish: Where creators do invoices.
-          </h3>
-          <p class="sm:text-lg">
-            Hagfish is the platform that helps professional creators send and manage invoices.
-          </p>
-          <a
-            href="https://hagfish.io?utm_source=dominuskelvin.dev"
-            class="border border-transparent border-b-green-700 lg:text-lg font-semibold"
-            target="_blank">Start sending invoices</a
-          >
-        </section>
-        <section class="my-4">
-          <h3 class="sm:text-3xl text-2xl font-extrabold">
-            The Sailscasts community
-          </h3>
-          <p class="sm:text-lg">
-            A welcoming and open Discord community for Web developers
-          </p>
-          <a
-            href="https://sailscasts.com/chat"
-            class="border border-transparent border-b-green-700 lg:text-lg font-semibold"
-            target="_blank">Connect with Us!</a
-          >
-        </section>
-        <section class="my-4">
-          <h3 class="sm:text-3xl text-2xl font-extrabold">guppy</h3>
-          <p class="sm:text-lg">
-            I built a tool that lets you tinker with Javascript.
-          </p>
-          <a
-            href="https://guppy.sailscasts.com?utm_source=dominuskelvin.dev"
-            class="border border-transparent border-b-green-700 lg:text-lg font-semibold"
-            target="_blank">Check it out</a
-          >
-        </section>
-        <section class="my-4">
-          <h3 class="sm:text-3xl text-2xl font-extrabold">YouTube</h3>
-          <p class="sm:text-lg">
-            I teach modern web development with JavaScript through videos on my
-            YouTube channel
-          </p>
-          <a
-            href="https://youtube.com/@dominuskelvin"
-            class="border border-transparent border-b-green-700 lg:text-lg font-semibold"
-            target="_blank">Watch Now!</a
-          >
-        </section>
-      </aside>
-      <NewsletterSignup client:idle />
+              Read Issues
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Sponsorships -->
+          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-purple-500/50 transition-all">
+            <div class="flex items-center justify-center w-12 h-12 bg-purple-500 rounded-xl mb-5">
+              <span class="text-2xl">🤝</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Sponsorships</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              Have a product or service you'd like me to share with my audience? Let's talk!
+            </p>
+            <a
+              href="https://dominuskelvin.dev/deals"
+              target="_blank"
+              class="inline-flex items-center text-sm font-medium text-purple-600 hover:text-purple-700"
+            >
+              Check out deals
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Boring Stack -->
+          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-pink-500/50 transition-all">
+            <div class="flex items-center justify-center w-12 h-12 bg-pink-500 rounded-xl mb-5">
+              <span class="text-2xl">🥱</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Boring JavaScript Stack</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              Tired of flashy new JavaScript trends? Use The Boring JavaScript Stack.
+            </p>
+            <a
+              href="https://github.com/sailscastshq/boring-stack"
+              target="_blank"
+              class="inline-flex items-center text-sm font-medium text-pink-600 hover:text-pink-700"
+            >
+              Check it out
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Sailscasts -->
+          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-blue-500/50 transition-all">
+            <div class="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-xl mb-5">
+              <span class="text-2xl">🎓</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Sailscasts</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              Learn fullstack JavaScript from screencasts and build your next great idea.
+            </p>
+            <a
+              href="https://sailscasts.com/courses?utm_source=dominuskelvin.dev"
+              target="_blank"
+              class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700"
+            >
+              Take a course
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Hagfish -->
+          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-orange-500/50 transition-all">
+            <div class="flex items-center justify-center w-12 h-12 bg-orange-500 rounded-xl mb-5">
+              <span class="text-2xl">📄</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Hagfish</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              The platform that helps professional creators send and manage invoices.
+            </p>
+            <a
+              href="https://hagfish.io?utm_source=dominuskelvin.dev"
+              target="_blank"
+              class="inline-flex items-center text-sm font-medium text-orange-600 hover:text-orange-700"
+            >
+              Start invoicing
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Community -->
+          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-indigo-500/50 transition-all">
+            <div class="flex items-center justify-center w-12 h-12 bg-indigo-500 rounded-xl mb-5">
+              <span class="text-2xl">💬</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Sailscasts Community</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              A welcoming and open Discord community for web developers.
+            </p>
+            <a
+              href="https://sailscasts.com/chat"
+              target="_blank"
+              class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-700"
+            >
+              Join us
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Guppy -->
+          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-teal-500/50 transition-all">
+            <div class="flex items-center justify-center w-12 h-12 bg-teal-500 rounded-xl mb-5">
+              <span class="text-2xl">🔧</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">guppy</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              A tool that lets you tinker with JavaScript in a fun way.
+            </p>
+            <a
+              href="https://guppy.sailscasts.com?utm_source=dominuskelvin.dev"
+              target="_blank"
+              class="inline-flex items-center text-sm font-medium text-teal-600 hover:text-teal-700"
+            >
+              Try it out
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- YouTube -->
+          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-red-500/50 transition-all">
+            <div class="flex items-center justify-center w-12 h-12 bg-red-500 rounded-xl mb-5">
+              <span class="text-2xl">📺</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">YouTube</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              Teaching modern web development with JavaScript through videos.
+            </p>
+            <a
+              href="https://youtube.com/@dominuskelvin"
+              target="_blank"
+              class="inline-flex items-center text-sm font-medium text-red-600 hover:text-red-700"
+            >
+              Watch now
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Content Sections -->
+      <section class="py-16 lg:py-24">
+        <div class="text-center mb-12 lg:mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">More from Kelvin</h2>
+          <p class="text-xl text-gray-500">Articles, webinars, and reading lists</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+
+          <!-- TKYT -->
+          <article class="relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-green-500/50 transition-all">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Things Kelvin Yakked To (TKYT)</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              Monthly live webinars diving deep into specific topics within fullstack JavaScript web development. Catch past sessions or register for upcoming ones.
+            </p>
+            <a
+              href="/tkyt"
+              class="inline-flex items-center text-sm font-medium text-green-600 hover:text-green-700"
+            >
+              Check out TKYT
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Blog -->
+          <article class="relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-purple-500/50 transition-all">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Blog</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              Long-form written content around programming, web development, and my thoughts on technology.
+            </p>
+            <a
+              href="/blog"
+              class="inline-flex items-center text-sm font-medium text-purple-600 hover:text-purple-700"
+            >
+              Read posts
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Articles -->
+          <article class="relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-pink-500/50 transition-all">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Guest Articles</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              Guest articles for various publications like Smashing Magazine, FreeCodeCamp, CSS-Tricks, and more.
+            </p>
+            <a
+              href="/articles"
+              class="inline-flex items-center text-sm font-medium text-pink-600 hover:text-pink-700"
+            >
+              Check them out
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Books -->
+          <article class="relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-amber-500/50 transition-all">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Books</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              The books I'm reading or have read. Sharing them to inspire you to read more!
+            </p>
+            <a
+              href="/books"
+              class="inline-flex items-center text-sm font-medium text-amber-600 hover:text-amber-700"
+            >
+              See my books
+              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </article>
+
+        </div>
+      </section>
+
     </main>
     <Footer />
   </body>
