@@ -13,42 +13,47 @@ const books = (await getCollection('books')).sort(
   <head>
     <BaseHead title="Books | Dominus Kelvin" description={`Explore my curated collection of ${books.length} insightful books that shaped my journey in tech and beyond`} image='/books.png'/>
   </head>
-  <body>
+  <body class="bg-gray-50">
     <Header />
-    <main  class="min-h-screen p-4 sm:p-0 sm:mx-auto sm:w-9/12 lg:w-7/12 my-4 sm:my-12">
-      <h1 class="text-pink-700 text-5xl sm:text-7xl font-black mb-2">
-        I own {books.length} books
-      </h1>
-      <p class="mb-16 text-lg text-brown font-bold">
-        "Books are a uniquely portable magic." - Stephen King
-      </p>
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {books.map((book) => (
-          <article class="relative border rounded-lg p-4 hover:shadow-lg transition-shadow flex flex-col items-center">
-             {book.data.readCount >= 1 && (
-    <span class="absolute -top-2 -right-2 bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full" title="Number of times I have read this book">
-      {book.data.readCount}x
-    </span>
-  )}
-             <a href={book.data.url} target="_blank">
-            <img loading="lazy" src={book.data.cover} alt={`${book.data.title} cover`} class="w-full object-cover mb-4 rounded-lg" />
-            </a>
-            <h2 class="text-xl font-semibold mb-2 text-center">
-              {book.data.title}
-            </h2>
-            {book.data.author && (
-              <p class="text-gray-600 mb-2 text-center">{book.data.author}</p>
-            )}
-            <ul>
-              {book.data.tags.map((tag) => (
-                <li class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full mr-2 mb-2">
-                  {tag}
-                </li>
-              ))}
-
-            </ul>
-          </article>
-        ))}
+    <main class="min-h-screen">
+      <div class="max-w-7xl mx-auto px-4 sm:px-10 py-12 lg:py-16">
+        <header class="mb-12 lg:mb-16">
+          <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
+            I own {books.length} books
+          </h1>
+          <p class="text-xl text-gray-500">
+            "Books are a uniquely portable magic." - Stephen King
+          </p>
+        </header>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {books.map((book) => (
+            <article class="group relative bg-white rounded-2xl p-4 ring-1 ring-gray-900/5 hover:ring-gray-900/10 transition-all">
+              {book.data.readCount >= 1 && (
+                <span class="absolute -top-2 -right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm" title="Number of times I have read this book">
+                  {book.data.readCount}x
+                </span>
+              )}
+              <a href={book.data.url} target="_blank" class="block">
+                <div class="aspect-2/3 mb-4 overflow-hidden rounded-xl">
+                  <img loading="lazy" src={book.data.cover} alt={`${book.data.title} cover`} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <h2 class="text-base font-semibold text-gray-900 mb-1 line-clamp-2 group-hover:text-green-600 transition-colors">
+                  {book.data.title}
+                </h2>
+                {book.data.author && (
+                  <p class="text-sm text-gray-500 mb-3">{book.data.author}</p>
+                )}
+              </a>
+              <div class="flex flex-wrap gap-1.5">
+                {book.data.tags.slice(0, 2).map((tag) => (
+                  <span class="inline-block bg-gray-100 text-gray-600 text-xs font-medium px-2 py-1 rounded">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </main>
     <Footer />

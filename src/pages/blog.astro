@@ -34,7 +34,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}'))
             {
               posts.map((post) => (
                 <article class="group py-8 first:pt-0">
-                  <a 
+                  <a
                     href={post.url}
                     class="block"
                   >
