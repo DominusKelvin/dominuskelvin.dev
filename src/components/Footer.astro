@@ -2,13 +2,22 @@
 import Socials from '../components/Socials.astro'
 ---
 
-<footer class="text-center p-4 flex flex-col items-center">
-  <a
-    href="https://x.com/Dominus_Kelvin"
-    target="_blank"
-    class="underline text-gray-700 font-semibold">@Dominus_Kelvin</a
-  >
-  <section class="mt-4">
-    <Socials />
-  </section>
+<footer class="border-t border-gray-200/60 mt-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-10 py-12">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex items-center gap-8">
+        <a
+          href="https://x.com/Dominus_Kelvin"
+          target="_blank"
+          class="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium"
+        >
+          @Dominus_Kelvin
+        </a>
+        <p class="text-gray-500 text-sm">
+          © {new Date().getFullYear()}
+        </p>
+      </div>
+      <Socials />
+    </div>
+  </div>
 </footer>
