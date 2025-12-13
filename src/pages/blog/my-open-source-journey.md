@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/BlogPost.astro'
 title: 'My Open Source Journey: Eight Years of Curiosity, Craft, and Community'
-description: 'From contributor to lead maintainer — my open source journey, the lessons that shaped it, and how anyone can start.'
+description: 'From contributor to lead maintainer, my open source journey, the lessons that shaped it, and how anyone can start.'
 pubDate: 'November 23, 2025'
 heroImage: /covers/open-source-journey.png
 ---
@@ -16,7 +16,7 @@ heroImage: /covers/open-source-journey.png
 
 Check out [my slides](https://docs.google.com/presentation/d/e/2PACX-1vTbE4NDZp1marbRBMMVaR2lWG46EnuPG8qUVkb8ctuLZd22Pj9xfi3BHNcewErEGpS6CnUV9FKp70_e/pub?start=true&loop=true&delayms=3000) from DevFest Port Harcourt 2025.
 
-In 2018, I started my web development career with nothing but hunger, curiosity, and the sense that I could shape something meaningful with the tools in my hands. I didn’t know it then, but the next eight years would turn into a journey that would change my life—creatively, financially, and spiritually.
+In 2018, I started my web development career with nothing but hunger, curiosity, and the sense that I could shape something meaningful with the tools in my hands. I didn't know it then, but the next eight years would turn into a journey that would change my life: creatively, financially, and spiritually.
 
 Today, as lead maintainer of **Sails.js**, creator of **The Boring JavaScript Stack**, and founder of **Sailscasts**, I get asked often:
 
@@ -24,7 +24,7 @@ Today, as lead maintainer of **Sails.js**, creator of **The Boring JavaScript St
 
 This is my story.
 
-## 2018: The Beginning — Planting Seeds Without Realizing It
+## 2018: The Beginning. Planting Seeds Without Realizing It
 
 My first year was pure apprenticeship.
 Quiet.
@@ -36,7 +36,7 @@ People cared, simply because I cared.
 
 > **Share what you’re learning before you're known for anything.**
 
-## 2019: Finding Sails — Discovering My Tribe
+## 2019: Finding Sails. Discovering My Tribe
 
 I wanted something like Laravel, but for JavaScript.
 Express wasn’t it.
@@ -50,11 +50,11 @@ As DHH often reminds us:
 
 > **You don’t need permission to love your tools.**
 
-I proved Sails’ value by using it in production — Telegram bots, APIs for mobile apps, Web3 tools, etc.
+I proved Sails' value by using it in production: Telegram bots, APIs for mobile apps, Web3 tools, etc.
 
 Not opinions. Output.
 
-## Becoming a Custodian — Not Assigned, But Assumed
+## Becoming a Custodian. Not Assigned, But Assumed
 
 When I realized nobody was telling Sails’ story... I did, by:
 
@@ -79,7 +79,7 @@ Just this year, the Sailscasts community became the official [Sails.js community
 
 ## 2020–2021: Community, Confidence & Real Rewards
 
-By 2021, open source began paying — literally.
+By 2021, open source began paying. Literally.
 
 Consulting.
 Opportunities.
@@ -100,7 +100,7 @@ From unknown contributor → community builder → educator → maintainer.
 
 It only makes sense in hindsight.
 
-Using the project — not talking about it — is what made the difference.
+Using the project, not talking about it, is what made the difference.
 
 ## 2024–2025: Building Futures, Not Just Tools
 
@@ -115,7 +115,7 @@ Today, my work focuses on creating infrastructure for Africa’s next generation
 These are not just products. They’re gifts.
 And that's what open source is:
 
-> **A gift — freely given, improved by others, returned to the world better than you found it.**
+> **A gift, freely given, improved by others, returned to the world better than you found it.**
 
 # So... How Do You Start in Open Source?
 
@@ -169,7 +169,7 @@ Robert Greene teaches us to pursue mastery.
 
 I’ve tried to choose both.
 
-My journey—from contributor to Sails.js lead maintainer—was never about chasing titles. It was about doing what I loved, loudly, consistently, and generously.
+My journey, from contributor to Sails.js lead maintainer, was never about chasing titles. It was about doing what I loved, loudly, consistently, and generously.
 
 Your path will be different.
 But the principles endure:

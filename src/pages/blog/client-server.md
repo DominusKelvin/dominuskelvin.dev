@@ -58,7 +58,7 @@ The Client-Server Pragmatists believe that neither side is 100% right when it co
 
 I believe Dan Abramov brilliantly illuminated this concept in his article ["The Two Reacts"](https://overreacted.io/the-two-reacts/). Here is an excerpt:
 
-> Asking the server for a fresh UI works well when the user expects a little delay—for example, when clicking a link. When the user knows they’re navigating to some different place in your app, they’ll wait. However, any direct manipulation (such as dragging a slider, switching a tab, typing into a post composer, clicking a like button, swiping a card, hovering a menu, dragging a chart, and so on) would feel broken if it didn’t reliably provide at least some instant feedback.
+> Asking the server for a fresh UI works well when the user expects a little delay, for example, when clicking a link. When the user knows they're navigating to some different place in your app, they'll wait. However, any direct manipulation (such as dragging a slider, switching a tab, typing into a post composer, clicking a like button, swiping a card, hovering a menu, dragging a chart, and so on) would feel broken if it didn't reliably provide at least some instant feedback.
 
 Server purists choose to ignore that trips to the server involve latency. Because of that, they hurt the user experience as the feedback time feels broken for interactions where users expect instant feedback, such as clicking on a button.
 

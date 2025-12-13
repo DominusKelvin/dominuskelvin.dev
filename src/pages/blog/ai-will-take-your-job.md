@@ -6,25 +6,25 @@ pubDate: 'December 13, 2025'
 heroImage: /covers/ai-will-take-your-job.png
 ---
 
-I've been reading Henry Ford's [My Life and Work](https://a.co/d/8CDvxdc) lately, and there's something about his relentless focus on economic efficiency that keeps nagging at me. Ford wasn't sentimental about the old ways—he saw the math and followed it wherever it led, even when it meant upending entire industries.
+I've been reading Henry Ford's [My Life and Work](https://a.co/d/8CDvxdc) lately, and there's something about his relentless focus on economic efficiency that keeps nagging at me. Ford wasn't sentimental about the old ways. He saw the math and followed it wherever it led, even when it meant upending entire industries.
 
 That same calculating perspective has been [haunting my thoughts about AI and software engineering](https://x.com/Dominus_Kelvin/status/1999836219950170568?s=20).
 
 I imagine the horse breeders had a good laugh when Ford unveiled his Model T in 1908. "A horseless carriage? Preposterous!" they must have chuckled, watching this contraption sputter and cough its way down the road. After all, horses were reliable, understood, and had powered transportation for millennia. Surely this noisy mechanical beast was just a passing fad.
 
-The horse breeders weren't stupid—they were operating on perfectly sound logic based on everything they knew. Horses _were_ better in many ways: they could navigate rough terrain, didn't need gas stations, and required no mechanical expertise to operate. But they missed one critical variable in their calculations: **economics**.
+The horse breeders weren't stupid: they were operating on perfectly sound logic based on everything they knew. Horses _were_ better in many ways: they could navigate rough terrain, didn't need gas stations, and required no mechanical expertise to operate. But they missed one critical variable in their calculations: **economics**.
 
-The Model T wasn't better because it was more elegant or more capable in every scenario. It won because Ford made it _cheap enough_ that the math simply couldn't be argued with. When you could produce and maintain an automobile for a fraction of what it cost to breed, feed, and stable horses at scale, the game was over. The horses didn't lose on merit—they lost on cost per mile.
+The Model T wasn't better because it was more elegant or more capable in every scenario. It won because Ford made it _cheap enough_ that the math simply couldn't be argued with. When you could produce and maintain an automobile for a fraction of what it cost to breed, feed, and stable horses at scale, the game was over. The horses didn't lose on merit; they lost on cost per mile.
 
 ## The Uncomfortable Truth
 
 I was wrong.
 
-For months I was one of those well-intentioned voices saying, "AI won't replace engineers—it's just a tool to augment us." I wanted to believe it. I still want to believe it. But after spending substantial time building with AI-assisted coding tools like [Warp](https://warp.dev?utm_source=dominuskelvin.dev/blog), I can no longer ignore the economic reality staring me in the face.
+For months I was one of those well-intentioned voices saying, "AI won't replace engineers, it's just a tool to augment us." I wanted to believe it. I still want to believe it. But after spending substantial time building with AI-assisted coding tools like [Warp](https://warp.dev?utm_source=dominuskelvin.dev/blog), I can no longer ignore the economic reality staring me in the face.
 
 Anyone who claims AI won't replace engineers in most tasks, though well-intentioned, is completely wrong.
 
-Today, even in its crudest form—and make no mistake, AI-assisted coding is still in its infancy—I'll take the code AI-assisted coding produces way more than hiring a junior engineer.
+Today, even in its crudest form, and make no mistake, AI-assisted coding is still in its infancy, I'll take the code AI-assisted coding produces way more than hiring a junior engineer.
 
 Not because I enjoy replacing humans with machines, but because it's _so cost-effective_ that ignoring this reality would be a disservice to anyone trying to build something sustainable while keeping cost low.
 
@@ -34,9 +34,9 @@ So yes, you should be worried if all you can do is write mediocre code, because 
 
 Here's what most people miss in this debate: AI doesn't have to be better than you at everything. It just has to be _cheaper_ at enough things.
 
-A junior engineer might cost me **$50,000-$80,000** annually (and that's being conservative in many markets). They need benefits, time off, sick days, and—most importantly—months of onboarding before they become productive. They'll write bugs (we all do), need code reviews, require mentorship, and occasionally have a bad day where their output drops to zero.
+A junior engineer might cost me **$50,000-$80,000** annually (and that's being conservative in many markets). They need benefits, time off, sick days, and most importantly, months of onboarding before they become productive. They'll write bugs (we all do), need code reviews, require mentorship, and occasionally have a bad day where their output drops to zero.
 
-AI-assisted coding, on the other hand, costs me somewhere between **$20-$200** monthly depending on the tooling. It doesn't sleep, doesn't need health insurance, never asks for a raise, and doesn't require months of domain knowledge transfer. When it produces bad code, I reject it and ask it to iterate on it again and again until the output match my tastes—no hurt feelings, no morale issues.
+AI-assisted coding, on the other hand, costs me somewhere between **$20-$200** monthly depending on the tooling. It doesn't sleep, doesn't need health insurance, never asks for a raise, and doesn't require months of domain knowledge transfer. When it produces bad code, I reject it and ask it to iterate on it again and again until the output match my tastes. No hurt feelings, no morale issues.
 
 The economic argument isn't even close.
 
@@ -60,7 +60,7 @@ Don't rest on your laurels thinking these higher-order skills are permanently sa
 
 If AI can already participate in architecture conversations in 2025, what will it be capable of in 2027? 2030? The moat you're relying on might be shallower than you think.
 
-The senior engineers who will survive aren't those banking on AI never catching up—they're those who keep pushing further ahead, always staying beyond whatever AI can currently do.
+The senior engineers who will survive aren't those banking on AI never catching up: they're those who keep pushing further ahead, always staying beyond whatever AI can currently do.
 
 But let's be honest: most junior engineering work doesn't involve these higher-order skills. Most junior work is implementing straightforward features based on clear requirements, fixing obvious bugs, and writing the kind of CRUD operations we've all written a thousand times.
 
@@ -72,7 +72,7 @@ There's a phrase that's been haunting me: **mediocre code**.
 
 What do I mean by mediocre code? Code that works (mostly), follows some conventions (kind of), and gets the job done (eventually). It's not elegant, it's not particularly maintainable, and reading it won't teach you anything new. But it runs, passes basic tests, and ships features.
 
-Mediocre code is what most junior engineers write—not because they're bad engineers, but because they're _learning_. We all wrote mediocre code when we started. I certainly did. It's part of the journey.
+Mediocre code is what most junior engineers write, not because they're bad engineers, but because they're _learning_. We all wrote mediocre code when we started. I certainly did. It's part of the journey.
 
 The problem is, from a business perspective, I don't need to nurture that journey if I can get the same mediocre output immediately. And that's where AI has become devastatingly effective.
 
@@ -86,7 +86,7 @@ So what does this mean for engineers, especially those starting out?
 
 The bar has moved. Dramatically.
 
-Being able to "code" is no longer enough. It's becoming table stakes—a commodity skill that AI can replicate cheaply. The engineers who will thrive in this new landscape are those who can:
+Being able to "code" is no longer enough. It's becoming table stakes, a commodity skill that AI can replicate cheaply. The engineers who will thrive in this new landscape are those who can:
 
 1. **Supervise and direct AI effectively** - Knowing what to ask for and how to evaluate what you get back
 2. **Architect systems** that AI isn't sophisticated enough to design
@@ -118,13 +118,13 @@ Use AI to handle the boilerplate. Use it to generate test cases. Use it to expla
 
 Here's something that gets lost in the "AI will replace us all" panic: **using AI to code feels natural because it is coding**.
 
-You're still providing instructions to a computer—just in natural language instead of JavaScript or Python. It's a different interface to the same fundamental activity: telling a machine what to do.
+You're still providing instructions to a computer, just in natural language instead of JavaScript or Python. It's a different interface to the same fundamental activity: telling a machine what to do.
 
 And here's the kicker: just as there has always been good code and bad code, AI-assisted coding will also yield good and bad outcomes. The difference? **It all hinges on the skill of the coder**.
 
 A mediocre engineer will produce mediocre prompts and get mediocre AI-generated code. A skilled engineer will craft precise requirements, spot issues in generated code, know when to accept or reject suggestions, and iterate until the output meets their standards.
 
-**A quick note:** Using AI-assisted coding doesn't mean "vibe coding" where you accept whatever comes out and ship it. The engineers actually thriving with AI-assisted coding are those who can get output quickly for their ideas and iterate faster than they ever could without it. They're not coding less rigorously—they're coding more rapidly, with tighter feedback loops and faster iteration cycles. The discipline remains; the velocity increases.
+**A quick note:** Using AI-assisted coding doesn't mean "vibe coding" where you accept whatever comes out and ship it. The engineers actually thriving with AI-assisted coding are those who can get output quickly for their ideas and iterate faster than they ever could without it. They're not coding less rigorously; they're coding more rapidly, with tighter feedback loops and faster iteration cycles. The discipline remains; the velocity increases.
 
 So I admonish coders to learn and get better at coding—not despite AI, but _because_ of it. The better you understand software architecture, design patterns, edge cases, and code quality, the better you'll be at producing high-quality AI-assisted code.
 
@@ -145,7 +145,7 @@ This is where the concept of the [T-shaped engineer](https://youtu.be/IMHneaMO-d
 
 ![T-Shaped Engineer Diagram](/post-images/t-shaped-engineer.png)
 
-AI can give you breadth. It can explain React, then Vue, then Svelte all in the same conversation. But depth—true mastery of what makes software _good_ rather than just functional—that's what separates engineers AI can replace from engineers AI amplifies.
+AI can give you breadth. It can explain React, then Vue, then Svelte all in the same conversation. But depth, true mastery of what makes software _good_ rather than just functional, that's what separates engineers AI can replace from engineers AI amplifies.
 
 When you understand _why_ certain patterns work, you can guide AI toward solutions that aren't just correct, but elegant, maintainable, and aligned with long-term system health. When you only know surface-level "how-to," you'll accept whatever AI gives you, unable to distinguish good from good-enough from technical debt in disguise.
 
@@ -155,9 +155,9 @@ Here's something interesting about the Model T: it didn't actually eliminate tra
 
 Horse breeders became obsolete, yes. But the automobile industry created mechanics, drivers, traffic engineers, auto designers, and entire supply chains that employed far more people than the horse industry ever did.
 
-The people who suffered weren't those who lost jobs—new jobs emerged. The people who suffered were those who refused to adapt, who insisted on breeding horses when the world had moved on.
+The people who suffered weren't those who lost jobs. New jobs emerged. The people who suffered were those who refused to adapt, who insisted on breeding horses when the world had moved on.
 
-AI will likely follow a similar pattern. Junior engineering jobs as we know them? Those may largely disappear. But new roles will emerge—roles we can't fully envision yet—that require human judgment working in concert with AI capabilities.
+AI will likely follow a similar pattern. Junior engineering jobs as we know them? Those may largely disappear. But new roles will emerge, roles we can't fully envision yet, that require human judgment working in concert with AI capabilities.
 
 The question is: will you be someone who adapts to this new reality, or will you insist on breeding horses?
 

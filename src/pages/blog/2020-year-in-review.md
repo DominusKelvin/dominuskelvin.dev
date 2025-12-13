@@ -11,7 +11,7 @@ Those where the exact words I used in conluding [2019: Unexpected turns. Still l
 
 Adam Wathan in his [2020 Year in Review](https://adamwathan.me/journal/2020/12/29/2020-year-in-review/) sums up my thoughts about the year 2020:
 
-> This year — despite all of the "2020 is so awful omg is it ever going to be over"-ness you're probably tired of reading about — was better. In fact it was probably the most rewarding and productive year of my career.
+> This year, despite all of the "2020 is so awful omg is it ever going to be over"-ness you're probably tired of reading about, was better. In fact it was probably the most rewarding and productive year of my career.
 
 ## Highlights
 
