@@ -40,7 +40,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}'))
                   >
                     <div class="flex items-baseline gap-6">
                       <time
-                        class="text-sm text-gray-500 w-28 flex-shrink-0 hidden sm:block"
+                        class="text-sm text-gray-500 w-28 shrink-0 hidden sm:block"
                         datetime={post.frontmatter.pubDate}
                       >
                         {new Date(post.frontmatter.pubDate).toLocaleDateString(
