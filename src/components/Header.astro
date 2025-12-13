@@ -2,18 +2,24 @@
 import HeaderLink from './HeaderLink.astro'
 ---
 
-<header class="text-center text-gray-800 my-4 lg:pt-8">
-  <h2 class="lg:text-6xl text-3xl font-extrabold">
-    <a href="/">Kelvin <span class="text-green">O</span> Omereshone</a>
-  </h2>
-  <h3 class="lg:text-xl mb-2">Developer. Teacher. Speaker.</h3>
-  <nav class="space-x-4">
-    <HeaderLink href="/blog">Blog</HeaderLink>
-    <HeaderLink href="/articles">Articles</HeaderLink>
-    <HeaderLink href="/books">Books</HeaderLink>
-    <HeaderLink href="/tkyt">TKYT</HeaderLink>
-    <HeaderLink href="https://newsletter.dominuskelvin.dev" target="_blank"
-      >Newsletter</HeaderLink
-    >
-  </nav>
+<header class="border-b border-gray-200/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-10 py-8 lg:py-12">
+    <div class="text-center space-y-6">
+      <div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
+          <a href="/" class="hover:text-gray-700 transition-colors">
+            Kelvin <span class="text-green-600">O</span> Omereshone
+          </a>
+        </h1>
+        <p class="text-base sm:text-lg text-gray-500">Developer. Teacher. Speaker.</p>
+      </div>
+      <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+        <HeaderLink href="/blog">Blog</HeaderLink>
+        <HeaderLink href="/articles">Articles</HeaderLink>
+        <HeaderLink href="/books">Books</HeaderLink>
+        <HeaderLink href="/tkyt">TKYT</HeaderLink>
+        <HeaderLink href="https://newsletter.dominuskelvin.dev" target="_blank">Newsletter</HeaderLink>
+      </nav>
+    </div>
+  </div>
 </header>
