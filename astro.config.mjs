@@ -1,14 +1,16 @@
 import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
-import tailwind from '@astrojs/tailwind'
-
+import tailwindcss from '@tailwindcss/vite'
 import vue from '@astrojs/vue'
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://dominuskelvin.dev',
-  integrations: [mdx(), sitemap(), tailwind(), vue()],
+  integrations: [mdx(), sitemap(), vue()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
   redirects: {
     '/yt': 'https://youtube.com/@dominuskelvin',
     '/x': 'https://x.com/Dominus_Kelvin',
