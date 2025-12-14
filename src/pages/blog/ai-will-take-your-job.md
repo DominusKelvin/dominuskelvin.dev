@@ -54,6 +54,18 @@ AI struggles with:
 
 These are the skills that still make senior engineers valuable. These are the moats that won't be easily crossed by probabilistic token prediction.
 
+## "But AI Isn't Creative!"
+
+I hear this argument often: "AI can't be creative. That's what makes human engineers irreplaceable."
+
+I want to believe this. It's comforting. But I've watched AI suggest architectural approaches I hadn't considered, combine patterns in novel ways, and propose solutions that made me think, "Huh, that's actually clever."
+
+The uncomfortable truth? AI can be creative. It can generate original solutions, make unexpected connections, and produce ideas that feel genuinely inventive.
+
+What AI struggles with isn't creativity itself. It's knowing which creative solution is _right_. It can generate ten clever approaches to a problem, but it can't tell you which one fits your team's skill level, your technical debt situation, your timeline, and your users' actual needs.
+
+That judgment, that taste, that's what still makes engineering beautiful and human. Not the ability to think of solutions, but the wisdom to choose the right one.
+
 **But here's the uncomfortable part for senior engineers: AI is in its earliest, crudest version right now.**
 
 Don't rest on your laurels thinking these higher-order skills are permanently safe. I've experienced firsthand that I can already have meaningful architecture discussions with AI today and get good enough output to work with. Not perfect, not always right, but _good enough_ to be useful.
