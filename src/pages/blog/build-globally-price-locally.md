@@ -76,6 +76,19 @@ The math is simple. Would you rather have:
 More users, more feedback, more growth, more revenue. The constraint becomes an advantage.
 ![Revenue comparison by pricing strategy](/post-images/revenue-comparison-by-pricing-strategy.png)
 
+## Opt-In, Not Automatic
+
+I chose to make PPP pricing opt-in, rather than applying it automatically for every user. This wasn't just a technical decision, but a deliberate choice about how I want to interact with my customers and community.
+
+Here's why:
+
+- **Transparency and trust:** I want users to know exactly what they're paying and why. An opt-in makes the discount explicit, not hidden or mysterious. It feels like a fair offer, not a trick.
+- **Avoiding false positives:** Automatic detection can be wrong. VPNs, travel, or edge cases can misclassify users. Opt-in lets people self-identify if they need the discount, reducing support headaches and awkward conversations.
+- **Respect for dignity:** Some users may not want or need a discount, even if they're eligible. Opt-in gives them the choice, rather than assuming their financial situation.
+- **Business clarity:** It helps me track how many people are using PPP, how it's impacting revenue, and whether the program is working as intended.
+
+Ultimately, I want PPP to be a tool for accessibility, not a source of confusion or resentment. Opt-in puts the power in the user's hands, and that's the kind of relationship I want with my customers.
+
 ## "But People Will Cheat!"
 
 This is the first objection everyone raises. Wes addresses this directly:
