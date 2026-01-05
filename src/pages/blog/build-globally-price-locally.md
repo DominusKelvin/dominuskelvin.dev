@@ -1,7 +1,7 @@
 ---
  layout: '../../layouts/BlogPost.astro'
  title: "Build Globally, Price Locally"
- description: "African builders should face the truth about purchasing power and build with that constraint in mind"
+ description: "I left money on the table for five years because I ignored one simple truth about pricing."
  pubDate: 'January 5, 2026'
  heroImage: /covers/build-globally-price-locally.png
 ---
