@@ -3,11 +3,12 @@ import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 
-// Use Astro.glob() to fetch all posts, filter out draft posts and then sort them by date.
-const posts = (await Astro.glob('./blog/*.{md,mdx}'))
-  .filter((post) => !post.frontmatter.draft)
+// Use import.meta.glob to fetch all posts, filter out draft posts and then sort them by date.
+const allPosts = import.meta.glob('./blog/*.{md,mdx}', { eager: true })
+const posts = Object.values(allPosts)
+  .filter((post: any) => !post.frontmatter.draft)
   .sort(
-    (a, b) =>
+    (a: any, b: any) =>
       new Date(b.frontmatter.pubDate).valueOf() -
       new Date(a.frontmatter.pubDate).valueOf()
   )
@@ -32,7 +33,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}'))
         <section>
           <div class="divide-y divide-gray-200/60">
             {
-              posts.map((post) => (
+              posts.map((post: any) => (
                 <article class="group py-8 first:pt-0">
                   <a
                     href={post.url}
