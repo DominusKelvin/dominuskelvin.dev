@@ -18,10 +18,6 @@ const {
   content: { title, description, pubDate, updatedDate, heroImage },
 } = Astro.props
 
-const postText = `I just read "${title}" by @Dominus_Kelvin \n`
-const postUrl = `https://x.com/intent/tweet?url=${
-  Astro.url
-}&text=${encodeURIComponent(postText)}`
 const xSearchUrl = `https://x.com/search?q=${encodeURI(
   String(Astro.url)
 )}`
@@ -38,16 +34,30 @@ const xSearchUrl = `https://x.com/search?q=${encodeURI(
     <main class="min-h-screen">
       <article class="max-w-3xl mx-auto px-4 sm:px-10 py-12 lg:py-20">
 
-        <!-- Back link -->
-        <a
-          href="/blog"
-          class="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 transition-colors mb-8 group"
-        >
-          <svg class="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg>
-          Back to blog
-        </a>
+        <!-- Navigation bar -->
+        <div class="flex items-center justify-between mb-8">
+          <a
+            href="/blog"
+            class="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 transition-colors group"
+          >
+            <svg class="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to blog
+          </a>
+          <button
+            data-title={title}
+            data-text={description}
+            data-url={Astro.url}
+            hidden
+            class="share-btn p-2 text-gray-400 hover:text-gray-900 transition-colors cursor-pointer"
+            aria-label="Share this article"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <circle cx="18" cy="5" r="3" stroke-width="2"/><circle cx="6" cy="12" r="3" stroke-width="2"/><circle cx="18" cy="19" r="3" stroke-width="2"/><path stroke-width="2" d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/>
+            </svg>
+          </button>
+        </div>
 
         <!-- Article header -->
         <header class="mb-12">
@@ -98,14 +108,18 @@ const xSearchUrl = `https://x.com/search?q=${encodeURI(
           <div class="flex flex-wrap items-center gap-4">
             <span class="text-sm font-medium text-gray-900">Share this article:</span>
             <div class="flex gap-3">
-              <a
-                target="_blank"
-                rel="noreferrer noopener"
-                href={postUrl}
-                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white rounded-lg ring-1 ring-gray-900/5 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+              <button
+                data-title={title}
+                data-text={description}
+                data-url={Astro.url}
+                hidden
+                class="share-btn inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-white rounded-lg ring-1 ring-gray-900/5 hover:bg-gray-50 hover:text-gray-900 transition-colors cursor-pointer"
               >
-                Post on X
-              </a>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <circle cx="18" cy="5" r="3" stroke-width="2"/><circle cx="6" cy="12" r="3" stroke-width="2"/><circle cx="18" cy="19" r="3" stroke-width="2"/><path stroke-width="2" d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/>
+                </svg>
+                Share
+              </button>
               <a
                 target="_blank"
                 rel="noreferrer noopener"
@@ -122,5 +136,20 @@ const xSearchUrl = `https://x.com/search?q=${encodeURI(
     </main>
 
     <Footer />
+
+    <script is:inline>
+      if (navigator.share) {
+        document.querySelectorAll('.share-btn').forEach(function(btn) {
+          btn.hidden = false;
+          btn.addEventListener('click', function() {
+            navigator.share({
+              title: btn.dataset.title,
+              text: btn.dataset.text,
+              url: btn.dataset.url,
+            });
+          });
+        });
+      }
+    </script>
   </body>
 </html>
