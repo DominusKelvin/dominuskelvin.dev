@@ -16,7 +16,7 @@ Sam Lambert, CEO of PlanetScale, [replied](https://x.com/samlambert/status/20295
 
 ![The PlanetScale CEO says I don't value my time](/post-images/planetscale-ceo.png)
 
-He followed up:
+He followed up with the following:
 
 > This would not happen on the majority of the services you are talking about. I think this thread reveals that you don't understand how database systems operate and that makes your advice pretty dangerous.
 
