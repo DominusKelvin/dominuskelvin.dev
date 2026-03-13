@@ -5,6 +5,7 @@ export interface Props {
   title: string
 }
 const { link, icon, title } = Astro.props
+const usesAdaptiveContrast = ['/github.svg', '/x.svg'].includes(icon)
 ---
 
 <li>
@@ -15,6 +16,20 @@ const { link, icon, title } = Astro.props
     aria-label={title}
     class="theme-button-soft flex h-11 w-11 items-center justify-center rounded-full transition-transform hover:-translate-y-0.5"
   >
-    <img class="h-5 w-5" loading="lazy" src={icon} alt={title} />
+    <img
+      class:list={['h-5 w-5', usesAdaptiveContrast && 'social-icon-adaptive']}
+      loading="lazy"
+      src={icon}
+      alt=""
+      aria-hidden="true"
+    />
   </a>
 </li>
+
+<style>
+  @media (prefers-color-scheme: dark) {
+    .social-icon-adaptive {
+      filter: brightness(0) invert(1);
+    }
+  }
+</style>
