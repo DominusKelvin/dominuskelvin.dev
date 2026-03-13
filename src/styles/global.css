@@ -1,6 +1,25 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+:root {
+  color-scheme: light;
+  --app-bg: #f6f8f3;
+  --app-surface: #ffffff;
+  --app-surface-alt: #eaf0ea;
+  --app-surface-strong: #ffffff;
+  --app-text: #18211b;
+  --app-text-muted: #425149;
+  --app-text-soft: #6a766f;
+  --app-text-faint: #8b948d;
+  --app-border: rgba(24, 33, 27, 0.08);
+  --app-border-strong: rgba(24, 33, 27, 0.14);
+  --app-code-bg: #101815;
+  --app-code-fg: #edf7f0;
+  --app-code-inline-bg: #e8f2ec;
+  --app-code-inline-fg: #2b6748;
+  --app-selection: rgba(77, 148, 110, 0.26);
+}
+
 @theme {
   /* Custom Colors */
   --color-green-50: #bcdccb;
@@ -57,6 +76,25 @@
 
 /* Dark mode color overrides based on device preference */
 @media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --app-bg: #070e0b;
+    --app-surface: #0d1712;
+    --app-surface-alt: #132019;
+    --app-surface-strong: #18261d;
+    --app-text: #edf5ef;
+    --app-text-muted: #c5d3c8;
+    --app-text-soft: #99ab9d;
+    --app-text-faint: #738478;
+    --app-border: rgba(237, 245, 239, 0.1);
+    --app-border-strong: rgba(237, 245, 239, 0.18);
+    --app-code-bg: #040807;
+    --app-code-fg: #eef7f1;
+    --app-code-inline-bg: rgba(121, 185, 151, 0.12);
+    --app-code-inline-fg: #bcdccb;
+    --app-selection: rgba(121, 185, 151, 0.28);
+  }
+
   @theme {
     /* Adjust colors for dark mode - invert some color scales */
     --color-green-50: #13251c;
@@ -102,5 +140,98 @@
     --color-brown-700: #ede5e5;
     --color-brown-800: #fdfdfd;
     --color-brown-900: #ffffff;
+  }
+}
+
+@theme inline {
+  --color-app-bg: var(--app-bg);
+  --color-app-surface: var(--app-surface);
+  --color-app-surface-alt: var(--app-surface-alt);
+  --color-app-surface-strong: var(--app-surface-strong);
+  --color-app-text: var(--app-text);
+  --color-app-text-muted: var(--app-text-muted);
+  --color-app-text-soft: var(--app-text-soft);
+  --color-app-text-faint: var(--app-text-faint);
+  --color-app-border: var(--app-border);
+  --color-app-border-strong: var(--app-border-strong);
+  --color-app-code-bg: var(--app-code-bg);
+  --color-app-code-fg: var(--app-code-fg);
+  --color-app-code-inline-bg: var(--app-code-inline-bg);
+  --color-app-code-inline-fg: var(--app-code-inline-fg);
+}
+
+@layer base {
+  html {
+    background-color: var(--app-bg);
+  }
+
+  body {
+    @apply min-h-screen bg-app-bg text-app-text antialiased;
+  }
+
+  ::selection {
+    background-color: var(--app-selection);
+    color: var(--app-text);
+  }
+}
+
+@layer components {
+  .theme-shell {
+    @apply bg-app-bg text-app-text;
+  }
+
+  .theme-card {
+    @apply rounded-2xl bg-app-surface ring-1 ring-app-border;
+    box-shadow: 0 24px 48px -36px rgba(15, 23, 42, 0.35);
+    backdrop-filter: blur(18px);
+  }
+
+  .theme-button-soft {
+    @apply bg-app-surface text-app-text-muted ring-1 ring-app-border transition-colors hover:bg-app-surface-alt hover:text-app-text;
+    backdrop-filter: blur(18px);
+  }
+
+  .theme-chip {
+    @apply bg-app-surface-alt text-app-text-muted;
+  }
+
+  .theme-link-muted {
+    @apply text-app-text-muted transition-colors hover:text-app-text;
+  }
+
+  .theme-prose {
+    @apply prose prose-lg max-w-none;
+    --tw-prose-body: var(--app-text-muted);
+    --tw-prose-headings: var(--app-text);
+    --tw-prose-lead: var(--app-text-muted);
+    --tw-prose-links: var(--color-green-600);
+    --tw-prose-bold: var(--app-text);
+    --tw-prose-counters: var(--app-text-soft);
+    --tw-prose-bullets: var(--app-text-soft);
+    --tw-prose-hr: var(--app-border);
+    --tw-prose-quotes: var(--app-text-muted);
+    --tw-prose-quote-borders: var(--color-green-600);
+    --tw-prose-captions: var(--app-text-soft);
+    --tw-prose-code: var(--app-code-inline-fg);
+    --tw-prose-pre-code: var(--app-code-fg);
+    --tw-prose-pre-bg: var(--app-code-bg);
+    --tw-prose-th-borders: var(--app-border);
+    --tw-prose-td-borders: var(--app-border);
+  }
+
+  .theme-prose :where(code):not(:where(pre code)) {
+    background-color: var(--app-code-inline-bg);
+    border-radius: 0.375rem;
+    padding: 0.125rem 0.375rem;
+  }
+
+  .theme-prose :where(pre) {
+    border: 1px solid var(--app-border);
+    border-radius: 0.75rem;
+  }
+
+  .theme-prose :where(img) {
+    border: 1px solid var(--app-border);
+    border-radius: 1rem;
   }
 }

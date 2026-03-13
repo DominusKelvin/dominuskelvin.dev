@@ -2,7 +2,6 @@
 import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
-import NewsletterSignup from '../components/NewsletterSignup.vue'
 
 export interface Props {
   content: {
@@ -18,9 +17,7 @@ const {
   content: { title, description, pubDate, updatedDate, heroImage },
 } = Astro.props
 
-const xSearchUrl = `https://x.com/search?q=${encodeURI(
-  String(Astro.url)
-)}`
+const xSearchUrl = `https://x.com/search?q=${encodeURI(String(Astro.url))}`
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -28,20 +25,28 @@ const xSearchUrl = `https://x.com/search?q=${encodeURI(
     <BaseHead title={title} description={description} image={heroImage} />
   </head>
 
-  <body class="bg-gray-50">
+  <body class="theme-shell">
     <Header />
 
     <main class="min-h-screen">
       <article class="max-w-3xl mx-auto px-4 sm:px-10 py-12 lg:py-20">
-
         <!-- Navigation bar -->
         <div class="flex items-center justify-between mb-8">
           <a
             href="/blog"
-            class="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 transition-colors group"
+            class="theme-link-muted inline-flex items-center text-sm group"
           >
-            <svg class="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            <svg
+              class="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"></path>
             </svg>
             Back to blog
           </a>
@@ -50,73 +55,110 @@ const xSearchUrl = `https://x.com/search?q=${encodeURI(
             data-text={description}
             data-url={Astro.url}
             hidden
-            class="share-btn p-2 text-gray-400 hover:text-gray-900 transition-colors cursor-pointer"
+            class="share-btn p-2 text-app-text-faint hover:text-app-text transition-colors cursor-pointer"
             aria-label="Share this article"
           >
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <circle cx="18" cy="5" r="3" stroke-width="2"/><circle cx="6" cy="12" r="3" stroke-width="2"/><circle cx="18" cy="19" r="3" stroke-width="2"/><path stroke-width="2" d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/>
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="18" cy="5" r="3" stroke-width="2"></circle><circle
+                cx="6"
+                cy="12"
+                r="3"
+                stroke-width="2"></circle><circle
+                cx="18"
+                cy="19"
+                r="3"
+                stroke-width="2"></circle><path
+                stroke-width="2"
+                d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"></path>
             </svg>
           </button>
         </div>
 
         <!-- Article header -->
         <header class="mb-12">
-          <time class="text-sm text-gray-500 block mb-4">
+          <time class="text-sm text-app-text-soft block mb-4">
             {pubDate}
           </time>
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+          <h1
+            class="text-3xl sm:text-4xl lg:text-5xl font-bold text-app-text mb-4 leading-tight"
+          >
             {title}
           </h1>
-          {updatedDate && (
-            <p class="text-sm text-gray-500">
-              Last updated on <time>{updatedDate}</time>
-            </p>
-          )}
+          {
+            updatedDate && (
+              <p class="text-sm text-app-text-soft">
+                Last updated on <time>{updatedDate}</time>
+              </p>
+            )
+          }
         </header>
 
         <!-- Hero image -->
-        {heroImage && (
-          <div class="mb-12">
-            <img
-              src={heroImage}
-              alt={title}
-              class="w-full rounded-2xl ring-1 ring-gray-900/5"
-            />
-          </div>
-        )}
+        {
+          heroImage && (
+            <div class="mb-12">
+              <img
+                src={heroImage}
+                alt={title}
+                class="w-full rounded-2xl ring-1 ring-app-border"
+              />
+            </div>
+          )
+        }
 
         <!-- Article content -->
-        <div class="prose prose-lg prose-gray max-w-none
-          prose-headings:font-bold prose-headings:text-gray-900
+        <div
+          class="theme-prose
+          prose-headings:font-bold
           prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4
           prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-          prose-p:text-gray-600 prose-p:leading-relaxed prose-p:mb-6
+          prose-p:leading-relaxed prose-p:mb-6
           prose-a:text-green-600 prose-a:no-underline prose-a:font-medium hover:prose-a:text-green-700
-          prose-strong:text-gray-900 prose-strong:font-semibold
-          prose-code:text-green-600 prose-code:bg-green-50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:before:content-none prose-code:after:content-none
-          prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-xl prose-pre:ring-1 prose-pre:ring-gray-900/5
+          prose-strong:font-semibold
+          prose-code:px-1.5 prose-code:py-0.5 prose-code:text-sm prose-code:before:content-none prose-code:after:content-none
           prose-ul:my-6 prose-ol:my-6
-          prose-li:text-gray-600 prose-li:leading-relaxed
-          prose-img:rounded-xl prose-img:ring-1 prose-img:ring-gray-900/5
-          prose-blockquote:border-l-green-600 prose-blockquote:text-gray-600 prose-blockquote:italic
-        ">
+          prose-li:leading-relaxed
+          prose-blockquote:border-l-green-600 prose-blockquote:italic"
+        >
           <slot />
         </div>
 
         <!-- Social sharing -->
-        <div class="mt-16 pt-8 border-t border-gray-200/60">
+        <div class="mt-16 pt-8 border-t border-app-border">
           <div class="flex flex-wrap items-center gap-4">
-            <span class="text-sm font-medium text-gray-900">Share this article:</span>
+            <span class="text-sm font-medium text-app-text"
+              >Share this article:</span
+            >
             <div class="flex gap-3">
               <button
                 data-title={title}
                 data-text={description}
                 data-url={Astro.url}
                 hidden
-                class="share-btn inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-white rounded-lg ring-1 ring-gray-900/5 hover:bg-gray-50 hover:text-gray-900 transition-colors cursor-pointer"
+                class="share-btn theme-button-soft inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg cursor-pointer"
               >
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <circle cx="18" cy="5" r="3" stroke-width="2"/><circle cx="6" cy="12" r="3" stroke-width="2"/><circle cx="18" cy="19" r="3" stroke-width="2"/><path stroke-width="2" d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/>
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="18" cy="5" r="3" stroke-width="2"></circle><circle
+                    cx="6"
+                    cy="12"
+                    r="3"
+                    stroke-width="2"></circle><circle
+                    cx="18"
+                    cy="19"
+                    r="3"
+                    stroke-width="2"></circle><path
+                    stroke-width="2"
+                    d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"></path>
                 </svg>
                 Share
               </button>
@@ -124,14 +166,13 @@ const xSearchUrl = `https://x.com/search?q=${encodeURI(
                 target="_blank"
                 rel="noreferrer noopener"
                 href={xSearchUrl}
-                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white rounded-lg ring-1 ring-gray-900/5 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                class="theme-button-soft inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg"
               >
                 Discuss on X
               </a>
             </div>
           </div>
         </div>
-
       </article>
     </main>
 
@@ -139,16 +180,16 @@ const xSearchUrl = `https://x.com/search?q=${encodeURI(
 
     <script is:inline>
       if (navigator.share) {
-        document.querySelectorAll('.share-btn').forEach(function(btn) {
-          btn.hidden = false;
-          btn.addEventListener('click', function() {
+        document.querySelectorAll('.share-btn').forEach(function (btn) {
+          btn.hidden = false
+          btn.addEventListener('click', function () {
             navigator.share({
               title: btn.dataset.title,
               text: btn.dataset.text,
               url: btn.dataset.url,
-            });
-          });
-        });
+            })
+          })
+        })
       }
     </script>
   </body>

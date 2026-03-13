@@ -13,10 +13,12 @@ export interface Props {
 const { session } = Astro.props
 ---
 
-<div class="relative">
+<div
+  class="relative overflow-hidden rounded-xl bg-app-surface ring-1 ring-app-border"
+>
   <a href={session.url} target="_blank"
     ><img
-      class="rounded-sm font-semibold"
+      class="font-semibold"
       width={1012}
       height={506}
       src={session.poster}
@@ -27,12 +29,12 @@ const { session } = Astro.props
 </div>
 <h3 class="font-extrabold text-md text-purple-500">
   {session.title}
-  <span> with </span>
+  <span> with</span>
   <a class="text-pink-600 underline" href={session.teacherUrl} target="_blank"
     >{session.teacher}
   </a>
 </h3>
-<p class="text-brown-800 text-sm">
+<p class="text-app-text-soft text-sm">
   {
     new Date(session.date).toLocaleDateString('en-us', {
       year: 'numeric',
