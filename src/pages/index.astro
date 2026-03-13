@@ -4,69 +4,95 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import Socials from '../components/Socials.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
-import NewsletterSignup from '../components/NewsletterSignup.vue'
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body class="bg-gray-50">
+  <body class="theme-shell">
     <Header title={SITE_TITLE} />
-    <main class="min-h-screen px-4 sm:px-10 lg:mx-auto lg:w-10/12 xl:w-9/12 max-w-7xl">
-
+    <main
+      class="min-h-screen px-4 sm:px-10 lg:mx-auto lg:w-10/12 xl:w-9/12 max-w-7xl"
+    >
       <!-- Hero Section -->
       <section class="py-12 lg:py-20">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div class="space-y-6">
             <div class="inline-block">
-              <span class="text-green-600 font-semibold text-sm uppercase tracking-wider">Developer • Teacher • Speaker</span>
+              <span
+                class="text-green-600 font-semibold text-sm uppercase tracking-wider"
+                >Developer • Teacher • Speaker</span
+              >
             </div>
-            <h1 class="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-gray-900 leading-tight">
+            <h1
+              class="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-app-text leading-tight"
+            >
               Hello, I'm <span class="text-green-600">Kelvin</span>!
             </h1>
-            <p class="text-xl text-gray-600 leading-relaxed">
-              Lead maintainer of <a href="https://sailsjs.com" class="text-green-600 font-semibold hover:text-green-700 underline decoration-2 underline-offset-2">Sails</a>
+            <p class="text-xl text-app-text-muted leading-relaxed">
+              Lead maintainer of <a
+                href="https://sailsjs.com"
+                class="text-green-600 font-semibold hover:text-green-700 underline decoration-2 underline-offset-2"
+                >Sails</a
+              >
             </p>
-            <p class="text-lg text-gray-600 leading-relaxed">
-              Helping developers build businesses on JavaScript. Teaching fullstack JavaScript for web development.
+            <p class="text-lg text-app-text-muted leading-relaxed">
+              Helping developers build businesses on JavaScript. Teaching
+              fullstack JavaScript for web development.
             </p>
             <div class="pt-4">
-              <h3 class="text-lg font-semibold text-gray-900 mb-4">Connect with me</h3>
+              <h3 class="text-lg font-semibold text-app-text mb-4">
+                Connect with me
+              </h3>
               <Socials />
             </div>
           </div>
           <div class="flex justify-center lg:justify-end">
             <div class="relative">
-              <div class="absolute -inset-4 bg-linear-to-r from-green-400 to-green-600 rounded-3xl opacity-20 blur-2xl"></div>
+              <div
+                class="absolute -inset-4 rounded-3xl bg-green-500/20 blur-2xl"
+              >
+              </div>
               <img
                 src="/koo.png"
                 alt="A picture of Kelvin O. Omereshone"
-                class="relative rounded-2xl shadow-2xl w-full max-w-md object-cover aspect-square"
+                class="relative rounded-2xl shadow-2xl ring-1 ring-app-border w-full max-w-md object-cover aspect-square"
               />
             </div>
           </div>
         </div>
       </section>
 
-            <!-- Projects Grid -->
+      <!-- Projects Grid -->
       <section class="py-16 lg:py-24">
         <div class="text-center mb-12 lg:mb-16">
-          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">Featured Projects & Initiatives</h2>
-          <p class="text-xl text-gray-500">Building tools and communities to help developers thrive with JavaScript</p>
+          <h2 class="text-3xl lg:text-4xl font-bold text-app-text mb-3">
+            Featured Projects & Initiatives
+          </h2>
+          <p class="text-xl text-app-text-soft">
+            Building tools and communities to help developers thrive with
+            JavaScript
+          </p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-
           <!-- The African Engineer -->
-          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-green-500/50 transition-all">
-            <div class="flex items-center justify-center w-12 h-12 bg-green-500 rounded-xl mb-5">
+          <article
+            class="group relative theme-card p-6 transition-all hover:-translate-y-1 hover:ring-green-500/50"
+          >
+            <div
+              class="flex items-center justify-center w-12 h-12 bg-green-500 rounded-xl mb-5"
+            >
               <span class="text-2xl">🌍</span>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">The African Engineer</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-              Inside stories from engineers building Africa's tech future. Deep dives into Big Tech & startups.
+            <h3 class="text-xl font-semibold text-app-text mb-2">
+              The African Engineer
+            </h3>
+            <p class="text-app-text-soft text-sm leading-relaxed mb-4">
+              Inside stories from engineers building Africa's tech future. Deep
+              dives into Big Tech & startups.
             </p>
             <a
               href="https://africanengineer.com"
@@ -74,20 +100,36 @@ import NewsletterSignup from '../components/NewsletterSignup.vue'
               class="inline-flex items-center text-sm font-medium text-green-600 hover:text-green-700"
             >
               Read Issues
-              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                class="w-4 h-4 ml-1.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </article>
 
           <!-- Sponsorships -->
-          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-purple-500/50 transition-all">
-            <div class="flex items-center justify-center w-12 h-12 bg-purple-500 rounded-xl mb-5">
+          <article
+            class="group relative theme-card p-6 transition-all hover:-translate-y-1 hover:ring-purple-500/50"
+          >
+            <div
+              class="flex items-center justify-center w-12 h-12 bg-purple-500 rounded-xl mb-5"
+            >
               <span class="text-2xl">🤝</span>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Sponsorships</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-              Have a product or service you'd like me to share with my audience? Let's talk!
+            <h3 class="text-xl font-semibold text-app-text mb-2">
+              Sponsorships
+            </h3>
+            <p class="text-app-text-soft text-sm leading-relaxed mb-4">
+              Have a product or service you'd like me to share with my audience?
+              Let's talk!
             </p>
             <a
               href="https://dominuskelvin.dev/deals"
@@ -95,20 +137,36 @@ import NewsletterSignup from '../components/NewsletterSignup.vue'
               class="inline-flex items-center text-sm font-medium text-purple-600 hover:text-purple-700"
             >
               Check out deals
-              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                class="w-4 h-4 ml-1.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </article>
 
           <!-- Boring Stack -->
-          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-pink-500/50 transition-all">
-            <div class="flex items-center justify-center w-12 h-12 bg-pink-500 rounded-xl mb-5">
+          <article
+            class="group relative theme-card p-6 transition-all hover:-translate-y-1 hover:ring-pink-500/50"
+          >
+            <div
+              class="flex items-center justify-center w-12 h-12 bg-pink-500 rounded-xl mb-5"
+            >
               <span class="text-2xl">🥱</span>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Boring JavaScript Stack</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-              Tired of flashy new JavaScript trends? Use The Boring JavaScript Stack.
+            <h3 class="text-xl font-semibold text-app-text mb-2">
+              Boring JavaScript Stack
+            </h3>
+            <p class="text-app-text-soft text-sm leading-relaxed mb-4">
+              Tired of flashy new JavaScript trends? Use The Boring JavaScript
+              Stack.
             </p>
             <a
               href="https://github.com/sailscastshq/boring-stack"
@@ -116,20 +174,34 @@ import NewsletterSignup from '../components/NewsletterSignup.vue'
               class="inline-flex items-center text-sm font-medium text-pink-600 hover:text-pink-700"
             >
               Check it out
-              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                class="w-4 h-4 ml-1.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </article>
 
           <!-- Sailscasts -->
-          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-blue-500/50 transition-all">
-            <div class="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-xl mb-5">
+          <article
+            class="group relative theme-card p-6 transition-all hover:-translate-y-1 hover:ring-blue-500/50"
+          >
+            <div
+              class="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-xl mb-5"
+            >
               <span class="text-2xl">🎓</span>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Sailscasts</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-              Learn fullstack JavaScript from screencasts and build your next great idea.
+            <h3 class="text-xl font-semibold text-app-text mb-2">Sailscasts</h3>
+            <p class="text-app-text-soft text-sm leading-relaxed mb-4">
+              Learn fullstack JavaScript from screencasts and build your next
+              great idea.
             </p>
             <a
               href="https://sailscasts.com/courses?utm_source=dominuskelvin.dev"
@@ -137,20 +209,34 @@ import NewsletterSignup from '../components/NewsletterSignup.vue'
               class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700"
             >
               Take a course
-              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                class="w-4 h-4 ml-1.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </article>
 
           <!-- Hagfish -->
-          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-orange-500/50 transition-all">
-            <div class="flex items-center justify-center w-12 h-12 bg-orange-500 rounded-xl mb-5">
+          <article
+            class="group relative theme-card p-6 transition-all hover:-translate-y-1 hover:ring-orange-500/50"
+          >
+            <div
+              class="flex items-center justify-center w-12 h-12 bg-orange-500 rounded-xl mb-5"
+            >
               <span class="text-2xl">📄</span>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Hagfish</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-              The platform that helps professional creators send and manage invoices.
+            <h3 class="text-xl font-semibold text-app-text mb-2">Hagfish</h3>
+            <p class="text-app-text-soft text-sm leading-relaxed mb-4">
+              The platform that helps professional creators send and manage
+              invoices.
             </p>
             <a
               href="https://hagfish.io?utm_source=dominuskelvin.dev"
@@ -158,19 +244,34 @@ import NewsletterSignup from '../components/NewsletterSignup.vue'
               class="inline-flex items-center text-sm font-medium text-orange-600 hover:text-orange-700"
             >
               Start invoicing
-              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                class="w-4 h-4 ml-1.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </article>
 
           <!-- Community -->
-          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-indigo-500/50 transition-all">
-            <div class="flex items-center justify-center w-12 h-12 bg-indigo-500 rounded-xl mb-5">
+          <article
+            class="group relative theme-card p-6 transition-all hover:-translate-y-1 hover:ring-indigo-500/50"
+          >
+            <div
+              class="flex items-center justify-center w-12 h-12 bg-indigo-500 rounded-xl mb-5"
+            >
               <span class="text-2xl">💬</span>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Sailscasts Community</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+            <h3 class="text-xl font-semibold text-app-text mb-2">
+              Sailscasts Community
+            </h3>
+            <p class="text-app-text-soft text-sm leading-relaxed mb-4">
               A welcoming and open Discord community for web developers.
             </p>
             <a
@@ -179,19 +280,32 @@ import NewsletterSignup from '../components/NewsletterSignup.vue'
               class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-700"
             >
               Join us
-              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                class="w-4 h-4 ml-1.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </article>
 
           <!-- Guppy -->
-          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-teal-500/50 transition-all">
-            <div class="flex items-center justify-center w-12 h-12 bg-teal-500 rounded-xl mb-5">
+          <article
+            class="group relative theme-card p-6 transition-all hover:-translate-y-1 hover:ring-teal-500/50"
+          >
+            <div
+              class="flex items-center justify-center w-12 h-12 bg-teal-500 rounded-xl mb-5"
+            >
               <span class="text-2xl">🔧</span>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">guppy</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+            <h3 class="text-xl font-semibold text-app-text mb-2">guppy</h3>
+            <p class="text-app-text-soft text-sm leading-relaxed mb-4">
               A tool that lets you tinker with JavaScript in a fun way.
             </p>
             <a
@@ -200,19 +314,32 @@ import NewsletterSignup from '../components/NewsletterSignup.vue'
               class="inline-flex items-center text-sm font-medium text-teal-600 hover:text-teal-700"
             >
               Try it out
-              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                class="w-4 h-4 ml-1.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </article>
 
           <!-- YouTube -->
-          <article class="group relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-red-500/50 transition-all">
-            <div class="flex items-center justify-center w-12 h-12 bg-red-500 rounded-xl mb-5">
+          <article
+            class="group relative theme-card p-6 transition-all hover:-translate-y-1 hover:ring-red-500/50"
+          >
+            <div
+              class="flex items-center justify-center w-12 h-12 bg-red-500 rounded-xl mb-5"
+            >
               <span class="text-2xl">📺</span>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">YouTube</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+            <h3 class="text-xl font-semibold text-app-text mb-2">YouTube</h3>
+            <p class="text-app-text-soft text-sm leading-relaxed mb-4">
               Teaching modern web development with JavaScript through videos.
             </p>
             <a
@@ -221,95 +348,157 @@ import NewsletterSignup from '../components/NewsletterSignup.vue'
               class="inline-flex items-center text-sm font-medium text-red-600 hover:text-red-700"
             >
               Watch now
-              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                class="w-4 h-4 ml-1.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </article>
-
         </div>
       </section>
 
       <!-- Content Sections -->
       <section class="py-16 lg:py-24">
         <div class="text-center mb-12 lg:mb-16">
-          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">More from Kelvin</h2>
-          <p class="text-xl text-gray-500">Articles, webinars, and reading lists</p>
+          <h2 class="text-3xl lg:text-4xl font-bold text-app-text mb-3">
+            More from Kelvin
+          </h2>
+          <p class="text-xl text-app-text-soft">
+            Articles, webinars, and reading lists
+          </p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
-
           <!-- TKYT -->
-          <article class="relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-green-500/50 transition-all">
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Things Kelvin Yakked To (TKYT)</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-              Monthly live webinars diving deep into specific topics within fullstack JavaScript web development. Catch past sessions or register for upcoming ones.
+          <article
+            class="relative theme-card p-6 transition-all hover:-translate-y-1 hover:ring-green-500/50"
+          >
+            <h3 class="text-xl font-semibold text-app-text mb-2">
+              Things Kelvin Yakked To (TKYT)
+            </h3>
+            <p class="text-app-text-soft text-sm leading-relaxed mb-4">
+              Monthly live webinars diving deep into specific topics within
+              fullstack JavaScript web development. Catch past sessions or
+              register for upcoming ones.
             </p>
             <a
               href="/tkyt"
               class="inline-flex items-center text-sm font-medium text-green-600 hover:text-green-700"
             >
               Check out TKYT
-              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                class="w-4 h-4 ml-1.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </article>
 
           <!-- Blog -->
-          <article class="relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-purple-500/50 transition-all">
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Blog</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-              Long-form written content around programming, web development, and my thoughts on technology.
+          <article
+            class="relative theme-card p-6 transition-all hover:-translate-y-1 hover:ring-purple-500/50"
+          >
+            <h3 class="text-xl font-semibold text-app-text mb-2">Blog</h3>
+            <p class="text-app-text-soft text-sm leading-relaxed mb-4">
+              Long-form written content around programming, web development, and
+              my thoughts on technology.
             </p>
             <a
               href="/blog"
               class="inline-flex items-center text-sm font-medium text-purple-600 hover:text-purple-700"
             >
               Read posts
-              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                class="w-4 h-4 ml-1.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </article>
 
           <!-- Articles -->
-          <article class="relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-pink-500/50 transition-all">
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Guest Articles</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-              Guest articles for various publications like Smashing Magazine, FreeCodeCamp, CSS-Tricks, and more.
+          <article
+            class="relative theme-card p-6 transition-all hover:-translate-y-1 hover:ring-pink-500/50"
+          >
+            <h3 class="text-xl font-semibold text-app-text mb-2">
+              Guest Articles
+            </h3>
+            <p class="text-app-text-soft text-sm leading-relaxed mb-4">
+              Guest articles for various publications like Smashing Magazine,
+              FreeCodeCamp, CSS-Tricks, and more.
             </p>
             <a
               href="/articles"
               class="inline-flex items-center text-sm font-medium text-pink-600 hover:text-pink-700"
             >
               Check them out
-              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                class="w-4 h-4 ml-1.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </article>
 
           <!-- Books -->
-          <article class="relative bg-white rounded-2xl p-6 ring-1 ring-gray-900/5 hover:ring-amber-500/50 transition-all">
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Books</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">
-              The books I'm reading or have read. Sharing them to inspire you to read more!
+          <article
+            class="relative theme-card p-6 transition-all hover:-translate-y-1 hover:ring-amber-500/50"
+          >
+            <h3 class="text-xl font-semibold text-app-text mb-2">Books</h3>
+            <p class="text-app-text-soft text-sm leading-relaxed mb-4">
+              The books I'm reading or have read. Sharing them to inspire you to
+              read more!
             </p>
             <a
               href="/books"
               class="inline-flex items-center text-sm font-medium text-amber-600 hover:text-amber-700"
             >
               See my books
-              <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                class="w-4 h-4 ml-1.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </article>
-
         </div>
       </section>
-
     </main>
     <Footer />
   </body>

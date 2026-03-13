@@ -5,68 +5,80 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 
 const articles = (await getCollection('articles')).sort(
-  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
+  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
 )
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <BaseHead
       title="Kelvin O. Omereshone Articles"
       description={`I've written over ${articles.length} articles for publications
-      like Smashing Magazine, FreeCodeCamp, LogRocket Blog, etc.`}, image='/articles.png'
+      like Smashing Magazine, FreeCodeCamp, LogRocket Blog, etc.`}
+      ,
+      image="/articles.png"
     />
   </head>
-  <body class="bg-gray-50">
+  <body class="theme-shell">
     <Header />
     <main class="min-h-screen">
       <div class="max-w-4xl mx-auto px-4 sm:px-10 py-12 lg:py-16">
         <header class="mb-12 lg:mb-16">
-          <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">Articles</h1>
-          <p class="text-xl text-gray-500">
-            This is a collection of <strong class="text-gray-900">{articles.length}</strong> articles—some written by me for publications like <strong class="text-gray-900">Smashing Magazine</strong>, <strong class="text-gray-900">FreeCodeCamp</strong>, <strong class="text-gray-900">LogRocket</strong>, and others written about me or featuring interviews and my story.
+          <h1 class="text-3xl lg:text-4xl font-bold text-app-text mb-3">
+            Articles
+          </h1>
+          <p class="text-xl text-app-text-soft">
+            This is a collection of <strong class="text-app-text"
+              >{articles.length}</strong
+            > articles—some written by me for publications like <strong
+              class="text-app-text">Smashing Magazine</strong
+            >, <strong class="text-app-text">FreeCodeCamp</strong>, <strong
+              class="text-app-text">LogRocket</strong
+            >, and others written about me or featuring interviews and my story.
           </p>
         </header>
         <section>
-          <div class="divide-y divide-gray-200/60">
+          <div class="divide-y divide-app-border">
             {
               articles.map((article) => (
                 <article class="group py-8 first:pt-0">
-                  <a
-                    href={article.data.url}
-                    target="_blank"
-                    class="block"
-                  >
+                  <a href={article.data.url} target="_blank" class="block">
                     <div class="flex items-baseline gap-6">
                       <time
-                        class="text-sm text-gray-500 w-28 shrink-0 hidden sm:block"
+                        class="text-sm text-app-text-soft w-28 shrink-0 hidden sm:block"
                         datetime={article.data.date}
                       >
-                        {new Date(article.data.date).toLocaleDateString('en-us', {
-                          year: 'numeric',
-                          month: 'short',
-                          day: 'numeric',
-                        })}
-                      </time>
-                      <div class="flex-1 min-w-0">
-                        <time
-                          class="text-sm text-gray-500 block mb-1 sm:hidden"
-                          datetime={article.data.date}
-                        >
-                          {new Date(article.data.date).toLocaleDateString('en-us', {
+                        {new Date(article.data.date).toLocaleDateString(
+                          'en-us',
+                          {
                             year: 'numeric',
                             month: 'short',
                             day: 'numeric',
-                          })}
+                          },
+                        )}
+                      </time>
+                      <div class="flex-1 min-w-0">
+                        <time
+                          class="text-sm text-app-text-soft block mb-1 sm:hidden"
+                          datetime={article.data.date}
+                        >
+                          {new Date(article.data.date).toLocaleDateString(
+                            'en-us',
+                            {
+                              year: 'numeric',
+                              month: 'short',
+                              day: 'numeric',
+                            },
+                          )}
                         </time>
-                        <h2 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-green-600 transition-colors">
+                        <h2 class="text-lg font-semibold text-app-text mb-1 group-hover:text-green-600 transition-colors">
                           {article.data.title}
                         </h2>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-2">
+                        <p class="text-app-text-soft text-sm leading-relaxed mb-2">
                           {article.data.excerpt}
                         </p>
-                        <span class="text-sm font-medium text-gray-400">
+                        <span class="text-sm font-medium text-app-text-faint">
                           {article.data.publication}
                         </span>
                       </div>

@@ -8,12 +8,13 @@ const { link, icon, title } = Astro.props
 ---
 
 <li>
-  <a href={link} target="_blank"
-    ><img
-      class="w-7 h-7 hover:scale-125 transition-transform"
-      loading="lazy"
-      src={icon}
-      alt={title}
-    />
+  <a
+    href={link}
+    target="_blank"
+    rel="noreferrer noopener"
+    aria-label={title}
+    class="theme-button-soft flex h-11 w-11 items-center justify-center rounded-full transition-transform hover:-translate-y-0.5"
+  >
+    <img class="h-5 w-5" loading="lazy" src={icon} alt={title} />
   </a>
 </li>

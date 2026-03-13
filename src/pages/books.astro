@@ -5,54 +5,70 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 
 const books = (await getCollection('books')).sort(
-  (a, b) => b.data.readCount -  a.data.readCount
+  (a, b) => b.data.readCount - a.data.readCount,
 )
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title="Books | Dominus Kelvin" description={`Explore my curated collection of ${books.length} insightful books that shaped my journey in tech and beyond`} image='/books.png'/>
+    <BaseHead
+      title="Books | Dominus Kelvin"
+      description={`Explore my curated collection of ${books.length} insightful books that shaped my journey in tech and beyond`}
+      image="/books.png"
+    />
   </head>
-  <body class="bg-gray-50">
+  <body class="theme-shell">
     <Header />
     <main class="min-h-screen">
       <div class="max-w-7xl mx-auto px-4 sm:px-10 py-12 lg:py-16">
         <header class="mb-12 lg:mb-16">
-          <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
+          <h1 class="text-3xl lg:text-4xl font-bold text-app-text mb-3">
             I own {books.length} books
           </h1>
-          <p class="text-xl text-gray-500">
+          <p class="text-xl text-app-text-soft">
             "Books are a uniquely portable magic." - Stephen King
           </p>
         </header>
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {books.map((book) => (
-            <article class="group relative bg-white rounded-2xl p-4 ring-1 ring-gray-900/5 hover:ring-gray-900/10 transition-all">
-              {book.data.readCount >= 1 && (
-                <span class="absolute -top-2 -right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm" title="Number of times I have read this book">
-                  {book.data.readCount}x
-                </span>
-              )}
-              <a href={book.data.url} target="_blank" class="block">
-                <div class="aspect-2/3 mb-4 overflow-hidden rounded-xl">
-                  <img loading="lazy" src={book.data.cover} alt={`${book.data.title} cover`} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                </div>
-                <h2 class="text-base font-semibold text-gray-900 mb-1 line-clamp-2 group-hover:text-green-600 transition-colors">
-                  {book.data.title}
-                </h2>
-                {book.data.author && (
-                  <p class="text-sm text-gray-500 mb-3">{book.data.author}</p>
-                )}
-              </a>
-              <div class="flex flex-wrap gap-1.5">
-                {book.data.tags.slice(0, 2).map((tag) => (
-                  <span class="inline-block bg-gray-100 text-gray-600 text-xs font-medium px-2 py-1 rounded">
-                    {tag}
+          {
+            books.map((book) => (
+              <article class="group relative theme-card p-4 transition-all hover:-translate-y-1 hover:ring-app-border-strong">
+                {book.data.readCount >= 1 && (
+                  <span
+                    class="absolute -top-2 -right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm"
+                    title="Number of times I have read this book"
+                  >
+                    {book.data.readCount}x
                   </span>
-                ))}
-              </div>
-            </article>
-          ))}
+                )}
+                <a href={book.data.url} target="_blank" class="block">
+                  <div class="aspect-2/3 mb-4 overflow-hidden rounded-xl bg-app-surface-alt ring-1 ring-app-border">
+                    <img
+                      loading="lazy"
+                      src={book.data.cover}
+                      alt={`${book.data.title} cover`}
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <h2 class="text-base font-semibold text-app-text mb-1 line-clamp-2 group-hover:text-green-600 transition-colors">
+                    {book.data.title}
+                  </h2>
+                  {book.data.author && (
+                    <p class="text-sm text-app-text-soft mb-3">
+                      {book.data.author}
+                    </p>
+                  )}
+                </a>
+                <div class="flex flex-wrap gap-1.5">
+                  {book.data.tags.slice(0, 2).map((tag) => (
+                    <span class="theme-chip inline-block text-xs font-medium px-2 py-1 rounded">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            ))
+          }
         </div>
       </div>
     </main>

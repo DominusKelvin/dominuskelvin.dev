@@ -10,38 +10,41 @@ const posts = Object.values(allPosts)
   .sort(
     (a: any, b: any) =>
       new Date(b.frontmatter.pubDate).valueOf() -
-      new Date(a.frontmatter.pubDate).valueOf()
+      new Date(a.frontmatter.pubDate).valueOf(),
   )
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <BaseHead
       title="The Kelvin O. Omereshone Blog"
-      description="Learn Fullstack Web Development through articles on various topics across the stack.", image='/blog.png'
+      description="Learn Fullstack Web Development through articles on various topics across the stack."
+      ,
+      image="/blog.png"
     />
   </head>
-  <body class="bg-gray-50">
+  <body class="theme-shell">
     <Header />
     <main class="min-h-screen">
       <div class="max-w-4xl mx-auto px-4 sm:px-10 py-12 lg:py-16">
         <header class="mb-12 lg:mb-16">
-          <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">Blog</h1>
-          <p class="text-xl text-gray-500">Thoughts, tutorials, guides, etc</p>
+          <h1 class="text-3xl lg:text-4xl font-bold text-app-text mb-3">
+            Blog
+          </h1>
+          <p class="text-xl text-app-text-soft">
+            Thoughts, tutorials, guides, etc
+          </p>
         </header>
         <section>
-          <div class="divide-y divide-gray-200/60">
+          <div class="divide-y divide-app-border">
             {
               posts.map((post: any) => (
                 <article class="group py-8 first:pt-0">
-                  <a
-                    href={post.url}
-                    class="block"
-                  >
+                  <a href={post.url} class="block">
                     <div class="flex items-baseline gap-6">
                       <time
-                        class="text-sm text-gray-500 w-28 shrink-0 hidden sm:block"
+                        class="text-sm text-app-text-soft w-28 shrink-0 hidden sm:block"
                         datetime={post.frontmatter.pubDate}
                       >
                         {new Date(post.frontmatter.pubDate).toLocaleDateString(
@@ -50,27 +53,26 @@ const posts = Object.values(allPosts)
                             year: 'numeric',
                             month: 'short',
                             day: 'numeric',
-                          }
+                          },
                         )}
                       </time>
                       <div class="flex-1 min-w-0">
                         <time
-                          class="text-sm text-gray-500 block mb-1 sm:hidden"
+                          class="text-sm text-app-text-soft block mb-1 sm:hidden"
                           datetime={post.frontmatter.pubDate}
                         >
-                          {new Date(post.frontmatter.pubDate).toLocaleDateString(
-                            'en-us',
-                            {
-                              year: 'numeric',
-                              month: 'short',
-                              day: 'numeric',
-                            }
-                          )}
+                          {new Date(
+                            post.frontmatter.pubDate,
+                          ).toLocaleDateString('en-us', {
+                            year: 'numeric',
+                            month: 'short',
+                            day: 'numeric',
+                          })}
                         </time>
-                        <h2 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-green-600 transition-colors">
+                        <h2 class="text-lg font-semibold text-app-text mb-1 group-hover:text-green-600 transition-colors">
                           {post.frontmatter.title}
                         </h2>
-                        <p class="text-gray-500 text-sm leading-relaxed">
+                        <p class="text-app-text-soft text-sm leading-relaxed">
                           {post.frontmatter.description}
                         </p>
                       </div>
