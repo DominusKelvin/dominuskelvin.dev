@@ -1,269 +1,154 @@
 ---
 layout: '../../layouts/BlogPost.astro'
 title: 'Git Flow Worked For Me. Agents Need Something Faster.'
-description: "I enjoyed Git Flow and I understand why so many teams did. But in an agentic world, the extra branches, release ceremonies, and branch-switching overhead slow down the one thing that matters most now: iteration."
+description: 'Git Flow worked for me as a solo maintainer because develop stayed hot and main stayed stable. But in an agentic world, the branch tax is no longer worth it. Git Vibe keeps the safety and drops the ceremony.'
 pubDate: 'March 16, 2026'
+heroImage: /covers/git-flow-worked-until-agents.png
 ---
 
-I have enjoyed Git Flow.
+I liked Git Flow for a very specific reason.
 
-I say that upfront because I do not want this essay to sound like one of those smug retrospectives where someone rediscovers a simpler workflow and pretends everybody who came before was foolish.
+I am often a team of one.
 
-They were not.
+Even when I am maintaining open source in public, the day-to-day reality is still me carrying most of the operational weight: building the feature, testing the change, cutting the release, and living with the consequences if I rushed something dumb into the stable branch.
 
-Git Flow solved real problems for real teams. A lot of us liked it because it gave shape to a messy world. It gave us `develop` for integration, `main` for production, `feature/*` for work in progress, `release/*` for stabilization, and `hotfix/*` for emergencies. It felt disciplined. It felt safe. And when release processes were slower, CI was weaker, and deployment was a bigger ceremony, that discipline made sense.
+In that world, Git Flow gave me something that felt deeply practical:
 
-You can still see why it became popular by looking at Vincent Driessen's original [successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/) and Atlassian's write-up of the [Gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). The selling point was never just more branches. The selling point was **control**.
+- one branch that stayed hot
+- one branch that stayed stable
 
-And if I am being honest, I am still sympathetic to that instinct.
+For me, `develop` was the hot lane.
 
-I like coherence. I like systems. I like workflows that make it harder to be careless.
+That was where I could test ideas, let unfinished work breathe a little, and shake out the rough edges without pretending it was already production-ready. `main` was the boring lane. Once something landed there, I wanted to feel calm. I wanted to know it was stable.
 
-But the world that made Git Flow feel like the right amount of structure is not the world I am building in now.
+As a solo builder and open source maintainer, that separation was not theoretical. It was useful.
 
-We are in an agentic world now.
+It meant I could keep moving on the next thing without making the stable branch feel like my workshop floor after a long night.
 
-And agentic work needs something faster.
+So when I say Git Flow worked for me, I mean it.
 
-## What Changed
+Not in the abstract.
 
-When I say "agentic work," I mean a way of building where software creation is no longer one human, one branch, one terminal, one pace.
+In my actual day-to-day work.
 
-Now I can have:
+## Why It Eventually Started Feeling Expensive
 
-- one AI agent exploring a refactor,
-- another one writing docs,
-- another one testing a fix,
-- while I review code, answer product questions, and make the calls that actually matter.
+The problem is that Git Flow buys safety with ceremony.
 
-The number of parallel attempts I can run has gone up dramatically.
+That trade-off can be worth it. Sometimes it is exactly the right trade-off. But the cost does not disappear just because the workflow has a nice diagram.
 
-That changes the bottleneck.
+You pay for it in branch choreography:
 
-The bottleneck is no longer "how do I impose enough ceremony so nobody breaks production by accident?"
+- feature into `develop`
+- release off `develop`
+- release into `main`
+- release back into `develop`
+- hotfix into `main`
+- hotfix back into `develop`
 
-The bottleneck is "how do I preserve clarity while letting iteration happen at a much higher rate?"
+If you are a big team shipping versioned software with long stabilization periods, maybe that cost is justified.
 
-That is a different problem.
+If you are a fast-moving product team, a solo maintainer, or an open source operator who wants to ship in smaller batches, that cost starts to feel like paying coordination tax to coordinate with yourself.
 
-Git Flow was optimized for a world where release management needed more ceremony.
+This is not even a controversial take anymore.
 
-Agentic work is optimized for a world where **feedback loops need less friction**.
+Vincent Driessen, who wrote the original [successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/), later added a note saying the model was conceived in 2010 and that teams doing continuous delivery should use something simpler such as [GitHub Flow](https://docs.github.com/en/get-started/using-github/github-flow).
 
-## Why People Loved Git Flow
+That matters.
 
-I want to linger here a little longer, because if we skip this part, the rest of the article becomes cheap.
+Because it clarifies something people miss all the time: Git Flow was never supposed to be the final law of software development. It was a fit for a certain environment.
 
-Git Flow was attractive because it offered a few things many teams badly wanted:
+And for a lot of modern software, that environment is gone.
 
-### 1. It separated "what we are building" from "what we are shipping"
+## The Limitation I Felt Most As a Team of One
 
-`develop` gave teams a place to integrate ongoing work while keeping `main` tied to production.
+Here was the real issue for me.
 
-That felt reassuring.
+Git Flow gave me a hot lane and a stable lane at the repository level.
 
-### 2. It gave releases a staging lane
+But I no longer wanted isolation at the repository level.
 
-`release/*` branches let teams freeze scope, fix bugs, bump versions, and get comfortable before the final merge.
+I wanted isolation at the task level.
 
-Again, reassuring.
+That is a big difference.
 
-### 3. It made hotfixes feel official
+`develop` works when you are comfortable pouring all unfinished work for "what comes next" into one long-lived branch.
 
-If production broke, `hotfix/*` gave everyone a clear story for how emergency work should happen.
+But that branch becomes a warehouse.
 
-### 4. It fit a slower release culture
+It accumulates unrelated changes.
 
-If releases were infrequent, if QA was heavier, if deployment had more human coordination, then having special lanes for special situations seemed mature rather than wasteful.
+It becomes a place where half-finished ideas sit beside almost-ready fixes.
 
-And to be fair, sometimes it was mature.
+It turns the question "what is ready?" into archaeology.
 
-There are still environments where that structure is justified: heavily regulated software, products with multiple maintained versions, teams with strict release trains, or organizations where deployment is still a coordinated event rather than a routine act.
+And as a solo maintainer, that gets old fast.
 
-So no, I am not saying Git Flow was dumb.
+`release/*` branches started feeling like ritual around work I could often express as a version bump, a final check, and a tag.
 
-I am saying it was optimized for a different era.
+`hotfix/*` branches started feeling like urgency with a fancier name.
 
-## Where Git Flow Falls Short In Agentic Work
+And `develop` started feeling less like freedom and more like inventory.
 
-In an agentic world, the extra steps and ceremonies are not usually buying you enough.
+That is before AI even enters the picture.
 
-They are just slowing you down.
+## Then AI Changed the Unit of Work
 
-### `develop` becomes a second main branch you have to babysit
+AI did not make me want less discipline.
 
-This is one of the biggest problems.
+It made me want a different kind of discipline.
 
-In theory, `develop` is the integration branch and `main` is the production branch.
+Now I can have one agent exploring a refactor, another drafting docs, another testing a fix, while I review the work, redirect it, or throw half of it away.
 
-In practice, for a lot of product teams, `develop` becomes shadow `main`:
+Even without AI, fast coders already live this way in miniature:
 
-- code lands in `develop`,
-- everyone treats it as the real center of gravity,
-- then somebody has to merge it forward again,
-- and now you are paying a tax just to keep two long-lived branches aligned.
+- one terminal for the app
+- another for tests
+- another for a risky experiment
+- another for a bug fix you do not want tangled into the first thing
 
-That tax might feel small once.
+The branch model that fits that world is not a grand taxonomy of `develop`, `release/*`, and `hotfix/*`.
 
-It does not feel small after fifty releases.
+It is a stable mainline plus cheap, isolated work lanes.
 
-### `release/*` branches add ceremony even when the release is already obvious
+That is the shift.
 
-Most teams do not need a whole extra branch to bump a version number, make one or two final checks, and tag a release.
+The thing I loved about Git Flow was the separation between hot and stable.
 
-If your mainline is healthy and your changes are landing in small batches, a release branch often becomes a formal ritual around work that could have been a single release commit on `main`.
+The thing I need now is that same separation, but scoped to each task.
 
-### `hotfix/*` branches duplicate a story `feat/*` can already tell
+## GitHub Flow And Trunk-Based Development Pointed The Way
 
-I understand the intention behind `hotfix/*`, but in practice it usually adds naming ceremony more than operational value.
+The broader industry has been moving this direction for a while.
 
-If all urgent work is just work that needs to happen now, then forcing a separate branch taxonomy is often unnecessary. The urgency lives in your priority, not your branch prefix.
+GitHub's own docs teach a simpler shape: `main` is the definitive branch, you branch off `main`, do the work, open a pull request, and merge back into `main`.
 
-### The merge choreography keeps multiplying
+Trunk-based development pushes even harder. The guidance around [short-lived feature branches](https://trunkbaseddevelopment.com/short-lived-feature-branches/) is blunt: branches should live briefly, merge quickly, and be deleted. If a branch hangs around too long, it starts becoming the very thing trunk-based development is trying to avoid.
 
-This is the real pain:
+That maps cleanly to how I want to build now.
 
-- feature to develop,
-- release to main,
-- release back to develop,
-- hotfix to main,
-- hotfix back to develop.
+Not because I suddenly became ideologically minimal about Git.
 
-That is a lot of movement for teams who mostly just want to ship product.
+Because I want less stale inventory living in branches.
 
-Every extra branch in the choreography is another place for drift, confusion, and merge noise to accumulate.
+I want `main` to mean something.
 
-## The Part Git Flow Really Struggles With: Parallel AI Work
+I want unfinished work isolated by task, not dumped into one perpetual "next release" branch.
 
-Git Flow was not built for a world where one person might run multiple work streams in parallel from the same machine.
+## What Git Vibe Changes
 
-But that is exactly the world we are entering.
+That is why I built [Git Vibe](https://github.com/sailscastshq/git-vibe).
 
-When you are using AI seriously, you do not want one giant working tree where unrelated experiments keep colliding.
-
-You do not want:
-
-- one branch with three half-finished ideas,
-- stash stacks you no longer trust,
-- uncommitted changes blocking context switches,
-- test runs from one task interfering with another,
-- or terminal tabs where you can no longer remember what each checkout is supposed to represent.
-
-This is where many teams still have the right instinct and the wrong tool.
-
-They know they need isolation.
-
-They just keep reaching for more branch categories instead of better workspace isolation.
-
-## Why Worktrees Matter More Than Most People Realize
-
-If you have never used Git worktrees seriously, here is the plain-English version:
-
-**A worktree lets you check out another branch into another folder without cloning the repository again.**
-
-That sounds small. It is not small.
-
-It means every active task can have its own room.
-
-That room can have:
-
-- its own branch,
-- its own terminal session,
-- its own test run,
-- its own editor window,
-- its own AI agent,
-- and its own mental context.
-
-This is much easier to understand when you stop thinking of worktrees as a Git trick and start thinking of them as **task isolation**.
-
-### Imagine your work like a house
-
-Without worktrees, every task is sharing the same room.
-
-You are moving chairs around every few minutes:
-
-- now this room is for a UI change,
-- now it is for a production fix,
-- now it is for a blog post,
-- now it is for a refactor,
-- now it is for a release.
-
-That gets chaotic fast.
-
-With worktrees, each task gets its own room.
-
-You do not need to clean up one room just to step into another.
-
-That is the benefit people understand immediately once they use it.
-
-### Worktrees reduce context switching cost
-
-Branch switching sounds cheap until you are doing it all day.
-
-But branch switching often comes with hidden costs:
-
-- stashing,
-- checking whether files are clean,
-- restarting dev servers,
-- rerunning tests,
-- reopening tabs,
-- and reconstructing what you were doing.
-
-A worktree cuts a lot of that cost out.
-
-The context is waiting for you where you left it.
-
-### Worktrees make AI orchestration safer
-
-This is where I think the conversation needs to catch up.
-
-When every active task gets its own worktree, you can assign one task to one agent without cross-contamination.
-
-That means:
-
-- one agent can draft docs,
-- another can refactor a controller,
-- another can debug a failing test,
-- and none of them need to step on each other in the same checkout.
-
-This is not just convenient.
-
-It is operationally saner.
-
-## GitHub Flow And Trunk-Based Development Pointed In The Right Direction
-
-I do not think Git Vibe appeared from nowhere.
-
-It is really the result of following simpler ideas to their logical conclusion.
-
-[GitHub Flow](https://docs.github.com/en/get-started/using-github/github-flow) made a strong case for lighter-weight branching around a stable mainline. [Trunk-based development](https://trunkbaseddevelopment.com/) pushed even harder on short-lived branches, small batches, and frequent integration.
-
-Those workflows were already closer to what modern teams need:
-
-- fewer long-lived branches,
-- smaller units of work,
-- faster integration,
-- and less ceremonial branch management.
-
-What I think they still left underemphasized, for the world we are moving into, is the importance of **workspace isolation**.
-
-That is where `git worktree` changes the conversation.
-
-And Git's own [worktree documentation](https://git-scm.com/docs/git-worktree) makes it clear that the feature was built for maintaining multiple working trees attached to the same repository. Once you experience that in an AI-heavy workflow, it becomes hard to go back.
-
-## What Git Vibe Is Trying To Do
-
-Git Vibe is my attempt to keep the discipline I liked from Git Flow while dropping the ceremony I no longer need.
+Git Vibe keeps the part I liked from Git Flow and changes the part that now feels too expensive.
 
 The model is simple:
 
-- `main` is the only long-lived branch,
-- all work branches live under `feat/*`,
-- every `feat/*` branch is created as its own worktree,
-- releases are cut from `main`,
-- and you finish a task by merging or syncing, then cleaning up the worktree.
+- `main` is the only long-lived branch
+- every piece of work lives under `feat/*`
+- every `feat/*` branch gets its own worktree
+- releases are cut directly from `main`
 
-That is it.
+That is the whole idea.
 
 No `develop`.
 
@@ -271,82 +156,150 @@ No `release/*`.
 
 No `hotfix/*`.
 
-Just one mainline, isolated work lanes, and faster iteration.
+No giant holding pen for unfinished work.
 
-That is why I built `git vibe`.
+Instead, every task gets its own lane.
 
-Not because I suddenly hate Git Flow.
+## How Git Vibe Actually Works
 
-But because I needed a workflow that behaves like this era feels.
+Start from a clean `main` checkout.
 
-## The Real Benefit Is Not Less Git. It Is More Momentum.
+Run:
 
-I want to be careful here.
+```bash
+git vibe code add-billing-webhook
+```
 
-The point of Git Vibe is not that it uses fewer branches and therefore wins some minimalist purity contest.
+Git Vibe creates a short-lived branch called `feat/add-billing-webhook` and checks it out into its own worktree, usually under `../.vibe/<repo>/add-billing-webhook`.
 
-The point is that it reduces drag in the places that now matter most:
+That sounds like a Git detail. It is not.
 
-- starting work quickly,
-- running multiple efforts in parallel,
-- keeping `main` meaningful,
-- avoiding stash gymnastics,
-- reducing merge ceremony,
-- and helping humans and agents collaborate without confusion.
+It means that one task now has its own:
 
-That is the real win.
+- folder
+- terminal
+- editor window
+- test run
+- dev server
+- agent context
 
-Momentum.
+If I need another piece of work, I do not pollute the first lane. I open another one.
 
-In the old world, the fear was chaos.
+```bash
+git vibe code fix-login-timeout && git vibe code write-launch-post
+```
 
-In this world, the bigger danger is drag.
+Now each task lives in its own room.
 
-## I Still Respect Git Flow
+Not its own pile in the same room.
 
-I do.
+That is the crucial distinction.
 
-Git Flow taught many teams good habits:
+If I rerun `git vibe code add-billing-webhook`, Git Vibe reopens the same worktree instead of creating a duplicate. So the lane is persistent while the work is active, but disposable once the work is done.
 
-- think about release discipline,
-- take branch hygiene seriously,
-- do not be casual about production,
-- and treat workflow as part of engineering, not an afterthought.
+When the branch is merged locally, I run:
+
+```bash
+git vibe finish --local add-billing-webhook
+```
+
+That fast-forwards `main`, removes the worktree, and deletes the feature branch.
+
+If the branch was merged through GitHub, I run:
+
+```bash
+git vibe finish --sync add-billing-webhook
+```
+
+That fetches `origin/main`, confirms the merge, fast-forwards local `main`, and then cleans up the worktree and branch.
+
+Releases stay boring too:
+
+```bash
+git vibe release 0.0.2 --push
+```
+
+That cuts the release directly from `main` with a version bump commit and an annotated tag.
+
+Git Vibe also adds light guardrails around the workflow. It can block casual commits on the base branch, enforce semantic commit messages, and keep `main` from slowly turning into a scratchpad.
+
+In other words, Git Vibe moves the hot lane down from one long-lived `develop` branch to many short-lived task lanes.
+
+That is the whole point.
+
+## Why This Fits Agents And Fast Coders
+
+Git Vibe is not only for AI agents.
+
+It is for anybody who wants to move quickly without smearing work across the same checkout.
+
+The agent angle just makes the need more obvious.
+
+When every task has its own worktree by default:
+
+- one agent can refactor safely
+- another can write docs safely
+- another can debug a test safely
+- and none of them have to step on each other in the same working tree
+
+But the exact same benefit applies to a human coder moving fast.
+
+You do not need AI to benefit from not branch-hopping, not stashing all day, not wondering which half-finished change belongs to which idea, and not restarting your mental context every 20 minutes.
+
+Git Vibe is simply Git organized around velocity with isolation.
+
+Not velocity with chaos.
+
+## The Real Upgrade
+
+Git Flow gave me a hot lane and a stable lane.
 
 I am grateful for that.
 
-But gratitude should not turn into inertia.
+But I do not need a cathedral of branches anymore.
 
-A workflow can be right for one era and wrong for the next.
+I need a boring mainline and cheap rooms for unfinished work.
 
-That does not make the old workflow foolish.
+I do not want one long-lived hot lane for everything that is not ready.
 
-It just means the optimization target moved.
+I want a stable lane and many short-lived hot lanes, each tied to a single task, each easy to open, each easy to finish, each easy to delete.
 
-## The Agentic Era Needs Faster Rails
+That is a better match for how I actually build now:
 
-If AI is going to make software creation more parallel, then our workflows need to become more legible under parallelism.
+- as a team of one
+- as an open source maintainer
+- as someone who wants `main` to stay trustworthy
+- as someone who wants unfinished work isolated by task
+- as someone who increasingly works with agents and parallel attempts
 
-That means:
+The old model separated stable from unstable.
 
-- smaller work units,
-- fewer long-lived branches,
-- fewer ceremonial merges,
-- more frequent integration,
-- and stronger task isolation.
+The new model separates task from task.
 
-That is why I think Git Flow falls short for agentic work.
+That is a better abstraction.
 
-It assumes the extra steps are worth the safety they buy.
+## Git Flow Worked For Me. Git Vibe Fits Me Better.
 
-For many modern product teams, they are not.
+I did not build Git Vibe because I wanted a clever new Git wrapper.
 
-Not anymore.
+I built it because I wanted to keep the feeling Git Flow gave me without paying the branch tax Git Flow demands.
 
-I enjoyed Git Flow.
+I still want `main` to feel stable.
 
-A lot of people did.
+I still want room to test new work.
 
-But the workflow I want now is one where every active task gets its own lane, `main` stays real, and iteration can move as fast as the work now demands.
+I still want discipline.
 
-That is what Git Vibe is about.
+I just do not think the right place for that discipline is a permanent `develop` branch anymore.
+
+I think it belongs in a boring `main`, short-lived `feat/*` branches, and isolated worktrees that disappear when the job is done.
+
+That is the workflow I wanted as a solo maintainer.
+
+It is the workflow I want even more in the age of agents.
+
+Git Flow gave me one hot lane and one stable lane.
+
+Git Vibe keeps the stable lane and gives every task its own hot lane.
+
+That is the upgrade.
