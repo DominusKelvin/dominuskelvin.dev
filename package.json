@@ -13,11 +13,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.13",
-    "@astrojs/rss": "^4.0.15",
-    "@astrojs/sitemap": "^3.7.0",
-    "@astrojs/vue": "^5.1.4",
-    "astro": "^5.16.15",
+    "@astrojs/mdx": "^5.0.2",
+    "@astrojs/rss": "^4.0.17",
+    "@astrojs/sitemap": "^3.7.1",
+    "@astrojs/vue": "^6.0.1",
+    "astro": "^6.0.8",
     "tailwindcss": "^4.1.18",
     "vue": "^3.5.25"
   },

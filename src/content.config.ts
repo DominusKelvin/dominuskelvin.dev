@@ -1,7 +1,9 @@
-import { z, defineCollection } from 'astro:content'
+import { defineCollection } from 'astro:content'
+import { glob } from 'astro/loaders'
+import { z } from 'astro/zod'
 
 const articles = defineCollection({
-  type: 'data',
+  loader: glob({ base: './src/content/articles', pattern: '**/*.json' }),
   schema: z.object({
     title: z.string(),
     url: z.string(),
@@ -12,7 +14,7 @@ const articles = defineCollection({
 })
 
 const socials = defineCollection({
-  type: 'data',
+  loader: glob({ base: './src/content/socials', pattern: '**/*.json' }),
   schema: z.object({
     link: z.string(),
     icon: z.string(),
@@ -21,7 +23,7 @@ const socials = defineCollection({
 })
 
 const tkyt = defineCollection({
-  type: 'data',
+  loader: glob({ base: './src/content/tkyt', pattern: '**/*.json' }),
   schema: z.object({
     title: z.string(),
     teacher: z.string(),
@@ -33,7 +35,7 @@ const tkyt = defineCollection({
 })
 
 const books = defineCollection({
-  type: 'data',
+  loader: glob({ base: './src/content/books', pattern: '**/*.json' }),
   schema: z.object({
     title: z.string(),
     subtitle: z.string().optional(),
