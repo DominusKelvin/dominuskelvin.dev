@@ -167,9 +167,9 @@ This is the core sequence itself: question the requirement, delete what should n
 
 This is where the skill moves from code to product work: scope, offer, UX, pricing, launch, and the shape of the MVP itself.
 
-### Boring Stack Decisions
+### Simplify the Design
 
-This part translates the framework into architecture choices inside the stack. When should you stay page-first? When do you actually need a queue, realtime, or more infrastructure? When should the boring default win?
+This part translates the framework into design and architecture choices. When should you stay page-first? When do you actually need a queue, realtime, or more infrastructure? When should the simpler default win?
 
 ### Feedback Loops
 
