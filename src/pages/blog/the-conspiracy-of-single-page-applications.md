@@ -325,7 +325,7 @@ The next three pieces zoom in on the three cleanup markets the SPA era helped no
 
 Part 1 looks at [**auth-as-a-service and JWT**](/blog/spa-conspiracy-auth-as-a-service-and-jwt), and why the browser pretending to be a separate client made ordinary session auth look old and provincial.
 
-Part 2 looks at **state management libraries**, and how duplicated truth between client and server turned normal apps into accidental distributed systems.
+Part 2 looks at [**state management libraries**](/blog/spa-conspiracy-state-management-libraries), and how duplicated truth between client and server turned normal apps into accidental distributed systems.
 
 Part 3 looks at **managed databases**, and why JavaScript finally running on the server should have made us own more of our systems, not outsource more of them.
 
