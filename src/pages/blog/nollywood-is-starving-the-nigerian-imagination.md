@@ -6,9 +6,9 @@ pubDate: 'April 15, 2026'
 heroImage: /covers/nollywood-is-starving-the-nigerian-imagination.png
 ---
 
-At this point, Nollywood can start to sound like an industry searching for one more way to squeeze love, heart, wife, husband, or forever into a title. _Love in Every Word_. _A Lagos Love Story_. _In the Name of Love_. _My Version of Love_. Different phrasing, same promise.
+At this point, Nollywood is starting to sound like an industry that thinks originality is finding one more way to cram love, heart, wife, husband, or forever into a title. _Love in Every Word_. _A Lagos Love Story_. _In the Name of Love_. _My Version of Love_. Different wording, same bait.
 
-Very often, you can guess the shape of the film from there. Someone is cheating. Someone is hunting for a husband. Someone is about to be humiliated in love. Someone is carrying a gender war into two hours of dialogue and calling it drama. The actors change. The wigs change. The furniture changes. The imaginative range barely moves.
+Very often, you can guess the shape of the film from there. Someone is cheating. Someone is hunting for a husband. Someone is about to be humiliated in love. Someone is carrying a gender war into two hours of dialogue and calling it drama. The actors change. The wigs change(do they really?). The furniture changes. The imaginative range barely moves.
 
 This is not me asking Nollywood to stop making love stories. Romance belongs in any healthy cinema. So do marriage, heartbreak, betrayal, desire, and domestic mess.
 
