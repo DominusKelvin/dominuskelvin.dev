@@ -476,14 +476,14 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
             </div>
           </div>
 
-          <div class="mt-12 grid gap-6 lg:grid-cols-[1fr_25rem]">
+          <div class="mt-8 grid gap-5 lg:mt-12 lg:grid-cols-[1fr_25rem]">
             <div class="grid gap-3">
               {
                 rates.map((rate, index) => (
                   <button
                     type="button"
                     class:list={[
-                      'music-rate-option grid gap-6 rounded-lg bg-app-surface p-5 text-left ring-1 ring-app-border transition hover:ring-app-border-strong focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 sm:grid-cols-[1fr_12rem] sm:p-6',
+                      'music-rate-option grid gap-5 rounded-lg bg-app-surface p-4 text-left ring-1 ring-app-border transition hover:ring-app-border-strong focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 sm:grid-cols-[1fr_12rem] sm:gap-6 sm:p-6',
                       index === 0 ? 'is-selected' : '',
                     ]}
                     data-rate-option
@@ -500,22 +500,22 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
                     data-quantity-plural={rate.quantityPlural}
                     aria-pressed={index === 0 ? 'true' : 'false'}
                   >
-                    <span>
+                    <span class="min-w-0">
                       <span class="text-xs font-bold uppercase text-green-600">
                         {rate.category}
                       </span>
-                      <span class="mt-2 block text-2xl font-black leading-tight text-app-text">
+                      <span class="mt-2 block text-xl font-black leading-tight text-app-text sm:text-2xl">
                         {rate.service}
                       </span>
                       <span class="mt-3 block max-w-2xl text-base leading-7 text-app-text-muted">
                         {rate.detail}
                       </span>
                     </span>
-                    <span class="flex items-end justify-between gap-4 sm:block sm:text-right">
+                    <span class="grid gap-2 sm:block sm:text-right">
                       <span class="block text-xs font-bold uppercase text-app-text-faint">
                         From
                       </span>
-                      <span class="mt-2 block text-3xl font-black leading-none text-app-text">
+                      <span class="block text-[clamp(1.85rem,10vw,2.65rem)] font-black leading-none text-app-text sm:mt-2 sm:text-3xl">
                         <span class="music-price-ngn">{rate.ngn}</span>
                         <span class="music-price-usd">{rate.usd}</span>
                       </span>
@@ -532,14 +532,14 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
             </div>
 
             <aside
-              class="music-ink music-ink-card rounded-lg p-6 lg:sticky lg:top-8 lg:self-start"
+              class="music-ink music-ink-card rounded-lg p-5 sm:p-6 lg:sticky lg:top-8 lg:self-start"
               aria-label="Booking estimate"
             >
               <p class="text-sm font-semibold uppercase text-white/60">
                 Estimate
               </p>
               <h3
-                class="mt-3 text-3xl font-black leading-tight"
+                class="mt-3 text-2xl font-black leading-tight sm:text-3xl"
                 data-estimate-service
               >
                 Record playing
@@ -559,7 +559,7 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
                   <label
                     for="music-estimate-quantity"
                     class="text-xs font-bold uppercase text-white/60"
-                    data-quantity-label
+                    data-estimate-quantity-label
                   >
                     Tracks
                   </label>
@@ -589,7 +589,7 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
                   </div>
                 </div>
                 <div
-                  class="mt-3 grid grid-cols-[3rem_1fr_3rem] overflow-hidden rounded-full bg-white/10 ring-1 ring-white/15"
+                  class="mt-3 grid grid-cols-[2.75rem_1fr_2.75rem] overflow-hidden rounded-full bg-white/10 ring-1 ring-white/15 sm:grid-cols-[3rem_1fr_3rem]"
                 >
                   <button
                     type="button"
@@ -636,13 +636,13 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
               </dl>
 
               <div
-                class="mt-8 rounded-lg bg-white/8 p-5 text-white ring-1 ring-white/12"
+                class="mt-8 rounded-lg bg-white/8 p-4 text-white ring-1 ring-white/12 sm:p-5"
               >
                 <p class="text-xs font-bold uppercase text-white/55">
                   Estimated from
                 </p>
                 <p
-                  class="mt-2 text-4xl font-black leading-none"
+                  class="mt-2 text-[clamp(2.4rem,13vw,3.5rem)] font-black leading-none sm:text-4xl"
                   aria-live="polite"
                   data-estimate-total
                 >
@@ -737,7 +737,9 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
       const quantityIncrement = document.querySelector(
         '[data-quantity-increment]',
       )
-      const quantityLabel = document.querySelector('[data-quantity-label]')
+      const quantityLabel = document.querySelector(
+        '[data-estimate-quantity-label]',
+      )
       const estimateService = document.querySelector('[data-estimate-service]')
       const estimateDetail = document.querySelector('[data-estimate-detail]')
       const estimateUnitNote = document.querySelector(
