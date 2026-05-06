@@ -1,19 +1,41 @@
 ---
 import Socials from '../components/Socials.astro'
+
+export interface Props {
+  compact?: boolean
+}
+
+const { compact = false } = Astro.props
 ---
 
-<footer class="border-t border-app-border mt-24">
-  <div class="max-w-7xl mx-auto px-4 sm:px-10 py-12">
-    <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<footer
+  class:list={[
+    compact
+      ? 'border-t border-white/10 bg-[var(--music-ink)]'
+      : 'mt-24 border-t border-app-border',
+  ]}
+>
+  <div
+    class:list={['mx-auto max-w-7xl px-4 sm:px-10', compact ? 'py-8' : 'py-12']}
+  >
+    <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
       <div class="flex items-center gap-8">
         <a
           href="https://x.com/Dominus_Kelvin"
           target="_blank"
-          class="theme-link-muted text-sm font-medium"
+          class:list={[
+            'text-sm font-medium transition-colors',
+            compact ? 'text-white/65 hover:text-white' : 'theme-link-muted',
+          ]}
         >
           @Dominus_Kelvin
         </a>
-        <p class="text-app-text-soft text-sm">
+        <p
+          class:list={[
+            'text-sm',
+            compact ? 'text-white/50' : 'text-app-text-soft',
+          ]}
+        >
           © {new Date().getFullYear()}
         </p>
       </div>

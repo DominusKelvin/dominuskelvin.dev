@@ -1,0 +1,978 @@
+---
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+
+const pageTitle = 'Music by Kelvin Omereshone | Hire for Sessions and Scores'
+const pageDescription =
+  'Book Kelvin Omereshone for recording sessions, live keys, arrangement, film scoring, musical direction, and production support.'
+const contactEmail = 'music@dominuskelvin.dev'
+
+const services = [
+  {
+    name: 'Playing For Records',
+    copy: 'Keys, piano, synths, pads, and supporting parts recorded cleanly for artists and producers.',
+  },
+  {
+    name: 'Arrangement',
+    copy: 'Musical shape for songs that need stronger movement, better transitions, and a clearer emotional arc.',
+  },
+  {
+    name: 'Production',
+    copy: 'Creative direction for artists who want the record guided from idea to confident musical delivery.',
+  },
+  {
+    name: 'Film Score',
+    copy: 'Original cues, themes, and textures for scenes that need emotion, restraint, tension, or lift.',
+  },
+  {
+    name: 'Live Playing',
+    copy: 'Keys for worship sets, intimate rooms, live recordings, and events that need a steady musical hand.',
+  },
+]
+
+const rates = [
+  {
+    id: 'record-playing',
+    category: 'Just playing',
+    service: 'Record playing',
+    detail: 'Keys, piano, synths, and pads recorded for one finished song.',
+    baseNgn: 100000,
+    baseUsd: 300,
+    ngn: '₦100,000+',
+    usd: '$300+',
+    unit: 'per track',
+    unitNote: 'A track is one recorded song.',
+    quantityLabel: 'Tracks',
+    quantitySingular: 'track',
+    quantityPlural: 'tracks',
+  },
+  {
+    id: 'musical-direction',
+    category: 'Arrangement',
+    service: 'Musical direction',
+    detail:
+      'Chord movement, transitions, song shape, dynamics, and musical direction.',
+    baseNgn: 200000,
+    baseUsd: 600,
+    ngn: '₦200,000+',
+    usd: '$600+',
+    unit: 'per track',
+    unitNote: 'A track is one recorded song.',
+    quantityLabel: 'Tracks',
+    quantitySingular: 'track',
+    quantityPlural: 'tracks',
+  },
+  {
+    id: 'production-lead',
+    category: 'Production',
+    service: 'Production lead',
+    detail:
+      'Full musical leadership for the sound, structure, players, and delivery of a record.',
+    baseNgn: 500000,
+    baseUsd: 2000,
+    ngn: '₦500,000+',
+    usd: '$2,000+',
+    unit: 'per track',
+    unitNote: 'A track is one recorded song.',
+    quantityLabel: 'Tracks',
+    quantitySingular: 'track',
+    quantityPlural: 'tracks',
+  },
+  {
+    id: 'film-score',
+    category: 'Screen music',
+    service: 'Film score',
+    detail:
+      'Original music for scenes, shorts, documentaries, ads, and visual stories.',
+    baseNgn: 300000,
+    baseUsd: 1000,
+    ngn: '₦300,000+',
+    usd: '$1,000+',
+    unit: 'per cue package',
+    unitNote: 'A cue package covers one scored scene or music moment.',
+    quantityLabel: 'Cue packages',
+    quantitySingular: 'cue package',
+    quantityPlural: 'cue packages',
+  },
+  {
+    id: 'live-playing',
+    category: 'Just playing',
+    service: 'Live playing',
+    detail:
+      'Keys for live sets, recordings, worship nights, and special events.',
+    baseNgn: 350000,
+    baseUsd: 1200,
+    ngn: '₦350,000+',
+    usd: '$1,200+',
+    unit: 'per engagement',
+    unitNote: 'An engagement is one live booking or event.',
+    quantityLabel: 'Engagements',
+    quantitySingular: 'engagement',
+    quantityPlural: 'engagements',
+  },
+]
+
+const terms = [
+  'A clear scope is agreed before work begins.',
+  'A deposit confirms the date, session, or project window.',
+  'Deliverables, timelines, and revisions are confirmed upfront.',
+  'Credits, usage, publishing, and media rights are handled in writing where applicable.',
+  'Live bookings are confirmed with rehearsal, location, travel, and backline needs.',
+]
+
+const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
+  'Music booking for Kelvin',
+)}&body=${encodeURIComponent(
+  'Hello Kelvin,\n\nI would like to book you for music work.\n\nProject type (song/live/film score):\nTimeline:\nLocation or remote:\nBudget/currency:\nReference links or scene link:\n\n',
+)}`
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={pageTitle}
+      description={pageDescription}
+      image="/koo.png"
+    />
+    <script is:inline>
+      ;(() => {
+        const storageKey = 'dominuskelvin.music.currency'
+        const fallback = 'usd'
+
+        const getUrlCurrency = () => {
+          const value = new URLSearchParams(window.location.search)
+            .get('currency')
+            ?.toLowerCase()
+
+          return value === 'ngn' || value === 'usd' ? value : null
+        }
+
+        const getStoredCurrency = () => {
+          try {
+            const value = window.localStorage.getItem(storageKey)
+            return value === 'ngn' || value === 'usd' ? value : null
+          } catch {
+            return null
+          }
+        }
+
+        const regionFromLocale = (locale) => {
+          if (!locale) return null
+
+          try {
+            return new Intl.Locale(locale).region
+          } catch {
+            const match = locale.match(/[-_]([a-z]{2})\b/i)
+            return match ? match[1].toUpperCase() : null
+          }
+        }
+
+        const guessCurrency = () => {
+          const languages =
+            navigator.languages && navigator.languages.length
+              ? navigator.languages
+              : [navigator.language].filter(Boolean)
+
+          const hasNigerianLocale = languages.some(
+            (locale) => regionFromLocale(locale) === 'NG',
+          )
+
+          const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone
+
+          return hasNigerianLocale || timeZone === 'Africa/Lagos'
+            ? 'ngn'
+            : fallback
+        }
+
+        document.documentElement.dataset.musicCurrency =
+          getUrlCurrency() || getStoredCurrency() || guessCurrency()
+      })()
+    </script>
+    <style is:global>
+      :root {
+        --music-ink: #17211a;
+        --music-ink-soft: #263229;
+        --music-on-ink: #ffffff;
+        --music-on-ink-muted: rgba(255, 255, 255, 0.72);
+        --music-on-ink-faint: rgba(255, 255, 255, 0.56);
+        --music-ink-border: rgba(255, 255, 255, 0.14);
+        --music-accent-glow: rgba(77, 148, 110, 0.18);
+        --music-accent-line: rgba(77, 148, 110, 0.22);
+        --music-hero-image-opacity: 0.28;
+        --music-hero-wash-mid: rgba(246, 248, 243, 0.95);
+        --music-hero-wash-end: rgba(246, 248, 243, 0.72);
+      }
+
+      .music-hero {
+        background:
+          radial-gradient(
+            circle at 12% 14%,
+            var(--music-accent-glow),
+            transparent 22rem
+          ),
+          var(--app-bg);
+      }
+
+      .music-hero-image {
+        opacity: var(--music-hero-image-opacity);
+      }
+
+      .music-hero-wash {
+        background:
+          linear-gradient(
+            90deg,
+            var(--app-bg) 0%,
+            var(--music-hero-wash-mid) 42%,
+            var(--music-hero-wash-end) 100%
+          ),
+          linear-gradient(0deg, var(--app-bg) 0%, transparent 38%);
+      }
+
+      .music-currency-button {
+        min-height: 2.25rem;
+        border-radius: 9999px;
+        padding: 0.375rem 0.75rem;
+        color: var(--music-on-ink-muted);
+        font-size: 0.75rem;
+        font-weight: 800;
+        transition:
+          background-color 180ms ease,
+          color 180ms ease;
+      }
+
+      .music-currency-button:hover {
+        color: var(--music-on-ink);
+      }
+
+      .music-price-ngn {
+        display: none;
+      }
+
+      html[data-music-currency='ngn'] .music-price-ngn {
+        display: inline;
+      }
+
+      html[data-music-currency='ngn'] .music-price-usd {
+        display: none;
+      }
+
+      html[data-music-currency='ngn'] [data-currency-button='ngn'],
+      html[data-music-currency='usd'] [data-currency-button='usd'] {
+        background-color: var(--music-on-ink);
+        color: var(--music-ink);
+      }
+
+      .music-rate-option.is-selected {
+        background-color: var(--music-ink);
+        color: var(--music-on-ink);
+        border-color: transparent;
+        box-shadow: inset 0 0 0 1px var(--music-accent-line);
+      }
+
+      .music-rate-option.is-selected :is(span, p) {
+        color: rgba(255, 255, 255, 0.74);
+      }
+
+      .music-rate-option.is-selected .text-app-text,
+      .music-rate-option.is-selected .text-green-600 {
+        color: #ffffff;
+      }
+
+      .music-rates {
+        background-color: var(--app-surface-alt);
+      }
+
+      .music-ink {
+        background-color: var(--music-ink);
+        color: var(--music-on-ink);
+      }
+
+      .music-ink-card {
+        border: 1px solid var(--music-accent-line);
+        box-shadow:
+          0 28px 72px -56px rgba(0, 0, 0, 0.55),
+          inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      }
+
+      .music-ink-button {
+        background-color: var(--music-on-ink);
+        color: var(--music-ink);
+      }
+
+      .music-estimate-quantity {
+        appearance: textfield;
+        -moz-appearance: textfield;
+      }
+
+      .music-estimate-quantity::-webkit-outer-spin-button,
+      .music-estimate-quantity::-webkit-inner-spin-button {
+        margin: 0;
+        -webkit-appearance: none;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --music-ink: var(--app-bg);
+          --music-ink-soft: var(--app-surface);
+          --music-on-ink-muted: rgba(255, 255, 255, 0.76);
+          --music-on-ink-faint: rgba(255, 255, 255, 0.6);
+          --music-ink-border: var(--app-border-strong);
+          --music-accent-glow: rgba(77, 148, 110, 0.07);
+          --music-accent-line: rgba(237, 245, 239, 0.16);
+          --music-hero-image-opacity: 0.18;
+          --music-hero-wash-mid: rgba(7, 14, 11, 0.92);
+          --music-hero-wash-end: rgba(7, 14, 11, 0.62);
+        }
+
+        .music-rates {
+          background-color: var(--app-bg);
+        }
+
+        .music-ink-card {
+          background:
+            linear-gradient(var(--music-ink), var(--music-ink)) padding-box,
+            linear-gradient(
+                135deg,
+                rgba(237, 245, 239, 0.18),
+                rgba(237, 245, 239, 0.07) 46%,
+                rgba(255, 255, 255, 0.04)
+              )
+              border-box;
+          border-color: transparent;
+          box-shadow:
+            0 32px 80px -54px rgba(0, 0, 0, 0.86),
+            inset 0 1px 0 rgba(255, 255, 255, 0.08);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .music-currency-button,
+        a {
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="theme-shell">
+    <Header title="Kelvin O Omereshone" />
+    <main>
+      <section class="music-hero relative isolate overflow-hidden">
+        <img
+          src="/koo.png"
+          alt=""
+          class="music-hero-image absolute inset-0 h-full w-full object-cover object-[58%_18%]"
+          loading="eager"
+        />
+        <div class="absolute inset-0 music-hero-wash"></div>
+        <div
+          class="relative mx-auto grid min-h-[clamp(32rem,68svh,44rem)] max-w-7xl content-center px-4 py-14 sm:px-10 lg:grid-cols-[minmax(0,0.92fr)_minmax(22rem,0.52fr)] lg:items-center lg:gap-12 lg:py-16"
+        >
+          <div class="max-w-3xl">
+            <p class="mb-4 text-sm font-semibold uppercase text-green-600">
+              Records • Screen • Stage
+            </p>
+            <h1
+              class="max-w-4xl text-5xl font-black leading-[0.95] text-app-text sm:text-6xl lg:text-7xl"
+            >
+              Music by Kelvin Omereshone.
+            </h1>
+            <p
+              class="mt-6 max-w-2xl text-lg leading-8 text-app-text-muted sm:text-xl"
+            >
+              Keys, cues, arrangements, and production support for artists,
+              churches, filmmakers, and live rooms that need musical judgement
+              they can trust.
+            </p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href={mailtoHref}
+                class="music-ink-button inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-bold transition hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2 focus-visible:ring-offset-app-bg"
+              >
+                Start a booking
+              </a>
+              <a
+                href="#rates"
+                class="inline-flex min-h-12 items-center justify-center rounded-full bg-app-surface/90 px-6 text-sm font-bold text-app-text ring-1 ring-app-border transition hover:bg-app-surface-alt hover:ring-app-border-strong focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2 focus-visible:ring-offset-app-bg"
+              >
+                See rates
+              </a>
+            </div>
+          </div>
+
+          <aside
+            class="mt-12 max-w-md text-app-text-muted lg:mt-0 lg:pl-2"
+            aria-label="Booking note"
+          >
+            <p class="text-sm font-semibold uppercase text-app-text">
+              For Artists And Directors
+            </p>
+            <p class="mt-4 text-2xl font-semibold leading-tight text-app-text">
+              Music that serves the moment.
+            </p>
+            <p class="mt-4 leading-7">
+              I help the song, scene, or room land with clarity, feeling, and
+              restraint.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="music-ink px-4 py-16 sm:px-10 lg:py-24">
+        <div
+          class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:gap-20"
+        >
+          <div>
+            <p class="text-sm font-semibold uppercase text-white/60">
+              What I Do
+            </p>
+            <h2
+              class="mt-3 max-w-xl text-4xl font-black leading-tight sm:text-5xl"
+            >
+              Musical support for records, rooms, and screen.
+            </h2>
+            <p class="mt-5 max-w-lg text-lg leading-8 text-white/72">
+              Bring me in when the music needs taste, direction, and a calmer
+              creative center.
+            </p>
+          </div>
+          <div class="grid gap-3 sm:grid-cols-2">
+            {
+              services.map((service, index) => (
+                <article class="rounded-lg bg-white/6 p-6 ring-1 ring-white/10 sm:p-7">
+                  <span class="font-mono text-sm text-white/42">
+                    {(index + 1).toString().padStart(2, '0')}
+                  </span>
+                  <h3 class="mt-5 text-2xl font-black leading-tight">
+                    {service.name}
+                  </h3>
+                  <p class="mt-4 leading-7 text-white/72">{service.copy}</p>
+                </article>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+
+      <section id="rates" class="music-rates px-4 py-16 sm:px-10 lg:py-24">
+        <div class="mx-auto max-w-7xl">
+          <div
+            class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between"
+          >
+            <div class="max-w-2xl">
+              <p class="text-sm font-semibold uppercase text-green-600">
+                Booking Rates
+              </p>
+              <h2
+                class="mt-3 text-3xl font-black leading-tight text-app-text sm:text-4xl"
+              >
+                Clear starting points for serious music work.
+              </h2>
+              <p class="mt-4 leading-7 text-app-text-muted">
+                Choose the closest booking type. Send a brief for availability
+                and a confirmed quote.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-12 grid gap-6 lg:grid-cols-[1fr_25rem]">
+            <div class="grid gap-3">
+              {
+                rates.map((rate, index) => (
+                  <button
+                    type="button"
+                    class:list={[
+                      'music-rate-option grid gap-6 rounded-lg bg-app-surface p-5 text-left ring-1 ring-app-border transition hover:ring-app-border-strong focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 sm:grid-cols-[1fr_12rem] sm:p-6',
+                      index === 0 ? 'is-selected' : '',
+                    ]}
+                    data-rate-option
+                    data-rate-id={rate.id}
+                    data-service={rate.service}
+                    data-category={rate.category}
+                    data-detail={rate.detail}
+                    data-price-ngn={rate.baseNgn}
+                    data-price-usd={rate.baseUsd}
+                    data-unit={rate.unit}
+                    data-unit-note={rate.unitNote}
+                    data-quantity-label={rate.quantityLabel}
+                    data-quantity-singular={rate.quantitySingular}
+                    data-quantity-plural={rate.quantityPlural}
+                    aria-pressed={index === 0 ? 'true' : 'false'}
+                  >
+                    <span>
+                      <span class="text-xs font-bold uppercase text-green-600">
+                        {rate.category}
+                      </span>
+                      <span class="mt-2 block text-2xl font-black leading-tight text-app-text">
+                        {rate.service}
+                      </span>
+                      <span class="mt-3 block max-w-2xl text-base leading-7 text-app-text-muted">
+                        {rate.detail}
+                      </span>
+                    </span>
+                    <span class="flex items-end justify-between gap-4 sm:block sm:text-right">
+                      <span class="block text-xs font-bold uppercase text-app-text-faint">
+                        From
+                      </span>
+                      <span class="mt-2 block text-3xl font-black leading-none text-app-text">
+                        <span class="music-price-ngn">{rate.ngn}</span>
+                        <span class="music-price-usd">{rate.usd}</span>
+                      </span>
+                      <span class="mt-2 block text-xs font-bold uppercase text-app-text-faint">
+                        {rate.unit}
+                      </span>
+                      <span class="mt-3 block text-sm leading-6 text-app-text-soft">
+                        {rate.unitNote}
+                      </span>
+                    </span>
+                  </button>
+                ))
+              }
+            </div>
+
+            <aside
+              class="music-ink music-ink-card rounded-lg p-6 lg:sticky lg:top-8 lg:self-start"
+              aria-label="Booking estimate"
+            >
+              <p class="text-sm font-semibold uppercase text-white/60">
+                Estimate
+              </p>
+              <h3
+                class="mt-3 text-3xl font-black leading-tight"
+                data-estimate-service
+              >
+                Record playing
+              </h3>
+              <p class="mt-3 leading-7 text-white/72" data-estimate-detail>
+                Keys, piano, synths, and pads recorded for one finished song.
+              </p>
+              <p
+                class="mt-3 text-sm font-medium text-white/58"
+                data-estimate-unit-note
+              >
+                A track is one recorded song.
+              </p>
+
+              <div class="mt-8">
+                <div class="flex items-center justify-between gap-4">
+                  <label
+                    for="music-estimate-quantity"
+                    class="text-xs font-bold uppercase text-white/60"
+                    data-quantity-label
+                  >
+                    Tracks
+                  </label>
+                  <div
+                    class="inline-flex rounded-full bg-white/10 p-1 ring-1 ring-white/15"
+                    role="group"
+                    aria-label="Choose currency"
+                  >
+                    <button
+                      type="button"
+                      class="music-currency-button"
+                      data-currency-button="ngn"
+                      aria-pressed="false"
+                      aria-label="Show naira prices"
+                    >
+                      ₦
+                    </button>
+                    <button
+                      type="button"
+                      class="music-currency-button"
+                      data-currency-button="usd"
+                      aria-pressed="false"
+                      aria-label="Show dollar prices"
+                    >
+                      $
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="mt-3 grid grid-cols-[3rem_1fr_3rem] overflow-hidden rounded-full bg-white/10 ring-1 ring-white/15"
+                >
+                  <button
+                    type="button"
+                    class="min-h-12 text-xl font-black text-white transition hover:bg-white/10 focus:outline-none focus-visible:bg-white/15"
+                    data-quantity-decrement
+                    aria-label="Decrease quantity"
+                  >
+                    -
+                  </button>
+                  <input
+                    id="music-estimate-quantity"
+                    type="number"
+                    min="1"
+                    max="20"
+                    value="1"
+                    inputmode="numeric"
+                    class="music-estimate-quantity min-h-12 bg-transparent text-center text-lg font-black text-white outline-none"
+                    data-estimate-quantity
+                  />
+                  <button
+                    type="button"
+                    class="min-h-12 text-xl font-black text-white transition hover:bg-white/10 focus:outline-none focus-visible:bg-white/15"
+                    data-quantity-increment
+                    aria-label="Increase quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+
+              <dl class="mt-8 space-y-4">
+                <div class="flex items-center justify-between gap-4">
+                  <dt class="text-sm text-white/65">Rate</dt>
+                  <dd class="font-bold text-white" data-estimate-rate>
+                    ₦100,000
+                  </dd>
+                </div>
+                <div class="flex items-center justify-between gap-4">
+                  <dt class="text-sm text-white/65">Quantity</dt>
+                  <dd class="font-bold text-white" data-estimate-count>
+                    1 track
+                  </dd>
+                </div>
+              </dl>
+
+              <div
+                class="mt-8 rounded-lg bg-white/8 p-5 text-white ring-1 ring-white/12"
+              >
+                <p class="text-xs font-bold uppercase text-white/55">
+                  Estimated from
+                </p>
+                <p
+                  class="mt-2 text-4xl font-black leading-none"
+                  aria-live="polite"
+                  data-estimate-total
+                >
+                  ₦100,000
+                </p>
+              </div>
+
+              <a
+                href={mailtoHref}
+                class="music-ink-button mt-5 inline-flex min-h-12 w-full items-center justify-center rounded-full px-6 text-sm font-bold transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--music-ink)]"
+                data-estimate-mailto
+              >
+                Send booking brief
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-16 sm:px-10 lg:py-24">
+        <div class="grid gap-12 lg:grid-cols-[0.75fr_1fr] lg:gap-16">
+          <div>
+            <p class="text-sm font-semibold uppercase text-green-600">
+              Booking Standards
+            </p>
+            <h2
+              class="mt-3 max-w-xl text-3xl font-black leading-tight text-app-text sm:text-4xl"
+            >
+              Clear scope, clean delivery, professional handoff.
+            </h2>
+            <p class="mt-5 leading-7 text-app-text-muted">
+              Every booking starts with the project, timeline, deliverables, and
+              rights aligned before the music begins.
+            </p>
+          </div>
+          <ol class="space-y-5">
+            {
+              terms.map((term, index) => (
+                <li class="grid gap-5 sm:grid-cols-[3rem_1fr]">
+                  <span class="font-mono text-sm text-app-text-faint">
+                    {(index + 1).toString().padStart(2, '0')}
+                  </span>
+                  <p class="text-lg leading-8 text-app-text">{term}</p>
+                </li>
+              ))
+            }
+          </ol>
+        </div>
+      </section>
+
+      <section class="music-ink px-4 py-16 sm:px-10 lg:py-24">
+        <div class="mx-auto flex max-w-4xl flex-col items-center text-center">
+          <p class="text-sm font-semibold uppercase text-white/60">
+            Book A Session
+          </p>
+          <h2
+            class="mt-3 max-w-3xl text-4xl font-black leading-tight sm:text-5xl"
+          >
+            Let the music carry the moment properly.
+          </h2>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-white/72">
+            Send the song, scene, set list, or brief. I’ll reply with
+            availability and the right next step.
+          </p>
+          <div class="mt-8 flex flex-col items-center gap-4 sm:flex-row">
+            <a
+              href={mailtoHref}
+              class="music-ink-button inline-flex min-h-12 items-center justify-center rounded-full px-7 text-sm font-bold transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--music-ink)]"
+            >
+              Start inquiry
+            </a>
+            <a
+              href={`mailto:${contactEmail}`}
+              class="text-sm font-bold text-white/72 transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--music-ink)]"
+            >
+              {contactEmail}
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer compact />
+
+    <script>
+      const storageKey = 'dominuskelvin.music.currency'
+      const buttons = document.querySelectorAll('[data-currency-button]')
+      const rateOptions = document.querySelectorAll('[data-rate-option]')
+      const quantityInput = document.querySelector('[data-estimate-quantity]')
+      const quantityDecrement = document.querySelector(
+        '[data-quantity-decrement]',
+      )
+      const quantityIncrement = document.querySelector(
+        '[data-quantity-increment]',
+      )
+      const quantityLabel = document.querySelector('[data-quantity-label]')
+      const estimateService = document.querySelector('[data-estimate-service]')
+      const estimateDetail = document.querySelector('[data-estimate-detail]')
+      const estimateUnitNote = document.querySelector(
+        '[data-estimate-unit-note]',
+      )
+      const estimateRate = document.querySelector('[data-estimate-rate]')
+      const estimateCount = document.querySelector('[data-estimate-count]')
+      const estimateTotal = document.querySelector('[data-estimate-total]')
+      const estimateMailto = document.querySelector('[data-estimate-mailto]')
+
+      let selectedRate = rateOptions[0]
+      let shouldSyncUrl = ['service', 'qty', 'currency'].some((key) =>
+        new URLSearchParams(window.location.search).has(key),
+      )
+
+      const clampQuantity = (value) => {
+        const number = Number.parseInt(value, 10)
+
+        if (Number.isNaN(number)) {
+          return 1
+        }
+
+        return Math.min(Math.max(number, 1), 20)
+      }
+
+      const getCurrency = () =>
+        document.documentElement.dataset.musicCurrency === 'ngn' ? 'ngn' : 'usd'
+
+      const getUrlCurrency = () => {
+        const value = new URLSearchParams(window.location.search)
+          .get('currency')
+          ?.toLowerCase()
+
+        return value === 'ngn' || value === 'usd' ? value : null
+      }
+
+      const getRateById = (id) =>
+        Array.from(rateOptions).find((option) => option.dataset.rateId === id)
+
+      const syncUrlState = () => {
+        if (!shouldSyncUrl || !selectedRate || !quantityInput) {
+          return
+        }
+
+        const url = new URL(window.location.href)
+        url.searchParams.set('service', selectedRate.dataset.rateId || '')
+        url.searchParams.set('qty', String(clampQuantity(quantityInput.value)))
+        url.searchParams.set('currency', getCurrency())
+
+        window.history.replaceState(
+          {},
+          '',
+          `${url.pathname}${url.search}${url.hash}`,
+        )
+      }
+
+      const formatMoney = (amount, currency) =>
+        new Intl.NumberFormat(currency === 'ngn' ? 'en-NG' : 'en-US', {
+          style: 'currency',
+          currency: currency === 'ngn' ? 'NGN' : 'USD',
+          maximumFractionDigits: 0,
+        }).format(amount)
+
+      const updateEstimate = () => {
+        if (!selectedRate || !quantityInput) {
+          return
+        }
+
+        const currency = getCurrency()
+        const quantity = clampQuantity(quantityInput.value)
+        const price = Number(
+          selectedRate.dataset[currency === 'ngn' ? 'priceNgn' : 'priceUsd'],
+        )
+        const total = price * quantity
+        const unit =
+          quantity === 1
+            ? selectedRate.dataset.quantitySingular
+            : selectedRate.dataset.quantityPlural
+        const totalLabel = formatMoney(total, currency)
+
+        quantityInput.value = String(quantity)
+
+        if (quantityLabel) {
+          quantityLabel.textContent = selectedRate.dataset.quantityLabel || ''
+        }
+
+        if (estimateService) {
+          estimateService.textContent = selectedRate.dataset.service || ''
+        }
+
+        if (estimateDetail) {
+          estimateDetail.textContent = selectedRate.dataset.detail || ''
+        }
+
+        if (estimateUnitNote) {
+          estimateUnitNote.textContent = selectedRate.dataset.unitNote || ''
+        }
+
+        if (estimateRate) {
+          estimateRate.textContent = formatMoney(price, currency)
+        }
+
+        if (estimateCount) {
+          estimateCount.textContent = `${quantity} ${unit}`
+        }
+
+        if (estimateTotal) {
+          estimateTotal.textContent = totalLabel
+        }
+
+        if (estimateMailto) {
+          const subject = `Booking brief: ${selectedRate.dataset.service}`
+          const body = `Hello Kelvin,
+
+I would like to book you for music work.
+
+Project type: ${selectedRate.dataset.service}
+Quantity: ${quantity} ${unit}
+Estimated starting budget: ${totalLabel}
+Pricing unit: ${selectedRate.dataset.unitNote}
+Timeline:
+Location or remote:
+Reference links or scene link:
+
+`
+
+          estimateMailto.href = `mailto:music@dominuskelvin.dev?subject=${encodeURIComponent(
+            subject,
+          )}&body=${encodeURIComponent(body)}`
+        }
+
+        syncUrlState()
+      }
+
+      const writeCurrency = (currency, options = {}) => {
+        if (options.syncUrl) {
+          shouldSyncUrl = true
+        }
+
+        document.documentElement.dataset.musicCurrency = currency
+
+        try {
+          window.localStorage.setItem(storageKey, currency)
+        } catch {}
+
+        buttons.forEach((button) => {
+          const isCurrent = button.dataset.currencyButton === currency
+          button.setAttribute('aria-pressed', String(isCurrent))
+        })
+
+        updateEstimate()
+      }
+
+      const selectRate = (option, options = {}) => {
+        if (!option) {
+          return
+        }
+
+        if (options.syncUrl) {
+          shouldSyncUrl = true
+        }
+
+        selectedRate = option
+
+        rateOptions.forEach((rateOption) => {
+          const isSelected = rateOption === option
+          rateOption.classList.toggle('is-selected', isSelected)
+          rateOption.setAttribute('aria-pressed', String(isSelected))
+        })
+
+        updateEstimate()
+      }
+
+      const hydrateFromUrl = () => {
+        const params = new URLSearchParams(window.location.search)
+        const urlRate = getRateById(params.get('service'))
+
+        if (urlRate) {
+          selectedRate = urlRate
+        }
+
+        if (quantityInput && params.has('qty')) {
+          quantityInput.value = String(clampQuantity(params.get('qty')))
+        }
+
+        selectRate(selectedRate)
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const currency = button.dataset.currencyButton
+
+          if (currency === 'ngn' || currency === 'usd') {
+            writeCurrency(currency, { syncUrl: true })
+          }
+        })
+      })
+
+      rateOptions.forEach((option) => {
+        option.addEventListener('click', () => {
+          selectRate(option, { syncUrl: true })
+        })
+      })
+
+      quantityInput?.addEventListener('input', () => {
+        shouldSyncUrl = true
+        updateEstimate()
+      })
+      quantityInput?.addEventListener('change', () => {
+        shouldSyncUrl = true
+        updateEstimate()
+      })
+
+      quantityDecrement?.addEventListener('click', () => {
+        if (!quantityInput) {
+          return
+        }
+
+        quantityInput.value = String(clampQuantity(quantityInput.value) - 1)
+        shouldSyncUrl = true
+        updateEstimate()
+      })
+
+      quantityIncrement?.addEventListener('click', () => {
+        if (!quantityInput) {
+          return
+        }
+
+        quantityInput.value = String(clampQuantity(quantityInput.value) + 1)
+        shouldSyncUrl = true
+        updateEstimate()
+      })
+
+      hydrateFromUrl()
+      writeCurrency(getUrlCurrency() || getCurrency())
+    </script>
+  </body>
+</html>
