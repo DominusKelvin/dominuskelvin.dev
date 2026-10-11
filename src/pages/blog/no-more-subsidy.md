@@ -10,7 +10,7 @@ I published [the Lagos Life interview](https://africanengineer.com/i/lagos-life)
 
 That discount was deliberate. I was accommodating our culture of not paying for written work, making it easier for people to try a paid publication. Some people were still outraged that they had to pay at all.
 
-An engineer built something people were interested in. I spoke with her about how she built it, the decisions she made, and the problems that arrived once people started using it. I published the work. Somehow, charging for it became something I was expected to defend.
+An engineer built something people were interested in. By 11 October 2026, Lagos Life’s [public dashboard](https://lagoslife.app/stats) was reporting more than 9.2 million total players and 38 million visits. I spoke with her about how she built it, the decisions she made, and the problems that arrived once people started using it. I published the work. Somehow, charging for it became something I was expected to defend.
 
 The African Engineer is a paid publication. There is a price because the writing is the product.
 
@@ -40,7 +40,7 @@ We use these products. We hear about the companies. But how much can we learn ab
 
 I want those decisions written down, so the knowledge can travel beyond the people who were in the room.
 
-The deep dives cover work such as Kuda's Nerve core banking system, the evolution of Paga's payments infrastructure, and now Lagos Life. The Lowdown is the free part of the publication, covering engineering stories from across Africa with our commentary. The full deep dives require paid access.
+The deep dives cover work such as [Kuda's Nerve core banking system](https://africanengineer.com/i/kuda-nerve), the evolution of [Paga's payments infrastructure](https://africanengineer.com/i/paga), and now [Lagos Life](https://africanengineer.com/i/lagos-life). The Lowdown is the free part of the publication, covering engineering stories from across Africa with our commentary. The full deep dives require paid access.
 
 Look at the Lagos Life story.
 
