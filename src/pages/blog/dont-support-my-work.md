@@ -10,7 +10,7 @@ I appreciate people who want to support my work. Sometimes that support is exact
 
 But I want to get through the noise of encouragement quickly and find the people who would pay because they actually want what I am making.
 
-Buy it because you want what it does. Read it because you want to know something. Use it because it makes a part of your life better. If the work fails to do that, I need to find out.
+Buy it because you want what it does. [Read it](https://africanengineer.com) because you want to know something. Use it because it makes a part of your life better. If the work fails to do that, I need to find out.
 
 A purchase made mainly to encourage me can postpone that discovery. You want me to succeed. I get a payment notification. It becomes easy to avoid the awkward question of whether I made something you actually wanted.
 
@@ -24,7 +24,7 @@ All of that may be true. It still leaves the buyer's life almost completely out 
 
 ## What did the payment tell you?
 
-Imagine you build an invoicing tool and share it with your friends. A few pay immediately. They congratulate you, repost the announcement and tell you to keep going.
+Imagine you build an [invoicing tool](https://hagfish.app) and share it with your friends. A few pay immediately. They congratulate you, repost the announcement and tell you to keep going.
 
 Good people. A good day.
 
@@ -40,7 +40,7 @@ She might also be your friend. That changes nothing about the value she is getti
 
 The mistake is treating everybody close to you as validation, or dismissing everybody close to you as biased. You have to look at what happens after the congratulations.
 
-In [No more subsidy](https://omereshone.com/blog/no-more-subsidy/), I wrote about charging for The African Engineer. I stand by that. Writing is work, and offering it for sale is an ordinary business decision.
+In [No more subsidy](https://omereshone.com/blog/no-more-subsidy/), I wrote about charging for [The African Engineer](https://africanengineer.com). I stand by that. Writing is work, and offering it for sale is an ordinary business decision.
 
 Charging also gives me a responsibility. I have to keep asking whether readers are getting something worth their money. An early purchase is encouraging. It cannot answer every question about the publication's future. The next piece still has to earn its place in someone's day.
 
