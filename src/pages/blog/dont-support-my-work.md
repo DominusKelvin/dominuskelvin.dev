@@ -3,7 +3,7 @@ layout: '../../layouts/BlogPost.astro'
 title: "Don't Support My Work"
 description: 'Support can get you started. Find out quickly who pays because they need what you make, and whether your product delivers.'
 pubDate: 'October 15, 2026'
-heroImage: /covers/dont-support-my-work.png
+heroImage: /covers/dont-support-my-work-v2.png
 ---
 
 I appreciate people who want to support my work. Sometimes that support is exactly what gets a business started. A friend buys the first copy, shares the launch, or gives an unfamiliar product a chance because they trust the person behind it. Some of those people become your best customers.
