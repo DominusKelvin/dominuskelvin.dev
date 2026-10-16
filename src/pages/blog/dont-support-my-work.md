@@ -40,6 +40,8 @@ She might also be your friend. That changes nothing about the value she is getti
 
 The mistake is treating everybody close to you as validation, or dismissing everybody close to you as biased. You have to look at what happens after the congratulations.
 
+This applies to feedback too. I can tell you where an interface is confusing without needing the product myself. But that does not tell you whether it solves a problem worth paying for. For that, spend time with the people you are building for and watch what happens when they use it.
+
 In [No more subsidy](https://omereshone.com/blog/no-more-subsidy/), I wrote about charging for [The African Engineer](https://africanengineer.com). I stand by that. Writing is work, and offering it for sale is an ordinary business decision.
 
 Charging also gives me a responsibility. I have to keep asking whether readers are getting something worth their money. An early purchase is encouraging. It cannot answer every question about the publication's future. The next piece still has to earn its place in someone's day.
