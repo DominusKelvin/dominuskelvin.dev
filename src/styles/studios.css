@@ -1,0 +1,395 @@
+/* This stylesheet is imported only by /studios. The software site keeps its theme. */
+html.studios-root {
+  color-scheme: dark;
+  --app-bg: #171716;
+  --app-surface: #20201e;
+  --app-surface-alt: #1b1b19;
+  --app-text: #f2eee5;
+  --app-text-muted: #c8c3b9;
+  --app-text-soft: #b1aca2;
+  --app-text-faint: #a5a096;
+  --app-border: #ffffff20;
+  --app-border-strong: #ffffff55;
+  --color-green-600: #d6c2a2;
+  --music-ink: #171716;
+  --music-on-ink: #f2eee5;
+  --music-on-ink-muted: #c8c3b9;
+  --music-accent-line: #ffffff25;
+  --app-selection: #a8947255;
+  scroll-padding-top: 2rem;
+}
+.studios {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.studios a,
+.studios button {
+  -webkit-tap-highlight-color: transparent;
+}
+.studios :focus-visible {
+  outline: 2px solid #d6c2a2;
+  outline-offset: 5px;
+}
+.studios-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.7rem 4vw;
+}
+.studios-wordmark {
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+.studios-wordmark span {
+  font-weight: 400;
+  color: var(--app-text-soft);
+}
+.studios-header nav {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.8rem;
+}
+.studios-header nav a,
+.personal-link {
+  color: var(--app-text-muted);
+  transition: color 180ms ease;
+}
+.studios-header a:hover {
+  color: #fff;
+}
+.personal-link {
+  font-size: 0.75rem;
+}
+.studios-hero {
+  min-height: min(780px, calc(100svh - 78px));
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.studios-portrait {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 66%;
+  object-fit: cover;
+  object-position: 50% 35%;
+  z-index: -2;
+  filter: grayscale(1);
+}
+.studios-hero-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      90deg,
+      #171716 9%,
+      #171716ed 30%,
+      #17171666 58%,
+      #1717160a 100%
+    ),
+    linear-gradient(0deg, #171716 0%, transparent 25%);
+}
+.studios-hero-copy {
+  padding: 3rem 7vw 7rem;
+  width: 100%;
+}
+.studio-label {
+  color: #c5b598;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  letter-spacing: 0.17em;
+  line-height: 1.8;
+}
+.studios-hero h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: clamp(4rem, 8.5vw, 9rem);
+  letter-spacing: -0.065em;
+  line-height: 0.98;
+  margin: 2rem 0;
+}
+.studios em {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+}
+.studios-intro {
+  color: #d4cfc5;
+  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+  line-height: 1.8;
+}
+.studio-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0.8rem 0;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #ffffff55;
+  transition:
+    gap 200ms ease,
+    border-color 200ms ease;
+}
+.studio-text-link:hover {
+  gap: 3.2rem;
+  border-color: #f2eee5;
+}
+.studios-hero-foot {
+  position: absolute;
+  left: 7vw;
+  bottom: 2rem;
+  color: #aaa59b;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.studio-section {
+  max-width: 1280px;
+  margin: auto;
+  padding: 7rem 2.5rem;
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 3rem;
+  border-bottom: 1px solid var(--app-border);
+}
+.studio-section h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 3.3vw, 3.5rem);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+.studio-section p:not(.studio-label) {
+  max-width: 36rem;
+  color: var(--app-text-muted);
+  line-height: 1.9;
+  margin-top: 1.5rem;
+}
+.studio-about {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.studios h2 {
+  font-weight: 400;
+}
+.studio-music h2,
+.studio-contact h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.035em;
+}
+.studio-service {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--app-border);
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  column-gap: 1rem;
+}
+.studio-service:first-child {
+  padding-top: 0;
+}
+.studio-service h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.studio-service p {
+  grid-column: 2;
+  margin-top: 0.6rem;
+}
+.music-ink {
+  background: var(--music-ink);
+  color: var(--music-on-ink);
+}
+.music-rates {
+  background: var(--app-surface-alt);
+}
+.music-rates h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.music-rate-option {
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid var(--app-border);
+  border-left: 2px solid transparent;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease;
+}
+.music-rate-option:hover {
+  background: #ffffff06;
+}
+.music-rate-option.is-selected {
+  background: #ffffff08;
+  border-left-color: #d6c2a2;
+}
+.music-rate-option span.font-black {
+  font-weight: 400;
+}
+.music-ink-card {
+  border: 1px solid var(--app-border-strong);
+  border-radius: 0;
+  box-shadow: none;
+}
+.music-ink-button {
+  background: var(--music-on-ink);
+  color: var(--music-ink);
+}
+.music-currency-button {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  border-radius: 100%;
+  padding: 0.4rem 0.7rem;
+  color: var(--music-on-ink-muted);
+  font-weight: 600;
+}
+.music-price-ngn {
+  display: none;
+}
+html[data-music-currency='ngn'] .music-price-ngn {
+  display: inline;
+}
+html[data-music-currency='ngn'] .music-price-usd {
+  display: none;
+}
+html[data-music-currency='ngn'] [data-currency-button='ngn'],
+html[data-music-currency='usd'] [data-currency-button='usd'] {
+  background: var(--music-on-ink);
+  color: var(--music-ink);
+}
+.music-estimate-quantity {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  min-width: 0;
+  width: 100%;
+}
+.music-estimate-quantity::-webkit-outer-spin-button,
+.music-estimate-quantity::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+.studio-contact {
+  border-top: 1px solid var(--app-border);
+}
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 10;
+  padding: 1rem;
+  background: #f2eee5;
+  color: #171716;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+@keyframes studio-enter {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .studios-hero-copy > * {
+    animation: studio-enter 800ms both;
+  }
+  .studios-hero-copy > :nth-child(2) {
+    animation-delay: 100ms;
+  }
+  .studios-hero-copy > :nth-child(3) {
+    animation-delay: 200ms;
+  }
+  .studios-hero-copy > :nth-child(4) {
+    animation-delay: 300ms;
+  }
+}
+@media (max-width: 700px) {
+  .studios-header {
+    padding: 1.2rem 6vw;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .studios-header nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .studios-header nav a {
+    padding: 0.5rem 0;
+  }
+  .personal-link {
+    font-size: 0.65rem;
+  }
+  .studios-wordmark {
+    font-size: 0.9rem;
+  }
+  .studios-hero {
+    min-height: 650px;
+    min-height: min(760px, calc(100svh - 116px));
+    align-items: end;
+  }
+  .studios-portrait {
+    width: 100%;
+    object-position: 55% 20%;
+  }
+  .studios-hero-shade {
+    background: linear-gradient(
+      0deg,
+      #171716 0%,
+      #171716ed 24%,
+      #17171655 67%,
+      #17171611 100%
+    );
+  }
+  .studios-hero-copy {
+    padding: 3rem 6vw 5.5rem;
+  }
+  .studios-hero h1 {
+    font-size: clamp(3.5rem, 13.5vw, 6rem);
+    margin: 1rem 0;
+  }
+  .studio-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+  }
+  .studios-intro {
+    font-size: 0.88rem;
+  }
+  .studios-hero-foot {
+    left: 6vw;
+    bottom: 1.6rem;
+  }
+  .studio-section {
+    display: block;
+    padding: 4rem 6vw;
+  }
+  .studio-section h2 {
+    margin-top: 1.5rem;
+  }
+  .studio-section p:not(.studio-label) {
+    font-size: 0.95rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.studios-root {
+    scroll-behavior: auto;
+  }
+  .studios *,
+  .studios *::before,
+  .studios *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.studios .social-icon-adaptive {
+  filter: brightness(0) invert(1);
+}

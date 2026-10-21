@@ -85,7 +85,7 @@ Some people receive evidence of their gift very early. Mine required a longer in
 
 This was simply how music became mine: not as immediate genius, but as a relationship built through attention, correction, embarrassment, repetition, and eventually competence. And I love my journey; warts and all.
 
-Today, I play keys and piano for records and [live rooms](https://youtu.be/rSuJbzi3qyU?si=p-e1e8VG4BE6McBa). I arrange music, produce, score scenes, and provide musical direction. Some of that work is on my [music page](/music). The point is not that I heroically ignored everybody and proved that self-belief conquers reality.
+Today, I play keys and piano for records and [live rooms](https://youtu.be/rSuJbzi3qyU?si=p-e1e8VG4BE6McBa). I arrange music, produce, score scenes, and provide musical direction. Some of that work is on my [Studios page](/studios/). The point is not that I heroically ignored everybody and proved that self-belief conquers reality.
 
 That is another lie. Critics can be right. Wanting something badly does not create ability, and repeating a mistake for ten years does not flip the mistake on its head.
 
