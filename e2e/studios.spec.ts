@@ -21,8 +21,8 @@ test('Studios has canonical metadata and keeps the software site accessible', as
   )
   await expect(page.locator('[data-rate-option]')).toHaveCount(5)
   await expect(page.locator('audio[autoplay], video[autoplay]')).toHaveCount(0)
-  await page.getByRole('link', { name: 'Kelvin’s personal site' }).click()
-  await expect(page.locator('header')).toContainText(
+  await page.getByRole('link', { name: 'Visit my personal site' }).click()
+  await expect(page.locator('body > header')).toContainText(
     'Developer. Teacher. Speaker.',
   )
   await expect(
@@ -75,4 +75,53 @@ test('Studios fits narrow and wide screens and respects reduced motion', async (
       .locator('#studio-title')
       .evaluate((element) => getComputedStyle(element).animationName),
   ).toBe('none')
+})
+
+test('Studios uses the shared site theme in light and dark modes without decorative arrows', async ({
+  page,
+}) => {
+  for (const colorScheme of ['light', 'dark'] as const) {
+    await page.emulateMedia({ colorScheme })
+    await page.goto('/')
+    const siteTheme = await page.evaluate(() => ({
+      background: getComputedStyle(document.body).backgroundColor,
+      color: getComputedStyle(document.body).color,
+      font: getComputedStyle(document.body).fontFamily,
+      headingFont: getComputedStyle(document.querySelector('main h1')!)
+        .fontFamily,
+      themeColor: getComputedStyle(document.documentElement).getPropertyValue(
+        '--color-green-600',
+      ),
+    }))
+    await page.goto('/studios/')
+    await expect(page.locator('body > header')).toContainText(
+      'Developer. Teacher. Speaker.',
+    )
+    await expect(
+      page.getByRole('link', { name: 'Studios', exact: true }),
+    ).toHaveClass(/text-green-600/)
+    const studioTheme = await page.evaluate(() => ({
+      background: getComputedStyle(document.body).backgroundColor,
+      color: getComputedStyle(document.body).color,
+      font: getComputedStyle(document.body).fontFamily,
+      headingFont: getComputedStyle(document.querySelector('main h1')!)
+        .fontFamily,
+      themeColor: getComputedStyle(document.documentElement).getPropertyValue(
+        '--color-green-600',
+      ),
+    }))
+    expect(studioTheme).toEqual(siteTheme)
+    expect(await page.locator('body > main').innerText()).not.toMatch(/[←-⇿]/u)
+    await expect(
+      page.locator('body > main a svg, body > main button svg'),
+    ).toHaveCount(0)
+    for (const width of [320, 390, 768, 1024, 1440]) {
+      await page.setViewportSize({ width, height: 900 })
+      expect(
+        await page.evaluate(
+          () => document.documentElement.scrollWidth <= innerWidth,
+        ),
+      ).toBe(true)
+    }
+  }
 })

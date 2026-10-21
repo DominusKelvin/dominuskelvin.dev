@@ -1,5 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
 import '../styles/studios.css'
 import Footer from '../components/Footer.astro'
 
@@ -129,14 +130,13 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
 ---
 
 <!doctype html>
-<html lang="en" class="studios-root">
+<html lang="en">
   <head>
     <BaseHead
       title={pageTitle}
       description={pageDescription}
       image="/koo.png"
       canonical="https://omereshone.com/studios/"
-      themeColor="#171716"
     />
     <script is:inline>
       ;(() => {
@@ -194,136 +194,179 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
     </script>
   </head>
   <body class="theme-shell studios">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="studios-header">
-      <a
-        class="studios-wordmark"
-        href="/studios/"
-        aria-label="Omereshone Studios home">Omereshone <span>Studios</span></a
-      >
-      <nav aria-label="Studio navigation">
-        <a href="#film">Film</a><a href="#music">Music</a><a href="#about"
-          >About</a
-        ><a href="#contact">Contact</a>
-      </nav>
-      <a class="personal-link" href="/">Kelvin’s personal site ↗</a>
-    </header>
-    <main id="main">
-      <section class="studios-hero" aria-labelledby="studio-title">
-        <img
-          src="/koo.png"
-          alt="Kelvin Omereshone"
-          class="studios-portrait"
-          width="1583"
-          height="1568"
-          fetchpriority="high"
-        />
-        <div class="studios-hero-shade"></div>
-        <div class="studios-hero-copy">
-          <p class="studio-label">
-            Film &amp; original music · Kelvin Omereshone
-          </p>
-          <h1 id="studio-title">Omereshone<br /><em>Studios.</em></h1>
-          <p class="studios-intro">
-            A practice in sound and storytelling.<br />Rooted in gospel. Growing
-            towards the screen.
-          </p>
-          <a class="studio-text-link" href="#music"
-            >Explore the music <span aria-hidden="true">↓</span></a
-          >
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 theme-button-soft rounded-lg p-3"
+      >Skip to content</a
+    >
+    <Header />
+    <main
+      id="main"
+      class="min-h-screen px-4 sm:px-10 lg:mx-auto lg:w-10/12 xl:w-9/12 max-w-7xl"
+    >
+      <section class="py-12 lg:py-20" aria-labelledby="studio-title">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <p
+              class="text-green-600 font-semibold text-sm uppercase tracking-wider"
+            >
+              Film &amp; original music · Kelvin Omereshone
+            </p>
+            <h1
+              id="studio-title"
+              class="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-app-text leading-tight"
+            >
+              Omereshone <span class="text-green-600">Studios</span>
+            </h1>
+            <p class="text-xl text-app-text-muted leading-relaxed">
+              A practice in sound and storytelling. Rooted in gospel. Growing
+              towards the screen.
+            </p>
+            <p class="text-sm font-medium text-app-text-soft">
+              Records · Screen · Stage
+            </p>
+            <div class="flex flex-wrap gap-3 pt-2">
+              <a
+                href="#music"
+                class="theme-button-soft inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold"
+                >Explore the music</a
+              >
+              <a
+                href="#contact"
+                class="theme-button-soft inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <img
+              src="/koo.png"
+              alt="Kelvin Omereshone"
+              class="studios-portrait rounded-2xl shadow-2xl ring-1 ring-app-border w-full max-w-md object-cover aspect-square"
+              width="1583"
+              height="1568"
+              fetchpriority="high"
+            />
+          </div>
         </div>
-        <p class="studios-hero-foot">Records · Screen · Stage</p>
       </section>
 
       <section
         id="film"
-        class="studio-section studio-film"
+        class="border-t border-app-border py-12 lg:py-16"
         aria-labelledby="film-title"
       >
-        <p class="studio-label">01 / Film · Current direction</p>
-        <div>
-          <h2 id="film-title">
-            Learning to tell stories.<br /><em>Listening for what they need.</em
+        <div class="grid gap-6 lg:grid-cols-[0.75fr_1fr] lg:gap-12">
+          <div>
+            <p
+              class="text-sm font-semibold uppercase tracking-wider text-green-600"
             >
-          </h2>
-          <p>
-            I’m developing my practice in directing and film scoring, bringing a
-            musician’s attention to rhythm, feeling, and restraint to the
-            screen.
-          </p>
-          <p>
-            This is the beginning of that work. Film and scene studies will be
-            shared here as they take shape.
-          </p>
-          <a class="studio-text-link" href={mailtoHref}
-            >Talk about a scene <span aria-hidden="true">↗</span></a
-          >
+              Film · Current direction
+            </p>
+            <h2
+              id="film-title"
+              class="mt-3 text-3xl lg:text-4xl font-bold text-app-text leading-tight"
+            >
+              Learning to tell stories. Listening for what they need.
+            </h2>
+          </div>
+          <div class="space-y-5 text-lg text-app-text-muted leading-relaxed">
+            <p>
+              I’m developing my practice in directing and film scoring, bringing
+              a musician’s attention to rhythm, feeling, and restraint to the
+              screen.
+            </p>
+            <p>
+              This is the beginning of that work. Film and scene studies will be
+              shared here as they take shape.
+            </p>
+            <a
+              href={mailtoHref}
+              class="inline-block text-sm font-semibold text-green-600 underline underline-offset-4 hover:text-green-700"
+              >Talk about a scene</a
+            >
+          </div>
         </div>
       </section>
 
       <section
         id="about"
-        class="studio-section studio-about"
+        class="border-t border-app-border py-12 lg:py-16"
         aria-labelledby="about-title"
       >
-        <p class="studio-label">02 / About</p>
-        <div>
-          <h2 id="about-title">Kelvin Omereshone.</h2>
-          <p>
-            I’m a software engineer and gospel keyboardist. Omereshone Studios
-            is the home for my music and my growing work in film, alongside my
-            life in software.
-          </p>
-          <a class="studio-text-link" href="/"
-            >Visit my personal site <span aria-hidden="true">↗</span></a
-          >
+        <div class="grid gap-6 lg:grid-cols-[0.75fr_1fr] lg:gap-12">
+          <div>
+            <p
+              class="text-sm font-semibold uppercase tracking-wider text-green-600"
+            >
+              About
+            </p>
+            <h2
+              id="about-title"
+              class="mt-3 text-3xl lg:text-4xl font-bold text-app-text"
+            >
+              Kelvin Omereshone.
+            </h2>
+          </div>
+          <div class="space-y-5 text-lg text-app-text-muted leading-relaxed">
+            <p>
+              I’m a software engineer and gospel keyboardist. Omereshone Studios
+              is the home for my music and my growing work in film, alongside my
+              life in software.
+            </p>
+            <a
+              href="/"
+              class="inline-block text-sm font-semibold text-green-600 underline underline-offset-4 hover:text-green-700"
+              >Visit my personal site</a
+            >
+          </div>
         </div>
       </section>
 
-      <section
-        id="music"
-        class="music-ink studio-music px-4 py-16 sm:px-10 lg:py-24"
-      >
+      <section id="music" class="border-t border-app-border py-12 lg:py-16">
         <div
           class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:gap-20"
         >
           <div>
-            <p class="text-sm font-semibold uppercase text-white/60">
-              03 / Music · What I Do
+            <p class="text-sm font-semibold uppercase text-app-text-soft">
+              Music · What I Do
             </p>
             <h2
-              class="mt-3 max-w-xl text-4xl font-black leading-tight sm:text-5xl"
+              class="mt-3 max-w-xl text-3xl font-bold leading-tight lg:text-4xl"
             >
               Musical support for records, rooms, and screen.
             </h2>
-            <p class="mt-5 max-w-lg text-lg leading-8 text-white/72">
+            <p class="mt-5 max-w-lg text-lg leading-8 text-app-text-muted">
               Keys, cues, arrangements, and production support for artists,
               churches, filmmakers, and live rooms that need musical judgement
               they can trust.
             </p>
-            <p class="mt-5 max-w-lg text-lg leading-8 text-white/72">
+            <p class="mt-5 max-w-lg text-lg leading-8 text-app-text-muted">
               Music that serves the moment. I help the song, scene, or room land
               with clarity, feeling, and restraint.
             </p>
-            <p class="mt-5 max-w-lg text-lg leading-8 text-white/72">
+            <p class="mt-5 max-w-lg text-lg leading-8 text-app-text-muted">
               Bring me in when the music needs taste, direction, and a calmer
               creative center.
             </p>
-            <a class="studio-text-link" href="#rates"
-              >See rates <span aria-hidden="true">↓</span></a
+            <a
+              class="mt-6 inline-block text-sm font-semibold text-green-600 underline underline-offset-4 hover:text-green-700"
+              href="#rates">See rates</a
             >
           </div>
-          <div class="studio-service-list">
+          <div class="divide-y divide-app-border">
             {
               services.map((service, index) => (
-                <article class="studio-service">
-                  <span class="font-mono text-sm text-white/42">
+                <article class="py-6 first:pt-0">
+                  <span class="font-mono text-sm text-app-text-faint">
                     {(index + 1).toString().padStart(2, '0')}
                   </span>
-                  <h3 class="mt-5 text-2xl font-black leading-tight">
+                  <h3 class="mt-2 text-xl font-semibold leading-tight text-app-text">
                     {service.name}
                   </h3>
-                  <p class="mt-4 leading-7 text-white/72">{service.copy}</p>
+                  <p class="mt-4 leading-7 text-app-text-muted">
+                    {service.copy}
+                  </p>
                 </article>
               ))
             }
@@ -331,7 +374,7 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
         </div>
       </section>
 
-      <section id="rates" class="music-rates px-4 py-16 sm:px-10 lg:py-24">
+      <section id="rates" class="border-t border-app-border py-12 lg:py-16">
         <div class="mx-auto max-w-7xl">
           <div
             class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between"
@@ -341,7 +384,7 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
                 Booking Rates
               </p>
               <h2
-                class="mt-3 text-3xl font-black leading-tight text-app-text sm:text-4xl"
+                class="mt-3 text-3xl font-bold leading-tight text-app-text sm:text-4xl"
               >
                 Clear starting points for serious music work.
               </h2>
@@ -352,14 +395,16 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
             </div>
           </div>
 
-          <div class="mt-8 grid gap-5 lg:mt-12 lg:grid-cols-[1fr_25rem]">
+          <div
+            class="mt-8 grid gap-5 lg:mt-12 xl:grid-cols-[minmax(0,1fr)_22rem]"
+          >
             <div class="grid gap-3">
               {
                 rates.map((rate, index) => (
                   <button
                     type="button"
                     class:list={[
-                      'music-rate-option grid gap-5 rounded-lg bg-app-surface p-4 text-left ring-1 ring-app-border transition hover:ring-app-border-strong focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 sm:grid-cols-[1fr_12rem] sm:gap-6 sm:p-6',
+                      'music-rate-option theme-card grid gap-5 bg-app-surface p-4 text-left ring-1 ring-app-border transition hover:ring-app-border-strong focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 sm:grid-cols-[1fr_12rem] sm:gap-6 sm:p-6',
                       index === 0 ? 'is-selected' : '',
                     ]}
                     data-rate-option
@@ -380,7 +425,7 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
                       <span class="text-xs font-bold uppercase text-green-600">
                         {rate.category}
                       </span>
-                      <span class="mt-2 block text-xl font-black leading-tight text-app-text sm:text-2xl">
+                      <span class="mt-2 block text-xl font-bold leading-tight text-app-text sm:text-2xl">
                         {rate.service}
                       </span>
                       <span class="mt-3 block max-w-2xl text-base leading-7 text-app-text-muted">
@@ -391,7 +436,7 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
                       <span class="block text-xs font-bold uppercase text-app-text-faint">
                         From
                       </span>
-                      <span class="block text-[clamp(1.85rem,10vw,2.65rem)] font-black leading-none text-app-text sm:mt-2 sm:text-3xl">
+                      <span class="block text-[clamp(1.85rem,10vw,2.65rem)] font-bold leading-none text-app-text sm:mt-2 sm:text-3xl">
                         <span class="music-price-ngn">{rate.ngn}</span>
                         <span class="music-price-usd">{rate.usd}</span>
                       </span>
@@ -408,23 +453,26 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
             </div>
 
             <aside
-              class="music-ink music-ink-card rounded-lg p-5 sm:p-6 lg:sticky lg:top-8 lg:self-start"
+              class="theme-card p-5 sm:p-6 xl:sticky xl:top-8 xl:self-start"
               aria-label="Booking estimate"
             >
-              <p class="text-sm font-semibold uppercase text-white/60">
+              <p class="text-sm font-semibold uppercase text-app-text-soft">
                 Estimate
               </p>
               <h3
-                class="mt-3 text-2xl font-black leading-tight sm:text-3xl"
+                class="mt-3 text-2xl font-bold leading-tight sm:text-3xl"
                 data-estimate-service
               >
                 Record playing
               </h3>
-              <p class="mt-3 leading-7 text-white/72" data-estimate-detail>
+              <p
+                class="mt-3 leading-7 text-app-text-muted"
+                data-estimate-detail
+              >
                 Keys, piano, synths, and pads recorded for one finished song.
               </p>
               <p
-                class="mt-3 text-sm font-medium text-white/58"
+                class="mt-3 text-sm font-medium text-app-text-soft"
                 data-estimate-unit-note
               >
                 A track is one recorded song.
@@ -434,19 +482,19 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
                 <div class="flex items-center justify-between gap-4">
                   <label
                     for="music-estimate-quantity"
-                    class="text-xs font-bold uppercase text-white/60"
+                    class="text-xs font-bold uppercase text-app-text-soft"
                     data-estimate-quantity-label
                   >
                     Tracks
                   </label>
                   <div
-                    class="inline-flex rounded-full bg-white/10 p-1 ring-1 ring-white/15"
+                    class="inline-flex rounded-full bg-app-surface-alt p-1 ring-1 ring-app-border"
                     role="group"
                     aria-label="Choose currency"
                   >
                     <button
                       type="button"
-                      class="music-currency-button"
+                      class="music-currency-button text-app-text-muted hover:text-app-text"
                       data-currency-button="ngn"
                       aria-pressed="false"
                       aria-label="Show naira prices"
@@ -455,7 +503,7 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
                     </button>
                     <button
                       type="button"
-                      class="music-currency-button"
+                      class="music-currency-button text-app-text-muted hover:text-app-text"
                       data-currency-button="usd"
                       aria-pressed="false"
                       aria-label="Show dollar prices"
@@ -465,11 +513,11 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
                   </div>
                 </div>
                 <div
-                  class="mt-3 grid grid-cols-[2.75rem_1fr_2.75rem] overflow-hidden rounded-full bg-white/10 ring-1 ring-white/15 sm:grid-cols-[3rem_1fr_3rem]"
+                  class="mt-3 grid grid-cols-[2.75rem_1fr_2.75rem] overflow-hidden rounded-full bg-app-surface-alt ring-1 ring-app-border sm:grid-cols-[3rem_1fr_3rem]"
                 >
                   <button
                     type="button"
-                    class="min-h-12 text-xl font-black text-white transition hover:bg-white/10 focus:outline-none focus-visible:bg-white/15"
+                    class="min-h-12 text-xl font-bold text-app-text transition hover:bg-app-surface-alt focus:outline-none focus-visible:bg-app-surface-alt"
                     data-quantity-decrement
                     aria-label="Decrease quantity"
                   >
@@ -482,12 +530,12 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
                     max="20"
                     value="1"
                     inputmode="numeric"
-                    class="music-estimate-quantity min-h-12 bg-transparent text-center text-lg font-black text-white outline-none"
+                    class="music-estimate-quantity min-h-12 bg-transparent text-center text-lg font-bold text-app-text outline-none"
                     data-estimate-quantity
                   />
                   <button
                     type="button"
-                    class="min-h-12 text-xl font-black text-white transition hover:bg-white/10 focus:outline-none focus-visible:bg-white/15"
+                    class="min-h-12 text-xl font-bold text-app-text transition hover:bg-app-surface-alt focus:outline-none focus-visible:bg-app-surface-alt"
                     data-quantity-increment
                     aria-label="Increase quantity"
                   >
@@ -498,27 +546,27 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
 
               <dl class="mt-8 space-y-4">
                 <div class="flex items-center justify-between gap-4">
-                  <dt class="text-sm text-white/65">Rate</dt>
-                  <dd class="font-bold text-white" data-estimate-rate>
+                  <dt class="text-sm text-app-text-muted">Rate</dt>
+                  <dd class="font-bold text-app-text" data-estimate-rate>
                     ₦100,000
                   </dd>
                 </div>
                 <div class="flex items-center justify-between gap-4">
-                  <dt class="text-sm text-white/65">Quantity</dt>
-                  <dd class="font-bold text-white" data-estimate-count>
+                  <dt class="text-sm text-app-text-muted">Quantity</dt>
+                  <dd class="font-bold text-app-text" data-estimate-count>
                     1 track
                   </dd>
                 </div>
               </dl>
 
               <div
-                class="mt-8 rounded-lg bg-white/8 p-4 text-white ring-1 ring-white/12 sm:p-5"
+                class="mt-8 rounded-lg bg-app-surface-alt p-4 text-app-text ring-1 ring-app-border sm:p-5"
               >
-                <p class="text-xs font-bold uppercase text-white/55">
+                <p class="text-xs font-bold uppercase text-app-text-soft">
                   Estimated from
                 </p>
                 <p
-                  class="mt-2 text-[clamp(2.4rem,13vw,3.5rem)] font-black leading-none sm:text-4xl"
+                  class="mt-2 text-[clamp(2.4rem,13vw,3.5rem)] font-bold leading-none sm:text-4xl"
                   aria-live="polite"
                   data-estimate-total
                 >
@@ -528,7 +576,7 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
 
               <a
                 href={mailtoHref}
-                class="music-ink-button mt-5 inline-flex min-h-12 w-full items-center justify-center rounded-full px-6 text-sm font-bold transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--music-ink)]"
+                class="theme-button-soft mt-5 inline-flex min-h-12 w-full items-center justify-center rounded-full px-6 text-sm font-bold transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2 focus-visible:ring-offset-app-bg"
                 data-estimate-mailto
               >
                 Send booking brief
@@ -538,14 +586,14 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
         </div>
       </section>
 
-      <section class="mx-auto max-w-7xl px-4 py-16 sm:px-10 lg:py-24">
+      <section class="border-t border-app-border py-12 lg:py-16">
         <div class="grid gap-12 lg:grid-cols-[0.75fr_1fr] lg:gap-16">
           <div>
             <p class="text-sm font-semibold uppercase text-green-600">
               Booking Standards
             </p>
             <h2
-              class="mt-3 max-w-xl text-3xl font-black leading-tight text-app-text sm:text-4xl"
+              class="mt-3 max-w-xl text-3xl font-bold leading-tight text-app-text sm:text-4xl"
             >
               Clear scope, clean delivery, professional handoff.
             </h2>
@@ -569,33 +617,30 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
         </div>
       </section>
 
-      <section
-        id="contact"
-        class="music-ink studio-contact px-4 py-16 sm:px-10 lg:py-24"
-      >
+      <section id="contact" class="border-t border-app-border py-12 lg:py-16">
         <div class="mx-auto flex max-w-4xl flex-col items-center text-center">
-          <p class="text-sm font-semibold uppercase text-white/60">
+          <p class="text-sm font-semibold uppercase text-app-text-soft">
             Contact · Book A Session
           </p>
           <h2
-            class="mt-3 max-w-3xl text-4xl font-black leading-tight sm:text-5xl"
+            class="mt-3 max-w-3xl text-3xl font-bold leading-tight lg:text-4xl"
           >
             Let the music carry the moment properly.
           </h2>
-          <p class="mt-5 max-w-2xl text-lg leading-8 text-white/72">
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-app-text-muted">
             Send the song, scene, set list, or brief. I’ll reply with
             availability and the right next step.
           </p>
           <div class="mt-8 flex flex-col items-center gap-4 sm:flex-row">
             <a
               href={mailtoHref}
-              class="music-ink-button inline-flex min-h-12 items-center justify-center rounded-full px-7 text-sm font-bold transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--music-ink)]"
+              class="theme-button-soft inline-flex min-h-12 items-center justify-center rounded-full px-7 text-sm font-bold transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2 focus-visible:ring-offset-app-bg"
             >
               Start inquiry
             </a>
             <a
               href={`mailto:${contactEmail}`}
-              class="text-sm font-bold text-white/72 transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--music-ink)]"
+              class="text-sm font-bold text-app-text-muted transition hover:text-app-text focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2 focus-visible:ring-offset-app-bg"
             >
               {contactEmail}
             </a>
@@ -603,7 +648,7 @@ const mailtoHref = `mailto:${contactEmail}?subject=${encodeURIComponent(
         </div>
       </section>
     </main>
-    <Footer compact />
+    <Footer />
 
     <script>
       const storageKey = 'omereshone.music.currency'
