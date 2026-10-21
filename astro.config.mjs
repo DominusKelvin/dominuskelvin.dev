@@ -12,6 +12,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   redirects: {
+    '/music': { destination: '/studios/', status: 301 },
     '/yt': 'https://youtube.com/@dominuskelvin',
     '/x': 'https://x.com/Dominus_Kelvin',
     '/nl': 'https://newsletter.omereshone.com',

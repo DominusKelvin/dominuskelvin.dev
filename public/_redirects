@@ -1,0 +1,3 @@
+# Permanent legacy music URLs (Cloudflare Pages / Netlify static hosting).
+/music /studios/ 301
+/music/ /studios/ 301
